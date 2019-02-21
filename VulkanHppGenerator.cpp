@@ -681,12 +681,20 @@ ${cases}
     functionBody = replaceWithMap(bodyTemplate, { { "cases", casesString } });
   }
 
+  static const std::string toStreamTemplate = R"(
+  std::ostream& operator<<( std::ostream& stream, ${typeName} const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+)";
   static const std::string toStringTemplate = R"(
   VULKAN_HPP_INLINE std::string to_string( ${typeName}${argumentName} )
   {${functionBody}
   }
 )";
   os << replaceWithMap(toStringTemplate, { { "typeName", bitmaskName },{ "argumentName", enumValues.empty() ? " " : " value " },{ "functionBody", functionBody } });
+  os << replaceWithMap(toStreamTemplate, { { "typeName", bitmaskName } });
 }
 
 void writeEnumToString(std::ostream & os, std::string const& enumName, std::vector<std::pair<std::string, std::string>> const& enumValues)
@@ -712,7 +720,13 @@ ${cases}      default: return "invalid";
     })";
     functionBody = replaceWithMap(switchTemplate, { { "cases", casesString.str() } });
   }
-
+  static const std::string enumToStream = R"(
+  std::ostream& operator<<( std::ostream& stream, ${typeName} const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+)";
   static const std::string enumToString = R"(
   VULKAN_HPP_INLINE std::string to_string( ${typeName}${argumentName} )
   {${functionBody}
@@ -723,6 +737,10 @@ ${cases}      default: return "invalid";
     { "typeName", enumName },
     { "argumentName", enumValues.empty() ? "" : " value" },
     { "functionBody", functionBody }
+  });
+  os << replaceWithMap(enumToStream,
+  {
+    { "typeName", enumName }
   });
 }
 
@@ -2598,6 +2616,10 @@ void VulkanHppGenerator::writeForwardDeclarations(std::ostream & os, std::set<st
     assert(structureIt != m_structures.end());
     enterProtect(os, structureIt->second.protect);
     os << "  " << (structureIt->second.isUnion ? "union" : "struct") << " " << stripPrefix(structureIt->first, "Vk") << ";" << std::endl;
+    static const std::string toStreamTemplate = "std::ostream& operator<<(std::ostream&, ${typeName} const&);";
+    static const std::string toStringTemplate = "std::string to_string( ${typeName} );";
+    os << "  " << replaceWithMap(toStreamTemplate, { { "typeName", stripPrefix(structureIt->first, "Vk") }}) << std::endl;
+    os << "  " << replaceWithMap(toStringTemplate, { { "typeName", stripPrefix(structureIt->first, "Vk") }}) << std::endl;
     if (!structureIt->second.alias.empty())
     {
       os << "  using " << stripPrefix(structureIt->second.alias, "Vk") << " = " << stripPrefix(structureIt->first, "Vk") << ";" << std::endl;
@@ -3888,6 +3910,41 @@ void VulkanHppGenerator::writeStructSetter(std::ostream & os, std::string const&
   }
 }
 
+void VulkanHppGenerator::writeStructToString(std::ostream & os, std::string const& structureName, StructureData const& structData) const
+{
+  // To Stream
+    static const std::string toStreamTemplate = R"(
+  std::ostream& operator<<( std::ostream& stream, ${typeName} const& value )
+  {
+${functionBody}
+    return stream;
+  }
+)";
+  // To String
+  static const std::string toStringTemplate = R"(
+  std::string to_string( ${typeName} value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+)";
+  std::string functionBody;
+  for( auto const& member : structData.members)
+  {
+    functionBody += "    stream << \"" + member.name +" : \" << value." + member.name + " << std::endl;\n";
+  }
+  os << "  " << replaceWithMap(toStreamTemplate,
+  {
+    { "typeName", stripPrefix(structureName, "Vk") },
+    { "functionBody", functionBody }
+  });
+  os << "  " << replaceWithMap(toStringTemplate,
+  {
+    { "typeName", stripPrefix(structureName, "Vk") }
+  });
+}
+
 void VulkanHppGenerator::writeStructure(std::ostream & os, std::pair<std::string, StructureData> const& structure) const
 {
   // only structs that are not returnedOnly get a constructor!
@@ -3914,6 +3971,10 @@ void VulkanHppGenerator::writeStructure(std::ostream & os, std::pair<std::string
   std::ostringstream members;
   writeStructMembers(members, structure.second);
 
+  // to_string method
+  std::ostringstream toString;
+  writeStructToString(toString, stripPrefix(structure.first, "Vk"), structure.second);
+
   static const std::string structureTemplate = R"(
 ${enterProtect}  struct ${name}
   {${constructorAndSetters}
@@ -3926,9 +3987,12 @@ ${enterProtect}  struct ${name}
     {
       return *reinterpret_cast<${vkName}*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, ${name} const& );
 ${compareOperators}
 ${members}  };
   static_assert( sizeof( ${name} ) == sizeof( ${vkName} ), "struct and wrapper have different size!" );
+${toString}
 ${leaveProtect})";
 
   os << replaceWithMap(structureTemplate,
@@ -3939,6 +4003,7 @@ ${leaveProtect})";
     { "vkName", structure.first },
     { "compareOperators", compareOperators.str() },
     { "members", members.str() },
+    { "toString", toString.str() },
     { "leaveProtect", structure.second.protect.empty() ? "" : ("#endif /*" + structure.second.protect + "*/\n") }
   });
 }
@@ -4869,6 +4934,7 @@ int main( int argc, char **argv )
 #include <cstring>
 #include <initializer_list>
 #include <string>
+#include <sstream>
 #include <system_error>
 #include <tuple>
 #include <type_traits>

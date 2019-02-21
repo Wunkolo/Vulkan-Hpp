@@ -41,6 +41,7 @@
 #include <cstring>
 #include <initializer_list>
 #include <string>
+#include <sstream>
 #include <system_error>
 #include <tuple>
 #include <type_traits>
@@ -2484,6 +2485,12 @@ namespace VULKAN_HPP_NAMESPACE
     }
   }
 
+  std::ostream& operator<<( std::ostream& stream, AccelerationStructureMemoryRequirementsTypeNV const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   enum class AccelerationStructureTypeNV
   {
     eTopLevel = VK_ACCELERATION_STRUCTURE_TYPE_TOP_LEVEL_NV,
@@ -2498,6 +2505,12 @@ namespace VULKAN_HPP_NAMESPACE
       case AccelerationStructureTypeNV::eBottomLevel : return "BottomLevel";
       default: return "invalid";
     }
+  }
+
+  std::ostream& operator<<( std::ostream& stream, AccelerationStructureTypeNV const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
   enum class AttachmentLoadOp
@@ -2518,6 +2531,12 @@ namespace VULKAN_HPP_NAMESPACE
     }
   }
 
+  std::ostream& operator<<( std::ostream& stream, AttachmentLoadOp const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   enum class AttachmentStoreOp
   {
     eStore = VK_ATTACHMENT_STORE_OP_STORE,
@@ -2532,6 +2551,12 @@ namespace VULKAN_HPP_NAMESPACE
       case AttachmentStoreOp::eDontCare : return "DontCare";
       default: return "invalid";
     }
+  }
+
+  std::ostream& operator<<( std::ostream& stream, AttachmentStoreOp const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
   enum class BlendFactor
@@ -2582,6 +2607,12 @@ namespace VULKAN_HPP_NAMESPACE
       case BlendFactor::eOneMinusSrc1Alpha : return "OneMinusSrc1Alpha";
       default: return "invalid";
     }
+  }
+
+  std::ostream& operator<<( std::ostream& stream, BlendFactor const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
   enum class BlendOp
@@ -2698,6 +2729,12 @@ namespace VULKAN_HPP_NAMESPACE
     }
   }
 
+  std::ostream& operator<<( std::ostream& stream, BlendOp const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   enum class BlendOverlapEXT
   {
     eUncorrelated = VK_BLEND_OVERLAP_UNCORRELATED_EXT,
@@ -2714,6 +2751,12 @@ namespace VULKAN_HPP_NAMESPACE
       case BlendOverlapEXT::eConjoint : return "Conjoint";
       default: return "invalid";
     }
+  }
+
+  std::ostream& operator<<( std::ostream& stream, BlendOverlapEXT const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
   enum class BorderColor
@@ -2740,6 +2783,12 @@ namespace VULKAN_HPP_NAMESPACE
     }
   }
 
+  std::ostream& operator<<( std::ostream& stream, BorderColor const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   enum class ChromaLocation
   {
     eCositedEven = VK_CHROMA_LOCATION_COSITED_EVEN,
@@ -2756,6 +2805,12 @@ namespace VULKAN_HPP_NAMESPACE
       case ChromaLocation::eMidpoint : return "Midpoint";
       default: return "invalid";
     }
+  }
+
+  std::ostream& operator<<( std::ostream& stream, ChromaLocation const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
   enum class CoarseSampleOrderTypeNV
@@ -2776,6 +2831,12 @@ namespace VULKAN_HPP_NAMESPACE
       case CoarseSampleOrderTypeNV::eSampleMajor : return "SampleMajor";
       default: return "invalid";
     }
+  }
+
+  std::ostream& operator<<( std::ostream& stream, CoarseSampleOrderTypeNV const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
   enum class ColorSpaceKHR
@@ -2821,6 +2882,12 @@ namespace VULKAN_HPP_NAMESPACE
     }
   }
 
+  std::ostream& operator<<( std::ostream& stream, ColorSpaceKHR const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   enum class CommandBufferLevel
   {
     ePrimary = VK_COMMAND_BUFFER_LEVEL_PRIMARY,
@@ -2835,6 +2902,12 @@ namespace VULKAN_HPP_NAMESPACE
       case CommandBufferLevel::eSecondary : return "Secondary";
       default: return "invalid";
     }
+  }
+
+  std::ostream& operator<<( std::ostream& stream, CommandBufferLevel const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
   enum class CompareOp
@@ -2865,6 +2938,12 @@ namespace VULKAN_HPP_NAMESPACE
     }
   }
 
+  std::ostream& operator<<( std::ostream& stream, CompareOp const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   enum class ComponentSwizzle
   {
     eIdentity = VK_COMPONENT_SWIZZLE_IDENTITY,
@@ -2891,6 +2970,12 @@ namespace VULKAN_HPP_NAMESPACE
     }
   }
 
+  std::ostream& operator<<( std::ostream& stream, ComponentSwizzle const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   enum class ConservativeRasterizationModeEXT
   {
     eDisabled = VK_CONSERVATIVE_RASTERIZATION_MODE_DISABLED_EXT,
@@ -2909,6 +2994,12 @@ namespace VULKAN_HPP_NAMESPACE
     }
   }
 
+  std::ostream& operator<<( std::ostream& stream, ConservativeRasterizationModeEXT const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   enum class CopyAccelerationStructureModeNV
   {
     eClone = VK_COPY_ACCELERATION_STRUCTURE_MODE_CLONE_NV,
@@ -2923,6 +3014,12 @@ namespace VULKAN_HPP_NAMESPACE
       case CopyAccelerationStructureModeNV::eCompact : return "Compact";
       default: return "invalid";
     }
+  }
+
+  std::ostream& operator<<( std::ostream& stream, CopyAccelerationStructureModeNV const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
   enum class CoverageModulationModeNV
@@ -2943,6 +3040,12 @@ namespace VULKAN_HPP_NAMESPACE
       case CoverageModulationModeNV::eRgba : return "Rgba";
       default: return "invalid";
     }
+  }
+
+  std::ostream& operator<<( std::ostream& stream, CoverageModulationModeNV const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
   enum class DebugReportObjectTypeEXT
@@ -3035,6 +3138,12 @@ namespace VULKAN_HPP_NAMESPACE
     }
   }
 
+  std::ostream& operator<<( std::ostream& stream, DebugReportObjectTypeEXT const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   enum class DescriptorType
   {
     eSampler = VK_DESCRIPTOR_TYPE_SAMPLER,
@@ -3073,6 +3182,12 @@ namespace VULKAN_HPP_NAMESPACE
     }
   }
 
+  std::ostream& operator<<( std::ostream& stream, DescriptorType const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   enum class DescriptorUpdateTemplateType
   {
     eDescriptorSet = VK_DESCRIPTOR_UPDATE_TEMPLATE_TYPE_DESCRIPTOR_SET,
@@ -3090,6 +3205,12 @@ namespace VULKAN_HPP_NAMESPACE
     }
   }
 
+  std::ostream& operator<<( std::ostream& stream, DescriptorUpdateTemplateType const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   enum class DeviceEventTypeEXT
   {
     eDisplayHotplug = VK_DEVICE_EVENT_TYPE_DISPLAY_HOTPLUG_EXT
@@ -3102,6 +3223,12 @@ namespace VULKAN_HPP_NAMESPACE
       case DeviceEventTypeEXT::eDisplayHotplug : return "DisplayHotplug";
       default: return "invalid";
     }
+  }
+
+  std::ostream& operator<<( std::ostream& stream, DeviceEventTypeEXT const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
   enum class DiscardRectangleModeEXT
@@ -3120,6 +3247,12 @@ namespace VULKAN_HPP_NAMESPACE
     }
   }
 
+  std::ostream& operator<<( std::ostream& stream, DiscardRectangleModeEXT const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   enum class DisplayEventTypeEXT
   {
     eFirstPixelOut = VK_DISPLAY_EVENT_TYPE_FIRST_PIXEL_OUT_EXT
@@ -3132,6 +3265,12 @@ namespace VULKAN_HPP_NAMESPACE
       case DisplayEventTypeEXT::eFirstPixelOut : return "FirstPixelOut";
       default: return "invalid";
     }
+  }
+
+  std::ostream& operator<<( std::ostream& stream, DisplayEventTypeEXT const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
   enum class DisplayPowerStateEXT
@@ -3150,6 +3289,12 @@ namespace VULKAN_HPP_NAMESPACE
       case DisplayPowerStateEXT::eOn : return "On";
       default: return "invalid";
     }
+  }
+
+  std::ostream& operator<<( std::ostream& stream, DisplayPowerStateEXT const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
   enum class DriverIdKHR
@@ -3182,6 +3327,12 @@ namespace VULKAN_HPP_NAMESPACE
       case DriverIdKHR::eGooglePastel : return "GooglePastel";
       default: return "invalid";
     }
+  }
+
+  std::ostream& operator<<( std::ostream& stream, DriverIdKHR const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
   enum class DynamicState
@@ -3226,6 +3377,12 @@ namespace VULKAN_HPP_NAMESPACE
     }
   }
 
+  std::ostream& operator<<( std::ostream& stream, DynamicState const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   enum class Filter
   {
     eNearest = VK_FILTER_NEAREST,
@@ -3243,6 +3400,12 @@ namespace VULKAN_HPP_NAMESPACE
       case Filter::eCubicIMG : return "CubicIMG";
       default: return "invalid";
     }
+  }
+
+  std::ostream& operator<<( std::ostream& stream, Filter const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
   enum class Format
@@ -3745,6 +3908,12 @@ namespace VULKAN_HPP_NAMESPACE
     }
   }
 
+  std::ostream& operator<<( std::ostream& stream, Format const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   enum class FrontFace
   {
     eCounterClockwise = VK_FRONT_FACE_COUNTER_CLOCKWISE,
@@ -3761,6 +3930,12 @@ namespace VULKAN_HPP_NAMESPACE
     }
   }
 
+  std::ostream& operator<<( std::ostream& stream, FrontFace const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   enum class GeometryTypeNV
   {
     eTriangles = VK_GEOMETRY_TYPE_TRIANGLES_NV,
@@ -3775,6 +3950,12 @@ namespace VULKAN_HPP_NAMESPACE
       case GeometryTypeNV::eAabbs : return "Aabbs";
       default: return "invalid";
     }
+  }
+
+  std::ostream& operator<<( std::ostream& stream, GeometryTypeNV const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
   enum class ImageLayout
@@ -3821,6 +4002,12 @@ namespace VULKAN_HPP_NAMESPACE
     }
   }
 
+  std::ostream& operator<<( std::ostream& stream, ImageLayout const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   enum class ImageTiling
   {
     eOptimal = VK_IMAGE_TILING_OPTIMAL,
@@ -3839,6 +4026,12 @@ namespace VULKAN_HPP_NAMESPACE
     }
   }
 
+  std::ostream& operator<<( std::ostream& stream, ImageTiling const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   enum class ImageType
   {
     e1D = VK_IMAGE_TYPE_1D,
@@ -3855,6 +4048,12 @@ namespace VULKAN_HPP_NAMESPACE
       case ImageType::e3D : return "3D";
       default: return "invalid";
     }
+  }
+
+  std::ostream& operator<<( std::ostream& stream, ImageType const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
   enum class ImageViewType
@@ -3883,6 +4082,12 @@ namespace VULKAN_HPP_NAMESPACE
     }
   }
 
+  std::ostream& operator<<( std::ostream& stream, ImageViewType const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   enum class IndexType
   {
     eUint16 = VK_INDEX_TYPE_UINT16,
@@ -3899,6 +4104,12 @@ namespace VULKAN_HPP_NAMESPACE
       case IndexType::eNoneNV : return "NoneNV";
       default: return "invalid";
     }
+  }
+
+  std::ostream& operator<<( std::ostream& stream, IndexType const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
   enum class IndirectCommandsTokenTypeNVX
@@ -3929,6 +4140,12 @@ namespace VULKAN_HPP_NAMESPACE
     }
   }
 
+  std::ostream& operator<<( std::ostream& stream, IndirectCommandsTokenTypeNVX const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   enum class InternalAllocationType
   {
     eExecutable = VK_INTERNAL_ALLOCATION_TYPE_EXECUTABLE
@@ -3941,6 +4158,12 @@ namespace VULKAN_HPP_NAMESPACE
       case InternalAllocationType::eExecutable : return "Executable";
       default: return "invalid";
     }
+  }
+
+  std::ostream& operator<<( std::ostream& stream, InternalAllocationType const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
   enum class LogicOp
@@ -3987,6 +4210,12 @@ namespace VULKAN_HPP_NAMESPACE
     }
   }
 
+  std::ostream& operator<<( std::ostream& stream, LogicOp const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   enum class MemoryOverallocationBehaviorAMD
   {
     eDefault = VK_MEMORY_OVERALLOCATION_BEHAVIOR_DEFAULT_AMD,
@@ -4003,6 +4232,12 @@ namespace VULKAN_HPP_NAMESPACE
       case MemoryOverallocationBehaviorAMD::eDisallowed : return "Disallowed";
       default: return "invalid";
     }
+  }
+
+  std::ostream& operator<<( std::ostream& stream, MemoryOverallocationBehaviorAMD const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
   enum class ObjectEntryTypeNVX
@@ -4025,6 +4260,12 @@ namespace VULKAN_HPP_NAMESPACE
       case ObjectEntryTypeNVX::ePushConstant : return "PushConstant";
       default: return "invalid";
     }
+  }
+
+  std::ostream& operator<<( std::ostream& stream, ObjectEntryTypeNVX const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
   enum class ObjectType
@@ -4117,6 +4358,12 @@ namespace VULKAN_HPP_NAMESPACE
     }
   }
 
+  std::ostream& operator<<( std::ostream& stream, ObjectType const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   enum class PhysicalDeviceType
   {
     eOther = VK_PHYSICAL_DEVICE_TYPE_OTHER,
@@ -4139,6 +4386,12 @@ namespace VULKAN_HPP_NAMESPACE
     }
   }
 
+  std::ostream& operator<<( std::ostream& stream, PhysicalDeviceType const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   enum class PipelineBindPoint
   {
     eGraphics = VK_PIPELINE_BIND_POINT_GRAPHICS,
@@ -4157,6 +4410,12 @@ namespace VULKAN_HPP_NAMESPACE
     }
   }
 
+  std::ostream& operator<<( std::ostream& stream, PipelineBindPoint const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   enum class PipelineCacheHeaderVersion
   {
     eOne = VK_PIPELINE_CACHE_HEADER_VERSION_ONE
@@ -4169,6 +4428,12 @@ namespace VULKAN_HPP_NAMESPACE
       case PipelineCacheHeaderVersion::eOne : return "One";
       default: return "invalid";
     }
+  }
+
+  std::ostream& operator<<( std::ostream& stream, PipelineCacheHeaderVersion const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
   enum class PointClippingBehavior
@@ -4189,6 +4454,12 @@ namespace VULKAN_HPP_NAMESPACE
     }
   }
 
+  std::ostream& operator<<( std::ostream& stream, PointClippingBehavior const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   enum class PolygonMode
   {
     eFill = VK_POLYGON_MODE_FILL,
@@ -4207,6 +4478,12 @@ namespace VULKAN_HPP_NAMESPACE
       case PolygonMode::eFillRectangleNV : return "FillRectangleNV";
       default: return "invalid";
     }
+  }
+
+  std::ostream& operator<<( std::ostream& stream, PolygonMode const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
   enum class PresentModeKHR
@@ -4231,6 +4508,12 @@ namespace VULKAN_HPP_NAMESPACE
       case PresentModeKHR::eSharedContinuousRefresh : return "SharedContinuousRefresh";
       default: return "invalid";
     }
+  }
+
+  std::ostream& operator<<( std::ostream& stream, PresentModeKHR const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
   enum class PrimitiveTopology
@@ -4267,6 +4550,12 @@ namespace VULKAN_HPP_NAMESPACE
     }
   }
 
+  std::ostream& operator<<( std::ostream& stream, PrimitiveTopology const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   enum class QueryType
   {
     eOcclusion = VK_QUERY_TYPE_OCCLUSION,
@@ -4289,6 +4578,12 @@ namespace VULKAN_HPP_NAMESPACE
     }
   }
 
+  std::ostream& operator<<( std::ostream& stream, QueryType const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   enum class QueueGlobalPriorityEXT
   {
     eLow = VK_QUEUE_GLOBAL_PRIORITY_LOW_EXT,
@@ -4309,6 +4604,12 @@ namespace VULKAN_HPP_NAMESPACE
     }
   }
 
+  std::ostream& operator<<( std::ostream& stream, QueueGlobalPriorityEXT const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   enum class RasterizationOrderAMD
   {
     eStrict = VK_RASTERIZATION_ORDER_STRICT_AMD,
@@ -4323,6 +4624,12 @@ namespace VULKAN_HPP_NAMESPACE
       case RasterizationOrderAMD::eRelaxed : return "Relaxed";
       default: return "invalid";
     }
+  }
+
+  std::ostream& operator<<( std::ostream& stream, RasterizationOrderAMD const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
   enum class RayTracingShaderGroupTypeNV
@@ -4341,6 +4648,12 @@ namespace VULKAN_HPP_NAMESPACE
       case RayTracingShaderGroupTypeNV::eProceduralHitGroup : return "ProceduralHitGroup";
       default: return "invalid";
     }
+  }
+
+  std::ostream& operator<<( std::ostream& stream, RayTracingShaderGroupTypeNV const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
   enum class Result
@@ -4419,6 +4732,12 @@ namespace VULKAN_HPP_NAMESPACE
     }
   }
 
+  std::ostream& operator<<( std::ostream& stream, Result const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   enum class SamplerAddressMode
   {
     eRepeat = VK_SAMPLER_ADDRESS_MODE_REPEAT,
@@ -4441,6 +4760,12 @@ namespace VULKAN_HPP_NAMESPACE
     }
   }
 
+  std::ostream& operator<<( std::ostream& stream, SamplerAddressMode const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   enum class SamplerMipmapMode
   {
     eNearest = VK_SAMPLER_MIPMAP_MODE_NEAREST,
@@ -4455,6 +4780,12 @@ namespace VULKAN_HPP_NAMESPACE
       case SamplerMipmapMode::eLinear : return "Linear";
       default: return "invalid";
     }
+  }
+
+  std::ostream& operator<<( std::ostream& stream, SamplerMipmapMode const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
   enum class SamplerReductionModeEXT
@@ -4473,6 +4804,12 @@ namespace VULKAN_HPP_NAMESPACE
       case SamplerReductionModeEXT::eMax : return "Max";
       default: return "invalid";
     }
+  }
+
+  std::ostream& operator<<( std::ostream& stream, SamplerReductionModeEXT const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
   enum class SamplerYcbcrModelConversion
@@ -4502,6 +4839,12 @@ namespace VULKAN_HPP_NAMESPACE
     }
   }
 
+  std::ostream& operator<<( std::ostream& stream, SamplerYcbcrModelConversion const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   enum class SamplerYcbcrRange
   {
     eItuFull = VK_SAMPLER_YCBCR_RANGE_ITU_FULL,
@@ -4520,6 +4863,12 @@ namespace VULKAN_HPP_NAMESPACE
     }
   }
 
+  std::ostream& operator<<( std::ostream& stream, SamplerYcbcrRange const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   enum class ShaderInfoTypeAMD
   {
     eStatistics = VK_SHADER_INFO_TYPE_STATISTICS_AMD,
@@ -4536,6 +4885,12 @@ namespace VULKAN_HPP_NAMESPACE
       case ShaderInfoTypeAMD::eDisassembly : return "Disassembly";
       default: return "invalid";
     }
+  }
+
+  std::ostream& operator<<( std::ostream& stream, ShaderInfoTypeAMD const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
   enum class ShadingRatePaletteEntryNV
@@ -4574,6 +4929,12 @@ namespace VULKAN_HPP_NAMESPACE
     }
   }
 
+  std::ostream& operator<<( std::ostream& stream, ShadingRatePaletteEntryNV const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   enum class SharingMode
   {
     eExclusive = VK_SHARING_MODE_EXCLUSIVE,
@@ -4588,6 +4949,12 @@ namespace VULKAN_HPP_NAMESPACE
       case SharingMode::eConcurrent : return "Concurrent";
       default: return "invalid";
     }
+  }
+
+  std::ostream& operator<<( std::ostream& stream, SharingMode const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
   enum class StencilOp
@@ -4616,6 +4983,12 @@ namespace VULKAN_HPP_NAMESPACE
       case StencilOp::eDecrementAndWrap : return "DecrementAndWrap";
       default: return "invalid";
     }
+  }
+
+  std::ostream& operator<<( std::ostream& stream, StencilOp const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
   enum class StructureType
@@ -5322,6 +5695,12 @@ namespace VULKAN_HPP_NAMESPACE
     }
   }
 
+  std::ostream& operator<<( std::ostream& stream, StructureType const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   enum class SubpassContents
   {
     eInline = VK_SUBPASS_CONTENTS_INLINE,
@@ -5336,6 +5715,12 @@ namespace VULKAN_HPP_NAMESPACE
       case SubpassContents::eSecondaryCommandBuffers : return "SecondaryCommandBuffers";
       default: return "invalid";
     }
+  }
+
+  std::ostream& operator<<( std::ostream& stream, SubpassContents const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
   enum class SystemAllocationScope
@@ -5360,6 +5745,12 @@ namespace VULKAN_HPP_NAMESPACE
     }
   }
 
+  std::ostream& operator<<( std::ostream& stream, SystemAllocationScope const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   enum class TessellationDomainOrigin
   {
     eUpperLeft = VK_TESSELLATION_DOMAIN_ORIGIN_UPPER_LEFT,
@@ -5376,6 +5767,12 @@ namespace VULKAN_HPP_NAMESPACE
       case TessellationDomainOrigin::eLowerLeft : return "LowerLeft";
       default: return "invalid";
     }
+  }
+
+  std::ostream& operator<<( std::ostream& stream, TessellationDomainOrigin const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
   enum class TimeDomainEXT
@@ -5398,6 +5795,12 @@ namespace VULKAN_HPP_NAMESPACE
     }
   }
 
+  std::ostream& operator<<( std::ostream& stream, TimeDomainEXT const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   enum class ValidationCacheHeaderVersionEXT
   {
     eOne = VK_VALIDATION_CACHE_HEADER_VERSION_ONE_EXT
@@ -5410,6 +5813,12 @@ namespace VULKAN_HPP_NAMESPACE
       case ValidationCacheHeaderVersionEXT::eOne : return "One";
       default: return "invalid";
     }
+  }
+
+  std::ostream& operator<<( std::ostream& stream, ValidationCacheHeaderVersionEXT const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
   enum class ValidationCheckEXT
@@ -5426,6 +5835,12 @@ namespace VULKAN_HPP_NAMESPACE
       case ValidationCheckEXT::eShaders : return "Shaders";
       default: return "invalid";
     }
+  }
+
+  std::ostream& operator<<( std::ostream& stream, ValidationCheckEXT const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
   enum class ValidationFeatureDisableEXT
@@ -5454,6 +5869,12 @@ namespace VULKAN_HPP_NAMESPACE
     }
   }
 
+  std::ostream& operator<<( std::ostream& stream, ValidationFeatureDisableEXT const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   enum class ValidationFeatureEnableEXT
   {
     eGpuAssisted = VK_VALIDATION_FEATURE_ENABLE_GPU_ASSISTED_EXT,
@@ -5468,6 +5889,12 @@ namespace VULKAN_HPP_NAMESPACE
       case ValidationFeatureEnableEXT::eGpuAssistedReserveBindingSlot : return "GpuAssistedReserveBindingSlot";
       default: return "invalid";
     }
+  }
+
+  std::ostream& operator<<( std::ostream& stream, ValidationFeatureEnableEXT const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
   enum class VendorId
@@ -5488,6 +5915,12 @@ namespace VULKAN_HPP_NAMESPACE
     }
   }
 
+  std::ostream& operator<<( std::ostream& stream, VendorId const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   enum class VertexInputRate
   {
     eVertex = VK_VERTEX_INPUT_RATE_VERTEX,
@@ -5502,6 +5935,12 @@ namespace VULKAN_HPP_NAMESPACE
       case VertexInputRate::eInstance : return "Instance";
       default: return "invalid";
     }
+  }
+
+  std::ostream& operator<<( std::ostream& stream, VertexInputRate const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
   enum class ViewportCoordinateSwizzleNV
@@ -5530,6 +5969,12 @@ namespace VULKAN_HPP_NAMESPACE
       case ViewportCoordinateSwizzleNV::eNegativeW : return "NegativeW";
       default: return "invalid";
     }
+  }
+
+  std::ostream& operator<<( std::ostream& stream, ViewportCoordinateSwizzleNV const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
   enum class AccessFlagBits
@@ -5600,6 +6045,12 @@ namespace VULKAN_HPP_NAMESPACE
     }
   }
 
+  std::ostream& operator<<( std::ostream& stream, AccessFlagBits const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   using AccessFlags = Flags<AccessFlagBits, VkAccessFlags>;
 
   VULKAN_HPP_INLINE AccessFlags operator|( AccessFlagBits bit0, AccessFlagBits bit1 )
@@ -5656,6 +6107,12 @@ namespace VULKAN_HPP_NAMESPACE
     return result;
   }
 
+  std::ostream& operator<<( std::ostream& stream, AccessFlags const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
 #ifdef VK_USE_PLATFORM_ANDROID_KHR
   enum class AndroidSurfaceCreateFlagBitsKHR
   {};
@@ -5665,11 +6122,23 @@ namespace VULKAN_HPP_NAMESPACE
     return "(void)";
   }
 
+  std::ostream& operator<<( std::ostream& stream, AndroidSurfaceCreateFlagBitsKHR const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   using AndroidSurfaceCreateFlagsKHR = Flags<AndroidSurfaceCreateFlagBitsKHR, VkAndroidSurfaceCreateFlagsKHR>;
 
   VULKAN_HPP_INLINE std::string to_string( AndroidSurfaceCreateFlagsKHR  )
   {
     return "{}";
+  }
+
+  std::ostream& operator<<( std::ostream& stream, AndroidSurfaceCreateFlagsKHR const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 #endif /*VK_USE_PLATFORM_ANDROID_KHR*/
 
@@ -5685,6 +6154,12 @@ namespace VULKAN_HPP_NAMESPACE
       case AttachmentDescriptionFlagBits::eMayAlias : return "MayAlias";
       default: return "invalid";
     }
+  }
+
+  std::ostream& operator<<( std::ostream& stream, AttachmentDescriptionFlagBits const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
   using AttachmentDescriptionFlags = Flags<AttachmentDescriptionFlagBits, VkAttachmentDescriptionFlags>;
@@ -5716,6 +6191,12 @@ namespace VULKAN_HPP_NAMESPACE
     return result;
   }
 
+  std::ostream& operator<<( std::ostream& stream, AttachmentDescriptionFlags const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   enum class BufferCreateFlagBits
   {
     eSparseBinding = VK_BUFFER_CREATE_SPARSE_BINDING_BIT,
@@ -5736,6 +6217,12 @@ namespace VULKAN_HPP_NAMESPACE
       case BufferCreateFlagBits::eDeviceAddressCaptureReplayEXT : return "DeviceAddressCaptureReplayEXT";
       default: return "invalid";
     }
+  }
+
+  std::ostream& operator<<( std::ostream& stream, BufferCreateFlagBits const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
   using BufferCreateFlags = Flags<BufferCreateFlagBits, VkBufferCreateFlags>;
@@ -5769,6 +6256,12 @@ namespace VULKAN_HPP_NAMESPACE
     if ( value & BufferCreateFlagBits::eProtected ) result += "Protected | ";
     if ( value & BufferCreateFlagBits::eDeviceAddressCaptureReplayEXT ) result += "DeviceAddressCaptureReplayEXT";
     return result;
+  }
+
+  std::ostream& operator<<( std::ostream& stream, BufferCreateFlags const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
   enum class BufferUsageFlagBits
@@ -5809,6 +6302,12 @@ namespace VULKAN_HPP_NAMESPACE
       case BufferUsageFlagBits::eShaderDeviceAddressEXT : return "ShaderDeviceAddressEXT";
       default: return "invalid";
     }
+  }
+
+  std::ostream& operator<<( std::ostream& stream, BufferUsageFlagBits const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
   using BufferUsageFlags = Flags<BufferUsageFlagBits, VkBufferUsageFlags>;
@@ -5853,6 +6352,12 @@ namespace VULKAN_HPP_NAMESPACE
     return result;
   }
 
+  std::ostream& operator<<( std::ostream& stream, BufferUsageFlags const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   enum class BufferViewCreateFlagBits
   {};
 
@@ -5861,11 +6366,23 @@ namespace VULKAN_HPP_NAMESPACE
     return "(void)";
   }
 
+  std::ostream& operator<<( std::ostream& stream, BufferViewCreateFlagBits const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   using BufferViewCreateFlags = Flags<BufferViewCreateFlagBits, VkBufferViewCreateFlags>;
 
   VULKAN_HPP_INLINE std::string to_string( BufferViewCreateFlags  )
   {
     return "{}";
+  }
+
+  std::ostream& operator<<( std::ostream& stream, BufferViewCreateFlags const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
   enum class BuildAccelerationStructureFlagBitsNV
@@ -5888,6 +6405,12 @@ namespace VULKAN_HPP_NAMESPACE
       case BuildAccelerationStructureFlagBitsNV::eLowMemory : return "LowMemory";
       default: return "invalid";
     }
+  }
+
+  std::ostream& operator<<( std::ostream& stream, BuildAccelerationStructureFlagBitsNV const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
   using BuildAccelerationStructureFlagsNV = Flags<BuildAccelerationStructureFlagBitsNV, VkBuildAccelerationStructureFlagsNV>;
@@ -5923,6 +6446,12 @@ namespace VULKAN_HPP_NAMESPACE
     return result;
   }
 
+  std::ostream& operator<<( std::ostream& stream, BuildAccelerationStructureFlagsNV const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   enum class ColorComponentFlagBits
   {
     eR = VK_COLOR_COMPONENT_R_BIT,
@@ -5941,6 +6470,12 @@ namespace VULKAN_HPP_NAMESPACE
       case ColorComponentFlagBits::eA : return "A";
       default: return "invalid";
     }
+  }
+
+  std::ostream& operator<<( std::ostream& stream, ColorComponentFlagBits const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
   using ColorComponentFlags = Flags<ColorComponentFlagBits, VkColorComponentFlags>;
@@ -5975,6 +6510,12 @@ namespace VULKAN_HPP_NAMESPACE
     return result;
   }
 
+  std::ostream& operator<<( std::ostream& stream, ColorComponentFlags const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   enum class CommandBufferResetFlagBits
   {
     eReleaseResources = VK_COMMAND_BUFFER_RESET_RELEASE_RESOURCES_BIT
@@ -5987,6 +6528,12 @@ namespace VULKAN_HPP_NAMESPACE
       case CommandBufferResetFlagBits::eReleaseResources : return "ReleaseResources";
       default: return "invalid";
     }
+  }
+
+  std::ostream& operator<<( std::ostream& stream, CommandBufferResetFlagBits const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
   using CommandBufferResetFlags = Flags<CommandBufferResetFlagBits, VkCommandBufferResetFlags>;
@@ -6018,6 +6565,12 @@ namespace VULKAN_HPP_NAMESPACE
     return result;
   }
 
+  std::ostream& operator<<( std::ostream& stream, CommandBufferResetFlags const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   enum class CommandBufferUsageFlagBits
   {
     eOneTimeSubmit = VK_COMMAND_BUFFER_USAGE_ONE_TIME_SUBMIT_BIT,
@@ -6034,6 +6587,12 @@ namespace VULKAN_HPP_NAMESPACE
       case CommandBufferUsageFlagBits::eSimultaneousUse : return "SimultaneousUse";
       default: return "invalid";
     }
+  }
+
+  std::ostream& operator<<( std::ostream& stream, CommandBufferUsageFlagBits const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
   using CommandBufferUsageFlags = Flags<CommandBufferUsageFlagBits, VkCommandBufferUsageFlags>;
@@ -6067,6 +6626,12 @@ namespace VULKAN_HPP_NAMESPACE
     return result;
   }
 
+  std::ostream& operator<<( std::ostream& stream, CommandBufferUsageFlags const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   enum class CommandPoolCreateFlagBits
   {
     eTransient = VK_COMMAND_POOL_CREATE_TRANSIENT_BIT,
@@ -6083,6 +6648,12 @@ namespace VULKAN_HPP_NAMESPACE
       case CommandPoolCreateFlagBits::eProtected : return "Protected";
       default: return "invalid";
     }
+  }
+
+  std::ostream& operator<<( std::ostream& stream, CommandPoolCreateFlagBits const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
   using CommandPoolCreateFlags = Flags<CommandPoolCreateFlagBits, VkCommandPoolCreateFlags>;
@@ -6116,6 +6687,12 @@ namespace VULKAN_HPP_NAMESPACE
     return result;
   }
 
+  std::ostream& operator<<( std::ostream& stream, CommandPoolCreateFlags const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   enum class CommandPoolResetFlagBits
   {
     eReleaseResources = VK_COMMAND_POOL_RESET_RELEASE_RESOURCES_BIT
@@ -6128,6 +6705,12 @@ namespace VULKAN_HPP_NAMESPACE
       case CommandPoolResetFlagBits::eReleaseResources : return "ReleaseResources";
       default: return "invalid";
     }
+  }
+
+  std::ostream& operator<<( std::ostream& stream, CommandPoolResetFlagBits const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
   using CommandPoolResetFlags = Flags<CommandPoolResetFlagBits, VkCommandPoolResetFlags>;
@@ -6159,12 +6742,24 @@ namespace VULKAN_HPP_NAMESPACE
     return result;
   }
 
+  std::ostream& operator<<( std::ostream& stream, CommandPoolResetFlags const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   enum class CommandPoolTrimFlagBits
   {};
 
   VULKAN_HPP_INLINE std::string to_string( CommandPoolTrimFlagBits )
   {
     return "(void)";
+  }
+
+  std::ostream& operator<<( std::ostream& stream, CommandPoolTrimFlagBits const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
   using CommandPoolTrimFlags = Flags<CommandPoolTrimFlagBits, VkCommandPoolTrimFlags>;
@@ -6174,6 +6769,12 @@ namespace VULKAN_HPP_NAMESPACE
   VULKAN_HPP_INLINE std::string to_string( CommandPoolTrimFlags  )
   {
     return "{}";
+  }
+
+  std::ostream& operator<<( std::ostream& stream, CommandPoolTrimFlags const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
   enum class CompositeAlphaFlagBitsKHR
@@ -6194,6 +6795,12 @@ namespace VULKAN_HPP_NAMESPACE
       case CompositeAlphaFlagBitsKHR::eInherit : return "Inherit";
       default: return "invalid";
     }
+  }
+
+  std::ostream& operator<<( std::ostream& stream, CompositeAlphaFlagBitsKHR const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
   using CompositeAlphaFlagsKHR = Flags<CompositeAlphaFlagBitsKHR, VkCompositeAlphaFlagsKHR>;
@@ -6228,6 +6835,12 @@ namespace VULKAN_HPP_NAMESPACE
     return result;
   }
 
+  std::ostream& operator<<( std::ostream& stream, CompositeAlphaFlagsKHR const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   enum class ConditionalRenderingFlagBitsEXT
   {
     eInverted = VK_CONDITIONAL_RENDERING_INVERTED_BIT_EXT
@@ -6240,6 +6853,12 @@ namespace VULKAN_HPP_NAMESPACE
       case ConditionalRenderingFlagBitsEXT::eInverted : return "Inverted";
       default: return "invalid";
     }
+  }
+
+  std::ostream& operator<<( std::ostream& stream, ConditionalRenderingFlagBitsEXT const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
   using ConditionalRenderingFlagsEXT = Flags<ConditionalRenderingFlagBitsEXT, VkConditionalRenderingFlagsEXT>;
@@ -6271,6 +6890,12 @@ namespace VULKAN_HPP_NAMESPACE
     return result;
   }
 
+  std::ostream& operator<<( std::ostream& stream, ConditionalRenderingFlagsEXT const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   enum class CullModeFlagBits
   {
     eNone = VK_CULL_MODE_NONE,
@@ -6289,6 +6914,12 @@ namespace VULKAN_HPP_NAMESPACE
       case CullModeFlagBits::eFrontAndBack : return "FrontAndBack";
       default: return "invalid";
     }
+  }
+
+  std::ostream& operator<<( std::ostream& stream, CullModeFlagBits const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
   using CullModeFlags = Flags<CullModeFlagBits, VkCullModeFlags>;
@@ -6323,6 +6954,12 @@ namespace VULKAN_HPP_NAMESPACE
     return result;
   }
 
+  std::ostream& operator<<( std::ostream& stream, CullModeFlags const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   enum class DebugReportFlagBitsEXT
   {
     eInformation = VK_DEBUG_REPORT_INFORMATION_BIT_EXT,
@@ -6343,6 +6980,12 @@ namespace VULKAN_HPP_NAMESPACE
       case DebugReportFlagBitsEXT::eDebug : return "Debug";
       default: return "invalid";
     }
+  }
+
+  std::ostream& operator<<( std::ostream& stream, DebugReportFlagBitsEXT const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
   using DebugReportFlagsEXT = Flags<DebugReportFlagBitsEXT, VkDebugReportFlagsEXT>;
@@ -6378,6 +7021,12 @@ namespace VULKAN_HPP_NAMESPACE
     return result;
   }
 
+  std::ostream& operator<<( std::ostream& stream, DebugReportFlagsEXT const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   enum class DebugUtilsMessageSeverityFlagBitsEXT
   {
     eVerbose = VK_DEBUG_UTILS_MESSAGE_SEVERITY_VERBOSE_BIT_EXT,
@@ -6396,6 +7045,12 @@ namespace VULKAN_HPP_NAMESPACE
       case DebugUtilsMessageSeverityFlagBitsEXT::eError : return "Error";
       default: return "invalid";
     }
+  }
+
+  std::ostream& operator<<( std::ostream& stream, DebugUtilsMessageSeverityFlagBitsEXT const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
   using DebugUtilsMessageSeverityFlagsEXT = Flags<DebugUtilsMessageSeverityFlagBitsEXT, VkDebugUtilsMessageSeverityFlagsEXT>;
@@ -6430,6 +7085,12 @@ namespace VULKAN_HPP_NAMESPACE
     return result;
   }
 
+  std::ostream& operator<<( std::ostream& stream, DebugUtilsMessageSeverityFlagsEXT const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   enum class DebugUtilsMessageTypeFlagBitsEXT
   {
     eGeneral = VK_DEBUG_UTILS_MESSAGE_TYPE_GENERAL_BIT_EXT,
@@ -6446,6 +7107,12 @@ namespace VULKAN_HPP_NAMESPACE
       case DebugUtilsMessageTypeFlagBitsEXT::ePerformance : return "Performance";
       default: return "invalid";
     }
+  }
+
+  std::ostream& operator<<( std::ostream& stream, DebugUtilsMessageTypeFlagBitsEXT const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
   using DebugUtilsMessageTypeFlagsEXT = Flags<DebugUtilsMessageTypeFlagBitsEXT, VkDebugUtilsMessageTypeFlagsEXT>;
@@ -6479,6 +7146,12 @@ namespace VULKAN_HPP_NAMESPACE
     return result;
   }
 
+  std::ostream& operator<<( std::ostream& stream, DebugUtilsMessageTypeFlagsEXT const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   enum class DebugUtilsMessengerCallbackDataFlagBitsEXT
   {};
 
@@ -6487,11 +7160,23 @@ namespace VULKAN_HPP_NAMESPACE
     return "(void)";
   }
 
+  std::ostream& operator<<( std::ostream& stream, DebugUtilsMessengerCallbackDataFlagBitsEXT const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   using DebugUtilsMessengerCallbackDataFlagsEXT = Flags<DebugUtilsMessengerCallbackDataFlagBitsEXT, VkDebugUtilsMessengerCallbackDataFlagsEXT>;
 
   VULKAN_HPP_INLINE std::string to_string( DebugUtilsMessengerCallbackDataFlagsEXT  )
   {
     return "{}";
+  }
+
+  std::ostream& operator<<( std::ostream& stream, DebugUtilsMessengerCallbackDataFlagsEXT const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
   enum class DebugUtilsMessengerCreateFlagBitsEXT
@@ -6502,11 +7187,23 @@ namespace VULKAN_HPP_NAMESPACE
     return "(void)";
   }
 
+  std::ostream& operator<<( std::ostream& stream, DebugUtilsMessengerCreateFlagBitsEXT const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   using DebugUtilsMessengerCreateFlagsEXT = Flags<DebugUtilsMessengerCreateFlagBitsEXT, VkDebugUtilsMessengerCreateFlagsEXT>;
 
   VULKAN_HPP_INLINE std::string to_string( DebugUtilsMessengerCreateFlagsEXT  )
   {
     return "{}";
+  }
+
+  std::ostream& operator<<( std::ostream& stream, DebugUtilsMessengerCreateFlagsEXT const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
   enum class DependencyFlagBits
@@ -6527,6 +7224,12 @@ namespace VULKAN_HPP_NAMESPACE
       case DependencyFlagBits::eViewLocal : return "ViewLocal";
       default: return "invalid";
     }
+  }
+
+  std::ostream& operator<<( std::ostream& stream, DependencyFlagBits const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
   using DependencyFlags = Flags<DependencyFlagBits, VkDependencyFlags>;
@@ -6560,6 +7263,12 @@ namespace VULKAN_HPP_NAMESPACE
     return result;
   }
 
+  std::ostream& operator<<( std::ostream& stream, DependencyFlags const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   enum class DescriptorBindingFlagBitsEXT
   {
     eUpdateAfterBind = VK_DESCRIPTOR_BINDING_UPDATE_AFTER_BIND_BIT_EXT,
@@ -6578,6 +7287,12 @@ namespace VULKAN_HPP_NAMESPACE
       case DescriptorBindingFlagBitsEXT::eVariableDescriptorCount : return "VariableDescriptorCount";
       default: return "invalid";
     }
+  }
+
+  std::ostream& operator<<( std::ostream& stream, DescriptorBindingFlagBitsEXT const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
   using DescriptorBindingFlagsEXT = Flags<DescriptorBindingFlagBitsEXT, VkDescriptorBindingFlagsEXT>;
@@ -6612,6 +7327,12 @@ namespace VULKAN_HPP_NAMESPACE
     return result;
   }
 
+  std::ostream& operator<<( std::ostream& stream, DescriptorBindingFlagsEXT const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   enum class DescriptorPoolCreateFlagBits
   {
     eFreeDescriptorSet = VK_DESCRIPTOR_POOL_CREATE_FREE_DESCRIPTOR_SET_BIT,
@@ -6626,6 +7347,12 @@ namespace VULKAN_HPP_NAMESPACE
       case DescriptorPoolCreateFlagBits::eUpdateAfterBindEXT : return "UpdateAfterBindEXT";
       default: return "invalid";
     }
+  }
+
+  std::ostream& operator<<( std::ostream& stream, DescriptorPoolCreateFlagBits const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
   using DescriptorPoolCreateFlags = Flags<DescriptorPoolCreateFlagBits, VkDescriptorPoolCreateFlags>;
@@ -6658,6 +7385,12 @@ namespace VULKAN_HPP_NAMESPACE
     return result;
   }
 
+  std::ostream& operator<<( std::ostream& stream, DescriptorPoolCreateFlags const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   enum class DescriptorPoolResetFlagBits
   {};
 
@@ -6666,11 +7399,23 @@ namespace VULKAN_HPP_NAMESPACE
     return "(void)";
   }
 
+  std::ostream& operator<<( std::ostream& stream, DescriptorPoolResetFlagBits const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   using DescriptorPoolResetFlags = Flags<DescriptorPoolResetFlagBits, VkDescriptorPoolResetFlags>;
 
   VULKAN_HPP_INLINE std::string to_string( DescriptorPoolResetFlags  )
   {
     return "{}";
+  }
+
+  std::ostream& operator<<( std::ostream& stream, DescriptorPoolResetFlags const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
   enum class DescriptorSetLayoutCreateFlagBits
@@ -6687,6 +7432,12 @@ namespace VULKAN_HPP_NAMESPACE
       case DescriptorSetLayoutCreateFlagBits::eUpdateAfterBindPoolEXT : return "UpdateAfterBindPoolEXT";
       default: return "invalid";
     }
+  }
+
+  std::ostream& operator<<( std::ostream& stream, DescriptorSetLayoutCreateFlagBits const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
   using DescriptorSetLayoutCreateFlags = Flags<DescriptorSetLayoutCreateFlagBits, VkDescriptorSetLayoutCreateFlags>;
@@ -6719,12 +7470,24 @@ namespace VULKAN_HPP_NAMESPACE
     return result;
   }
 
+  std::ostream& operator<<( std::ostream& stream, DescriptorSetLayoutCreateFlags const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   enum class DescriptorUpdateTemplateCreateFlagBits
   {};
 
   VULKAN_HPP_INLINE std::string to_string( DescriptorUpdateTemplateCreateFlagBits )
   {
     return "(void)";
+  }
+
+  std::ostream& operator<<( std::ostream& stream, DescriptorUpdateTemplateCreateFlagBits const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
   using DescriptorUpdateTemplateCreateFlags = Flags<DescriptorUpdateTemplateCreateFlagBits, VkDescriptorUpdateTemplateCreateFlags>;
@@ -6736,6 +7499,12 @@ namespace VULKAN_HPP_NAMESPACE
     return "{}";
   }
 
+  std::ostream& operator<<( std::ostream& stream, DescriptorUpdateTemplateCreateFlags const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   enum class DeviceCreateFlagBits
   {};
 
@@ -6744,11 +7513,23 @@ namespace VULKAN_HPP_NAMESPACE
     return "(void)";
   }
 
+  std::ostream& operator<<( std::ostream& stream, DeviceCreateFlagBits const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   using DeviceCreateFlags = Flags<DeviceCreateFlagBits, VkDeviceCreateFlags>;
 
   VULKAN_HPP_INLINE std::string to_string( DeviceCreateFlags  )
   {
     return "{}";
+  }
+
+  std::ostream& operator<<( std::ostream& stream, DeviceCreateFlags const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
   enum class DeviceGroupPresentModeFlagBitsKHR
@@ -6769,6 +7550,12 @@ namespace VULKAN_HPP_NAMESPACE
       case DeviceGroupPresentModeFlagBitsKHR::eLocalMultiDevice : return "LocalMultiDevice";
       default: return "invalid";
     }
+  }
+
+  std::ostream& operator<<( std::ostream& stream, DeviceGroupPresentModeFlagBitsKHR const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
   using DeviceGroupPresentModeFlagsKHR = Flags<DeviceGroupPresentModeFlagBitsKHR, VkDeviceGroupPresentModeFlagsKHR>;
@@ -6803,6 +7590,12 @@ namespace VULKAN_HPP_NAMESPACE
     return result;
   }
 
+  std::ostream& operator<<( std::ostream& stream, DeviceGroupPresentModeFlagsKHR const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   enum class DeviceQueueCreateFlagBits
   {
     eProtected = VK_DEVICE_QUEUE_CREATE_PROTECTED_BIT
@@ -6815,6 +7608,12 @@ namespace VULKAN_HPP_NAMESPACE
       case DeviceQueueCreateFlagBits::eProtected : return "Protected";
       default: return "invalid";
     }
+  }
+
+  std::ostream& operator<<( std::ostream& stream, DeviceQueueCreateFlagBits const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
   using DeviceQueueCreateFlags = Flags<DeviceQueueCreateFlagBits, VkDeviceQueueCreateFlags>;
@@ -6846,6 +7645,12 @@ namespace VULKAN_HPP_NAMESPACE
     return result;
   }
 
+  std::ostream& operator<<( std::ostream& stream, DeviceQueueCreateFlags const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   enum class DisplayModeCreateFlagBitsKHR
   {};
 
@@ -6854,11 +7659,23 @@ namespace VULKAN_HPP_NAMESPACE
     return "(void)";
   }
 
+  std::ostream& operator<<( std::ostream& stream, DisplayModeCreateFlagBitsKHR const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   using DisplayModeCreateFlagsKHR = Flags<DisplayModeCreateFlagBitsKHR, VkDisplayModeCreateFlagsKHR>;
 
   VULKAN_HPP_INLINE std::string to_string( DisplayModeCreateFlagsKHR  )
   {
     return "{}";
+  }
+
+  std::ostream& operator<<( std::ostream& stream, DisplayModeCreateFlagsKHR const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
   enum class DisplayPlaneAlphaFlagBitsKHR
@@ -6879,6 +7696,12 @@ namespace VULKAN_HPP_NAMESPACE
       case DisplayPlaneAlphaFlagBitsKHR::ePerPixelPremultiplied : return "PerPixelPremultiplied";
       default: return "invalid";
     }
+  }
+
+  std::ostream& operator<<( std::ostream& stream, DisplayPlaneAlphaFlagBitsKHR const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
   using DisplayPlaneAlphaFlagsKHR = Flags<DisplayPlaneAlphaFlagBitsKHR, VkDisplayPlaneAlphaFlagsKHR>;
@@ -6913,6 +7736,12 @@ namespace VULKAN_HPP_NAMESPACE
     return result;
   }
 
+  std::ostream& operator<<( std::ostream& stream, DisplayPlaneAlphaFlagsKHR const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   enum class DisplaySurfaceCreateFlagBitsKHR
   {};
 
@@ -6921,11 +7750,23 @@ namespace VULKAN_HPP_NAMESPACE
     return "(void)";
   }
 
+  std::ostream& operator<<( std::ostream& stream, DisplaySurfaceCreateFlagBitsKHR const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   using DisplaySurfaceCreateFlagsKHR = Flags<DisplaySurfaceCreateFlagBitsKHR, VkDisplaySurfaceCreateFlagsKHR>;
 
   VULKAN_HPP_INLINE std::string to_string( DisplaySurfaceCreateFlagsKHR  )
   {
     return "{}";
+  }
+
+  std::ostream& operator<<( std::ostream& stream, DisplaySurfaceCreateFlagsKHR const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
   enum class EventCreateFlagBits
@@ -6936,11 +7777,23 @@ namespace VULKAN_HPP_NAMESPACE
     return "(void)";
   }
 
+  std::ostream& operator<<( std::ostream& stream, EventCreateFlagBits const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   using EventCreateFlags = Flags<EventCreateFlagBits, VkEventCreateFlags>;
 
   VULKAN_HPP_INLINE std::string to_string( EventCreateFlags  )
   {
     return "{}";
+  }
+
+  std::ostream& operator<<( std::ostream& stream, EventCreateFlags const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
   enum class ExternalFenceFeatureFlagBits
@@ -6959,6 +7812,12 @@ namespace VULKAN_HPP_NAMESPACE
       case ExternalFenceFeatureFlagBits::eImportable : return "Importable";
       default: return "invalid";
     }
+  }
+
+  std::ostream& operator<<( std::ostream& stream, ExternalFenceFeatureFlagBits const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
   using ExternalFenceFeatureFlags = Flags<ExternalFenceFeatureFlagBits, VkExternalFenceFeatureFlags>;
@@ -6993,6 +7852,12 @@ namespace VULKAN_HPP_NAMESPACE
     return result;
   }
 
+  std::ostream& operator<<( std::ostream& stream, ExternalFenceFeatureFlags const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   enum class ExternalFenceHandleTypeFlagBits
   {
     eOpaqueFd = VK_EXTERNAL_FENCE_HANDLE_TYPE_OPAQUE_FD_BIT,
@@ -7015,6 +7880,12 @@ namespace VULKAN_HPP_NAMESPACE
       case ExternalFenceHandleTypeFlagBits::eSyncFd : return "SyncFd";
       default: return "invalid";
     }
+  }
+
+  std::ostream& operator<<( std::ostream& stream, ExternalFenceHandleTypeFlagBits const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
   using ExternalFenceHandleTypeFlags = Flags<ExternalFenceHandleTypeFlagBits, VkExternalFenceHandleTypeFlags>;
@@ -7051,6 +7922,12 @@ namespace VULKAN_HPP_NAMESPACE
     return result;
   }
 
+  std::ostream& operator<<( std::ostream& stream, ExternalFenceHandleTypeFlags const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   enum class ExternalMemoryFeatureFlagBits
   {
     eDedicatedOnly = VK_EXTERNAL_MEMORY_FEATURE_DEDICATED_ONLY_BIT,
@@ -7070,6 +7947,12 @@ namespace VULKAN_HPP_NAMESPACE
       case ExternalMemoryFeatureFlagBits::eImportable : return "Importable";
       default: return "invalid";
     }
+  }
+
+  std::ostream& operator<<( std::ostream& stream, ExternalMemoryFeatureFlagBits const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
   using ExternalMemoryFeatureFlags = Flags<ExternalMemoryFeatureFlagBits, VkExternalMemoryFeatureFlags>;
@@ -7105,6 +7988,12 @@ namespace VULKAN_HPP_NAMESPACE
     return result;
   }
 
+  std::ostream& operator<<( std::ostream& stream, ExternalMemoryFeatureFlags const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   enum class ExternalMemoryFeatureFlagBitsNV
   {
     eDedicatedOnly = VK_EXTERNAL_MEMORY_FEATURE_DEDICATED_ONLY_BIT_NV,
@@ -7121,6 +8010,12 @@ namespace VULKAN_HPP_NAMESPACE
       case ExternalMemoryFeatureFlagBitsNV::eImportable : return "Importable";
       default: return "invalid";
     }
+  }
+
+  std::ostream& operator<<( std::ostream& stream, ExternalMemoryFeatureFlagBitsNV const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
   using ExternalMemoryFeatureFlagsNV = Flags<ExternalMemoryFeatureFlagBitsNV, VkExternalMemoryFeatureFlagsNV>;
@@ -7152,6 +8047,12 @@ namespace VULKAN_HPP_NAMESPACE
     if ( value & ExternalMemoryFeatureFlagBitsNV::eExportable ) result += "Exportable | ";
     if ( value & ExternalMemoryFeatureFlagBitsNV::eImportable ) result += "Importable";
     return result;
+  }
+
+  std::ostream& operator<<( std::ostream& stream, ExternalMemoryFeatureFlagsNV const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
   enum class ExternalMemoryHandleTypeFlagBits
@@ -7195,6 +8096,12 @@ namespace VULKAN_HPP_NAMESPACE
     }
   }
 
+  std::ostream& operator<<( std::ostream& stream, ExternalMemoryHandleTypeFlagBits const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   using ExternalMemoryHandleTypeFlags = Flags<ExternalMemoryHandleTypeFlagBits, VkExternalMemoryHandleTypeFlags>;
 
   VULKAN_HPP_INLINE ExternalMemoryHandleTypeFlags operator|( ExternalMemoryHandleTypeFlagBits bit0, ExternalMemoryHandleTypeFlagBits bit1 )
@@ -7236,6 +8143,12 @@ namespace VULKAN_HPP_NAMESPACE
     return result;
   }
 
+  std::ostream& operator<<( std::ostream& stream, ExternalMemoryHandleTypeFlags const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   enum class ExternalMemoryHandleTypeFlagBitsNV
   {
     eOpaqueWin32 = VK_EXTERNAL_MEMORY_HANDLE_TYPE_OPAQUE_WIN32_BIT_NV,
@@ -7254,6 +8167,12 @@ namespace VULKAN_HPP_NAMESPACE
       case ExternalMemoryHandleTypeFlagBitsNV::eD3D11ImageKmt : return "D3D11ImageKmt";
       default: return "invalid";
     }
+  }
+
+  std::ostream& operator<<( std::ostream& stream, ExternalMemoryHandleTypeFlagBitsNV const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
   using ExternalMemoryHandleTypeFlagsNV = Flags<ExternalMemoryHandleTypeFlagBitsNV, VkExternalMemoryHandleTypeFlagsNV>;
@@ -7288,6 +8207,12 @@ namespace VULKAN_HPP_NAMESPACE
     return result;
   }
 
+  std::ostream& operator<<( std::ostream& stream, ExternalMemoryHandleTypeFlagsNV const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   enum class ExternalSemaphoreFeatureFlagBits
   {
     eExportable = VK_EXTERNAL_SEMAPHORE_FEATURE_EXPORTABLE_BIT,
@@ -7304,6 +8229,12 @@ namespace VULKAN_HPP_NAMESPACE
       case ExternalSemaphoreFeatureFlagBits::eImportable : return "Importable";
       default: return "invalid";
     }
+  }
+
+  std::ostream& operator<<( std::ostream& stream, ExternalSemaphoreFeatureFlagBits const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
   using ExternalSemaphoreFeatureFlags = Flags<ExternalSemaphoreFeatureFlagBits, VkExternalSemaphoreFeatureFlags>;
@@ -7338,6 +8269,12 @@ namespace VULKAN_HPP_NAMESPACE
     return result;
   }
 
+  std::ostream& operator<<( std::ostream& stream, ExternalSemaphoreFeatureFlags const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   enum class ExternalSemaphoreHandleTypeFlagBits
   {
     eOpaqueFd = VK_EXTERNAL_SEMAPHORE_HANDLE_TYPE_OPAQUE_FD_BIT,
@@ -7363,6 +8300,12 @@ namespace VULKAN_HPP_NAMESPACE
       case ExternalSemaphoreHandleTypeFlagBits::eSyncFd : return "SyncFd";
       default: return "invalid";
     }
+  }
+
+  std::ostream& operator<<( std::ostream& stream, ExternalSemaphoreHandleTypeFlagBits const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
   using ExternalSemaphoreHandleTypeFlags = Flags<ExternalSemaphoreHandleTypeFlagBits, VkExternalSemaphoreHandleTypeFlags>;
@@ -7400,6 +8343,12 @@ namespace VULKAN_HPP_NAMESPACE
     return result;
   }
 
+  std::ostream& operator<<( std::ostream& stream, ExternalSemaphoreHandleTypeFlags const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   enum class FenceCreateFlagBits
   {
     eSignaled = VK_FENCE_CREATE_SIGNALED_BIT
@@ -7412,6 +8361,12 @@ namespace VULKAN_HPP_NAMESPACE
       case FenceCreateFlagBits::eSignaled : return "Signaled";
       default: return "invalid";
     }
+  }
+
+  std::ostream& operator<<( std::ostream& stream, FenceCreateFlagBits const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
   using FenceCreateFlags = Flags<FenceCreateFlagBits, VkFenceCreateFlags>;
@@ -7443,6 +8398,12 @@ namespace VULKAN_HPP_NAMESPACE
     return result;
   }
 
+  std::ostream& operator<<( std::ostream& stream, FenceCreateFlags const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   enum class FenceImportFlagBits
   {
     eTemporary = VK_FENCE_IMPORT_TEMPORARY_BIT,
@@ -7456,6 +8417,12 @@ namespace VULKAN_HPP_NAMESPACE
       case FenceImportFlagBits::eTemporary : return "Temporary";
       default: return "invalid";
     }
+  }
+
+  std::ostream& operator<<( std::ostream& stream, FenceImportFlagBits const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
   using FenceImportFlags = Flags<FenceImportFlagBits, VkFenceImportFlags>;
@@ -7487,6 +8454,12 @@ namespace VULKAN_HPP_NAMESPACE
 
     if ( value & FenceImportFlagBits::eTemporary ) result += "Temporary";
     return result;
+  }
+
+  std::ostream& operator<<( std::ostream& stream, FenceImportFlags const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
   enum class FormatFeatureFlagBits
@@ -7561,6 +8534,12 @@ namespace VULKAN_HPP_NAMESPACE
     }
   }
 
+  std::ostream& operator<<( std::ostream& stream, FormatFeatureFlagBits const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   using FormatFeatureFlags = Flags<FormatFeatureFlagBits, VkFormatFeatureFlags>;
 
   VULKAN_HPP_INLINE FormatFeatureFlags operator|( FormatFeatureFlagBits bit0, FormatFeatureFlagBits bit1 )
@@ -7614,6 +8593,12 @@ namespace VULKAN_HPP_NAMESPACE
     return result;
   }
 
+  std::ostream& operator<<( std::ostream& stream, FormatFeatureFlags const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   enum class FramebufferCreateFlagBits
   {};
 
@@ -7622,11 +8607,23 @@ namespace VULKAN_HPP_NAMESPACE
     return "(void)";
   }
 
+  std::ostream& operator<<( std::ostream& stream, FramebufferCreateFlagBits const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   using FramebufferCreateFlags = Flags<FramebufferCreateFlagBits, VkFramebufferCreateFlags>;
 
   VULKAN_HPP_INLINE std::string to_string( FramebufferCreateFlags  )
   {
     return "{}";
+  }
+
+  std::ostream& operator<<( std::ostream& stream, FramebufferCreateFlags const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
   enum class GeometryFlagBitsNV
@@ -7643,6 +8640,12 @@ namespace VULKAN_HPP_NAMESPACE
       case GeometryFlagBitsNV::eNoDuplicateAnyHitInvocation : return "NoDuplicateAnyHitInvocation";
       default: return "invalid";
     }
+  }
+
+  std::ostream& operator<<( std::ostream& stream, GeometryFlagBitsNV const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
   using GeometryFlagsNV = Flags<GeometryFlagBitsNV, VkGeometryFlagsNV>;
@@ -7675,6 +8678,12 @@ namespace VULKAN_HPP_NAMESPACE
     return result;
   }
 
+  std::ostream& operator<<( std::ostream& stream, GeometryFlagsNV const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   enum class GeometryInstanceFlagBitsNV
   {
     eTriangleCullDisable = VK_GEOMETRY_INSTANCE_TRIANGLE_CULL_DISABLE_BIT_NV,
@@ -7693,6 +8702,12 @@ namespace VULKAN_HPP_NAMESPACE
       case GeometryInstanceFlagBitsNV::eForceNoOpaque : return "ForceNoOpaque";
       default: return "invalid";
     }
+  }
+
+  std::ostream& operator<<( std::ostream& stream, GeometryInstanceFlagBitsNV const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
   using GeometryInstanceFlagsNV = Flags<GeometryInstanceFlagBitsNV, VkGeometryInstanceFlagsNV>;
@@ -7727,6 +8742,12 @@ namespace VULKAN_HPP_NAMESPACE
     return result;
   }
 
+  std::ostream& operator<<( std::ostream& stream, GeometryInstanceFlagsNV const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
 #ifdef VK_USE_PLATFORM_IOS_MVK
   enum class IOSSurfaceCreateFlagBitsMVK
   {};
@@ -7736,11 +8757,23 @@ namespace VULKAN_HPP_NAMESPACE
     return "(void)";
   }
 
+  std::ostream& operator<<( std::ostream& stream, IOSSurfaceCreateFlagBitsMVK const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   using IOSSurfaceCreateFlagsMVK = Flags<IOSSurfaceCreateFlagBitsMVK, VkIOSSurfaceCreateFlagsMVK>;
 
   VULKAN_HPP_INLINE std::string to_string( IOSSurfaceCreateFlagsMVK  )
   {
     return "{}";
+  }
+
+  std::ostream& operator<<( std::ostream& stream, IOSSurfaceCreateFlagsMVK const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 #endif /*VK_USE_PLATFORM_IOS_MVK*/
 
@@ -7781,6 +8814,12 @@ namespace VULKAN_HPP_NAMESPACE
     }
   }
 
+  std::ostream& operator<<( std::ostream& stream, ImageAspectFlagBits const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   using ImageAspectFlags = Flags<ImageAspectFlagBits, VkImageAspectFlags>;
 
   VULKAN_HPP_INLINE ImageAspectFlags operator|( ImageAspectFlagBits bit0, ImageAspectFlagBits bit1 )
@@ -7818,6 +8857,12 @@ namespace VULKAN_HPP_NAMESPACE
     if ( value & ImageAspectFlagBits::eMemoryPlane2EXT ) result += "MemoryPlane2EXT | ";
     if ( value & ImageAspectFlagBits::eMemoryPlane3EXT ) result += "MemoryPlane3EXT";
     return result;
+  }
+
+  std::ostream& operator<<( std::ostream& stream, ImageAspectFlags const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
   enum class ImageCreateFlagBits
@@ -7868,6 +8913,12 @@ namespace VULKAN_HPP_NAMESPACE
     }
   }
 
+  std::ostream& operator<<( std::ostream& stream, ImageCreateFlagBits const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   using ImageCreateFlags = Flags<ImageCreateFlagBits, VkImageCreateFlags>;
 
   VULKAN_HPP_INLINE ImageCreateFlags operator|( ImageCreateFlagBits bit0, ImageCreateFlagBits bit1 )
@@ -7911,6 +8962,12 @@ namespace VULKAN_HPP_NAMESPACE
     return result;
   }
 
+  std::ostream& operator<<( std::ostream& stream, ImageCreateFlags const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
 #ifdef VK_USE_PLATFORM_FUCHSIA
   enum class ImagePipeSurfaceCreateFlagBitsFUCHSIA
   {};
@@ -7920,11 +8977,23 @@ namespace VULKAN_HPP_NAMESPACE
     return "(void)";
   }
 
+  std::ostream& operator<<( std::ostream& stream, ImagePipeSurfaceCreateFlagBitsFUCHSIA const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   using ImagePipeSurfaceCreateFlagsFUCHSIA = Flags<ImagePipeSurfaceCreateFlagBitsFUCHSIA, VkImagePipeSurfaceCreateFlagsFUCHSIA>;
 
   VULKAN_HPP_INLINE std::string to_string( ImagePipeSurfaceCreateFlagsFUCHSIA  )
   {
     return "{}";
+  }
+
+  std::ostream& operator<<( std::ostream& stream, ImagePipeSurfaceCreateFlagsFUCHSIA const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 #endif /*VK_USE_PLATFORM_FUCHSIA*/
 
@@ -7958,6 +9027,12 @@ namespace VULKAN_HPP_NAMESPACE
       case ImageUsageFlagBits::eFragmentDensityMapEXT : return "FragmentDensityMapEXT";
       default: return "invalid";
     }
+  }
+
+  std::ostream& operator<<( std::ostream& stream, ImageUsageFlagBits const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
   using ImageUsageFlags = Flags<ImageUsageFlagBits, VkImageUsageFlags>;
@@ -7998,6 +9073,12 @@ namespace VULKAN_HPP_NAMESPACE
     return result;
   }
 
+  std::ostream& operator<<( std::ostream& stream, ImageUsageFlags const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   enum class ImageViewCreateFlagBits
   {
     eFragmentDensityMapDynamicEXT = VK_IMAGE_VIEW_CREATE_FRAGMENT_DENSITY_MAP_DYNAMIC_BIT_EXT
@@ -8010,6 +9091,12 @@ namespace VULKAN_HPP_NAMESPACE
       case ImageViewCreateFlagBits::eFragmentDensityMapDynamicEXT : return "FragmentDensityMapDynamicEXT";
       default: return "invalid";
     }
+  }
+
+  std::ostream& operator<<( std::ostream& stream, ImageViewCreateFlagBits const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
   using ImageViewCreateFlags = Flags<ImageViewCreateFlagBits, VkImageViewCreateFlags>;
@@ -8041,6 +9128,12 @@ namespace VULKAN_HPP_NAMESPACE
     return result;
   }
 
+  std::ostream& operator<<( std::ostream& stream, ImageViewCreateFlags const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   enum class IndirectCommandsLayoutUsageFlagBitsNVX
   {
     eUnorderedSequences = VK_INDIRECT_COMMANDS_LAYOUT_USAGE_UNORDERED_SEQUENCES_BIT_NVX,
@@ -8059,6 +9152,12 @@ namespace VULKAN_HPP_NAMESPACE
       case IndirectCommandsLayoutUsageFlagBitsNVX::eIndexedSequences : return "IndexedSequences";
       default: return "invalid";
     }
+  }
+
+  std::ostream& operator<<( std::ostream& stream, IndirectCommandsLayoutUsageFlagBitsNVX const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
   using IndirectCommandsLayoutUsageFlagsNVX = Flags<IndirectCommandsLayoutUsageFlagBitsNVX, VkIndirectCommandsLayoutUsageFlagsNVX>;
@@ -8093,6 +9192,12 @@ namespace VULKAN_HPP_NAMESPACE
     return result;
   }
 
+  std::ostream& operator<<( std::ostream& stream, IndirectCommandsLayoutUsageFlagsNVX const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   enum class InstanceCreateFlagBits
   {};
 
@@ -8101,11 +9206,23 @@ namespace VULKAN_HPP_NAMESPACE
     return "(void)";
   }
 
+  std::ostream& operator<<( std::ostream& stream, InstanceCreateFlagBits const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   using InstanceCreateFlags = Flags<InstanceCreateFlagBits, VkInstanceCreateFlags>;
 
   VULKAN_HPP_INLINE std::string to_string( InstanceCreateFlags  )
   {
     return "{}";
+  }
+
+  std::ostream& operator<<( std::ostream& stream, InstanceCreateFlags const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
 #ifdef VK_USE_PLATFORM_MACOS_MVK
@@ -8117,11 +9234,23 @@ namespace VULKAN_HPP_NAMESPACE
     return "(void)";
   }
 
+  std::ostream& operator<<( std::ostream& stream, MacOSSurfaceCreateFlagBitsMVK const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   using MacOSSurfaceCreateFlagsMVK = Flags<MacOSSurfaceCreateFlagBitsMVK, VkMacOSSurfaceCreateFlagsMVK>;
 
   VULKAN_HPP_INLINE std::string to_string( MacOSSurfaceCreateFlagsMVK  )
   {
     return "{}";
+  }
+
+  std::ostream& operator<<( std::ostream& stream, MacOSSurfaceCreateFlagsMVK const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 #endif /*VK_USE_PLATFORM_MACOS_MVK*/
 
@@ -8138,6 +9267,12 @@ namespace VULKAN_HPP_NAMESPACE
       case MemoryAllocateFlagBits::eDeviceMask : return "DeviceMask";
       default: return "invalid";
     }
+  }
+
+  std::ostream& operator<<( std::ostream& stream, MemoryAllocateFlagBits const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
   using MemoryAllocateFlags = Flags<MemoryAllocateFlagBits, VkMemoryAllocateFlags>;
@@ -8171,6 +9306,12 @@ namespace VULKAN_HPP_NAMESPACE
     return result;
   }
 
+  std::ostream& operator<<( std::ostream& stream, MemoryAllocateFlags const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   enum class MemoryHeapFlagBits
   {
     eDeviceLocal = VK_MEMORY_HEAP_DEVICE_LOCAL_BIT,
@@ -8186,6 +9327,12 @@ namespace VULKAN_HPP_NAMESPACE
       case MemoryHeapFlagBits::eMultiInstance : return "MultiInstance";
       default: return "invalid";
     }
+  }
+
+  std::ostream& operator<<( std::ostream& stream, MemoryHeapFlagBits const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
   using MemoryHeapFlags = Flags<MemoryHeapFlagBits, VkMemoryHeapFlags>;
@@ -8218,6 +9365,12 @@ namespace VULKAN_HPP_NAMESPACE
     return result;
   }
 
+  std::ostream& operator<<( std::ostream& stream, MemoryHeapFlags const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   enum class MemoryMapFlagBits
   {};
 
@@ -8226,11 +9379,23 @@ namespace VULKAN_HPP_NAMESPACE
     return "(void)";
   }
 
+  std::ostream& operator<<( std::ostream& stream, MemoryMapFlagBits const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   using MemoryMapFlags = Flags<MemoryMapFlagBits, VkMemoryMapFlags>;
 
   VULKAN_HPP_INLINE std::string to_string( MemoryMapFlags  )
   {
     return "{}";
+  }
+
+  std::ostream& operator<<( std::ostream& stream, MemoryMapFlags const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
   enum class MemoryPropertyFlagBits
@@ -8255,6 +9420,12 @@ namespace VULKAN_HPP_NAMESPACE
       case MemoryPropertyFlagBits::eProtected : return "Protected";
       default: return "invalid";
     }
+  }
+
+  std::ostream& operator<<( std::ostream& stream, MemoryPropertyFlagBits const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
   using MemoryPropertyFlags = Flags<MemoryPropertyFlagBits, VkMemoryPropertyFlags>;
@@ -8291,6 +9462,12 @@ namespace VULKAN_HPP_NAMESPACE
     return result;
   }
 
+  std::ostream& operator<<( std::ostream& stream, MemoryPropertyFlags const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   enum class ObjectEntryUsageFlagBitsNVX
   {
     eGraphics = VK_OBJECT_ENTRY_USAGE_GRAPHICS_BIT_NVX,
@@ -8305,6 +9482,12 @@ namespace VULKAN_HPP_NAMESPACE
       case ObjectEntryUsageFlagBitsNVX::eCompute : return "Compute";
       default: return "invalid";
     }
+  }
+
+  std::ostream& operator<<( std::ostream& stream, ObjectEntryUsageFlagBitsNVX const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
   using ObjectEntryUsageFlagsNVX = Flags<ObjectEntryUsageFlagBitsNVX, VkObjectEntryUsageFlagsNVX>;
@@ -8337,6 +9520,12 @@ namespace VULKAN_HPP_NAMESPACE
     return result;
   }
 
+  std::ostream& operator<<( std::ostream& stream, ObjectEntryUsageFlagsNVX const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   enum class PeerMemoryFeatureFlagBits
   {
     eCopySrc = VK_PEER_MEMORY_FEATURE_COPY_SRC_BIT,
@@ -8359,6 +9548,12 @@ namespace VULKAN_HPP_NAMESPACE
       case PeerMemoryFeatureFlagBits::eGenericDst : return "GenericDst";
       default: return "invalid";
     }
+  }
+
+  std::ostream& operator<<( std::ostream& stream, PeerMemoryFeatureFlagBits const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
   using PeerMemoryFeatureFlags = Flags<PeerMemoryFeatureFlagBits, VkPeerMemoryFeatureFlags>;
@@ -8395,6 +9590,12 @@ namespace VULKAN_HPP_NAMESPACE
     return result;
   }
 
+  std::ostream& operator<<( std::ostream& stream, PeerMemoryFeatureFlags const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   enum class PipelineCacheCreateFlagBits
   {};
 
@@ -8403,11 +9604,23 @@ namespace VULKAN_HPP_NAMESPACE
     return "(void)";
   }
 
+  std::ostream& operator<<( std::ostream& stream, PipelineCacheCreateFlagBits const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   using PipelineCacheCreateFlags = Flags<PipelineCacheCreateFlagBits, VkPipelineCacheCreateFlags>;
 
   VULKAN_HPP_INLINE std::string to_string( PipelineCacheCreateFlags  )
   {
     return "{}";
+  }
+
+  std::ostream& operator<<( std::ostream& stream, PipelineCacheCreateFlags const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
   enum class PipelineColorBlendStateCreateFlagBits
@@ -8418,11 +9631,23 @@ namespace VULKAN_HPP_NAMESPACE
     return "(void)";
   }
 
+  std::ostream& operator<<( std::ostream& stream, PipelineColorBlendStateCreateFlagBits const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   using PipelineColorBlendStateCreateFlags = Flags<PipelineColorBlendStateCreateFlagBits, VkPipelineColorBlendStateCreateFlags>;
 
   VULKAN_HPP_INLINE std::string to_string( PipelineColorBlendStateCreateFlags  )
   {
     return "{}";
+  }
+
+  std::ostream& operator<<( std::ostream& stream, PipelineColorBlendStateCreateFlags const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
   enum class PipelineCoverageModulationStateCreateFlagBitsNV
@@ -8433,11 +9658,23 @@ namespace VULKAN_HPP_NAMESPACE
     return "(void)";
   }
 
+  std::ostream& operator<<( std::ostream& stream, PipelineCoverageModulationStateCreateFlagBitsNV const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   using PipelineCoverageModulationStateCreateFlagsNV = Flags<PipelineCoverageModulationStateCreateFlagBitsNV, VkPipelineCoverageModulationStateCreateFlagsNV>;
 
   VULKAN_HPP_INLINE std::string to_string( PipelineCoverageModulationStateCreateFlagsNV  )
   {
     return "{}";
+  }
+
+  std::ostream& operator<<( std::ostream& stream, PipelineCoverageModulationStateCreateFlagsNV const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
   enum class PipelineCoverageToColorStateCreateFlagBitsNV
@@ -8448,11 +9685,23 @@ namespace VULKAN_HPP_NAMESPACE
     return "(void)";
   }
 
+  std::ostream& operator<<( std::ostream& stream, PipelineCoverageToColorStateCreateFlagBitsNV const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   using PipelineCoverageToColorStateCreateFlagsNV = Flags<PipelineCoverageToColorStateCreateFlagBitsNV, VkPipelineCoverageToColorStateCreateFlagsNV>;
 
   VULKAN_HPP_INLINE std::string to_string( PipelineCoverageToColorStateCreateFlagsNV  )
   {
     return "{}";
+  }
+
+  std::ostream& operator<<( std::ostream& stream, PipelineCoverageToColorStateCreateFlagsNV const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
   enum class PipelineCreateFlagBits
@@ -8479,6 +9728,12 @@ namespace VULKAN_HPP_NAMESPACE
       case PipelineCreateFlagBits::eDeferCompileNV : return "DeferCompileNV";
       default: return "invalid";
     }
+  }
+
+  std::ostream& operator<<( std::ostream& stream, PipelineCreateFlagBits const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
   using PipelineCreateFlags = Flags<PipelineCreateFlagBits, VkPipelineCreateFlags>;
@@ -8515,6 +9770,12 @@ namespace VULKAN_HPP_NAMESPACE
     return result;
   }
 
+  std::ostream& operator<<( std::ostream& stream, PipelineCreateFlags const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   enum class PipelineDepthStencilStateCreateFlagBits
   {};
 
@@ -8523,11 +9784,23 @@ namespace VULKAN_HPP_NAMESPACE
     return "(void)";
   }
 
+  std::ostream& operator<<( std::ostream& stream, PipelineDepthStencilStateCreateFlagBits const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   using PipelineDepthStencilStateCreateFlags = Flags<PipelineDepthStencilStateCreateFlagBits, VkPipelineDepthStencilStateCreateFlags>;
 
   VULKAN_HPP_INLINE std::string to_string( PipelineDepthStencilStateCreateFlags  )
   {
     return "{}";
+  }
+
+  std::ostream& operator<<( std::ostream& stream, PipelineDepthStencilStateCreateFlags const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
   enum class PipelineDiscardRectangleStateCreateFlagBitsEXT
@@ -8538,11 +9811,23 @@ namespace VULKAN_HPP_NAMESPACE
     return "(void)";
   }
 
+  std::ostream& operator<<( std::ostream& stream, PipelineDiscardRectangleStateCreateFlagBitsEXT const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   using PipelineDiscardRectangleStateCreateFlagsEXT = Flags<PipelineDiscardRectangleStateCreateFlagBitsEXT, VkPipelineDiscardRectangleStateCreateFlagsEXT>;
 
   VULKAN_HPP_INLINE std::string to_string( PipelineDiscardRectangleStateCreateFlagsEXT  )
   {
     return "{}";
+  }
+
+  std::ostream& operator<<( std::ostream& stream, PipelineDiscardRectangleStateCreateFlagsEXT const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
   enum class PipelineDynamicStateCreateFlagBits
@@ -8553,11 +9838,23 @@ namespace VULKAN_HPP_NAMESPACE
     return "(void)";
   }
 
+  std::ostream& operator<<( std::ostream& stream, PipelineDynamicStateCreateFlagBits const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   using PipelineDynamicStateCreateFlags = Flags<PipelineDynamicStateCreateFlagBits, VkPipelineDynamicStateCreateFlags>;
 
   VULKAN_HPP_INLINE std::string to_string( PipelineDynamicStateCreateFlags  )
   {
     return "{}";
+  }
+
+  std::ostream& operator<<( std::ostream& stream, PipelineDynamicStateCreateFlags const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
   enum class PipelineInputAssemblyStateCreateFlagBits
@@ -8568,11 +9865,23 @@ namespace VULKAN_HPP_NAMESPACE
     return "(void)";
   }
 
+  std::ostream& operator<<( std::ostream& stream, PipelineInputAssemblyStateCreateFlagBits const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   using PipelineInputAssemblyStateCreateFlags = Flags<PipelineInputAssemblyStateCreateFlagBits, VkPipelineInputAssemblyStateCreateFlags>;
 
   VULKAN_HPP_INLINE std::string to_string( PipelineInputAssemblyStateCreateFlags  )
   {
     return "{}";
+  }
+
+  std::ostream& operator<<( std::ostream& stream, PipelineInputAssemblyStateCreateFlags const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
   enum class PipelineLayoutCreateFlagBits
@@ -8583,11 +9892,23 @@ namespace VULKAN_HPP_NAMESPACE
     return "(void)";
   }
 
+  std::ostream& operator<<( std::ostream& stream, PipelineLayoutCreateFlagBits const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   using PipelineLayoutCreateFlags = Flags<PipelineLayoutCreateFlagBits, VkPipelineLayoutCreateFlags>;
 
   VULKAN_HPP_INLINE std::string to_string( PipelineLayoutCreateFlags  )
   {
     return "{}";
+  }
+
+  std::ostream& operator<<( std::ostream& stream, PipelineLayoutCreateFlags const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
   enum class PipelineMultisampleStateCreateFlagBits
@@ -8598,11 +9919,23 @@ namespace VULKAN_HPP_NAMESPACE
     return "(void)";
   }
 
+  std::ostream& operator<<( std::ostream& stream, PipelineMultisampleStateCreateFlagBits const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   using PipelineMultisampleStateCreateFlags = Flags<PipelineMultisampleStateCreateFlagBits, VkPipelineMultisampleStateCreateFlags>;
 
   VULKAN_HPP_INLINE std::string to_string( PipelineMultisampleStateCreateFlags  )
   {
     return "{}";
+  }
+
+  std::ostream& operator<<( std::ostream& stream, PipelineMultisampleStateCreateFlags const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
   enum class PipelineRasterizationConservativeStateCreateFlagBitsEXT
@@ -8613,11 +9946,23 @@ namespace VULKAN_HPP_NAMESPACE
     return "(void)";
   }
 
+  std::ostream& operator<<( std::ostream& stream, PipelineRasterizationConservativeStateCreateFlagBitsEXT const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   using PipelineRasterizationConservativeStateCreateFlagsEXT = Flags<PipelineRasterizationConservativeStateCreateFlagBitsEXT, VkPipelineRasterizationConservativeStateCreateFlagsEXT>;
 
   VULKAN_HPP_INLINE std::string to_string( PipelineRasterizationConservativeStateCreateFlagsEXT  )
   {
     return "{}";
+  }
+
+  std::ostream& operator<<( std::ostream& stream, PipelineRasterizationConservativeStateCreateFlagsEXT const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
   enum class PipelineRasterizationStateCreateFlagBits
@@ -8628,11 +9973,23 @@ namespace VULKAN_HPP_NAMESPACE
     return "(void)";
   }
 
+  std::ostream& operator<<( std::ostream& stream, PipelineRasterizationStateCreateFlagBits const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   using PipelineRasterizationStateCreateFlags = Flags<PipelineRasterizationStateCreateFlagBits, VkPipelineRasterizationStateCreateFlags>;
 
   VULKAN_HPP_INLINE std::string to_string( PipelineRasterizationStateCreateFlags  )
   {
     return "{}";
+  }
+
+  std::ostream& operator<<( std::ostream& stream, PipelineRasterizationStateCreateFlags const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
   enum class PipelineRasterizationStateStreamCreateFlagBitsEXT
@@ -8643,11 +10000,23 @@ namespace VULKAN_HPP_NAMESPACE
     return "(void)";
   }
 
+  std::ostream& operator<<( std::ostream& stream, PipelineRasterizationStateStreamCreateFlagBitsEXT const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   using PipelineRasterizationStateStreamCreateFlagsEXT = Flags<PipelineRasterizationStateStreamCreateFlagBitsEXT, VkPipelineRasterizationStateStreamCreateFlagsEXT>;
 
   VULKAN_HPP_INLINE std::string to_string( PipelineRasterizationStateStreamCreateFlagsEXT  )
   {
     return "{}";
+  }
+
+  std::ostream& operator<<( std::ostream& stream, PipelineRasterizationStateStreamCreateFlagsEXT const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
   enum class PipelineShaderStageCreateFlagBits
@@ -8658,11 +10027,23 @@ namespace VULKAN_HPP_NAMESPACE
     return "(void)";
   }
 
+  std::ostream& operator<<( std::ostream& stream, PipelineShaderStageCreateFlagBits const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   using PipelineShaderStageCreateFlags = Flags<PipelineShaderStageCreateFlagBits, VkPipelineShaderStageCreateFlags>;
 
   VULKAN_HPP_INLINE std::string to_string( PipelineShaderStageCreateFlags  )
   {
     return "{}";
+  }
+
+  std::ostream& operator<<( std::ostream& stream, PipelineShaderStageCreateFlags const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
   enum class PipelineStageFlagBits
@@ -8729,6 +10110,12 @@ namespace VULKAN_HPP_NAMESPACE
     }
   }
 
+  std::ostream& operator<<( std::ostream& stream, PipelineStageFlagBits const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   using PipelineStageFlags = Flags<PipelineStageFlagBits, VkPipelineStageFlags>;
 
   VULKAN_HPP_INLINE PipelineStageFlags operator|( PipelineStageFlagBits bit0, PipelineStageFlagBits bit1 )
@@ -8783,6 +10170,12 @@ namespace VULKAN_HPP_NAMESPACE
     return result;
   }
 
+  std::ostream& operator<<( std::ostream& stream, PipelineStageFlags const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   enum class PipelineTessellationStateCreateFlagBits
   {};
 
@@ -8791,11 +10184,23 @@ namespace VULKAN_HPP_NAMESPACE
     return "(void)";
   }
 
+  std::ostream& operator<<( std::ostream& stream, PipelineTessellationStateCreateFlagBits const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   using PipelineTessellationStateCreateFlags = Flags<PipelineTessellationStateCreateFlagBits, VkPipelineTessellationStateCreateFlags>;
 
   VULKAN_HPP_INLINE std::string to_string( PipelineTessellationStateCreateFlags  )
   {
     return "{}";
+  }
+
+  std::ostream& operator<<( std::ostream& stream, PipelineTessellationStateCreateFlags const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
   enum class PipelineVertexInputStateCreateFlagBits
@@ -8806,11 +10211,23 @@ namespace VULKAN_HPP_NAMESPACE
     return "(void)";
   }
 
+  std::ostream& operator<<( std::ostream& stream, PipelineVertexInputStateCreateFlagBits const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   using PipelineVertexInputStateCreateFlags = Flags<PipelineVertexInputStateCreateFlagBits, VkPipelineVertexInputStateCreateFlags>;
 
   VULKAN_HPP_INLINE std::string to_string( PipelineVertexInputStateCreateFlags  )
   {
     return "{}";
+  }
+
+  std::ostream& operator<<( std::ostream& stream, PipelineVertexInputStateCreateFlags const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
   enum class PipelineViewportStateCreateFlagBits
@@ -8821,11 +10238,23 @@ namespace VULKAN_HPP_NAMESPACE
     return "(void)";
   }
 
+  std::ostream& operator<<( std::ostream& stream, PipelineViewportStateCreateFlagBits const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   using PipelineViewportStateCreateFlags = Flags<PipelineViewportStateCreateFlagBits, VkPipelineViewportStateCreateFlags>;
 
   VULKAN_HPP_INLINE std::string to_string( PipelineViewportStateCreateFlags  )
   {
     return "{}";
+  }
+
+  std::ostream& operator<<( std::ostream& stream, PipelineViewportStateCreateFlags const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
   enum class PipelineViewportSwizzleStateCreateFlagBitsNV
@@ -8836,11 +10265,23 @@ namespace VULKAN_HPP_NAMESPACE
     return "(void)";
   }
 
+  std::ostream& operator<<( std::ostream& stream, PipelineViewportSwizzleStateCreateFlagBitsNV const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   using PipelineViewportSwizzleStateCreateFlagsNV = Flags<PipelineViewportSwizzleStateCreateFlagBitsNV, VkPipelineViewportSwizzleStateCreateFlagsNV>;
 
   VULKAN_HPP_INLINE std::string to_string( PipelineViewportSwizzleStateCreateFlagsNV  )
   {
     return "{}";
+  }
+
+  std::ostream& operator<<( std::ostream& stream, PipelineViewportSwizzleStateCreateFlagsNV const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
   enum class QueryControlFlagBits
@@ -8855,6 +10296,12 @@ namespace VULKAN_HPP_NAMESPACE
       case QueryControlFlagBits::ePrecise : return "Precise";
       default: return "invalid";
     }
+  }
+
+  std::ostream& operator<<( std::ostream& stream, QueryControlFlagBits const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
   using QueryControlFlags = Flags<QueryControlFlagBits, VkQueryControlFlags>;
@@ -8884,6 +10331,12 @@ namespace VULKAN_HPP_NAMESPACE
 
     if ( value & QueryControlFlagBits::ePrecise ) result += "Precise";
     return result;
+  }
+
+  std::ostream& operator<<( std::ostream& stream, QueryControlFlags const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
   enum class QueryPipelineStatisticFlagBits
@@ -8918,6 +10371,12 @@ namespace VULKAN_HPP_NAMESPACE
       case QueryPipelineStatisticFlagBits::eComputeShaderInvocations : return "ComputeShaderInvocations";
       default: return "invalid";
     }
+  }
+
+  std::ostream& operator<<( std::ostream& stream, QueryPipelineStatisticFlagBits const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
   using QueryPipelineStatisticFlags = Flags<QueryPipelineStatisticFlagBits, VkQueryPipelineStatisticFlags>;
@@ -8959,6 +10418,12 @@ namespace VULKAN_HPP_NAMESPACE
     return result;
   }
 
+  std::ostream& operator<<( std::ostream& stream, QueryPipelineStatisticFlags const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   enum class QueryPoolCreateFlagBits
   {};
 
@@ -8967,11 +10432,23 @@ namespace VULKAN_HPP_NAMESPACE
     return "(void)";
   }
 
+  std::ostream& operator<<( std::ostream& stream, QueryPoolCreateFlagBits const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   using QueryPoolCreateFlags = Flags<QueryPoolCreateFlagBits, VkQueryPoolCreateFlags>;
 
   VULKAN_HPP_INLINE std::string to_string( QueryPoolCreateFlags  )
   {
     return "{}";
+  }
+
+  std::ostream& operator<<( std::ostream& stream, QueryPoolCreateFlags const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
   enum class QueryResultFlagBits
@@ -8992,6 +10469,12 @@ namespace VULKAN_HPP_NAMESPACE
       case QueryResultFlagBits::ePartial : return "Partial";
       default: return "invalid";
     }
+  }
+
+  std::ostream& operator<<( std::ostream& stream, QueryResultFlagBits const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
   using QueryResultFlags = Flags<QueryResultFlagBits, VkQueryResultFlags>;
@@ -9026,6 +10509,12 @@ namespace VULKAN_HPP_NAMESPACE
     return result;
   }
 
+  std::ostream& operator<<( std::ostream& stream, QueryResultFlags const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   enum class QueueFlagBits
   {
     eGraphics = VK_QUEUE_GRAPHICS_BIT,
@@ -9046,6 +10535,12 @@ namespace VULKAN_HPP_NAMESPACE
       case QueueFlagBits::eProtected : return "Protected";
       default: return "invalid";
     }
+  }
+
+  std::ostream& operator<<( std::ostream& stream, QueueFlagBits const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
   using QueueFlags = Flags<QueueFlagBits, VkQueueFlags>;
@@ -9081,6 +10576,12 @@ namespace VULKAN_HPP_NAMESPACE
     return result;
   }
 
+  std::ostream& operator<<( std::ostream& stream, QueueFlags const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   enum class RenderPassCreateFlagBits
   {};
 
@@ -9089,11 +10590,23 @@ namespace VULKAN_HPP_NAMESPACE
     return "(void)";
   }
 
+  std::ostream& operator<<( std::ostream& stream, RenderPassCreateFlagBits const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   using RenderPassCreateFlags = Flags<RenderPassCreateFlagBits, VkRenderPassCreateFlags>;
 
   VULKAN_HPP_INLINE std::string to_string( RenderPassCreateFlags  )
   {
     return "{}";
+  }
+
+  std::ostream& operator<<( std::ostream& stream, RenderPassCreateFlags const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
   enum class ResolveModeFlagBitsKHR
@@ -9116,6 +10629,12 @@ namespace VULKAN_HPP_NAMESPACE
       case ResolveModeFlagBitsKHR::eMax : return "Max";
       default: return "invalid";
     }
+  }
+
+  std::ostream& operator<<( std::ostream& stream, ResolveModeFlagBitsKHR const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
   using ResolveModeFlagsKHR = Flags<ResolveModeFlagBitsKHR, VkResolveModeFlagsKHR>;
@@ -9151,6 +10670,12 @@ namespace VULKAN_HPP_NAMESPACE
     return result;
   }
 
+  std::ostream& operator<<( std::ostream& stream, ResolveModeFlagsKHR const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   enum class SampleCountFlagBits
   {
     e1 = VK_SAMPLE_COUNT_1_BIT,
@@ -9175,6 +10700,12 @@ namespace VULKAN_HPP_NAMESPACE
       case SampleCountFlagBits::e64 : return "64";
       default: return "invalid";
     }
+  }
+
+  std::ostream& operator<<( std::ostream& stream, SampleCountFlagBits const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
   using SampleCountFlags = Flags<SampleCountFlagBits, VkSampleCountFlags>;
@@ -9212,6 +10743,12 @@ namespace VULKAN_HPP_NAMESPACE
     return result;
   }
 
+  std::ostream& operator<<( std::ostream& stream, SampleCountFlags const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   enum class SamplerCreateFlagBits
   {
     eSubsampledEXT = VK_SAMPLER_CREATE_SUBSAMPLED_BIT_EXT,
@@ -9226,6 +10763,12 @@ namespace VULKAN_HPP_NAMESPACE
       case SamplerCreateFlagBits::eSubsampledCoarseReconstructionEXT : return "SubsampledCoarseReconstructionEXT";
       default: return "invalid";
     }
+  }
+
+  std::ostream& operator<<( std::ostream& stream, SamplerCreateFlagBits const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
   using SamplerCreateFlags = Flags<SamplerCreateFlagBits, VkSamplerCreateFlags>;
@@ -9258,6 +10801,12 @@ namespace VULKAN_HPP_NAMESPACE
     return result;
   }
 
+  std::ostream& operator<<( std::ostream& stream, SamplerCreateFlags const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   enum class SemaphoreCreateFlagBits
   {};
 
@@ -9266,11 +10815,23 @@ namespace VULKAN_HPP_NAMESPACE
     return "(void)";
   }
 
+  std::ostream& operator<<( std::ostream& stream, SemaphoreCreateFlagBits const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   using SemaphoreCreateFlags = Flags<SemaphoreCreateFlagBits, VkSemaphoreCreateFlags>;
 
   VULKAN_HPP_INLINE std::string to_string( SemaphoreCreateFlags  )
   {
     return "{}";
+  }
+
+  std::ostream& operator<<( std::ostream& stream, SemaphoreCreateFlags const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
   enum class SemaphoreImportFlagBits
@@ -9286,6 +10847,12 @@ namespace VULKAN_HPP_NAMESPACE
       case SemaphoreImportFlagBits::eTemporary : return "Temporary";
       default: return "invalid";
     }
+  }
+
+  std::ostream& operator<<( std::ostream& stream, SemaphoreImportFlagBits const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
   using SemaphoreImportFlags = Flags<SemaphoreImportFlagBits, VkSemaphoreImportFlags>;
@@ -9319,6 +10886,12 @@ namespace VULKAN_HPP_NAMESPACE
     return result;
   }
 
+  std::ostream& operator<<( std::ostream& stream, SemaphoreImportFlags const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   enum class ShaderModuleCreateFlagBits
   {};
 
@@ -9327,11 +10900,23 @@ namespace VULKAN_HPP_NAMESPACE
     return "(void)";
   }
 
+  std::ostream& operator<<( std::ostream& stream, ShaderModuleCreateFlagBits const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   using ShaderModuleCreateFlags = Flags<ShaderModuleCreateFlagBits, VkShaderModuleCreateFlags>;
 
   VULKAN_HPP_INLINE std::string to_string( ShaderModuleCreateFlags  )
   {
     return "{}";
+  }
+
+  std::ostream& operator<<( std::ostream& stream, ShaderModuleCreateFlags const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
   enum class ShaderStageFlagBits
@@ -9378,6 +10963,12 @@ namespace VULKAN_HPP_NAMESPACE
     }
   }
 
+  std::ostream& operator<<( std::ostream& stream, ShaderStageFlagBits const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   using ShaderStageFlags = Flags<ShaderStageFlagBits, VkShaderStageFlags>;
 
   VULKAN_HPP_INLINE ShaderStageFlags operator|( ShaderStageFlagBits bit0, ShaderStageFlagBits bit1 )
@@ -9422,6 +11013,12 @@ namespace VULKAN_HPP_NAMESPACE
     return result;
   }
 
+  std::ostream& operator<<( std::ostream& stream, ShaderStageFlags const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   enum class SparseImageFormatFlagBits
   {
     eSingleMiptail = VK_SPARSE_IMAGE_FORMAT_SINGLE_MIPTAIL_BIT,
@@ -9438,6 +11035,12 @@ namespace VULKAN_HPP_NAMESPACE
       case SparseImageFormatFlagBits::eNonstandardBlockSize : return "NonstandardBlockSize";
       default: return "invalid";
     }
+  }
+
+  std::ostream& operator<<( std::ostream& stream, SparseImageFormatFlagBits const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
   using SparseImageFormatFlags = Flags<SparseImageFormatFlagBits, VkSparseImageFormatFlags>;
@@ -9471,6 +11074,12 @@ namespace VULKAN_HPP_NAMESPACE
     return result;
   }
 
+  std::ostream& operator<<( std::ostream& stream, SparseImageFormatFlags const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   enum class SparseMemoryBindFlagBits
   {
     eMetadata = VK_SPARSE_MEMORY_BIND_METADATA_BIT
@@ -9483,6 +11092,12 @@ namespace VULKAN_HPP_NAMESPACE
       case SparseMemoryBindFlagBits::eMetadata : return "Metadata";
       default: return "invalid";
     }
+  }
+
+  std::ostream& operator<<( std::ostream& stream, SparseMemoryBindFlagBits const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
   using SparseMemoryBindFlags = Flags<SparseMemoryBindFlagBits, VkSparseMemoryBindFlags>;
@@ -9514,6 +11129,12 @@ namespace VULKAN_HPP_NAMESPACE
     return result;
   }
 
+  std::ostream& operator<<( std::ostream& stream, SparseMemoryBindFlags const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   enum class StencilFaceFlagBits
   {
     eFront = VK_STENCIL_FACE_FRONT_BIT,
@@ -9530,6 +11151,12 @@ namespace VULKAN_HPP_NAMESPACE
       case StencilFaceFlagBits::eVkStencilFrontAndBack : return "VkStencilFrontAndBack";
       default: return "invalid";
     }
+  }
+
+  std::ostream& operator<<( std::ostream& stream, StencilFaceFlagBits const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
   using StencilFaceFlags = Flags<StencilFaceFlagBits, VkStencilFaceFlags>;
@@ -9563,6 +11190,12 @@ namespace VULKAN_HPP_NAMESPACE
     return result;
   }
 
+  std::ostream& operator<<( std::ostream& stream, StencilFaceFlags const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   enum class SubgroupFeatureFlagBits
   {
     eBasic = VK_SUBGROUP_FEATURE_BASIC_BIT,
@@ -9591,6 +11224,12 @@ namespace VULKAN_HPP_NAMESPACE
       case SubgroupFeatureFlagBits::ePartitionedNV : return "PartitionedNV";
       default: return "invalid";
     }
+  }
+
+  std::ostream& operator<<( std::ostream& stream, SubgroupFeatureFlagBits const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
   using SubgroupFeatureFlags = Flags<SubgroupFeatureFlagBits, VkSubgroupFeatureFlags>;
@@ -9630,6 +11269,12 @@ namespace VULKAN_HPP_NAMESPACE
     return result;
   }
 
+  std::ostream& operator<<( std::ostream& stream, SubgroupFeatureFlags const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   enum class SubpassDescriptionFlagBits
   {
     ePerViewAttributesNVX = VK_SUBPASS_DESCRIPTION_PER_VIEW_ATTRIBUTES_BIT_NVX,
@@ -9644,6 +11289,12 @@ namespace VULKAN_HPP_NAMESPACE
       case SubpassDescriptionFlagBits::ePerViewPositionXOnlyNVX : return "PerViewPositionXOnlyNVX";
       default: return "invalid";
     }
+  }
+
+  std::ostream& operator<<( std::ostream& stream, SubpassDescriptionFlagBits const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
   using SubpassDescriptionFlags = Flags<SubpassDescriptionFlagBits, VkSubpassDescriptionFlags>;
@@ -9676,6 +11327,12 @@ namespace VULKAN_HPP_NAMESPACE
     return result;
   }
 
+  std::ostream& operator<<( std::ostream& stream, SubpassDescriptionFlags const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   enum class SurfaceCounterFlagBitsEXT
   {
     eVblank = VK_SURFACE_COUNTER_VBLANK_EXT
@@ -9688,6 +11345,12 @@ namespace VULKAN_HPP_NAMESPACE
       case SurfaceCounterFlagBitsEXT::eVblank : return "Vblank";
       default: return "invalid";
     }
+  }
+
+  std::ostream& operator<<( std::ostream& stream, SurfaceCounterFlagBitsEXT const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
   using SurfaceCounterFlagsEXT = Flags<SurfaceCounterFlagBitsEXT, VkSurfaceCounterFlagsEXT>;
@@ -9719,6 +11382,12 @@ namespace VULKAN_HPP_NAMESPACE
     return result;
   }
 
+  std::ostream& operator<<( std::ostream& stream, SurfaceCounterFlagsEXT const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   enum class SurfaceTransformFlagBitsKHR
   {
     eIdentity = VK_SURFACE_TRANSFORM_IDENTITY_BIT_KHR,
@@ -9747,6 +11416,12 @@ namespace VULKAN_HPP_NAMESPACE
       case SurfaceTransformFlagBitsKHR::eInherit : return "Inherit";
       default: return "invalid";
     }
+  }
+
+  std::ostream& operator<<( std::ostream& stream, SurfaceTransformFlagBitsKHR const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
   using SurfaceTransformFlagsKHR = Flags<SurfaceTransformFlagBitsKHR, VkSurfaceTransformFlagsKHR>;
@@ -9786,6 +11461,12 @@ namespace VULKAN_HPP_NAMESPACE
     return result;
   }
 
+  std::ostream& operator<<( std::ostream& stream, SurfaceTransformFlagsKHR const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   enum class SwapchainCreateFlagBitsKHR
   {
     eSplitInstanceBindRegions = VK_SWAPCHAIN_CREATE_SPLIT_INSTANCE_BIND_REGIONS_BIT_KHR,
@@ -9802,6 +11483,12 @@ namespace VULKAN_HPP_NAMESPACE
       case SwapchainCreateFlagBitsKHR::eMutableFormat : return "MutableFormat";
       default: return "invalid";
     }
+  }
+
+  std::ostream& operator<<( std::ostream& stream, SwapchainCreateFlagBitsKHR const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
   using SwapchainCreateFlagsKHR = Flags<SwapchainCreateFlagBitsKHR, VkSwapchainCreateFlagsKHR>;
@@ -9835,6 +11522,12 @@ namespace VULKAN_HPP_NAMESPACE
     return result;
   }
 
+  std::ostream& operator<<( std::ostream& stream, SwapchainCreateFlagsKHR const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   enum class ValidationCacheCreateFlagBitsEXT
   {};
 
@@ -9843,11 +11536,23 @@ namespace VULKAN_HPP_NAMESPACE
     return "(void)";
   }
 
+  std::ostream& operator<<( std::ostream& stream, ValidationCacheCreateFlagBitsEXT const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   using ValidationCacheCreateFlagsEXT = Flags<ValidationCacheCreateFlagBitsEXT, VkValidationCacheCreateFlagsEXT>;
 
   VULKAN_HPP_INLINE std::string to_string( ValidationCacheCreateFlagsEXT  )
   {
     return "{}";
+  }
+
+  std::ostream& operator<<( std::ostream& stream, ValidationCacheCreateFlagsEXT const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 
 #ifdef VK_USE_PLATFORM_VI_NN
@@ -9859,11 +11564,23 @@ namespace VULKAN_HPP_NAMESPACE
     return "(void)";
   }
 
+  std::ostream& operator<<( std::ostream& stream, ViSurfaceCreateFlagBitsNN const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   using ViSurfaceCreateFlagsNN = Flags<ViSurfaceCreateFlagBitsNN, VkViSurfaceCreateFlagsNN>;
 
   VULKAN_HPP_INLINE std::string to_string( ViSurfaceCreateFlagsNN  )
   {
     return "{}";
+  }
+
+  std::ostream& operator<<( std::ostream& stream, ViSurfaceCreateFlagsNN const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 #endif /*VK_USE_PLATFORM_VI_NN*/
 
@@ -9876,11 +11593,23 @@ namespace VULKAN_HPP_NAMESPACE
     return "(void)";
   }
 
+  std::ostream& operator<<( std::ostream& stream, WaylandSurfaceCreateFlagBitsKHR const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   using WaylandSurfaceCreateFlagsKHR = Flags<WaylandSurfaceCreateFlagBitsKHR, VkWaylandSurfaceCreateFlagsKHR>;
 
   VULKAN_HPP_INLINE std::string to_string( WaylandSurfaceCreateFlagsKHR  )
   {
     return "{}";
+  }
+
+  std::ostream& operator<<( std::ostream& stream, WaylandSurfaceCreateFlagsKHR const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 #endif /*VK_USE_PLATFORM_WAYLAND_KHR*/
 
@@ -9893,11 +11622,23 @@ namespace VULKAN_HPP_NAMESPACE
     return "(void)";
   }
 
+  std::ostream& operator<<( std::ostream& stream, Win32SurfaceCreateFlagBitsKHR const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   using Win32SurfaceCreateFlagsKHR = Flags<Win32SurfaceCreateFlagBitsKHR, VkWin32SurfaceCreateFlagsKHR>;
 
   VULKAN_HPP_INLINE std::string to_string( Win32SurfaceCreateFlagsKHR  )
   {
     return "{}";
+  }
+
+  std::ostream& operator<<( std::ostream& stream, Win32SurfaceCreateFlagsKHR const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 #endif /*VK_USE_PLATFORM_WIN32_KHR*/
 
@@ -9910,11 +11651,23 @@ namespace VULKAN_HPP_NAMESPACE
     return "(void)";
   }
 
+  std::ostream& operator<<( std::ostream& stream, XcbSurfaceCreateFlagBitsKHR const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   using XcbSurfaceCreateFlagsKHR = Flags<XcbSurfaceCreateFlagBitsKHR, VkXcbSurfaceCreateFlagsKHR>;
 
   VULKAN_HPP_INLINE std::string to_string( XcbSurfaceCreateFlagsKHR  )
   {
     return "{}";
+  }
+
+  std::ostream& operator<<( std::ostream& stream, XcbSurfaceCreateFlagsKHR const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 #endif /*VK_USE_PLATFORM_XCB_KHR*/
 
@@ -9927,11 +11680,23 @@ namespace VULKAN_HPP_NAMESPACE
     return "(void)";
   }
 
+  std::ostream& operator<<( std::ostream& stream, XlibSurfaceCreateFlagBitsKHR const& value )
+  {
+    stream << to_string(value);
+    return stream;
+  }
+
   using XlibSurfaceCreateFlagsKHR = Flags<XlibSurfaceCreateFlagBitsKHR, VkXlibSurfaceCreateFlagsKHR>;
 
   VULKAN_HPP_INLINE std::string to_string( XlibSurfaceCreateFlagsKHR  )
   {
     return "{}";
+  }
+
+  std::ostream& operator<<( std::ostream& stream, XlibSurfaceCreateFlagsKHR const& value )
+  {
+    stream << to_string(value);
+    return stream;
   }
 #endif /*VK_USE_PLATFORM_XLIB_KHR*/
 } // namespace VULKAN_HPP_NAMESPACE
@@ -10386,239 +12151,589 @@ namespace VULKAN_HPP_NAMESPACE
 #endif
 
   struct AccelerationStructureCreateInfoNV;
+  std::ostream& operator<<(std::ostream&, AccelerationStructureCreateInfoNV const&);
+  std::string to_string( AccelerationStructureCreateInfoNV );
   struct AccelerationStructureInfoNV;
+  std::ostream& operator<<(std::ostream&, AccelerationStructureInfoNV const&);
+  std::string to_string( AccelerationStructureInfoNV );
   struct AccelerationStructureMemoryRequirementsInfoNV;
+  std::ostream& operator<<(std::ostream&, AccelerationStructureMemoryRequirementsInfoNV const&);
+  std::string to_string( AccelerationStructureMemoryRequirementsInfoNV );
   struct AcquireNextImageInfoKHR;
+  std::ostream& operator<<(std::ostream&, AcquireNextImageInfoKHR const&);
+  std::string to_string( AcquireNextImageInfoKHR );
   struct AllocationCallbacks;
+  std::ostream& operator<<(std::ostream&, AllocationCallbacks const&);
+  std::string to_string( AllocationCallbacks );
 #ifdef VK_USE_PLATFORM_ANDROID_KHR
   struct AndroidHardwareBufferPropertiesANDROID;
+  std::ostream& operator<<(std::ostream&, AndroidHardwareBufferPropertiesANDROID const&);
+  std::string to_string( AndroidHardwareBufferPropertiesANDROID );
 #endif /*VK_USE_PLATFORM_ANDROID_KHR*/
 #ifdef VK_USE_PLATFORM_ANDROID_KHR
   struct AndroidSurfaceCreateInfoKHR;
+  std::ostream& operator<<(std::ostream&, AndroidSurfaceCreateInfoKHR const&);
+  std::string to_string( AndroidSurfaceCreateInfoKHR );
 #endif /*VK_USE_PLATFORM_ANDROID_KHR*/
   struct BindAccelerationStructureMemoryInfoNV;
+  std::ostream& operator<<(std::ostream&, BindAccelerationStructureMemoryInfoNV const&);
+  std::string to_string( BindAccelerationStructureMemoryInfoNV );
   struct BindBufferMemoryInfo;
+  std::ostream& operator<<(std::ostream&, BindBufferMemoryInfo const&);
+  std::string to_string( BindBufferMemoryInfo );
   using BindBufferMemoryInfoKHR = BindBufferMemoryInfo;
   struct BindImageMemoryInfo;
+  std::ostream& operator<<(std::ostream&, BindImageMemoryInfo const&);
+  std::string to_string( BindImageMemoryInfo );
   using BindImageMemoryInfoKHR = BindImageMemoryInfo;
   struct BindSparseInfo;
+  std::ostream& operator<<(std::ostream&, BindSparseInfo const&);
+  std::string to_string( BindSparseInfo );
   struct BufferCopy;
+  std::ostream& operator<<(std::ostream&, BufferCopy const&);
+  std::string to_string( BufferCopy );
   struct BufferCreateInfo;
+  std::ostream& operator<<(std::ostream&, BufferCreateInfo const&);
+  std::string to_string( BufferCreateInfo );
   struct BufferDeviceAddressInfoEXT;
+  std::ostream& operator<<(std::ostream&, BufferDeviceAddressInfoEXT const&);
+  std::string to_string( BufferDeviceAddressInfoEXT );
   struct BufferImageCopy;
+  std::ostream& operator<<(std::ostream&, BufferImageCopy const&);
+  std::string to_string( BufferImageCopy );
   struct BufferMemoryBarrier;
+  std::ostream& operator<<(std::ostream&, BufferMemoryBarrier const&);
+  std::string to_string( BufferMemoryBarrier );
   struct BufferMemoryRequirementsInfo2;
+  std::ostream& operator<<(std::ostream&, BufferMemoryRequirementsInfo2 const&);
+  std::string to_string( BufferMemoryRequirementsInfo2 );
   using BufferMemoryRequirementsInfo2KHR = BufferMemoryRequirementsInfo2;
   struct BufferViewCreateInfo;
+  std::ostream& operator<<(std::ostream&, BufferViewCreateInfo const&);
+  std::string to_string( BufferViewCreateInfo );
   struct CalibratedTimestampInfoEXT;
+  std::ostream& operator<<(std::ostream&, CalibratedTimestampInfoEXT const&);
+  std::string to_string( CalibratedTimestampInfoEXT );
   struct CheckpointDataNV;
+  std::ostream& operator<<(std::ostream&, CheckpointDataNV const&);
+  std::string to_string( CheckpointDataNV );
   struct ClearAttachment;
+  std::ostream& operator<<(std::ostream&, ClearAttachment const&);
+  std::string to_string( ClearAttachment );
   union ClearColorValue;
+  std::ostream& operator<<(std::ostream&, ClearColorValue const&);
+  std::string to_string( ClearColorValue );
   struct ClearDepthStencilValue;
+  std::ostream& operator<<(std::ostream&, ClearDepthStencilValue const&);
+  std::string to_string( ClearDepthStencilValue );
   struct ClearRect;
+  std::ostream& operator<<(std::ostream&, ClearRect const&);
+  std::string to_string( ClearRect );
   struct CmdProcessCommandsInfoNVX;
+  std::ostream& operator<<(std::ostream&, CmdProcessCommandsInfoNVX const&);
+  std::string to_string( CmdProcessCommandsInfoNVX );
   struct CmdReserveSpaceForCommandsInfoNVX;
+  std::ostream& operator<<(std::ostream&, CmdReserveSpaceForCommandsInfoNVX const&);
+  std::string to_string( CmdReserveSpaceForCommandsInfoNVX );
   struct CoarseSampleOrderCustomNV;
+  std::ostream& operator<<(std::ostream&, CoarseSampleOrderCustomNV const&);
+  std::string to_string( CoarseSampleOrderCustomNV );
   struct CommandBufferAllocateInfo;
+  std::ostream& operator<<(std::ostream&, CommandBufferAllocateInfo const&);
+  std::string to_string( CommandBufferAllocateInfo );
   struct CommandBufferBeginInfo;
+  std::ostream& operator<<(std::ostream&, CommandBufferBeginInfo const&);
+  std::string to_string( CommandBufferBeginInfo );
   struct CommandPoolCreateInfo;
+  std::ostream& operator<<(std::ostream&, CommandPoolCreateInfo const&);
+  std::string to_string( CommandPoolCreateInfo );
   struct ComputePipelineCreateInfo;
+  std::ostream& operator<<(std::ostream&, ComputePipelineCreateInfo const&);
+  std::string to_string( ComputePipelineCreateInfo );
   struct ConditionalRenderingBeginInfoEXT;
+  std::ostream& operator<<(std::ostream&, ConditionalRenderingBeginInfoEXT const&);
+  std::string to_string( ConditionalRenderingBeginInfoEXT );
   struct CopyDescriptorSet;
+  std::ostream& operator<<(std::ostream&, CopyDescriptorSet const&);
+  std::string to_string( CopyDescriptorSet );
   struct DebugMarkerMarkerInfoEXT;
+  std::ostream& operator<<(std::ostream&, DebugMarkerMarkerInfoEXT const&);
+  std::string to_string( DebugMarkerMarkerInfoEXT );
   struct DebugMarkerObjectNameInfoEXT;
+  std::ostream& operator<<(std::ostream&, DebugMarkerObjectNameInfoEXT const&);
+  std::string to_string( DebugMarkerObjectNameInfoEXT );
   struct DebugMarkerObjectTagInfoEXT;
+  std::ostream& operator<<(std::ostream&, DebugMarkerObjectTagInfoEXT const&);
+  std::string to_string( DebugMarkerObjectTagInfoEXT );
   struct DebugReportCallbackCreateInfoEXT;
+  std::ostream& operator<<(std::ostream&, DebugReportCallbackCreateInfoEXT const&);
+  std::string to_string( DebugReportCallbackCreateInfoEXT );
   struct DebugUtilsLabelEXT;
+  std::ostream& operator<<(std::ostream&, DebugUtilsLabelEXT const&);
+  std::string to_string( DebugUtilsLabelEXT );
   struct DebugUtilsMessengerCallbackDataEXT;
+  std::ostream& operator<<(std::ostream&, DebugUtilsMessengerCallbackDataEXT const&);
+  std::string to_string( DebugUtilsMessengerCallbackDataEXT );
   struct DebugUtilsMessengerCreateInfoEXT;
+  std::ostream& operator<<(std::ostream&, DebugUtilsMessengerCreateInfoEXT const&);
+  std::string to_string( DebugUtilsMessengerCreateInfoEXT );
   struct DebugUtilsObjectNameInfoEXT;
+  std::ostream& operator<<(std::ostream&, DebugUtilsObjectNameInfoEXT const&);
+  std::string to_string( DebugUtilsObjectNameInfoEXT );
   struct DebugUtilsObjectTagInfoEXT;
+  std::ostream& operator<<(std::ostream&, DebugUtilsObjectTagInfoEXT const&);
+  std::string to_string( DebugUtilsObjectTagInfoEXT );
   struct DescriptorPoolCreateInfo;
+  std::ostream& operator<<(std::ostream&, DescriptorPoolCreateInfo const&);
+  std::string to_string( DescriptorPoolCreateInfo );
   struct DescriptorSetAllocateInfo;
+  std::ostream& operator<<(std::ostream&, DescriptorSetAllocateInfo const&);
+  std::string to_string( DescriptorSetAllocateInfo );
   struct DescriptorSetLayoutCreateInfo;
+  std::ostream& operator<<(std::ostream&, DescriptorSetLayoutCreateInfo const&);
+  std::string to_string( DescriptorSetLayoutCreateInfo );
   struct DescriptorSetLayoutSupport;
+  std::ostream& operator<<(std::ostream&, DescriptorSetLayoutSupport const&);
+  std::string to_string( DescriptorSetLayoutSupport );
   using DescriptorSetLayoutSupportKHR = DescriptorSetLayoutSupport;
   struct DescriptorUpdateTemplateCreateInfo;
+  std::ostream& operator<<(std::ostream&, DescriptorUpdateTemplateCreateInfo const&);
+  std::string to_string( DescriptorUpdateTemplateCreateInfo );
   using DescriptorUpdateTemplateCreateInfoKHR = DescriptorUpdateTemplateCreateInfo;
   struct DeviceCreateInfo;
+  std::ostream& operator<<(std::ostream&, DeviceCreateInfo const&);
+  std::string to_string( DeviceCreateInfo );
   struct DeviceEventInfoEXT;
+  std::ostream& operator<<(std::ostream&, DeviceEventInfoEXT const&);
+  std::string to_string( DeviceEventInfoEXT );
   struct DeviceGeneratedCommandsFeaturesNVX;
+  std::ostream& operator<<(std::ostream&, DeviceGeneratedCommandsFeaturesNVX const&);
+  std::string to_string( DeviceGeneratedCommandsFeaturesNVX );
   struct DeviceGeneratedCommandsLimitsNVX;
+  std::ostream& operator<<(std::ostream&, DeviceGeneratedCommandsLimitsNVX const&);
+  std::string to_string( DeviceGeneratedCommandsLimitsNVX );
   struct DeviceGroupPresentCapabilitiesKHR;
+  std::ostream& operator<<(std::ostream&, DeviceGroupPresentCapabilitiesKHR const&);
+  std::string to_string( DeviceGroupPresentCapabilitiesKHR );
   struct DeviceQueueInfo2;
+  std::ostream& operator<<(std::ostream&, DeviceQueueInfo2 const&);
+  std::string to_string( DeviceQueueInfo2 );
   struct DisplayEventInfoEXT;
+  std::ostream& operator<<(std::ostream&, DisplayEventInfoEXT const&);
+  std::string to_string( DisplayEventInfoEXT );
   struct DisplayModeCreateInfoKHR;
+  std::ostream& operator<<(std::ostream&, DisplayModeCreateInfoKHR const&);
+  std::string to_string( DisplayModeCreateInfoKHR );
   struct DisplayModeProperties2KHR;
+  std::ostream& operator<<(std::ostream&, DisplayModeProperties2KHR const&);
+  std::string to_string( DisplayModeProperties2KHR );
   struct DisplayModePropertiesKHR;
+  std::ostream& operator<<(std::ostream&, DisplayModePropertiesKHR const&);
+  std::string to_string( DisplayModePropertiesKHR );
   struct DisplayPlaneCapabilities2KHR;
+  std::ostream& operator<<(std::ostream&, DisplayPlaneCapabilities2KHR const&);
+  std::string to_string( DisplayPlaneCapabilities2KHR );
   struct DisplayPlaneCapabilitiesKHR;
+  std::ostream& operator<<(std::ostream&, DisplayPlaneCapabilitiesKHR const&);
+  std::string to_string( DisplayPlaneCapabilitiesKHR );
   struct DisplayPlaneInfo2KHR;
+  std::ostream& operator<<(std::ostream&, DisplayPlaneInfo2KHR const&);
+  std::string to_string( DisplayPlaneInfo2KHR );
   struct DisplayPlaneProperties2KHR;
+  std::ostream& operator<<(std::ostream&, DisplayPlaneProperties2KHR const&);
+  std::string to_string( DisplayPlaneProperties2KHR );
   struct DisplayPlanePropertiesKHR;
+  std::ostream& operator<<(std::ostream&, DisplayPlanePropertiesKHR const&);
+  std::string to_string( DisplayPlanePropertiesKHR );
   struct DisplayPowerInfoEXT;
+  std::ostream& operator<<(std::ostream&, DisplayPowerInfoEXT const&);
+  std::string to_string( DisplayPowerInfoEXT );
   struct DisplayProperties2KHR;
+  std::ostream& operator<<(std::ostream&, DisplayProperties2KHR const&);
+  std::string to_string( DisplayProperties2KHR );
   struct DisplayPropertiesKHR;
+  std::ostream& operator<<(std::ostream&, DisplayPropertiesKHR const&);
+  std::string to_string( DisplayPropertiesKHR );
   struct DisplaySurfaceCreateInfoKHR;
+  std::ostream& operator<<(std::ostream&, DisplaySurfaceCreateInfoKHR const&);
+  std::string to_string( DisplaySurfaceCreateInfoKHR );
   struct EventCreateInfo;
+  std::ostream& operator<<(std::ostream&, EventCreateInfo const&);
+  std::string to_string( EventCreateInfo );
   struct ExtensionProperties;
+  std::ostream& operator<<(std::ostream&, ExtensionProperties const&);
+  std::string to_string( ExtensionProperties );
   struct Extent2D;
+  std::ostream& operator<<(std::ostream&, Extent2D const&);
+  std::string to_string( Extent2D );
   struct ExternalBufferProperties;
+  std::ostream& operator<<(std::ostream&, ExternalBufferProperties const&);
+  std::string to_string( ExternalBufferProperties );
   using ExternalBufferPropertiesKHR = ExternalBufferProperties;
   struct ExternalFenceProperties;
+  std::ostream& operator<<(std::ostream&, ExternalFenceProperties const&);
+  std::string to_string( ExternalFenceProperties );
   using ExternalFencePropertiesKHR = ExternalFenceProperties;
   struct ExternalImageFormatPropertiesNV;
+  std::ostream& operator<<(std::ostream&, ExternalImageFormatPropertiesNV const&);
+  std::string to_string( ExternalImageFormatPropertiesNV );
   struct ExternalSemaphoreProperties;
+  std::ostream& operator<<(std::ostream&, ExternalSemaphoreProperties const&);
+  std::string to_string( ExternalSemaphoreProperties );
   using ExternalSemaphorePropertiesKHR = ExternalSemaphoreProperties;
   struct FenceCreateInfo;
+  std::ostream& operator<<(std::ostream&, FenceCreateInfo const&);
+  std::string to_string( FenceCreateInfo );
   struct FenceGetFdInfoKHR;
+  std::ostream& operator<<(std::ostream&, FenceGetFdInfoKHR const&);
+  std::string to_string( FenceGetFdInfoKHR );
 #ifdef VK_USE_PLATFORM_WIN32_KHR
   struct FenceGetWin32HandleInfoKHR;
+  std::ostream& operator<<(std::ostream&, FenceGetWin32HandleInfoKHR const&);
+  std::string to_string( FenceGetWin32HandleInfoKHR );
 #endif /*VK_USE_PLATFORM_WIN32_KHR*/
   struct FormatProperties;
+  std::ostream& operator<<(std::ostream&, FormatProperties const&);
+  std::string to_string( FormatProperties );
   struct FormatProperties2;
+  std::ostream& operator<<(std::ostream&, FormatProperties2 const&);
+  std::string to_string( FormatProperties2 );
   using FormatProperties2KHR = FormatProperties2;
   struct FramebufferCreateInfo;
+  std::ostream& operator<<(std::ostream&, FramebufferCreateInfo const&);
+  std::string to_string( FramebufferCreateInfo );
   struct GraphicsPipelineCreateInfo;
+  std::ostream& operator<<(std::ostream&, GraphicsPipelineCreateInfo const&);
+  std::string to_string( GraphicsPipelineCreateInfo );
   struct HdrMetadataEXT;
+  std::ostream& operator<<(std::ostream&, HdrMetadataEXT const&);
+  std::string to_string( HdrMetadataEXT );
 #ifdef VK_USE_PLATFORM_IOS_MVK
   struct IOSSurfaceCreateInfoMVK;
+  std::ostream& operator<<(std::ostream&, IOSSurfaceCreateInfoMVK const&);
+  std::string to_string( IOSSurfaceCreateInfoMVK );
 #endif /*VK_USE_PLATFORM_IOS_MVK*/
   struct ImageBlit;
+  std::ostream& operator<<(std::ostream&, ImageBlit const&);
+  std::string to_string( ImageBlit );
   struct ImageCopy;
+  std::ostream& operator<<(std::ostream&, ImageCopy const&);
+  std::string to_string( ImageCopy );
   struct ImageCreateInfo;
+  std::ostream& operator<<(std::ostream&, ImageCreateInfo const&);
+  std::string to_string( ImageCreateInfo );
   struct ImageDrmFormatModifierPropertiesEXT;
+  std::ostream& operator<<(std::ostream&, ImageDrmFormatModifierPropertiesEXT const&);
+  std::string to_string( ImageDrmFormatModifierPropertiesEXT );
   struct ImageFormatProperties;
+  std::ostream& operator<<(std::ostream&, ImageFormatProperties const&);
+  std::string to_string( ImageFormatProperties );
   struct ImageFormatProperties2;
+  std::ostream& operator<<(std::ostream&, ImageFormatProperties2 const&);
+  std::string to_string( ImageFormatProperties2 );
   using ImageFormatProperties2KHR = ImageFormatProperties2;
   struct ImageMemoryBarrier;
+  std::ostream& operator<<(std::ostream&, ImageMemoryBarrier const&);
+  std::string to_string( ImageMemoryBarrier );
   struct ImageMemoryRequirementsInfo2;
+  std::ostream& operator<<(std::ostream&, ImageMemoryRequirementsInfo2 const&);
+  std::string to_string( ImageMemoryRequirementsInfo2 );
   using ImageMemoryRequirementsInfo2KHR = ImageMemoryRequirementsInfo2;
 #ifdef VK_USE_PLATFORM_FUCHSIA
   struct ImagePipeSurfaceCreateInfoFUCHSIA;
+  std::ostream& operator<<(std::ostream&, ImagePipeSurfaceCreateInfoFUCHSIA const&);
+  std::string to_string( ImagePipeSurfaceCreateInfoFUCHSIA );
 #endif /*VK_USE_PLATFORM_FUCHSIA*/
   struct ImageResolve;
+  std::ostream& operator<<(std::ostream&, ImageResolve const&);
+  std::string to_string( ImageResolve );
   struct ImageSparseMemoryRequirementsInfo2;
+  std::ostream& operator<<(std::ostream&, ImageSparseMemoryRequirementsInfo2 const&);
+  std::string to_string( ImageSparseMemoryRequirementsInfo2 );
   using ImageSparseMemoryRequirementsInfo2KHR = ImageSparseMemoryRequirementsInfo2;
   struct ImageSubresource;
+  std::ostream& operator<<(std::ostream&, ImageSubresource const&);
+  std::string to_string( ImageSubresource );
   struct ImageSubresourceRange;
+  std::ostream& operator<<(std::ostream&, ImageSubresourceRange const&);
+  std::string to_string( ImageSubresourceRange );
   struct ImageViewCreateInfo;
+  std::ostream& operator<<(std::ostream&, ImageViewCreateInfo const&);
+  std::string to_string( ImageViewCreateInfo );
   struct ImportFenceFdInfoKHR;
+  std::ostream& operator<<(std::ostream&, ImportFenceFdInfoKHR const&);
+  std::string to_string( ImportFenceFdInfoKHR );
 #ifdef VK_USE_PLATFORM_WIN32_KHR
   struct ImportFenceWin32HandleInfoKHR;
+  std::ostream& operator<<(std::ostream&, ImportFenceWin32HandleInfoKHR const&);
+  std::string to_string( ImportFenceWin32HandleInfoKHR );
 #endif /*VK_USE_PLATFORM_WIN32_KHR*/
   struct ImportSemaphoreFdInfoKHR;
+  std::ostream& operator<<(std::ostream&, ImportSemaphoreFdInfoKHR const&);
+  std::string to_string( ImportSemaphoreFdInfoKHR );
 #ifdef VK_USE_PLATFORM_WIN32_KHR
   struct ImportSemaphoreWin32HandleInfoKHR;
+  std::ostream& operator<<(std::ostream&, ImportSemaphoreWin32HandleInfoKHR const&);
+  std::string to_string( ImportSemaphoreWin32HandleInfoKHR );
 #endif /*VK_USE_PLATFORM_WIN32_KHR*/
   struct IndirectCommandsLayoutCreateInfoNVX;
+  std::ostream& operator<<(std::ostream&, IndirectCommandsLayoutCreateInfoNVX const&);
+  std::string to_string( IndirectCommandsLayoutCreateInfoNVX );
   struct InstanceCreateInfo;
+  std::ostream& operator<<(std::ostream&, InstanceCreateInfo const&);
+  std::string to_string( InstanceCreateInfo );
   struct LayerProperties;
+  std::ostream& operator<<(std::ostream&, LayerProperties const&);
+  std::string to_string( LayerProperties );
 #ifdef VK_USE_PLATFORM_MACOS_MVK
   struct MacOSSurfaceCreateInfoMVK;
+  std::ostream& operator<<(std::ostream&, MacOSSurfaceCreateInfoMVK const&);
+  std::string to_string( MacOSSurfaceCreateInfoMVK );
 #endif /*VK_USE_PLATFORM_MACOS_MVK*/
   struct MappedMemoryRange;
+  std::ostream& operator<<(std::ostream&, MappedMemoryRange const&);
+  std::string to_string( MappedMemoryRange );
   struct MemoryAllocateInfo;
+  std::ostream& operator<<(std::ostream&, MemoryAllocateInfo const&);
+  std::string to_string( MemoryAllocateInfo );
   struct MemoryBarrier;
+  std::ostream& operator<<(std::ostream&, MemoryBarrier const&);
+  std::string to_string( MemoryBarrier );
   struct MemoryFdPropertiesKHR;
+  std::ostream& operator<<(std::ostream&, MemoryFdPropertiesKHR const&);
+  std::string to_string( MemoryFdPropertiesKHR );
 #ifdef VK_USE_PLATFORM_ANDROID_KHR
   struct MemoryGetAndroidHardwareBufferInfoANDROID;
+  std::ostream& operator<<(std::ostream&, MemoryGetAndroidHardwareBufferInfoANDROID const&);
+  std::string to_string( MemoryGetAndroidHardwareBufferInfoANDROID );
 #endif /*VK_USE_PLATFORM_ANDROID_KHR*/
   struct MemoryGetFdInfoKHR;
+  std::ostream& operator<<(std::ostream&, MemoryGetFdInfoKHR const&);
+  std::string to_string( MemoryGetFdInfoKHR );
 #ifdef VK_USE_PLATFORM_WIN32_KHR
   struct MemoryGetWin32HandleInfoKHR;
+  std::ostream& operator<<(std::ostream&, MemoryGetWin32HandleInfoKHR const&);
+  std::string to_string( MemoryGetWin32HandleInfoKHR );
 #endif /*VK_USE_PLATFORM_WIN32_KHR*/
   struct MemoryHostPointerPropertiesEXT;
+  std::ostream& operator<<(std::ostream&, MemoryHostPointerPropertiesEXT const&);
+  std::string to_string( MemoryHostPointerPropertiesEXT );
   struct MemoryRequirements;
+  std::ostream& operator<<(std::ostream&, MemoryRequirements const&);
+  std::string to_string( MemoryRequirements );
   struct MemoryRequirements2;
+  std::ostream& operator<<(std::ostream&, MemoryRequirements2 const&);
+  std::string to_string( MemoryRequirements2 );
   using MemoryRequirements2KHR = MemoryRequirements2;
 #ifdef VK_USE_PLATFORM_WIN32_KHR
   struct MemoryWin32HandlePropertiesKHR;
+  std::ostream& operator<<(std::ostream&, MemoryWin32HandlePropertiesKHR const&);
+  std::string to_string( MemoryWin32HandlePropertiesKHR );
 #endif /*VK_USE_PLATFORM_WIN32_KHR*/
   struct MultisamplePropertiesEXT;
+  std::ostream& operator<<(std::ostream&, MultisamplePropertiesEXT const&);
+  std::string to_string( MultisamplePropertiesEXT );
   struct ObjectTableCreateInfoNVX;
+  std::ostream& operator<<(std::ostream&, ObjectTableCreateInfoNVX const&);
+  std::string to_string( ObjectTableCreateInfoNVX );
   struct ObjectTableEntryNVX;
+  std::ostream& operator<<(std::ostream&, ObjectTableEntryNVX const&);
+  std::string to_string( ObjectTableEntryNVX );
   struct PastPresentationTimingGOOGLE;
+  std::ostream& operator<<(std::ostream&, PastPresentationTimingGOOGLE const&);
+  std::string to_string( PastPresentationTimingGOOGLE );
   struct PhysicalDeviceExternalBufferInfo;
+  std::ostream& operator<<(std::ostream&, PhysicalDeviceExternalBufferInfo const&);
+  std::string to_string( PhysicalDeviceExternalBufferInfo );
   using PhysicalDeviceExternalBufferInfoKHR = PhysicalDeviceExternalBufferInfo;
   struct PhysicalDeviceExternalFenceInfo;
+  std::ostream& operator<<(std::ostream&, PhysicalDeviceExternalFenceInfo const&);
+  std::string to_string( PhysicalDeviceExternalFenceInfo );
   using PhysicalDeviceExternalFenceInfoKHR = PhysicalDeviceExternalFenceInfo;
   struct PhysicalDeviceExternalSemaphoreInfo;
+  std::ostream& operator<<(std::ostream&, PhysicalDeviceExternalSemaphoreInfo const&);
+  std::string to_string( PhysicalDeviceExternalSemaphoreInfo );
   using PhysicalDeviceExternalSemaphoreInfoKHR = PhysicalDeviceExternalSemaphoreInfo;
   struct PhysicalDeviceFeatures;
+  std::ostream& operator<<(std::ostream&, PhysicalDeviceFeatures const&);
+  std::string to_string( PhysicalDeviceFeatures );
   struct PhysicalDeviceFeatures2;
+  std::ostream& operator<<(std::ostream&, PhysicalDeviceFeatures2 const&);
+  std::string to_string( PhysicalDeviceFeatures2 );
   using PhysicalDeviceFeatures2KHR = PhysicalDeviceFeatures2;
   struct PhysicalDeviceGroupProperties;
+  std::ostream& operator<<(std::ostream&, PhysicalDeviceGroupProperties const&);
+  std::string to_string( PhysicalDeviceGroupProperties );
   using PhysicalDeviceGroupPropertiesKHR = PhysicalDeviceGroupProperties;
   struct PhysicalDeviceImageFormatInfo2;
+  std::ostream& operator<<(std::ostream&, PhysicalDeviceImageFormatInfo2 const&);
+  std::string to_string( PhysicalDeviceImageFormatInfo2 );
   using PhysicalDeviceImageFormatInfo2KHR = PhysicalDeviceImageFormatInfo2;
   struct PhysicalDeviceMemoryProperties;
+  std::ostream& operator<<(std::ostream&, PhysicalDeviceMemoryProperties const&);
+  std::string to_string( PhysicalDeviceMemoryProperties );
   struct PhysicalDeviceMemoryProperties2;
+  std::ostream& operator<<(std::ostream&, PhysicalDeviceMemoryProperties2 const&);
+  std::string to_string( PhysicalDeviceMemoryProperties2 );
   using PhysicalDeviceMemoryProperties2KHR = PhysicalDeviceMemoryProperties2;
   struct PhysicalDeviceProperties;
+  std::ostream& operator<<(std::ostream&, PhysicalDeviceProperties const&);
+  std::string to_string( PhysicalDeviceProperties );
   struct PhysicalDeviceProperties2;
+  std::ostream& operator<<(std::ostream&, PhysicalDeviceProperties2 const&);
+  std::string to_string( PhysicalDeviceProperties2 );
   using PhysicalDeviceProperties2KHR = PhysicalDeviceProperties2;
   struct PhysicalDeviceSparseImageFormatInfo2;
+  std::ostream& operator<<(std::ostream&, PhysicalDeviceSparseImageFormatInfo2 const&);
+  std::string to_string( PhysicalDeviceSparseImageFormatInfo2 );
   using PhysicalDeviceSparseImageFormatInfo2KHR = PhysicalDeviceSparseImageFormatInfo2;
   struct PhysicalDeviceSurfaceInfo2KHR;
+  std::ostream& operator<<(std::ostream&, PhysicalDeviceSurfaceInfo2KHR const&);
+  std::string to_string( PhysicalDeviceSurfaceInfo2KHR );
   struct PipelineCacheCreateInfo;
+  std::ostream& operator<<(std::ostream&, PipelineCacheCreateInfo const&);
+  std::string to_string( PipelineCacheCreateInfo );
   struct PipelineLayoutCreateInfo;
+  std::ostream& operator<<(std::ostream&, PipelineLayoutCreateInfo const&);
+  std::string to_string( PipelineLayoutCreateInfo );
   struct PresentInfoKHR;
+  std::ostream& operator<<(std::ostream&, PresentInfoKHR const&);
+  std::string to_string( PresentInfoKHR );
   struct QueryPoolCreateInfo;
+  std::ostream& operator<<(std::ostream&, QueryPoolCreateInfo const&);
+  std::string to_string( QueryPoolCreateInfo );
   struct QueueFamilyProperties;
+  std::ostream& operator<<(std::ostream&, QueueFamilyProperties const&);
+  std::string to_string( QueueFamilyProperties );
   struct QueueFamilyProperties2;
+  std::ostream& operator<<(std::ostream&, QueueFamilyProperties2 const&);
+  std::string to_string( QueueFamilyProperties2 );
   using QueueFamilyProperties2KHR = QueueFamilyProperties2;
   struct RayTracingPipelineCreateInfoNV;
+  std::ostream& operator<<(std::ostream&, RayTracingPipelineCreateInfoNV const&);
+  std::string to_string( RayTracingPipelineCreateInfoNV );
   struct Rect2D;
+  std::ostream& operator<<(std::ostream&, Rect2D const&);
+  std::string to_string( Rect2D );
   struct RefreshCycleDurationGOOGLE;
+  std::ostream& operator<<(std::ostream&, RefreshCycleDurationGOOGLE const&);
+  std::string to_string( RefreshCycleDurationGOOGLE );
   struct RenderPassBeginInfo;
+  std::ostream& operator<<(std::ostream&, RenderPassBeginInfo const&);
+  std::string to_string( RenderPassBeginInfo );
   struct RenderPassCreateInfo;
+  std::ostream& operator<<(std::ostream&, RenderPassCreateInfo const&);
+  std::string to_string( RenderPassCreateInfo );
   struct RenderPassCreateInfo2KHR;
+  std::ostream& operator<<(std::ostream&, RenderPassCreateInfo2KHR const&);
+  std::string to_string( RenderPassCreateInfo2KHR );
   struct SampleLocationsInfoEXT;
+  std::ostream& operator<<(std::ostream&, SampleLocationsInfoEXT const&);
+  std::string to_string( SampleLocationsInfoEXT );
   struct SamplerCreateInfo;
+  std::ostream& operator<<(std::ostream&, SamplerCreateInfo const&);
+  std::string to_string( SamplerCreateInfo );
   struct SamplerYcbcrConversionCreateInfo;
+  std::ostream& operator<<(std::ostream&, SamplerYcbcrConversionCreateInfo const&);
+  std::string to_string( SamplerYcbcrConversionCreateInfo );
   using SamplerYcbcrConversionCreateInfoKHR = SamplerYcbcrConversionCreateInfo;
   struct SemaphoreCreateInfo;
+  std::ostream& operator<<(std::ostream&, SemaphoreCreateInfo const&);
+  std::string to_string( SemaphoreCreateInfo );
   struct SemaphoreGetFdInfoKHR;
+  std::ostream& operator<<(std::ostream&, SemaphoreGetFdInfoKHR const&);
+  std::string to_string( SemaphoreGetFdInfoKHR );
 #ifdef VK_USE_PLATFORM_WIN32_KHR
   struct SemaphoreGetWin32HandleInfoKHR;
+  std::ostream& operator<<(std::ostream&, SemaphoreGetWin32HandleInfoKHR const&);
+  std::string to_string( SemaphoreGetWin32HandleInfoKHR );
 #endif /*VK_USE_PLATFORM_WIN32_KHR*/
   struct ShaderModuleCreateInfo;
+  std::ostream& operator<<(std::ostream&, ShaderModuleCreateInfo const&);
+  std::string to_string( ShaderModuleCreateInfo );
   struct ShadingRatePaletteNV;
+  std::ostream& operator<<(std::ostream&, ShadingRatePaletteNV const&);
+  std::string to_string( ShadingRatePaletteNV );
   struct SparseImageFormatProperties;
+  std::ostream& operator<<(std::ostream&, SparseImageFormatProperties const&);
+  std::string to_string( SparseImageFormatProperties );
   struct SparseImageFormatProperties2;
+  std::ostream& operator<<(std::ostream&, SparseImageFormatProperties2 const&);
+  std::string to_string( SparseImageFormatProperties2 );
   using SparseImageFormatProperties2KHR = SparseImageFormatProperties2;
   struct SparseImageMemoryRequirements;
+  std::ostream& operator<<(std::ostream&, SparseImageMemoryRequirements const&);
+  std::string to_string( SparseImageMemoryRequirements );
   struct SparseImageMemoryRequirements2;
+  std::ostream& operator<<(std::ostream&, SparseImageMemoryRequirements2 const&);
+  std::string to_string( SparseImageMemoryRequirements2 );
   using SparseImageMemoryRequirements2KHR = SparseImageMemoryRequirements2;
   struct SubmitInfo;
+  std::ostream& operator<<(std::ostream&, SubmitInfo const&);
+  std::string to_string( SubmitInfo );
   struct SubpassBeginInfoKHR;
+  std::ostream& operator<<(std::ostream&, SubpassBeginInfoKHR const&);
+  std::string to_string( SubpassBeginInfoKHR );
   struct SubpassEndInfoKHR;
+  std::ostream& operator<<(std::ostream&, SubpassEndInfoKHR const&);
+  std::string to_string( SubpassEndInfoKHR );
   struct SubresourceLayout;
+  std::ostream& operator<<(std::ostream&, SubresourceLayout const&);
+  std::string to_string( SubresourceLayout );
   struct SurfaceCapabilities2EXT;
+  std::ostream& operator<<(std::ostream&, SurfaceCapabilities2EXT const&);
+  std::string to_string( SurfaceCapabilities2EXT );
   struct SurfaceCapabilities2KHR;
+  std::ostream& operator<<(std::ostream&, SurfaceCapabilities2KHR const&);
+  std::string to_string( SurfaceCapabilities2KHR );
   struct SurfaceCapabilitiesKHR;
+  std::ostream& operator<<(std::ostream&, SurfaceCapabilitiesKHR const&);
+  std::string to_string( SurfaceCapabilitiesKHR );
   struct SurfaceFormat2KHR;
+  std::ostream& operator<<(std::ostream&, SurfaceFormat2KHR const&);
+  std::string to_string( SurfaceFormat2KHR );
   struct SurfaceFormatKHR;
+  std::ostream& operator<<(std::ostream&, SurfaceFormatKHR const&);
+  std::string to_string( SurfaceFormatKHR );
   struct SwapchainCreateInfoKHR;
+  std::ostream& operator<<(std::ostream&, SwapchainCreateInfoKHR const&);
+  std::string to_string( SwapchainCreateInfoKHR );
   struct ValidationCacheCreateInfoEXT;
+  std::ostream& operator<<(std::ostream&, ValidationCacheCreateInfoEXT const&);
+  std::string to_string( ValidationCacheCreateInfoEXT );
 #ifdef VK_USE_PLATFORM_VI_NN
   struct ViSurfaceCreateInfoNN;
+  std::ostream& operator<<(std::ostream&, ViSurfaceCreateInfoNN const&);
+  std::string to_string( ViSurfaceCreateInfoNN );
 #endif /*VK_USE_PLATFORM_VI_NN*/
   struct Viewport;
+  std::ostream& operator<<(std::ostream&, Viewport const&);
+  std::string to_string( Viewport );
   struct ViewportWScalingNV;
+  std::ostream& operator<<(std::ostream&, ViewportWScalingNV const&);
+  std::string to_string( ViewportWScalingNV );
 #ifdef VK_USE_PLATFORM_WAYLAND_KHR
   struct WaylandSurfaceCreateInfoKHR;
+  std::ostream& operator<<(std::ostream&, WaylandSurfaceCreateInfoKHR const&);
+  std::string to_string( WaylandSurfaceCreateInfoKHR );
 #endif /*VK_USE_PLATFORM_WAYLAND_KHR*/
 #ifdef VK_USE_PLATFORM_WIN32_KHR
   struct Win32SurfaceCreateInfoKHR;
+  std::ostream& operator<<(std::ostream&, Win32SurfaceCreateInfoKHR const&);
+  std::string to_string( Win32SurfaceCreateInfoKHR );
 #endif /*VK_USE_PLATFORM_WIN32_KHR*/
   struct WriteDescriptorSet;
+  std::ostream& operator<<(std::ostream&, WriteDescriptorSet const&);
+  std::string to_string( WriteDescriptorSet );
 #ifdef VK_USE_PLATFORM_XCB_KHR
   struct XcbSurfaceCreateInfoKHR;
+  std::ostream& operator<<(std::ostream&, XcbSurfaceCreateInfoKHR const&);
+  std::string to_string( XcbSurfaceCreateInfoKHR );
 #endif /*VK_USE_PLATFORM_XCB_KHR*/
 #ifdef VK_USE_PLATFORM_XLIB_KHR
   struct XlibSurfaceCreateInfoKHR;
+  std::ostream& operator<<(std::ostream&, XlibSurfaceCreateInfoKHR const&);
+  std::string to_string( XlibSurfaceCreateInfoKHR );
 #endif /*VK_USE_PLATFORM_XLIB_KHR*/
 
   class SurfaceKHR
@@ -15974,6 +18089,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkGeometryTrianglesNV*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, GeometryTrianglesNV const& );
 
     bool operator==( GeometryTrianglesNV const& rhs ) const
     {
@@ -16015,6 +18132,33 @@ namespace VULKAN_HPP_NAMESPACE
     DeviceSize transformOffset;
   };
   static_assert( sizeof( GeometryTrianglesNV ) == sizeof( VkGeometryTrianglesNV ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, GeometryTrianglesNV const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "vertexData : " << value.vertexData << std::endl;
+    stream << "vertexOffset : " << value.vertexOffset << std::endl;
+    stream << "vertexCount : " << value.vertexCount << std::endl;
+    stream << "vertexStride : " << value.vertexStride << std::endl;
+    stream << "vertexFormat : " << value.vertexFormat << std::endl;
+    stream << "indexData : " << value.indexData << std::endl;
+    stream << "indexOffset : " << value.indexOffset << std::endl;
+    stream << "indexCount : " << value.indexCount << std::endl;
+    stream << "indexType : " << value.indexType << std::endl;
+    stream << "transformData : " << value.transformData << std::endl;
+    stream << "transformOffset : " << value.transformOffset << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( GeometryTrianglesNV value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct GeometryAABBNV
   {
@@ -16078,6 +18222,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkGeometryAABBNV*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, GeometryAABBNV const& );
 
     bool operator==( GeometryAABBNV const& rhs ) const
     {
@@ -16105,6 +18251,26 @@ namespace VULKAN_HPP_NAMESPACE
     DeviceSize offset;
   };
   static_assert( sizeof( GeometryAABBNV ) == sizeof( VkGeometryAABBNV ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, GeometryAABBNV const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "aabbData : " << value.aabbData << std::endl;
+    stream << "numAABBs : " << value.numAABBs << std::endl;
+    stream << "stride : " << value.stride << std::endl;
+    stream << "offset : " << value.offset << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( GeometryAABBNV value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct GeometryDataNV
   {
@@ -16146,6 +18312,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkGeometryDataNV*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, GeometryDataNV const& );
 
     bool operator==( GeometryDataNV const& rhs ) const
     {
@@ -16162,6 +18330,22 @@ namespace VULKAN_HPP_NAMESPACE
     GeometryAABBNV aabbs;
   };
   static_assert( sizeof( GeometryDataNV ) == sizeof( VkGeometryDataNV ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, GeometryDataNV const& value )
+  {
+    stream << "triangles : " << value.triangles << std::endl;
+    stream << "aabbs : " << value.aabbs << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( GeometryDataNV value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct GeometryNV
   {
@@ -16217,6 +18401,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkGeometryNV*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, GeometryNV const& );
 
     bool operator==( GeometryNV const& rhs ) const
     {
@@ -16242,6 +18428,25 @@ namespace VULKAN_HPP_NAMESPACE
     GeometryFlagsNV flags;
   };
   static_assert( sizeof( GeometryNV ) == sizeof( VkGeometryNV ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, GeometryNV const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "geometryType : " << value.geometryType << std::endl;
+    stream << "geometry : " << value.geometry << std::endl;
+    stream << "flags : " << value.flags << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( GeometryNV value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct AccelerationStructureInfoNV
   {
@@ -16313,6 +18518,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkAccelerationStructureInfoNV*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, AccelerationStructureInfoNV const& );
 
     bool operator==( AccelerationStructureInfoNV const& rhs ) const
     {
@@ -16342,6 +18549,27 @@ namespace VULKAN_HPP_NAMESPACE
     const GeometryNV* pGeometries;
   };
   static_assert( sizeof( AccelerationStructureInfoNV ) == sizeof( VkAccelerationStructureInfoNV ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, AccelerationStructureInfoNV const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "type : " << value.type << std::endl;
+    stream << "flags : " << value.flags << std::endl;
+    stream << "instanceCount : " << value.instanceCount << std::endl;
+    stream << "geometryCount : " << value.geometryCount << std::endl;
+    stream << "pGeometries : " << value.pGeometries << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( AccelerationStructureInfoNV value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct AccelerationStructureCreateInfoNV
   {
@@ -16389,6 +18617,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkAccelerationStructureCreateInfoNV*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, AccelerationStructureCreateInfoNV const& );
 
     bool operator==( AccelerationStructureCreateInfoNV const& rhs ) const
     {
@@ -16412,6 +18642,24 @@ namespace VULKAN_HPP_NAMESPACE
     AccelerationStructureInfoNV info;
   };
   static_assert( sizeof( AccelerationStructureCreateInfoNV ) == sizeof( VkAccelerationStructureCreateInfoNV ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, AccelerationStructureCreateInfoNV const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "compactedSize : " << value.compactedSize << std::endl;
+    stream << "info : " << value.info << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( AccelerationStructureCreateInfoNV value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct AccelerationStructureMemoryRequirementsInfoNV
   {
@@ -16459,6 +18707,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkAccelerationStructureMemoryRequirementsInfoNV*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, AccelerationStructureMemoryRequirementsInfoNV const& );
 
     bool operator==( AccelerationStructureMemoryRequirementsInfoNV const& rhs ) const
     {
@@ -16482,6 +18732,24 @@ namespace VULKAN_HPP_NAMESPACE
     AccelerationStructureNV accelerationStructure;
   };
   static_assert( sizeof( AccelerationStructureMemoryRequirementsInfoNV ) == sizeof( VkAccelerationStructureMemoryRequirementsInfoNV ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, AccelerationStructureMemoryRequirementsInfoNV const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "type : " << value.type << std::endl;
+    stream << "accelerationStructure : " << value.accelerationStructure << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( AccelerationStructureMemoryRequirementsInfoNV value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct AcquireNextImageInfoKHR
   {
@@ -16553,6 +18821,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkAcquireNextImageInfoKHR*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, AcquireNextImageInfoKHR const& );
 
     bool operator==( AcquireNextImageInfoKHR const& rhs ) const
     {
@@ -16582,6 +18852,27 @@ namespace VULKAN_HPP_NAMESPACE
     uint32_t deviceMask;
   };
   static_assert( sizeof( AcquireNextImageInfoKHR ) == sizeof( VkAcquireNextImageInfoKHR ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, AcquireNextImageInfoKHR const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "swapchain : " << value.swapchain << std::endl;
+    stream << "timeout : " << value.timeout << std::endl;
+    stream << "semaphore : " << value.semaphore << std::endl;
+    stream << "fence : " << value.fence << std::endl;
+    stream << "deviceMask : " << value.deviceMask << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( AcquireNextImageInfoKHR value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct AllocationCallbacks
   {
@@ -16655,6 +18946,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkAllocationCallbacks*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, AllocationCallbacks const& );
 
     bool operator==( AllocationCallbacks const& rhs ) const
     {
@@ -16679,6 +18972,26 @@ namespace VULKAN_HPP_NAMESPACE
     PFN_vkInternalFreeNotification pfnInternalFree;
   };
   static_assert( sizeof( AllocationCallbacks ) == sizeof( VkAllocationCallbacks ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, AllocationCallbacks const& value )
+  {
+    stream << "pUserData : " << value.pUserData << std::endl;
+    stream << "pfnAllocation : " << value.pfnAllocation << std::endl;
+    stream << "pfnReallocation : " << value.pfnReallocation << std::endl;
+    stream << "pfnFree : " << value.pfnFree << std::endl;
+    stream << "pfnInternalAllocation : " << value.pfnInternalAllocation << std::endl;
+    stream << "pfnInternalFree : " << value.pfnInternalFree << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( AllocationCallbacks value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct ComponentMapping
   {
@@ -16736,6 +19049,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkComponentMapping*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, ComponentMapping const& );
 
     bool operator==( ComponentMapping const& rhs ) const
     {
@@ -16756,6 +19071,24 @@ namespace VULKAN_HPP_NAMESPACE
     ComponentSwizzle a;
   };
   static_assert( sizeof( ComponentMapping ) == sizeof( VkComponentMapping ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, ComponentMapping const& value )
+  {
+    stream << "r : " << value.r << std::endl;
+    stream << "g : " << value.g << std::endl;
+    stream << "b : " << value.b << std::endl;
+    stream << "a : " << value.a << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( ComponentMapping value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
 #ifdef VK_USE_PLATFORM_ANDROID_KHR
   struct AndroidHardwareBufferFormatPropertiesANDROID
@@ -16769,6 +19102,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkAndroidHardwareBufferFormatPropertiesANDROID*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, AndroidHardwareBufferFormatPropertiesANDROID const& );
 
     bool operator==( AndroidHardwareBufferFormatPropertiesANDROID const& rhs ) const
     {
@@ -16804,6 +19139,30 @@ namespace VULKAN_HPP_NAMESPACE
     ChromaLocation suggestedYChromaOffset;
   };
   static_assert( sizeof( AndroidHardwareBufferFormatPropertiesANDROID ) == sizeof( VkAndroidHardwareBufferFormatPropertiesANDROID ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, AndroidHardwareBufferFormatPropertiesANDROID const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "format : " << value.format << std::endl;
+    stream << "externalFormat : " << value.externalFormat << std::endl;
+    stream << "formatFeatures : " << value.formatFeatures << std::endl;
+    stream << "samplerYcbcrConversionComponents : " << value.samplerYcbcrConversionComponents << std::endl;
+    stream << "suggestedYcbcrModel : " << value.suggestedYcbcrModel << std::endl;
+    stream << "suggestedYcbcrRange : " << value.suggestedYcbcrRange << std::endl;
+    stream << "suggestedXChromaOffset : " << value.suggestedXChromaOffset << std::endl;
+    stream << "suggestedYChromaOffset : " << value.suggestedYChromaOffset << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( AndroidHardwareBufferFormatPropertiesANDROID value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 #endif /*VK_USE_PLATFORM_ANDROID_KHR*/
 
 #ifdef VK_USE_PLATFORM_ANDROID_KHR
@@ -16818,6 +19177,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkAndroidHardwareBufferPropertiesANDROID*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, AndroidHardwareBufferPropertiesANDROID const& );
 
     bool operator==( AndroidHardwareBufferPropertiesANDROID const& rhs ) const
     {
@@ -16841,6 +19202,24 @@ namespace VULKAN_HPP_NAMESPACE
     uint32_t memoryTypeBits;
   };
   static_assert( sizeof( AndroidHardwareBufferPropertiesANDROID ) == sizeof( VkAndroidHardwareBufferPropertiesANDROID ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, AndroidHardwareBufferPropertiesANDROID const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "allocationSize : " << value.allocationSize << std::endl;
+    stream << "memoryTypeBits : " << value.memoryTypeBits << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( AndroidHardwareBufferPropertiesANDROID value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 #endif /*VK_USE_PLATFORM_ANDROID_KHR*/
 
 #ifdef VK_USE_PLATFORM_ANDROID_KHR
@@ -16855,6 +19234,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkAndroidHardwareBufferUsageANDROID*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, AndroidHardwareBufferUsageANDROID const& );
 
     bool operator==( AndroidHardwareBufferUsageANDROID const& rhs ) const
     {
@@ -16876,6 +19257,23 @@ namespace VULKAN_HPP_NAMESPACE
     uint64_t androidHardwareBufferUsage;
   };
   static_assert( sizeof( AndroidHardwareBufferUsageANDROID ) == sizeof( VkAndroidHardwareBufferUsageANDROID ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, AndroidHardwareBufferUsageANDROID const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "androidHardwareBufferUsage : " << value.androidHardwareBufferUsage << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( AndroidHardwareBufferUsageANDROID value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 #endif /*VK_USE_PLATFORM_ANDROID_KHR*/
 
 #ifdef VK_USE_PLATFORM_ANDROID_KHR
@@ -16925,6 +19323,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkAndroidSurfaceCreateInfoKHR*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, AndroidSurfaceCreateInfoKHR const& );
 
     bool operator==( AndroidSurfaceCreateInfoKHR const& rhs ) const
     {
@@ -16948,6 +19348,24 @@ namespace VULKAN_HPP_NAMESPACE
     struct ANativeWindow* window;
   };
   static_assert( sizeof( AndroidSurfaceCreateInfoKHR ) == sizeof( VkAndroidSurfaceCreateInfoKHR ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, AndroidSurfaceCreateInfoKHR const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "flags : " << value.flags << std::endl;
+    stream << "window : " << value.window << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( AndroidSurfaceCreateInfoKHR value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 #endif /*VK_USE_PLATFORM_ANDROID_KHR*/
 
   struct ApplicationInfo
@@ -17020,6 +19438,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkApplicationInfo*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, ApplicationInfo const& );
 
     bool operator==( ApplicationInfo const& rhs ) const
     {
@@ -17049,6 +19469,27 @@ namespace VULKAN_HPP_NAMESPACE
     uint32_t apiVersion;
   };
   static_assert( sizeof( ApplicationInfo ) == sizeof( VkApplicationInfo ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, ApplicationInfo const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "pApplicationName : " << value.pApplicationName << std::endl;
+    stream << "applicationVersion : " << value.applicationVersion << std::endl;
+    stream << "pEngineName : " << value.pEngineName << std::endl;
+    stream << "engineVersion : " << value.engineVersion << std::endl;
+    stream << "apiVersion : " << value.apiVersion << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( ApplicationInfo value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct AttachmentDescription
   {
@@ -17146,6 +19587,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkAttachmentDescription*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, AttachmentDescription const& );
 
     bool operator==( AttachmentDescription const& rhs ) const
     {
@@ -17176,6 +19619,29 @@ namespace VULKAN_HPP_NAMESPACE
     ImageLayout finalLayout;
   };
   static_assert( sizeof( AttachmentDescription ) == sizeof( VkAttachmentDescription ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, AttachmentDescription const& value )
+  {
+    stream << "flags : " << value.flags << std::endl;
+    stream << "format : " << value.format << std::endl;
+    stream << "samples : " << value.samples << std::endl;
+    stream << "loadOp : " << value.loadOp << std::endl;
+    stream << "storeOp : " << value.storeOp << std::endl;
+    stream << "stencilLoadOp : " << value.stencilLoadOp << std::endl;
+    stream << "stencilStoreOp : " << value.stencilStoreOp << std::endl;
+    stream << "initialLayout : " << value.initialLayout << std::endl;
+    stream << "finalLayout : " << value.finalLayout << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( AttachmentDescription value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct AttachmentDescription2KHR
   {
@@ -17279,6 +19745,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkAttachmentDescription2KHR*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, AttachmentDescription2KHR const& );
 
     bool operator==( AttachmentDescription2KHR const& rhs ) const
     {
@@ -17316,6 +19784,31 @@ namespace VULKAN_HPP_NAMESPACE
     ImageLayout finalLayout;
   };
   static_assert( sizeof( AttachmentDescription2KHR ) == sizeof( VkAttachmentDescription2KHR ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, AttachmentDescription2KHR const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "flags : " << value.flags << std::endl;
+    stream << "format : " << value.format << std::endl;
+    stream << "samples : " << value.samples << std::endl;
+    stream << "loadOp : " << value.loadOp << std::endl;
+    stream << "storeOp : " << value.storeOp << std::endl;
+    stream << "stencilLoadOp : " << value.stencilLoadOp << std::endl;
+    stream << "stencilStoreOp : " << value.stencilStoreOp << std::endl;
+    stream << "initialLayout : " << value.initialLayout << std::endl;
+    stream << "finalLayout : " << value.finalLayout << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( AttachmentDescription2KHR value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct AttachmentReference
   {
@@ -17357,6 +19850,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkAttachmentReference*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, AttachmentReference const& );
 
     bool operator==( AttachmentReference const& rhs ) const
     {
@@ -17373,6 +19868,22 @@ namespace VULKAN_HPP_NAMESPACE
     ImageLayout layout;
   };
   static_assert( sizeof( AttachmentReference ) == sizeof( VkAttachmentReference ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, AttachmentReference const& value )
+  {
+    stream << "attachment : " << value.attachment << std::endl;
+    stream << "layout : " << value.layout << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( AttachmentReference value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct AttachmentReference2KHR
   {
@@ -17428,6 +19939,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkAttachmentReference2KHR*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, AttachmentReference2KHR const& );
 
     bool operator==( AttachmentReference2KHR const& rhs ) const
     {
@@ -17453,6 +19966,25 @@ namespace VULKAN_HPP_NAMESPACE
     ImageAspectFlags aspectMask;
   };
   static_assert( sizeof( AttachmentReference2KHR ) == sizeof( VkAttachmentReference2KHR ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, AttachmentReference2KHR const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "attachment : " << value.attachment << std::endl;
+    stream << "layout : " << value.layout << std::endl;
+    stream << "aspectMask : " << value.aspectMask << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( AttachmentReference2KHR value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct Extent2D
   {
@@ -17494,6 +20026,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkExtent2D*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, Extent2D const& );
 
     bool operator==( Extent2D const& rhs ) const
     {
@@ -17510,6 +20044,22 @@ namespace VULKAN_HPP_NAMESPACE
     uint32_t height;
   };
   static_assert( sizeof( Extent2D ) == sizeof( VkExtent2D ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, Extent2D const& value )
+  {
+    stream << "width : " << value.width << std::endl;
+    stream << "height : " << value.height << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( Extent2D value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct SampleLocationEXT
   {
@@ -17551,6 +20101,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkSampleLocationEXT*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, SampleLocationEXT const& );
 
     bool operator==( SampleLocationEXT const& rhs ) const
     {
@@ -17567,6 +20119,22 @@ namespace VULKAN_HPP_NAMESPACE
     float y;
   };
   static_assert( sizeof( SampleLocationEXT ) == sizeof( VkSampleLocationEXT ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, SampleLocationEXT const& value )
+  {
+    stream << "x : " << value.x << std::endl;
+    stream << "y : " << value.y << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( SampleLocationEXT value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct SampleLocationsInfoEXT
   {
@@ -17630,6 +20198,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkSampleLocationsInfoEXT*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, SampleLocationsInfoEXT const& );
 
     bool operator==( SampleLocationsInfoEXT const& rhs ) const
     {
@@ -17657,6 +20227,26 @@ namespace VULKAN_HPP_NAMESPACE
     const SampleLocationEXT* pSampleLocations;
   };
   static_assert( sizeof( SampleLocationsInfoEXT ) == sizeof( VkSampleLocationsInfoEXT ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, SampleLocationsInfoEXT const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "sampleLocationsPerPixel : " << value.sampleLocationsPerPixel << std::endl;
+    stream << "sampleLocationGridSize : " << value.sampleLocationGridSize << std::endl;
+    stream << "sampleLocationsCount : " << value.sampleLocationsCount << std::endl;
+    stream << "pSampleLocations : " << value.pSampleLocations << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( SampleLocationsInfoEXT value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct AttachmentSampleLocationsEXT
   {
@@ -17698,6 +20288,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkAttachmentSampleLocationsEXT*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, AttachmentSampleLocationsEXT const& );
 
     bool operator==( AttachmentSampleLocationsEXT const& rhs ) const
     {
@@ -17714,6 +20306,22 @@ namespace VULKAN_HPP_NAMESPACE
     SampleLocationsInfoEXT sampleLocationsInfo;
   };
   static_assert( sizeof( AttachmentSampleLocationsEXT ) == sizeof( VkAttachmentSampleLocationsEXT ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, AttachmentSampleLocationsEXT const& value )
+  {
+    stream << "attachmentIndex : " << value.attachmentIndex << std::endl;
+    stream << "sampleLocationsInfo : " << value.sampleLocationsInfo << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( AttachmentSampleLocationsEXT value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct BaseInStructure
   {
@@ -17746,6 +20354,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkBaseInStructure*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, BaseInStructure const& );
 
     bool operator==( BaseInStructure const& rhs ) const
     {
@@ -17762,6 +20372,22 @@ namespace VULKAN_HPP_NAMESPACE
     const struct BaseInStructure* pNext = nullptr;
   };
   static_assert( sizeof( BaseInStructure ) == sizeof( VkBaseInStructure ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, BaseInStructure const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( BaseInStructure value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct BaseOutStructure
   {
@@ -17794,6 +20420,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkBaseOutStructure*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, BaseOutStructure const& );
 
     bool operator==( BaseOutStructure const& rhs ) const
     {
@@ -17810,6 +20438,22 @@ namespace VULKAN_HPP_NAMESPACE
     struct BaseOutStructure* pNext = nullptr;
   };
   static_assert( sizeof( BaseOutStructure ) == sizeof( VkBaseOutStructure ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, BaseOutStructure const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( BaseOutStructure value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct BindAccelerationStructureMemoryInfoNV
   {
@@ -17881,6 +20525,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkBindAccelerationStructureMemoryInfoNV*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, BindAccelerationStructureMemoryInfoNV const& );
 
     bool operator==( BindAccelerationStructureMemoryInfoNV const& rhs ) const
     {
@@ -17910,6 +20556,27 @@ namespace VULKAN_HPP_NAMESPACE
     const uint32_t* pDeviceIndices;
   };
   static_assert( sizeof( BindAccelerationStructureMemoryInfoNV ) == sizeof( VkBindAccelerationStructureMemoryInfoNV ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, BindAccelerationStructureMemoryInfoNV const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "accelerationStructure : " << value.accelerationStructure << std::endl;
+    stream << "memory : " << value.memory << std::endl;
+    stream << "memoryOffset : " << value.memoryOffset << std::endl;
+    stream << "deviceIndexCount : " << value.deviceIndexCount << std::endl;
+    stream << "pDeviceIndices : " << value.pDeviceIndices << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( BindAccelerationStructureMemoryInfoNV value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct BindBufferMemoryDeviceGroupInfo
   {
@@ -17957,6 +20624,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkBindBufferMemoryDeviceGroupInfo*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, BindBufferMemoryDeviceGroupInfo const& );
 
     bool operator==( BindBufferMemoryDeviceGroupInfo const& rhs ) const
     {
@@ -17980,6 +20649,24 @@ namespace VULKAN_HPP_NAMESPACE
     const uint32_t* pDeviceIndices;
   };
   static_assert( sizeof( BindBufferMemoryDeviceGroupInfo ) == sizeof( VkBindBufferMemoryDeviceGroupInfo ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, BindBufferMemoryDeviceGroupInfo const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "deviceIndexCount : " << value.deviceIndexCount << std::endl;
+    stream << "pDeviceIndices : " << value.pDeviceIndices << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( BindBufferMemoryDeviceGroupInfo value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct BindBufferMemoryInfo
   {
@@ -18035,6 +20722,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkBindBufferMemoryInfo*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, BindBufferMemoryInfo const& );
 
     bool operator==( BindBufferMemoryInfo const& rhs ) const
     {
@@ -18060,6 +20749,25 @@ namespace VULKAN_HPP_NAMESPACE
     DeviceSize memoryOffset;
   };
   static_assert( sizeof( BindBufferMemoryInfo ) == sizeof( VkBindBufferMemoryInfo ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, BindBufferMemoryInfo const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "buffer : " << value.buffer << std::endl;
+    stream << "memory : " << value.memory << std::endl;
+    stream << "memoryOffset : " << value.memoryOffset << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( BindBufferMemoryInfo value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct Offset2D
   {
@@ -18101,6 +20809,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkOffset2D*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, Offset2D const& );
 
     bool operator==( Offset2D const& rhs ) const
     {
@@ -18117,6 +20827,22 @@ namespace VULKAN_HPP_NAMESPACE
     int32_t y;
   };
   static_assert( sizeof( Offset2D ) == sizeof( VkOffset2D ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, Offset2D const& value )
+  {
+    stream << "x : " << value.x << std::endl;
+    stream << "y : " << value.y << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( Offset2D value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct Rect2D
   {
@@ -18158,6 +20884,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkRect2D*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, Rect2D const& );
 
     bool operator==( Rect2D const& rhs ) const
     {
@@ -18174,6 +20902,22 @@ namespace VULKAN_HPP_NAMESPACE
     Extent2D extent;
   };
   static_assert( sizeof( Rect2D ) == sizeof( VkRect2D ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, Rect2D const& value )
+  {
+    stream << "offset : " << value.offset << std::endl;
+    stream << "extent : " << value.extent << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( Rect2D value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct BindImageMemoryDeviceGroupInfo
   {
@@ -18237,6 +20981,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkBindImageMemoryDeviceGroupInfo*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, BindImageMemoryDeviceGroupInfo const& );
 
     bool operator==( BindImageMemoryDeviceGroupInfo const& rhs ) const
     {
@@ -18264,6 +21010,26 @@ namespace VULKAN_HPP_NAMESPACE
     const Rect2D* pSplitInstanceBindRegions;
   };
   static_assert( sizeof( BindImageMemoryDeviceGroupInfo ) == sizeof( VkBindImageMemoryDeviceGroupInfo ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, BindImageMemoryDeviceGroupInfo const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "deviceIndexCount : " << value.deviceIndexCount << std::endl;
+    stream << "pDeviceIndices : " << value.pDeviceIndices << std::endl;
+    stream << "splitInstanceBindRegionCount : " << value.splitInstanceBindRegionCount << std::endl;
+    stream << "pSplitInstanceBindRegions : " << value.pSplitInstanceBindRegions << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( BindImageMemoryDeviceGroupInfo value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct BindImageMemoryInfo
   {
@@ -18319,6 +21085,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkBindImageMemoryInfo*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, BindImageMemoryInfo const& );
 
     bool operator==( BindImageMemoryInfo const& rhs ) const
     {
@@ -18344,6 +21112,25 @@ namespace VULKAN_HPP_NAMESPACE
     DeviceSize memoryOffset;
   };
   static_assert( sizeof( BindImageMemoryInfo ) == sizeof( VkBindImageMemoryInfo ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, BindImageMemoryInfo const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "image : " << value.image << std::endl;
+    stream << "memory : " << value.memory << std::endl;
+    stream << "memoryOffset : " << value.memoryOffset << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( BindImageMemoryInfo value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct BindImageMemorySwapchainInfoKHR
   {
@@ -18391,6 +21178,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkBindImageMemorySwapchainInfoKHR*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, BindImageMemorySwapchainInfoKHR const& );
 
     bool operator==( BindImageMemorySwapchainInfoKHR const& rhs ) const
     {
@@ -18414,6 +21203,24 @@ namespace VULKAN_HPP_NAMESPACE
     uint32_t imageIndex;
   };
   static_assert( sizeof( BindImageMemorySwapchainInfoKHR ) == sizeof( VkBindImageMemorySwapchainInfoKHR ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, BindImageMemorySwapchainInfoKHR const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "swapchain : " << value.swapchain << std::endl;
+    stream << "imageIndex : " << value.imageIndex << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( BindImageMemorySwapchainInfoKHR value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct BindImagePlaneMemoryInfo
   {
@@ -18453,6 +21260,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkBindImagePlaneMemoryInfo*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, BindImagePlaneMemoryInfo const& );
 
     bool operator==( BindImagePlaneMemoryInfo const& rhs ) const
     {
@@ -18474,6 +21283,23 @@ namespace VULKAN_HPP_NAMESPACE
     ImageAspectFlagBits planeAspect;
   };
   static_assert( sizeof( BindImagePlaneMemoryInfo ) == sizeof( VkBindImagePlaneMemoryInfo ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, BindImagePlaneMemoryInfo const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "planeAspect : " << value.planeAspect << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( BindImagePlaneMemoryInfo value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct SparseMemoryBind
   {
@@ -18539,6 +21365,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkSparseMemoryBind*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, SparseMemoryBind const& );
 
     bool operator==( SparseMemoryBind const& rhs ) const
     {
@@ -18561,6 +21389,25 @@ namespace VULKAN_HPP_NAMESPACE
     SparseMemoryBindFlags flags;
   };
   static_assert( sizeof( SparseMemoryBind ) == sizeof( VkSparseMemoryBind ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, SparseMemoryBind const& value )
+  {
+    stream << "resourceOffset : " << value.resourceOffset << std::endl;
+    stream << "size : " << value.size << std::endl;
+    stream << "memory : " << value.memory << std::endl;
+    stream << "memoryOffset : " << value.memoryOffset << std::endl;
+    stream << "flags : " << value.flags << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( SparseMemoryBind value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct SparseBufferMemoryBindInfo
   {
@@ -18610,6 +21457,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkSparseBufferMemoryBindInfo*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, SparseBufferMemoryBindInfo const& );
 
     bool operator==( SparseBufferMemoryBindInfo const& rhs ) const
     {
@@ -18628,6 +21477,23 @@ namespace VULKAN_HPP_NAMESPACE
     const SparseMemoryBind* pBinds;
   };
   static_assert( sizeof( SparseBufferMemoryBindInfo ) == sizeof( VkSparseBufferMemoryBindInfo ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, SparseBufferMemoryBindInfo const& value )
+  {
+    stream << "buffer : " << value.buffer << std::endl;
+    stream << "bindCount : " << value.bindCount << std::endl;
+    stream << "pBinds : " << value.pBinds << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( SparseBufferMemoryBindInfo value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct SparseImageOpaqueMemoryBindInfo
   {
@@ -18677,6 +21543,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkSparseImageOpaqueMemoryBindInfo*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, SparseImageOpaqueMemoryBindInfo const& );
 
     bool operator==( SparseImageOpaqueMemoryBindInfo const& rhs ) const
     {
@@ -18695,6 +21563,23 @@ namespace VULKAN_HPP_NAMESPACE
     const SparseMemoryBind* pBinds;
   };
   static_assert( sizeof( SparseImageOpaqueMemoryBindInfo ) == sizeof( VkSparseImageOpaqueMemoryBindInfo ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, SparseImageOpaqueMemoryBindInfo const& value )
+  {
+    stream << "image : " << value.image << std::endl;
+    stream << "bindCount : " << value.bindCount << std::endl;
+    stream << "pBinds : " << value.pBinds << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( SparseImageOpaqueMemoryBindInfo value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct ImageSubresource
   {
@@ -18744,6 +21629,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkImageSubresource*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, ImageSubresource const& );
 
     bool operator==( ImageSubresource const& rhs ) const
     {
@@ -18762,6 +21649,23 @@ namespace VULKAN_HPP_NAMESPACE
     uint32_t arrayLayer;
   };
   static_assert( sizeof( ImageSubresource ) == sizeof( VkImageSubresource ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, ImageSubresource const& value )
+  {
+    stream << "aspectMask : " << value.aspectMask << std::endl;
+    stream << "mipLevel : " << value.mipLevel << std::endl;
+    stream << "arrayLayer : " << value.arrayLayer << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( ImageSubresource value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct Offset3D
   {
@@ -18818,6 +21722,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkOffset3D*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, Offset3D const& );
 
     bool operator==( Offset3D const& rhs ) const
     {
@@ -18836,6 +21742,23 @@ namespace VULKAN_HPP_NAMESPACE
     int32_t z;
   };
   static_assert( sizeof( Offset3D ) == sizeof( VkOffset3D ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, Offset3D const& value )
+  {
+    stream << "x : " << value.x << std::endl;
+    stream << "y : " << value.y << std::endl;
+    stream << "z : " << value.z << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( Offset3D value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct Extent3D
   {
@@ -18892,6 +21815,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkExtent3D*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, Extent3D const& );
 
     bool operator==( Extent3D const& rhs ) const
     {
@@ -18910,6 +21835,23 @@ namespace VULKAN_HPP_NAMESPACE
     uint32_t depth;
   };
   static_assert( sizeof( Extent3D ) == sizeof( VkExtent3D ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, Extent3D const& value )
+  {
+    stream << "width : " << value.width << std::endl;
+    stream << "height : " << value.height << std::endl;
+    stream << "depth : " << value.depth << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( Extent3D value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct SparseImageMemoryBind
   {
@@ -18983,6 +21925,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkSparseImageMemoryBind*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, SparseImageMemoryBind const& );
 
     bool operator==( SparseImageMemoryBind const& rhs ) const
     {
@@ -19007,6 +21951,26 @@ namespace VULKAN_HPP_NAMESPACE
     SparseMemoryBindFlags flags;
   };
   static_assert( sizeof( SparseImageMemoryBind ) == sizeof( VkSparseImageMemoryBind ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, SparseImageMemoryBind const& value )
+  {
+    stream << "subresource : " << value.subresource << std::endl;
+    stream << "offset : " << value.offset << std::endl;
+    stream << "extent : " << value.extent << std::endl;
+    stream << "memory : " << value.memory << std::endl;
+    stream << "memoryOffset : " << value.memoryOffset << std::endl;
+    stream << "flags : " << value.flags << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( SparseImageMemoryBind value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct SparseImageMemoryBindInfo
   {
@@ -19056,6 +22020,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkSparseImageMemoryBindInfo*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, SparseImageMemoryBindInfo const& );
 
     bool operator==( SparseImageMemoryBindInfo const& rhs ) const
     {
@@ -19074,6 +22040,23 @@ namespace VULKAN_HPP_NAMESPACE
     const SparseImageMemoryBind* pBinds;
   };
   static_assert( sizeof( SparseImageMemoryBindInfo ) == sizeof( VkSparseImageMemoryBindInfo ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, SparseImageMemoryBindInfo const& value )
+  {
+    stream << "image : " << value.image << std::endl;
+    stream << "bindCount : " << value.bindCount << std::endl;
+    stream << "pBinds : " << value.pBinds << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( SparseImageMemoryBindInfo value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct BindSparseInfo
   {
@@ -19185,6 +22168,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkBindSparseInfo*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, BindSparseInfo const& );
 
     bool operator==( BindSparseInfo const& rhs ) const
     {
@@ -19224,6 +22209,32 @@ namespace VULKAN_HPP_NAMESPACE
     const Semaphore* pSignalSemaphores;
   };
   static_assert( sizeof( BindSparseInfo ) == sizeof( VkBindSparseInfo ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, BindSparseInfo const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "waitSemaphoreCount : " << value.waitSemaphoreCount << std::endl;
+    stream << "pWaitSemaphores : " << value.pWaitSemaphores << std::endl;
+    stream << "bufferBindCount : " << value.bufferBindCount << std::endl;
+    stream << "pBufferBinds : " << value.pBufferBinds << std::endl;
+    stream << "imageOpaqueBindCount : " << value.imageOpaqueBindCount << std::endl;
+    stream << "pImageOpaqueBinds : " << value.pImageOpaqueBinds << std::endl;
+    stream << "imageBindCount : " << value.imageBindCount << std::endl;
+    stream << "pImageBinds : " << value.pImageBinds << std::endl;
+    stream << "signalSemaphoreCount : " << value.signalSemaphoreCount << std::endl;
+    stream << "pSignalSemaphores : " << value.pSignalSemaphores << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( BindSparseInfo value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct BufferCopy
   {
@@ -19273,6 +22284,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkBufferCopy*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, BufferCopy const& );
 
     bool operator==( BufferCopy const& rhs ) const
     {
@@ -19291,6 +22304,23 @@ namespace VULKAN_HPP_NAMESPACE
     DeviceSize size;
   };
   static_assert( sizeof( BufferCopy ) == sizeof( VkBufferCopy ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, BufferCopy const& value )
+  {
+    stream << "srcOffset : " << value.srcOffset << std::endl;
+    stream << "dstOffset : " << value.dstOffset << std::endl;
+    stream << "size : " << value.size << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( BufferCopy value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct BufferCreateInfo
   {
@@ -19370,6 +22400,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkBufferCreateInfo*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, BufferCreateInfo const& );
 
     bool operator==( BufferCreateInfo const& rhs ) const
     {
@@ -19401,6 +22433,28 @@ namespace VULKAN_HPP_NAMESPACE
     const uint32_t* pQueueFamilyIndices;
   };
   static_assert( sizeof( BufferCreateInfo ) == sizeof( VkBufferCreateInfo ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, BufferCreateInfo const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "flags : " << value.flags << std::endl;
+    stream << "size : " << value.size << std::endl;
+    stream << "usage : " << value.usage << std::endl;
+    stream << "sharingMode : " << value.sharingMode << std::endl;
+    stream << "queueFamilyIndexCount : " << value.queueFamilyIndexCount << std::endl;
+    stream << "pQueueFamilyIndices : " << value.pQueueFamilyIndices << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( BufferCreateInfo value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct BufferDeviceAddressCreateInfoEXT
   {
@@ -19440,6 +22494,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkBufferDeviceAddressCreateInfoEXT*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, BufferDeviceAddressCreateInfoEXT const& );
 
     bool operator==( BufferDeviceAddressCreateInfoEXT const& rhs ) const
     {
@@ -19461,6 +22517,23 @@ namespace VULKAN_HPP_NAMESPACE
     DeviceSize deviceAddress;
   };
   static_assert( sizeof( BufferDeviceAddressCreateInfoEXT ) == sizeof( VkBufferDeviceAddressCreateInfoEXT ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, BufferDeviceAddressCreateInfoEXT const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "deviceAddress : " << value.deviceAddress << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( BufferDeviceAddressCreateInfoEXT value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct BufferDeviceAddressInfoEXT
   {
@@ -19500,6 +22573,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkBufferDeviceAddressInfoEXT*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, BufferDeviceAddressInfoEXT const& );
 
     bool operator==( BufferDeviceAddressInfoEXT const& rhs ) const
     {
@@ -19521,6 +22596,23 @@ namespace VULKAN_HPP_NAMESPACE
     Buffer buffer;
   };
   static_assert( sizeof( BufferDeviceAddressInfoEXT ) == sizeof( VkBufferDeviceAddressInfoEXT ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, BufferDeviceAddressInfoEXT const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "buffer : " << value.buffer << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( BufferDeviceAddressInfoEXT value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct ImageSubresourceLayers
   {
@@ -19578,6 +22670,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkImageSubresourceLayers*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, ImageSubresourceLayers const& );
 
     bool operator==( ImageSubresourceLayers const& rhs ) const
     {
@@ -19598,6 +22692,24 @@ namespace VULKAN_HPP_NAMESPACE
     uint32_t layerCount;
   };
   static_assert( sizeof( ImageSubresourceLayers ) == sizeof( VkImageSubresourceLayers ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, ImageSubresourceLayers const& value )
+  {
+    stream << "aspectMask : " << value.aspectMask << std::endl;
+    stream << "mipLevel : " << value.mipLevel << std::endl;
+    stream << "baseArrayLayer : " << value.baseArrayLayer << std::endl;
+    stream << "layerCount : " << value.layerCount << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( ImageSubresourceLayers value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct BufferImageCopy
   {
@@ -19671,6 +22783,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkBufferImageCopy*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, BufferImageCopy const& );
 
     bool operator==( BufferImageCopy const& rhs ) const
     {
@@ -19695,6 +22809,26 @@ namespace VULKAN_HPP_NAMESPACE
     Extent3D imageExtent;
   };
   static_assert( sizeof( BufferImageCopy ) == sizeof( VkBufferImageCopy ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, BufferImageCopy const& value )
+  {
+    stream << "bufferOffset : " << value.bufferOffset << std::endl;
+    stream << "bufferRowLength : " << value.bufferRowLength << std::endl;
+    stream << "bufferImageHeight : " << value.bufferImageHeight << std::endl;
+    stream << "imageSubresource : " << value.imageSubresource << std::endl;
+    stream << "imageOffset : " << value.imageOffset << std::endl;
+    stream << "imageExtent : " << value.imageExtent << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( BufferImageCopy value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct BufferMemoryBarrier
   {
@@ -19782,6 +22916,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkBufferMemoryBarrier*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, BufferMemoryBarrier const& );
 
     bool operator==( BufferMemoryBarrier const& rhs ) const
     {
@@ -19815,6 +22951,29 @@ namespace VULKAN_HPP_NAMESPACE
     DeviceSize size;
   };
   static_assert( sizeof( BufferMemoryBarrier ) == sizeof( VkBufferMemoryBarrier ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, BufferMemoryBarrier const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "srcAccessMask : " << value.srcAccessMask << std::endl;
+    stream << "dstAccessMask : " << value.dstAccessMask << std::endl;
+    stream << "srcQueueFamilyIndex : " << value.srcQueueFamilyIndex << std::endl;
+    stream << "dstQueueFamilyIndex : " << value.dstQueueFamilyIndex << std::endl;
+    stream << "buffer : " << value.buffer << std::endl;
+    stream << "offset : " << value.offset << std::endl;
+    stream << "size : " << value.size << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( BufferMemoryBarrier value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct BufferMemoryRequirementsInfo2
   {
@@ -19854,6 +23013,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkBufferMemoryRequirementsInfo2*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, BufferMemoryRequirementsInfo2 const& );
 
     bool operator==( BufferMemoryRequirementsInfo2 const& rhs ) const
     {
@@ -19875,6 +23036,23 @@ namespace VULKAN_HPP_NAMESPACE
     Buffer buffer;
   };
   static_assert( sizeof( BufferMemoryRequirementsInfo2 ) == sizeof( VkBufferMemoryRequirementsInfo2 ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, BufferMemoryRequirementsInfo2 const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "buffer : " << value.buffer << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( BufferMemoryRequirementsInfo2 value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct BufferViewCreateInfo
   {
@@ -19946,6 +23124,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkBufferViewCreateInfo*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, BufferViewCreateInfo const& );
 
     bool operator==( BufferViewCreateInfo const& rhs ) const
     {
@@ -19975,6 +23155,27 @@ namespace VULKAN_HPP_NAMESPACE
     DeviceSize range;
   };
   static_assert( sizeof( BufferViewCreateInfo ) == sizeof( VkBufferViewCreateInfo ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, BufferViewCreateInfo const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "flags : " << value.flags << std::endl;
+    stream << "buffer : " << value.buffer << std::endl;
+    stream << "format : " << value.format << std::endl;
+    stream << "offset : " << value.offset << std::endl;
+    stream << "range : " << value.range << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( BufferViewCreateInfo value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct CalibratedTimestampInfoEXT
   {
@@ -20014,6 +23215,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkCalibratedTimestampInfoEXT*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, CalibratedTimestampInfoEXT const& );
 
     bool operator==( CalibratedTimestampInfoEXT const& rhs ) const
     {
@@ -20035,6 +23238,23 @@ namespace VULKAN_HPP_NAMESPACE
     TimeDomainEXT timeDomain;
   };
   static_assert( sizeof( CalibratedTimestampInfoEXT ) == sizeof( VkCalibratedTimestampInfoEXT ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, CalibratedTimestampInfoEXT const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "timeDomain : " << value.timeDomain << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( CalibratedTimestampInfoEXT value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct CheckpointDataNV
   {
@@ -20047,6 +23267,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkCheckpointDataNV*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, CheckpointDataNV const& );
 
     bool operator==( CheckpointDataNV const& rhs ) const
     {
@@ -20070,6 +23292,24 @@ namespace VULKAN_HPP_NAMESPACE
     void* pCheckpointMarker;
   };
   static_assert( sizeof( CheckpointDataNV ) == sizeof( VkCheckpointDataNV ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, CheckpointDataNV const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "stage : " << value.stage << std::endl;
+    stream << "pCheckpointMarker : " << value.pCheckpointMarker << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( CheckpointDataNV value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   union ClearColorValue
   {
@@ -20161,6 +23401,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkClearDepthStencilValue*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, ClearDepthStencilValue const& );
 
     bool operator==( ClearDepthStencilValue const& rhs ) const
     {
@@ -20177,6 +23419,22 @@ namespace VULKAN_HPP_NAMESPACE
     uint32_t stencil;
   };
   static_assert( sizeof( ClearDepthStencilValue ) == sizeof( VkClearDepthStencilValue ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, ClearDepthStencilValue const& value )
+  {
+    stream << "depth : " << value.depth << std::endl;
+    stream << "stencil : " << value.stencil << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( ClearDepthStencilValue value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   union ClearValue
   {
@@ -20269,12 +23527,31 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkClearAttachment*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, ClearAttachment const& );
 
     ImageAspectFlags aspectMask;
     uint32_t colorAttachment;
     ClearValue clearValue;
   };
   static_assert( sizeof( ClearAttachment ) == sizeof( VkClearAttachment ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, ClearAttachment const& value )
+  {
+    stream << "aspectMask : " << value.aspectMask << std::endl;
+    stream << "colorAttachment : " << value.colorAttachment << std::endl;
+    stream << "clearValue : " << value.clearValue << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( ClearAttachment value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct ClearRect
   {
@@ -20324,6 +23601,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkClearRect*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, ClearRect const& );
 
     bool operator==( ClearRect const& rhs ) const
     {
@@ -20342,6 +23621,23 @@ namespace VULKAN_HPP_NAMESPACE
     uint32_t layerCount;
   };
   static_assert( sizeof( ClearRect ) == sizeof( VkClearRect ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, ClearRect const& value )
+  {
+    stream << "rect : " << value.rect << std::endl;
+    stream << "baseArrayLayer : " << value.baseArrayLayer << std::endl;
+    stream << "layerCount : " << value.layerCount << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( ClearRect value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct IndirectCommandsTokenNVX
   {
@@ -20391,6 +23687,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkIndirectCommandsTokenNVX*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, IndirectCommandsTokenNVX const& );
 
     bool operator==( IndirectCommandsTokenNVX const& rhs ) const
     {
@@ -20409,6 +23707,23 @@ namespace VULKAN_HPP_NAMESPACE
     DeviceSize offset;
   };
   static_assert( sizeof( IndirectCommandsTokenNVX ) == sizeof( VkIndirectCommandsTokenNVX ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, IndirectCommandsTokenNVX const& value )
+  {
+    stream << "tokenType : " << value.tokenType << std::endl;
+    stream << "buffer : " << value.buffer << std::endl;
+    stream << "offset : " << value.offset << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( IndirectCommandsTokenNVX value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct CmdProcessCommandsInfoNVX
   {
@@ -20520,6 +23835,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkCmdProcessCommandsInfoNVX*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, CmdProcessCommandsInfoNVX const& );
 
     bool operator==( CmdProcessCommandsInfoNVX const& rhs ) const
     {
@@ -20559,6 +23876,32 @@ namespace VULKAN_HPP_NAMESPACE
     DeviceSize sequencesIndexOffset;
   };
   static_assert( sizeof( CmdProcessCommandsInfoNVX ) == sizeof( VkCmdProcessCommandsInfoNVX ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, CmdProcessCommandsInfoNVX const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "objectTable : " << value.objectTable << std::endl;
+    stream << "indirectCommandsLayout : " << value.indirectCommandsLayout << std::endl;
+    stream << "indirectCommandsTokenCount : " << value.indirectCommandsTokenCount << std::endl;
+    stream << "pIndirectCommandsTokens : " << value.pIndirectCommandsTokens << std::endl;
+    stream << "maxSequencesCount : " << value.maxSequencesCount << std::endl;
+    stream << "targetCommandBuffer : " << value.targetCommandBuffer << std::endl;
+    stream << "sequencesCountBuffer : " << value.sequencesCountBuffer << std::endl;
+    stream << "sequencesCountOffset : " << value.sequencesCountOffset << std::endl;
+    stream << "sequencesIndexBuffer : " << value.sequencesIndexBuffer << std::endl;
+    stream << "sequencesIndexOffset : " << value.sequencesIndexOffset << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( CmdProcessCommandsInfoNVX value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct CmdReserveSpaceForCommandsInfoNVX
   {
@@ -20614,6 +23957,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkCmdReserveSpaceForCommandsInfoNVX*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, CmdReserveSpaceForCommandsInfoNVX const& );
 
     bool operator==( CmdReserveSpaceForCommandsInfoNVX const& rhs ) const
     {
@@ -20639,6 +23984,25 @@ namespace VULKAN_HPP_NAMESPACE
     uint32_t maxSequencesCount;
   };
   static_assert( sizeof( CmdReserveSpaceForCommandsInfoNVX ) == sizeof( VkCmdReserveSpaceForCommandsInfoNVX ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, CmdReserveSpaceForCommandsInfoNVX const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "objectTable : " << value.objectTable << std::endl;
+    stream << "indirectCommandsLayout : " << value.indirectCommandsLayout << std::endl;
+    stream << "maxSequencesCount : " << value.maxSequencesCount << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( CmdReserveSpaceForCommandsInfoNVX value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct CoarseSampleLocationNV
   {
@@ -20688,6 +24052,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkCoarseSampleLocationNV*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, CoarseSampleLocationNV const& );
 
     bool operator==( CoarseSampleLocationNV const& rhs ) const
     {
@@ -20706,6 +24072,23 @@ namespace VULKAN_HPP_NAMESPACE
     uint32_t sample;
   };
   static_assert( sizeof( CoarseSampleLocationNV ) == sizeof( VkCoarseSampleLocationNV ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, CoarseSampleLocationNV const& value )
+  {
+    stream << "pixelX : " << value.pixelX << std::endl;
+    stream << "pixelY : " << value.pixelY << std::endl;
+    stream << "sample : " << value.sample << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( CoarseSampleLocationNV value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct CoarseSampleOrderCustomNV
   {
@@ -20763,6 +24146,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkCoarseSampleOrderCustomNV*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, CoarseSampleOrderCustomNV const& );
 
     bool operator==( CoarseSampleOrderCustomNV const& rhs ) const
     {
@@ -20783,6 +24168,24 @@ namespace VULKAN_HPP_NAMESPACE
     const CoarseSampleLocationNV* pSampleLocations;
   };
   static_assert( sizeof( CoarseSampleOrderCustomNV ) == sizeof( VkCoarseSampleOrderCustomNV ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, CoarseSampleOrderCustomNV const& value )
+  {
+    stream << "shadingRate : " << value.shadingRate << std::endl;
+    stream << "sampleCount : " << value.sampleCount << std::endl;
+    stream << "sampleLocationCount : " << value.sampleLocationCount << std::endl;
+    stream << "pSampleLocations : " << value.pSampleLocations << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( CoarseSampleOrderCustomNV value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct CommandBufferAllocateInfo
   {
@@ -20838,6 +24241,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkCommandBufferAllocateInfo*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, CommandBufferAllocateInfo const& );
 
     bool operator==( CommandBufferAllocateInfo const& rhs ) const
     {
@@ -20863,6 +24268,25 @@ namespace VULKAN_HPP_NAMESPACE
     uint32_t commandBufferCount;
   };
   static_assert( sizeof( CommandBufferAllocateInfo ) == sizeof( VkCommandBufferAllocateInfo ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, CommandBufferAllocateInfo const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "commandPool : " << value.commandPool << std::endl;
+    stream << "level : " << value.level << std::endl;
+    stream << "commandBufferCount : " << value.commandBufferCount << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( CommandBufferAllocateInfo value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct CommandBufferInheritanceInfo
   {
@@ -20942,6 +24366,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkCommandBufferInheritanceInfo*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, CommandBufferInheritanceInfo const& );
 
     bool operator==( CommandBufferInheritanceInfo const& rhs ) const
     {
@@ -20973,6 +24399,28 @@ namespace VULKAN_HPP_NAMESPACE
     QueryPipelineStatisticFlags pipelineStatistics;
   };
   static_assert( sizeof( CommandBufferInheritanceInfo ) == sizeof( VkCommandBufferInheritanceInfo ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, CommandBufferInheritanceInfo const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "renderPass : " << value.renderPass << std::endl;
+    stream << "subpass : " << value.subpass << std::endl;
+    stream << "framebuffer : " << value.framebuffer << std::endl;
+    stream << "occlusionQueryEnable : " << value.occlusionQueryEnable << std::endl;
+    stream << "queryFlags : " << value.queryFlags << std::endl;
+    stream << "pipelineStatistics : " << value.pipelineStatistics << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( CommandBufferInheritanceInfo value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct CommandBufferBeginInfo
   {
@@ -21020,6 +24468,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkCommandBufferBeginInfo*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, CommandBufferBeginInfo const& );
 
     bool operator==( CommandBufferBeginInfo const& rhs ) const
     {
@@ -21043,6 +24493,24 @@ namespace VULKAN_HPP_NAMESPACE
     const CommandBufferInheritanceInfo* pInheritanceInfo;
   };
   static_assert( sizeof( CommandBufferBeginInfo ) == sizeof( VkCommandBufferBeginInfo ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, CommandBufferBeginInfo const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "flags : " << value.flags << std::endl;
+    stream << "pInheritanceInfo : " << value.pInheritanceInfo << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( CommandBufferBeginInfo value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct CommandBufferInheritanceConditionalRenderingInfoEXT
   {
@@ -21082,6 +24550,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkCommandBufferInheritanceConditionalRenderingInfoEXT*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, CommandBufferInheritanceConditionalRenderingInfoEXT const& );
 
     bool operator==( CommandBufferInheritanceConditionalRenderingInfoEXT const& rhs ) const
     {
@@ -21103,6 +24573,23 @@ namespace VULKAN_HPP_NAMESPACE
     Bool32 conditionalRenderingEnable;
   };
   static_assert( sizeof( CommandBufferInheritanceConditionalRenderingInfoEXT ) == sizeof( VkCommandBufferInheritanceConditionalRenderingInfoEXT ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, CommandBufferInheritanceConditionalRenderingInfoEXT const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "conditionalRenderingEnable : " << value.conditionalRenderingEnable << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( CommandBufferInheritanceConditionalRenderingInfoEXT value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct CommandPoolCreateInfo
   {
@@ -21150,6 +24637,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkCommandPoolCreateInfo*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, CommandPoolCreateInfo const& );
 
     bool operator==( CommandPoolCreateInfo const& rhs ) const
     {
@@ -21173,6 +24662,24 @@ namespace VULKAN_HPP_NAMESPACE
     uint32_t queueFamilyIndex;
   };
   static_assert( sizeof( CommandPoolCreateInfo ) == sizeof( VkCommandPoolCreateInfo ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, CommandPoolCreateInfo const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "flags : " << value.flags << std::endl;
+    stream << "queueFamilyIndex : " << value.queueFamilyIndex << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( CommandPoolCreateInfo value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct SpecializationMapEntry
   {
@@ -21222,6 +24729,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkSpecializationMapEntry*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, SpecializationMapEntry const& );
 
     bool operator==( SpecializationMapEntry const& rhs ) const
     {
@@ -21240,6 +24749,23 @@ namespace VULKAN_HPP_NAMESPACE
     size_t size;
   };
   static_assert( sizeof( SpecializationMapEntry ) == sizeof( VkSpecializationMapEntry ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, SpecializationMapEntry const& value )
+  {
+    stream << "constantID : " << value.constantID << std::endl;
+    stream << "offset : " << value.offset << std::endl;
+    stream << "size : " << value.size << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( SpecializationMapEntry value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct SpecializationInfo
   {
@@ -21297,6 +24823,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkSpecializationInfo*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, SpecializationInfo const& );
 
     bool operator==( SpecializationInfo const& rhs ) const
     {
@@ -21317,6 +24845,24 @@ namespace VULKAN_HPP_NAMESPACE
     const void* pData;
   };
   static_assert( sizeof( SpecializationInfo ) == sizeof( VkSpecializationInfo ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, SpecializationInfo const& value )
+  {
+    stream << "mapEntryCount : " << value.mapEntryCount << std::endl;
+    stream << "pMapEntries : " << value.pMapEntries << std::endl;
+    stream << "dataSize : " << value.dataSize << std::endl;
+    stream << "pData : " << value.pData << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( SpecializationInfo value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct PipelineShaderStageCreateInfo
   {
@@ -21388,6 +24934,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkPipelineShaderStageCreateInfo*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, PipelineShaderStageCreateInfo const& );
 
     bool operator==( PipelineShaderStageCreateInfo const& rhs ) const
     {
@@ -21417,6 +24965,27 @@ namespace VULKAN_HPP_NAMESPACE
     const SpecializationInfo* pSpecializationInfo;
   };
   static_assert( sizeof( PipelineShaderStageCreateInfo ) == sizeof( VkPipelineShaderStageCreateInfo ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, PipelineShaderStageCreateInfo const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "flags : " << value.flags << std::endl;
+    stream << "stage : " << value.stage << std::endl;
+    stream << "module : " << value.module << std::endl;
+    stream << "pName : " << value.pName << std::endl;
+    stream << "pSpecializationInfo : " << value.pSpecializationInfo << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( PipelineShaderStageCreateInfo value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct ComputePipelineCreateInfo
   {
@@ -21488,6 +25057,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkComputePipelineCreateInfo*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, ComputePipelineCreateInfo const& );
 
     bool operator==( ComputePipelineCreateInfo const& rhs ) const
     {
@@ -21517,6 +25088,27 @@ namespace VULKAN_HPP_NAMESPACE
     int32_t basePipelineIndex;
   };
   static_assert( sizeof( ComputePipelineCreateInfo ) == sizeof( VkComputePipelineCreateInfo ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, ComputePipelineCreateInfo const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "flags : " << value.flags << std::endl;
+    stream << "stage : " << value.stage << std::endl;
+    stream << "layout : " << value.layout << std::endl;
+    stream << "basePipelineHandle : " << value.basePipelineHandle << std::endl;
+    stream << "basePipelineIndex : " << value.basePipelineIndex << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( ComputePipelineCreateInfo value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct ConditionalRenderingBeginInfoEXT
   {
@@ -21572,6 +25164,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkConditionalRenderingBeginInfoEXT*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, ConditionalRenderingBeginInfoEXT const& );
 
     bool operator==( ConditionalRenderingBeginInfoEXT const& rhs ) const
     {
@@ -21597,6 +25191,25 @@ namespace VULKAN_HPP_NAMESPACE
     ConditionalRenderingFlagsEXT flags;
   };
   static_assert( sizeof( ConditionalRenderingBeginInfoEXT ) == sizeof( VkConditionalRenderingBeginInfoEXT ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, ConditionalRenderingBeginInfoEXT const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "buffer : " << value.buffer << std::endl;
+    stream << "offset : " << value.offset << std::endl;
+    stream << "flags : " << value.flags << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( ConditionalRenderingBeginInfoEXT value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct ConformanceVersionKHR
   {
@@ -21654,6 +25267,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkConformanceVersionKHR*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, ConformanceVersionKHR const& );
 
     bool operator==( ConformanceVersionKHR const& rhs ) const
     {
@@ -21674,6 +25289,24 @@ namespace VULKAN_HPP_NAMESPACE
     uint8_t patch;
   };
   static_assert( sizeof( ConformanceVersionKHR ) == sizeof( VkConformanceVersionKHR ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, ConformanceVersionKHR const& value )
+  {
+    stream << "major : " << value.major << std::endl;
+    stream << "minor : " << value.minor << std::endl;
+    stream << "subminor : " << value.subminor << std::endl;
+    stream << "patch : " << value.patch << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( ConformanceVersionKHR value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct CopyDescriptorSet
   {
@@ -21761,6 +25394,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkCopyDescriptorSet*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, CopyDescriptorSet const& );
 
     bool operator==( CopyDescriptorSet const& rhs ) const
     {
@@ -21794,6 +25429,29 @@ namespace VULKAN_HPP_NAMESPACE
     uint32_t descriptorCount;
   };
   static_assert( sizeof( CopyDescriptorSet ) == sizeof( VkCopyDescriptorSet ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, CopyDescriptorSet const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "srcSet : " << value.srcSet << std::endl;
+    stream << "srcBinding : " << value.srcBinding << std::endl;
+    stream << "srcArrayElement : " << value.srcArrayElement << std::endl;
+    stream << "dstSet : " << value.dstSet << std::endl;
+    stream << "dstBinding : " << value.dstBinding << std::endl;
+    stream << "dstArrayElement : " << value.dstArrayElement << std::endl;
+    stream << "descriptorCount : " << value.descriptorCount << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( CopyDescriptorSet value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
 #ifdef VK_USE_PLATFORM_WIN32_KHR
   struct D3D12FenceSubmitInfoKHR
@@ -21858,6 +25516,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkD3D12FenceSubmitInfoKHR*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, D3D12FenceSubmitInfoKHR const& );
 
     bool operator==( D3D12FenceSubmitInfoKHR const& rhs ) const
     {
@@ -21885,6 +25545,26 @@ namespace VULKAN_HPP_NAMESPACE
     const uint64_t* pSignalSemaphoreValues;
   };
   static_assert( sizeof( D3D12FenceSubmitInfoKHR ) == sizeof( VkD3D12FenceSubmitInfoKHR ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, D3D12FenceSubmitInfoKHR const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "waitSemaphoreValuesCount : " << value.waitSemaphoreValuesCount << std::endl;
+    stream << "pWaitSemaphoreValues : " << value.pWaitSemaphoreValues << std::endl;
+    stream << "signalSemaphoreValuesCount : " << value.signalSemaphoreValuesCount << std::endl;
+    stream << "pSignalSemaphoreValues : " << value.pSignalSemaphoreValues << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( D3D12FenceSubmitInfoKHR value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 #endif /*VK_USE_PLATFORM_WIN32_KHR*/
 
   struct DebugMarkerMarkerInfoEXT
@@ -21934,6 +25614,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkDebugMarkerMarkerInfoEXT*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, DebugMarkerMarkerInfoEXT const& );
 
     bool operator==( DebugMarkerMarkerInfoEXT const& rhs ) const
     {
@@ -21957,6 +25639,24 @@ namespace VULKAN_HPP_NAMESPACE
     float color[4];
   };
   static_assert( sizeof( DebugMarkerMarkerInfoEXT ) == sizeof( VkDebugMarkerMarkerInfoEXT ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, DebugMarkerMarkerInfoEXT const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "pMarkerName : " << value.pMarkerName << std::endl;
+    stream << "color : " << value.color << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( DebugMarkerMarkerInfoEXT value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct DebugMarkerObjectNameInfoEXT
   {
@@ -22012,6 +25712,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkDebugMarkerObjectNameInfoEXT*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, DebugMarkerObjectNameInfoEXT const& );
 
     bool operator==( DebugMarkerObjectNameInfoEXT const& rhs ) const
     {
@@ -22037,6 +25739,25 @@ namespace VULKAN_HPP_NAMESPACE
     const char* pObjectName;
   };
   static_assert( sizeof( DebugMarkerObjectNameInfoEXT ) == sizeof( VkDebugMarkerObjectNameInfoEXT ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, DebugMarkerObjectNameInfoEXT const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "objectType : " << value.objectType << std::endl;
+    stream << "object : " << value.object << std::endl;
+    stream << "pObjectName : " << value.pObjectName << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( DebugMarkerObjectNameInfoEXT value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct DebugMarkerObjectTagInfoEXT
   {
@@ -22108,6 +25829,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkDebugMarkerObjectTagInfoEXT*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, DebugMarkerObjectTagInfoEXT const& );
 
     bool operator==( DebugMarkerObjectTagInfoEXT const& rhs ) const
     {
@@ -22137,6 +25860,27 @@ namespace VULKAN_HPP_NAMESPACE
     const void* pTag;
   };
   static_assert( sizeof( DebugMarkerObjectTagInfoEXT ) == sizeof( VkDebugMarkerObjectTagInfoEXT ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, DebugMarkerObjectTagInfoEXT const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "objectType : " << value.objectType << std::endl;
+    stream << "object : " << value.object << std::endl;
+    stream << "tagName : " << value.tagName << std::endl;
+    stream << "tagSize : " << value.tagSize << std::endl;
+    stream << "pTag : " << value.pTag << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( DebugMarkerObjectTagInfoEXT value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct DebugReportCallbackCreateInfoEXT
   {
@@ -22192,6 +25936,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkDebugReportCallbackCreateInfoEXT*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, DebugReportCallbackCreateInfoEXT const& );
 
     bool operator==( DebugReportCallbackCreateInfoEXT const& rhs ) const
     {
@@ -22217,6 +25963,25 @@ namespace VULKAN_HPP_NAMESPACE
     void* pUserData;
   };
   static_assert( sizeof( DebugReportCallbackCreateInfoEXT ) == sizeof( VkDebugReportCallbackCreateInfoEXT ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, DebugReportCallbackCreateInfoEXT const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "flags : " << value.flags << std::endl;
+    stream << "pfnCallback : " << value.pfnCallback << std::endl;
+    stream << "pUserData : " << value.pUserData << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( DebugReportCallbackCreateInfoEXT value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct DebugUtilsLabelEXT
   {
@@ -22265,6 +26030,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkDebugUtilsLabelEXT*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, DebugUtilsLabelEXT const& );
 
     bool operator==( DebugUtilsLabelEXT const& rhs ) const
     {
@@ -22288,6 +26055,24 @@ namespace VULKAN_HPP_NAMESPACE
     float color[4];
   };
   static_assert( sizeof( DebugUtilsLabelEXT ) == sizeof( VkDebugUtilsLabelEXT ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, DebugUtilsLabelEXT const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "pLabelName : " << value.pLabelName << std::endl;
+    stream << "color : " << value.color << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( DebugUtilsLabelEXT value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct DebugUtilsObjectNameInfoEXT
   {
@@ -22343,6 +26128,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkDebugUtilsObjectNameInfoEXT*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, DebugUtilsObjectNameInfoEXT const& );
 
     bool operator==( DebugUtilsObjectNameInfoEXT const& rhs ) const
     {
@@ -22368,6 +26155,25 @@ namespace VULKAN_HPP_NAMESPACE
     const char* pObjectName;
   };
   static_assert( sizeof( DebugUtilsObjectNameInfoEXT ) == sizeof( VkDebugUtilsObjectNameInfoEXT ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, DebugUtilsObjectNameInfoEXT const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "objectType : " << value.objectType << std::endl;
+    stream << "objectHandle : " << value.objectHandle << std::endl;
+    stream << "pObjectName : " << value.pObjectName << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( DebugUtilsObjectNameInfoEXT value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct DebugUtilsMessengerCallbackDataEXT
   {
@@ -22479,6 +26285,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkDebugUtilsMessengerCallbackDataEXT*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, DebugUtilsMessengerCallbackDataEXT const& );
 
     bool operator==( DebugUtilsMessengerCallbackDataEXT const& rhs ) const
     {
@@ -22518,6 +26326,32 @@ namespace VULKAN_HPP_NAMESPACE
     const DebugUtilsObjectNameInfoEXT* pObjects;
   };
   static_assert( sizeof( DebugUtilsMessengerCallbackDataEXT ) == sizeof( VkDebugUtilsMessengerCallbackDataEXT ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, DebugUtilsMessengerCallbackDataEXT const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "flags : " << value.flags << std::endl;
+    stream << "pMessageIdName : " << value.pMessageIdName << std::endl;
+    stream << "messageIdNumber : " << value.messageIdNumber << std::endl;
+    stream << "pMessage : " << value.pMessage << std::endl;
+    stream << "queueLabelCount : " << value.queueLabelCount << std::endl;
+    stream << "pQueueLabels : " << value.pQueueLabels << std::endl;
+    stream << "cmdBufLabelCount : " << value.cmdBufLabelCount << std::endl;
+    stream << "pCmdBufLabels : " << value.pCmdBufLabels << std::endl;
+    stream << "objectCount : " << value.objectCount << std::endl;
+    stream << "pObjects : " << value.pObjects << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( DebugUtilsMessengerCallbackDataEXT value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct DebugUtilsMessengerCreateInfoEXT
   {
@@ -22589,6 +26423,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkDebugUtilsMessengerCreateInfoEXT*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, DebugUtilsMessengerCreateInfoEXT const& );
 
     bool operator==( DebugUtilsMessengerCreateInfoEXT const& rhs ) const
     {
@@ -22618,6 +26454,27 @@ namespace VULKAN_HPP_NAMESPACE
     void* pUserData;
   };
   static_assert( sizeof( DebugUtilsMessengerCreateInfoEXT ) == sizeof( VkDebugUtilsMessengerCreateInfoEXT ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, DebugUtilsMessengerCreateInfoEXT const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "flags : " << value.flags << std::endl;
+    stream << "messageSeverity : " << value.messageSeverity << std::endl;
+    stream << "messageType : " << value.messageType << std::endl;
+    stream << "pfnUserCallback : " << value.pfnUserCallback << std::endl;
+    stream << "pUserData : " << value.pUserData << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( DebugUtilsMessengerCreateInfoEXT value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct DebugUtilsObjectTagInfoEXT
   {
@@ -22689,6 +26546,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkDebugUtilsObjectTagInfoEXT*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, DebugUtilsObjectTagInfoEXT const& );
 
     bool operator==( DebugUtilsObjectTagInfoEXT const& rhs ) const
     {
@@ -22718,6 +26577,27 @@ namespace VULKAN_HPP_NAMESPACE
     const void* pTag;
   };
   static_assert( sizeof( DebugUtilsObjectTagInfoEXT ) == sizeof( VkDebugUtilsObjectTagInfoEXT ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, DebugUtilsObjectTagInfoEXT const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "objectType : " << value.objectType << std::endl;
+    stream << "objectHandle : " << value.objectHandle << std::endl;
+    stream << "tagName : " << value.tagName << std::endl;
+    stream << "tagSize : " << value.tagSize << std::endl;
+    stream << "pTag : " << value.pTag << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( DebugUtilsObjectTagInfoEXT value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct DedicatedAllocationBufferCreateInfoNV
   {
@@ -22757,6 +26637,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkDedicatedAllocationBufferCreateInfoNV*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, DedicatedAllocationBufferCreateInfoNV const& );
 
     bool operator==( DedicatedAllocationBufferCreateInfoNV const& rhs ) const
     {
@@ -22778,6 +26660,23 @@ namespace VULKAN_HPP_NAMESPACE
     Bool32 dedicatedAllocation;
   };
   static_assert( sizeof( DedicatedAllocationBufferCreateInfoNV ) == sizeof( VkDedicatedAllocationBufferCreateInfoNV ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, DedicatedAllocationBufferCreateInfoNV const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "dedicatedAllocation : " << value.dedicatedAllocation << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( DedicatedAllocationBufferCreateInfoNV value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct DedicatedAllocationImageCreateInfoNV
   {
@@ -22817,6 +26716,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkDedicatedAllocationImageCreateInfoNV*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, DedicatedAllocationImageCreateInfoNV const& );
 
     bool operator==( DedicatedAllocationImageCreateInfoNV const& rhs ) const
     {
@@ -22838,6 +26739,23 @@ namespace VULKAN_HPP_NAMESPACE
     Bool32 dedicatedAllocation;
   };
   static_assert( sizeof( DedicatedAllocationImageCreateInfoNV ) == sizeof( VkDedicatedAllocationImageCreateInfoNV ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, DedicatedAllocationImageCreateInfoNV const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "dedicatedAllocation : " << value.dedicatedAllocation << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( DedicatedAllocationImageCreateInfoNV value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct DedicatedAllocationMemoryAllocateInfoNV
   {
@@ -22885,6 +26803,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkDedicatedAllocationMemoryAllocateInfoNV*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, DedicatedAllocationMemoryAllocateInfoNV const& );
 
     bool operator==( DedicatedAllocationMemoryAllocateInfoNV const& rhs ) const
     {
@@ -22908,6 +26828,24 @@ namespace VULKAN_HPP_NAMESPACE
     Buffer buffer;
   };
   static_assert( sizeof( DedicatedAllocationMemoryAllocateInfoNV ) == sizeof( VkDedicatedAllocationMemoryAllocateInfoNV ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, DedicatedAllocationMemoryAllocateInfoNV const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "image : " << value.image << std::endl;
+    stream << "buffer : " << value.buffer << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( DedicatedAllocationMemoryAllocateInfoNV value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct DescriptorBufferInfo
   {
@@ -22957,6 +26895,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkDescriptorBufferInfo*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, DescriptorBufferInfo const& );
 
     bool operator==( DescriptorBufferInfo const& rhs ) const
     {
@@ -22975,6 +26915,23 @@ namespace VULKAN_HPP_NAMESPACE
     DeviceSize range;
   };
   static_assert( sizeof( DescriptorBufferInfo ) == sizeof( VkDescriptorBufferInfo ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, DescriptorBufferInfo const& value )
+  {
+    stream << "buffer : " << value.buffer << std::endl;
+    stream << "offset : " << value.offset << std::endl;
+    stream << "range : " << value.range << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( DescriptorBufferInfo value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct DescriptorImageInfo
   {
@@ -23024,6 +26981,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkDescriptorImageInfo*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, DescriptorImageInfo const& );
 
     bool operator==( DescriptorImageInfo const& rhs ) const
     {
@@ -23042,6 +27001,23 @@ namespace VULKAN_HPP_NAMESPACE
     ImageLayout imageLayout;
   };
   static_assert( sizeof( DescriptorImageInfo ) == sizeof( VkDescriptorImageInfo ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, DescriptorImageInfo const& value )
+  {
+    stream << "sampler : " << value.sampler << std::endl;
+    stream << "imageView : " << value.imageView << std::endl;
+    stream << "imageLayout : " << value.imageLayout << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( DescriptorImageInfo value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct DescriptorPoolSize
   {
@@ -23083,6 +27059,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkDescriptorPoolSize*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, DescriptorPoolSize const& );
 
     bool operator==( DescriptorPoolSize const& rhs ) const
     {
@@ -23099,6 +27077,22 @@ namespace VULKAN_HPP_NAMESPACE
     uint32_t descriptorCount;
   };
   static_assert( sizeof( DescriptorPoolSize ) == sizeof( VkDescriptorPoolSize ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, DescriptorPoolSize const& value )
+  {
+    stream << "type : " << value.type << std::endl;
+    stream << "descriptorCount : " << value.descriptorCount << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( DescriptorPoolSize value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct DescriptorPoolCreateInfo
   {
@@ -23162,6 +27156,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkDescriptorPoolCreateInfo*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, DescriptorPoolCreateInfo const& );
 
     bool operator==( DescriptorPoolCreateInfo const& rhs ) const
     {
@@ -23189,6 +27185,26 @@ namespace VULKAN_HPP_NAMESPACE
     const DescriptorPoolSize* pPoolSizes;
   };
   static_assert( sizeof( DescriptorPoolCreateInfo ) == sizeof( VkDescriptorPoolCreateInfo ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, DescriptorPoolCreateInfo const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "flags : " << value.flags << std::endl;
+    stream << "maxSets : " << value.maxSets << std::endl;
+    stream << "poolSizeCount : " << value.poolSizeCount << std::endl;
+    stream << "pPoolSizes : " << value.pPoolSizes << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( DescriptorPoolCreateInfo value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct DescriptorPoolInlineUniformBlockCreateInfoEXT
   {
@@ -23228,6 +27244,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkDescriptorPoolInlineUniformBlockCreateInfoEXT*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, DescriptorPoolInlineUniformBlockCreateInfoEXT const& );
 
     bool operator==( DescriptorPoolInlineUniformBlockCreateInfoEXT const& rhs ) const
     {
@@ -23249,6 +27267,23 @@ namespace VULKAN_HPP_NAMESPACE
     uint32_t maxInlineUniformBlockBindings;
   };
   static_assert( sizeof( DescriptorPoolInlineUniformBlockCreateInfoEXT ) == sizeof( VkDescriptorPoolInlineUniformBlockCreateInfoEXT ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, DescriptorPoolInlineUniformBlockCreateInfoEXT const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "maxInlineUniformBlockBindings : " << value.maxInlineUniformBlockBindings << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( DescriptorPoolInlineUniformBlockCreateInfoEXT value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct DescriptorSetAllocateInfo
   {
@@ -23304,6 +27339,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkDescriptorSetAllocateInfo*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, DescriptorSetAllocateInfo const& );
 
     bool operator==( DescriptorSetAllocateInfo const& rhs ) const
     {
@@ -23329,6 +27366,25 @@ namespace VULKAN_HPP_NAMESPACE
     const DescriptorSetLayout* pSetLayouts;
   };
   static_assert( sizeof( DescriptorSetAllocateInfo ) == sizeof( VkDescriptorSetAllocateInfo ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, DescriptorSetAllocateInfo const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "descriptorPool : " << value.descriptorPool << std::endl;
+    stream << "descriptorSetCount : " << value.descriptorSetCount << std::endl;
+    stream << "pSetLayouts : " << value.pSetLayouts << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( DescriptorSetAllocateInfo value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct DescriptorSetLayoutBinding
   {
@@ -23394,6 +27450,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkDescriptorSetLayoutBinding*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, DescriptorSetLayoutBinding const& );
 
     bool operator==( DescriptorSetLayoutBinding const& rhs ) const
     {
@@ -23416,6 +27474,25 @@ namespace VULKAN_HPP_NAMESPACE
     const Sampler* pImmutableSamplers;
   };
   static_assert( sizeof( DescriptorSetLayoutBinding ) == sizeof( VkDescriptorSetLayoutBinding ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, DescriptorSetLayoutBinding const& value )
+  {
+    stream << "binding : " << value.binding << std::endl;
+    stream << "descriptorType : " << value.descriptorType << std::endl;
+    stream << "descriptorCount : " << value.descriptorCount << std::endl;
+    stream << "stageFlags : " << value.stageFlags << std::endl;
+    stream << "pImmutableSamplers : " << value.pImmutableSamplers << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( DescriptorSetLayoutBinding value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct DescriptorSetLayoutBindingFlagsCreateInfoEXT
   {
@@ -23463,6 +27540,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkDescriptorSetLayoutBindingFlagsCreateInfoEXT*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, DescriptorSetLayoutBindingFlagsCreateInfoEXT const& );
 
     bool operator==( DescriptorSetLayoutBindingFlagsCreateInfoEXT const& rhs ) const
     {
@@ -23486,6 +27565,24 @@ namespace VULKAN_HPP_NAMESPACE
     const DescriptorBindingFlagsEXT* pBindingFlags;
   };
   static_assert( sizeof( DescriptorSetLayoutBindingFlagsCreateInfoEXT ) == sizeof( VkDescriptorSetLayoutBindingFlagsCreateInfoEXT ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, DescriptorSetLayoutBindingFlagsCreateInfoEXT const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "bindingCount : " << value.bindingCount << std::endl;
+    stream << "pBindingFlags : " << value.pBindingFlags << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( DescriptorSetLayoutBindingFlagsCreateInfoEXT value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct DescriptorSetLayoutCreateInfo
   {
@@ -23541,6 +27638,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkDescriptorSetLayoutCreateInfo*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, DescriptorSetLayoutCreateInfo const& );
 
     bool operator==( DescriptorSetLayoutCreateInfo const& rhs ) const
     {
@@ -23566,6 +27665,25 @@ namespace VULKAN_HPP_NAMESPACE
     const DescriptorSetLayoutBinding* pBindings;
   };
   static_assert( sizeof( DescriptorSetLayoutCreateInfo ) == sizeof( VkDescriptorSetLayoutCreateInfo ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, DescriptorSetLayoutCreateInfo const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "flags : " << value.flags << std::endl;
+    stream << "bindingCount : " << value.bindingCount << std::endl;
+    stream << "pBindings : " << value.pBindings << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( DescriptorSetLayoutCreateInfo value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct DescriptorSetLayoutSupport
   {
@@ -23578,6 +27696,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkDescriptorSetLayoutSupport*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, DescriptorSetLayoutSupport const& );
 
     bool operator==( DescriptorSetLayoutSupport const& rhs ) const
     {
@@ -23599,6 +27719,23 @@ namespace VULKAN_HPP_NAMESPACE
     Bool32 supported;
   };
   static_assert( sizeof( DescriptorSetLayoutSupport ) == sizeof( VkDescriptorSetLayoutSupport ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, DescriptorSetLayoutSupport const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "supported : " << value.supported << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( DescriptorSetLayoutSupport value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct DescriptorSetVariableDescriptorCountAllocateInfoEXT
   {
@@ -23646,6 +27783,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkDescriptorSetVariableDescriptorCountAllocateInfoEXT*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, DescriptorSetVariableDescriptorCountAllocateInfoEXT const& );
 
     bool operator==( DescriptorSetVariableDescriptorCountAllocateInfoEXT const& rhs ) const
     {
@@ -23669,6 +27808,24 @@ namespace VULKAN_HPP_NAMESPACE
     const uint32_t* pDescriptorCounts;
   };
   static_assert( sizeof( DescriptorSetVariableDescriptorCountAllocateInfoEXT ) == sizeof( VkDescriptorSetVariableDescriptorCountAllocateInfoEXT ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, DescriptorSetVariableDescriptorCountAllocateInfoEXT const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "descriptorSetCount : " << value.descriptorSetCount << std::endl;
+    stream << "pDescriptorCounts : " << value.pDescriptorCounts << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( DescriptorSetVariableDescriptorCountAllocateInfoEXT value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct DescriptorSetVariableDescriptorCountLayoutSupportEXT
   {
@@ -23681,6 +27838,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkDescriptorSetVariableDescriptorCountLayoutSupportEXT*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, DescriptorSetVariableDescriptorCountLayoutSupportEXT const& );
 
     bool operator==( DescriptorSetVariableDescriptorCountLayoutSupportEXT const& rhs ) const
     {
@@ -23702,6 +27861,23 @@ namespace VULKAN_HPP_NAMESPACE
     uint32_t maxVariableDescriptorCount;
   };
   static_assert( sizeof( DescriptorSetVariableDescriptorCountLayoutSupportEXT ) == sizeof( VkDescriptorSetVariableDescriptorCountLayoutSupportEXT ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, DescriptorSetVariableDescriptorCountLayoutSupportEXT const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "maxVariableDescriptorCount : " << value.maxVariableDescriptorCount << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( DescriptorSetVariableDescriptorCountLayoutSupportEXT value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct DescriptorUpdateTemplateEntry
   {
@@ -23775,6 +27951,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkDescriptorUpdateTemplateEntry*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, DescriptorUpdateTemplateEntry const& );
 
     bool operator==( DescriptorUpdateTemplateEntry const& rhs ) const
     {
@@ -23799,6 +27977,26 @@ namespace VULKAN_HPP_NAMESPACE
     size_t stride;
   };
   static_assert( sizeof( DescriptorUpdateTemplateEntry ) == sizeof( VkDescriptorUpdateTemplateEntry ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, DescriptorUpdateTemplateEntry const& value )
+  {
+    stream << "dstBinding : " << value.dstBinding << std::endl;
+    stream << "dstArrayElement : " << value.dstArrayElement << std::endl;
+    stream << "descriptorCount : " << value.descriptorCount << std::endl;
+    stream << "descriptorType : " << value.descriptorType << std::endl;
+    stream << "offset : " << value.offset << std::endl;
+    stream << "stride : " << value.stride << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( DescriptorUpdateTemplateEntry value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct DescriptorUpdateTemplateCreateInfo
   {
@@ -23894,6 +28092,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkDescriptorUpdateTemplateCreateInfo*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, DescriptorUpdateTemplateCreateInfo const& );
 
     bool operator==( DescriptorUpdateTemplateCreateInfo const& rhs ) const
     {
@@ -23929,6 +28129,30 @@ namespace VULKAN_HPP_NAMESPACE
     uint32_t set;
   };
   static_assert( sizeof( DescriptorUpdateTemplateCreateInfo ) == sizeof( VkDescriptorUpdateTemplateCreateInfo ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, DescriptorUpdateTemplateCreateInfo const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "flags : " << value.flags << std::endl;
+    stream << "descriptorUpdateEntryCount : " << value.descriptorUpdateEntryCount << std::endl;
+    stream << "pDescriptorUpdateEntries : " << value.pDescriptorUpdateEntries << std::endl;
+    stream << "templateType : " << value.templateType << std::endl;
+    stream << "descriptorSetLayout : " << value.descriptorSetLayout << std::endl;
+    stream << "pipelineBindPoint : " << value.pipelineBindPoint << std::endl;
+    stream << "pipelineLayout : " << value.pipelineLayout << std::endl;
+    stream << "set : " << value.set << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( DescriptorUpdateTemplateCreateInfo value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct DeviceQueueCreateInfo
   {
@@ -23992,6 +28216,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkDeviceQueueCreateInfo*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, DeviceQueueCreateInfo const& );
 
     bool operator==( DeviceQueueCreateInfo const& rhs ) const
     {
@@ -24019,6 +28245,26 @@ namespace VULKAN_HPP_NAMESPACE
     const float* pQueuePriorities;
   };
   static_assert( sizeof( DeviceQueueCreateInfo ) == sizeof( VkDeviceQueueCreateInfo ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, DeviceQueueCreateInfo const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "flags : " << value.flags << std::endl;
+    stream << "queueFamilyIndex : " << value.queueFamilyIndex << std::endl;
+    stream << "queueCount : " << value.queueCount << std::endl;
+    stream << "pQueuePriorities : " << value.pQueuePriorities << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( DeviceQueueCreateInfo value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct PhysicalDeviceFeatures
   {
@@ -24484,6 +28730,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkPhysicalDeviceFeatures*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, PhysicalDeviceFeatures const& );
 
     bool operator==( PhysicalDeviceFeatures const& rhs ) const
     {
@@ -24606,6 +28854,75 @@ namespace VULKAN_HPP_NAMESPACE
     Bool32 inheritedQueries;
   };
   static_assert( sizeof( PhysicalDeviceFeatures ) == sizeof( VkPhysicalDeviceFeatures ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, PhysicalDeviceFeatures const& value )
+  {
+    stream << "robustBufferAccess : " << value.robustBufferAccess << std::endl;
+    stream << "fullDrawIndexUint32 : " << value.fullDrawIndexUint32 << std::endl;
+    stream << "imageCubeArray : " << value.imageCubeArray << std::endl;
+    stream << "independentBlend : " << value.independentBlend << std::endl;
+    stream << "geometryShader : " << value.geometryShader << std::endl;
+    stream << "tessellationShader : " << value.tessellationShader << std::endl;
+    stream << "sampleRateShading : " << value.sampleRateShading << std::endl;
+    stream << "dualSrcBlend : " << value.dualSrcBlend << std::endl;
+    stream << "logicOp : " << value.logicOp << std::endl;
+    stream << "multiDrawIndirect : " << value.multiDrawIndirect << std::endl;
+    stream << "drawIndirectFirstInstance : " << value.drawIndirectFirstInstance << std::endl;
+    stream << "depthClamp : " << value.depthClamp << std::endl;
+    stream << "depthBiasClamp : " << value.depthBiasClamp << std::endl;
+    stream << "fillModeNonSolid : " << value.fillModeNonSolid << std::endl;
+    stream << "depthBounds : " << value.depthBounds << std::endl;
+    stream << "wideLines : " << value.wideLines << std::endl;
+    stream << "largePoints : " << value.largePoints << std::endl;
+    stream << "alphaToOne : " << value.alphaToOne << std::endl;
+    stream << "multiViewport : " << value.multiViewport << std::endl;
+    stream << "samplerAnisotropy : " << value.samplerAnisotropy << std::endl;
+    stream << "textureCompressionETC2 : " << value.textureCompressionETC2 << std::endl;
+    stream << "textureCompressionASTC_LDR : " << value.textureCompressionASTC_LDR << std::endl;
+    stream << "textureCompressionBC : " << value.textureCompressionBC << std::endl;
+    stream << "occlusionQueryPrecise : " << value.occlusionQueryPrecise << std::endl;
+    stream << "pipelineStatisticsQuery : " << value.pipelineStatisticsQuery << std::endl;
+    stream << "vertexPipelineStoresAndAtomics : " << value.vertexPipelineStoresAndAtomics << std::endl;
+    stream << "fragmentStoresAndAtomics : " << value.fragmentStoresAndAtomics << std::endl;
+    stream << "shaderTessellationAndGeometryPointSize : " << value.shaderTessellationAndGeometryPointSize << std::endl;
+    stream << "shaderImageGatherExtended : " << value.shaderImageGatherExtended << std::endl;
+    stream << "shaderStorageImageExtendedFormats : " << value.shaderStorageImageExtendedFormats << std::endl;
+    stream << "shaderStorageImageMultisample : " << value.shaderStorageImageMultisample << std::endl;
+    stream << "shaderStorageImageReadWithoutFormat : " << value.shaderStorageImageReadWithoutFormat << std::endl;
+    stream << "shaderStorageImageWriteWithoutFormat : " << value.shaderStorageImageWriteWithoutFormat << std::endl;
+    stream << "shaderUniformBufferArrayDynamicIndexing : " << value.shaderUniformBufferArrayDynamicIndexing << std::endl;
+    stream << "shaderSampledImageArrayDynamicIndexing : " << value.shaderSampledImageArrayDynamicIndexing << std::endl;
+    stream << "shaderStorageBufferArrayDynamicIndexing : " << value.shaderStorageBufferArrayDynamicIndexing << std::endl;
+    stream << "shaderStorageImageArrayDynamicIndexing : " << value.shaderStorageImageArrayDynamicIndexing << std::endl;
+    stream << "shaderClipDistance : " << value.shaderClipDistance << std::endl;
+    stream << "shaderCullDistance : " << value.shaderCullDistance << std::endl;
+    stream << "shaderFloat64 : " << value.shaderFloat64 << std::endl;
+    stream << "shaderInt64 : " << value.shaderInt64 << std::endl;
+    stream << "shaderInt16 : " << value.shaderInt16 << std::endl;
+    stream << "shaderResourceResidency : " << value.shaderResourceResidency << std::endl;
+    stream << "shaderResourceMinLod : " << value.shaderResourceMinLod << std::endl;
+    stream << "sparseBinding : " << value.sparseBinding << std::endl;
+    stream << "sparseResidencyBuffer : " << value.sparseResidencyBuffer << std::endl;
+    stream << "sparseResidencyImage2D : " << value.sparseResidencyImage2D << std::endl;
+    stream << "sparseResidencyImage3D : " << value.sparseResidencyImage3D << std::endl;
+    stream << "sparseResidency2Samples : " << value.sparseResidency2Samples << std::endl;
+    stream << "sparseResidency4Samples : " << value.sparseResidency4Samples << std::endl;
+    stream << "sparseResidency8Samples : " << value.sparseResidency8Samples << std::endl;
+    stream << "sparseResidency16Samples : " << value.sparseResidency16Samples << std::endl;
+    stream << "sparseResidencyAliased : " << value.sparseResidencyAliased << std::endl;
+    stream << "variableMultisampleRate : " << value.variableMultisampleRate << std::endl;
+    stream << "inheritedQueries : " << value.inheritedQueries << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( PhysicalDeviceFeatures value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct DeviceCreateInfo
   {
@@ -24701,6 +29018,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkDeviceCreateInfo*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, DeviceCreateInfo const& );
 
     bool operator==( DeviceCreateInfo const& rhs ) const
     {
@@ -24736,6 +29055,30 @@ namespace VULKAN_HPP_NAMESPACE
     const PhysicalDeviceFeatures* pEnabledFeatures;
   };
   static_assert( sizeof( DeviceCreateInfo ) == sizeof( VkDeviceCreateInfo ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, DeviceCreateInfo const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "flags : " << value.flags << std::endl;
+    stream << "queueCreateInfoCount : " << value.queueCreateInfoCount << std::endl;
+    stream << "pQueueCreateInfos : " << value.pQueueCreateInfos << std::endl;
+    stream << "enabledLayerCount : " << value.enabledLayerCount << std::endl;
+    stream << "ppEnabledLayerNames : " << value.ppEnabledLayerNames << std::endl;
+    stream << "enabledExtensionCount : " << value.enabledExtensionCount << std::endl;
+    stream << "ppEnabledExtensionNames : " << value.ppEnabledExtensionNames << std::endl;
+    stream << "pEnabledFeatures : " << value.pEnabledFeatures << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( DeviceCreateInfo value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct DeviceEventInfoEXT
   {
@@ -24775,6 +29118,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkDeviceEventInfoEXT*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, DeviceEventInfoEXT const& );
 
     bool operator==( DeviceEventInfoEXT const& rhs ) const
     {
@@ -24796,6 +29141,23 @@ namespace VULKAN_HPP_NAMESPACE
     DeviceEventTypeEXT deviceEvent;
   };
   static_assert( sizeof( DeviceEventInfoEXT ) == sizeof( VkDeviceEventInfoEXT ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, DeviceEventInfoEXT const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "deviceEvent : " << value.deviceEvent << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( DeviceEventInfoEXT value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct DeviceGeneratedCommandsFeaturesNVX
   {
@@ -24835,6 +29197,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkDeviceGeneratedCommandsFeaturesNVX*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, DeviceGeneratedCommandsFeaturesNVX const& );
 
     bool operator==( DeviceGeneratedCommandsFeaturesNVX const& rhs ) const
     {
@@ -24856,6 +29220,23 @@ namespace VULKAN_HPP_NAMESPACE
     Bool32 computeBindingPointSupport;
   };
   static_assert( sizeof( DeviceGeneratedCommandsFeaturesNVX ) == sizeof( VkDeviceGeneratedCommandsFeaturesNVX ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, DeviceGeneratedCommandsFeaturesNVX const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "computeBindingPointSupport : " << value.computeBindingPointSupport << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( DeviceGeneratedCommandsFeaturesNVX value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct DeviceGeneratedCommandsLimitsNVX
   {
@@ -24927,6 +29308,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkDeviceGeneratedCommandsLimitsNVX*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, DeviceGeneratedCommandsLimitsNVX const& );
 
     bool operator==( DeviceGeneratedCommandsLimitsNVX const& rhs ) const
     {
@@ -24956,6 +29339,27 @@ namespace VULKAN_HPP_NAMESPACE
     uint32_t minCommandsTokenBufferOffsetAlignment;
   };
   static_assert( sizeof( DeviceGeneratedCommandsLimitsNVX ) == sizeof( VkDeviceGeneratedCommandsLimitsNVX ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, DeviceGeneratedCommandsLimitsNVX const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "maxIndirectCommandsLayoutTokenCount : " << value.maxIndirectCommandsLayoutTokenCount << std::endl;
+    stream << "maxObjectEntryCounts : " << value.maxObjectEntryCounts << std::endl;
+    stream << "minSequenceCountBufferOffsetAlignment : " << value.minSequenceCountBufferOffsetAlignment << std::endl;
+    stream << "minSequenceIndexBufferOffsetAlignment : " << value.minSequenceIndexBufferOffsetAlignment << std::endl;
+    stream << "minCommandsTokenBufferOffsetAlignment : " << value.minCommandsTokenBufferOffsetAlignment << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( DeviceGeneratedCommandsLimitsNVX value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct DeviceGroupBindSparseInfo
   {
@@ -25003,6 +29407,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkDeviceGroupBindSparseInfo*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, DeviceGroupBindSparseInfo const& );
 
     bool operator==( DeviceGroupBindSparseInfo const& rhs ) const
     {
@@ -25026,6 +29432,24 @@ namespace VULKAN_HPP_NAMESPACE
     uint32_t memoryDeviceIndex;
   };
   static_assert( sizeof( DeviceGroupBindSparseInfo ) == sizeof( VkDeviceGroupBindSparseInfo ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, DeviceGroupBindSparseInfo const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "resourceDeviceIndex : " << value.resourceDeviceIndex << std::endl;
+    stream << "memoryDeviceIndex : " << value.memoryDeviceIndex << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( DeviceGroupBindSparseInfo value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct DeviceGroupCommandBufferBeginInfo
   {
@@ -25065,6 +29489,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkDeviceGroupCommandBufferBeginInfo*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, DeviceGroupCommandBufferBeginInfo const& );
 
     bool operator==( DeviceGroupCommandBufferBeginInfo const& rhs ) const
     {
@@ -25086,6 +29512,23 @@ namespace VULKAN_HPP_NAMESPACE
     uint32_t deviceMask;
   };
   static_assert( sizeof( DeviceGroupCommandBufferBeginInfo ) == sizeof( VkDeviceGroupCommandBufferBeginInfo ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, DeviceGroupCommandBufferBeginInfo const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "deviceMask : " << value.deviceMask << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( DeviceGroupCommandBufferBeginInfo value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct DeviceGroupDeviceCreateInfo
   {
@@ -25133,6 +29576,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkDeviceGroupDeviceCreateInfo*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, DeviceGroupDeviceCreateInfo const& );
 
     bool operator==( DeviceGroupDeviceCreateInfo const& rhs ) const
     {
@@ -25156,6 +29601,24 @@ namespace VULKAN_HPP_NAMESPACE
     const PhysicalDevice* pPhysicalDevices;
   };
   static_assert( sizeof( DeviceGroupDeviceCreateInfo ) == sizeof( VkDeviceGroupDeviceCreateInfo ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, DeviceGroupDeviceCreateInfo const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "physicalDeviceCount : " << value.physicalDeviceCount << std::endl;
+    stream << "pPhysicalDevices : " << value.pPhysicalDevices << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( DeviceGroupDeviceCreateInfo value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct DeviceGroupPresentCapabilitiesKHR
   {
@@ -25168,6 +29631,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkDeviceGroupPresentCapabilitiesKHR*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, DeviceGroupPresentCapabilitiesKHR const& );
 
     bool operator==( DeviceGroupPresentCapabilitiesKHR const& rhs ) const
     {
@@ -25191,6 +29656,24 @@ namespace VULKAN_HPP_NAMESPACE
     DeviceGroupPresentModeFlagsKHR modes;
   };
   static_assert( sizeof( DeviceGroupPresentCapabilitiesKHR ) == sizeof( VkDeviceGroupPresentCapabilitiesKHR ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, DeviceGroupPresentCapabilitiesKHR const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "presentMask : " << value.presentMask << std::endl;
+    stream << "modes : " << value.modes << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( DeviceGroupPresentCapabilitiesKHR value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct DeviceGroupPresentInfoKHR
   {
@@ -25246,6 +29729,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkDeviceGroupPresentInfoKHR*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, DeviceGroupPresentInfoKHR const& );
 
     bool operator==( DeviceGroupPresentInfoKHR const& rhs ) const
     {
@@ -25271,6 +29756,25 @@ namespace VULKAN_HPP_NAMESPACE
     DeviceGroupPresentModeFlagBitsKHR mode;
   };
   static_assert( sizeof( DeviceGroupPresentInfoKHR ) == sizeof( VkDeviceGroupPresentInfoKHR ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, DeviceGroupPresentInfoKHR const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "swapchainCount : " << value.swapchainCount << std::endl;
+    stream << "pDeviceMasks : " << value.pDeviceMasks << std::endl;
+    stream << "mode : " << value.mode << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( DeviceGroupPresentInfoKHR value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct DeviceGroupRenderPassBeginInfo
   {
@@ -25326,6 +29830,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkDeviceGroupRenderPassBeginInfo*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, DeviceGroupRenderPassBeginInfo const& );
 
     bool operator==( DeviceGroupRenderPassBeginInfo const& rhs ) const
     {
@@ -25351,6 +29857,25 @@ namespace VULKAN_HPP_NAMESPACE
     const Rect2D* pDeviceRenderAreas;
   };
   static_assert( sizeof( DeviceGroupRenderPassBeginInfo ) == sizeof( VkDeviceGroupRenderPassBeginInfo ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, DeviceGroupRenderPassBeginInfo const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "deviceMask : " << value.deviceMask << std::endl;
+    stream << "deviceRenderAreaCount : " << value.deviceRenderAreaCount << std::endl;
+    stream << "pDeviceRenderAreas : " << value.pDeviceRenderAreas << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( DeviceGroupRenderPassBeginInfo value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct DeviceGroupSubmitInfo
   {
@@ -25430,6 +29955,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkDeviceGroupSubmitInfo*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, DeviceGroupSubmitInfo const& );
 
     bool operator==( DeviceGroupSubmitInfo const& rhs ) const
     {
@@ -25461,6 +29988,28 @@ namespace VULKAN_HPP_NAMESPACE
     const uint32_t* pSignalSemaphoreDeviceIndices;
   };
   static_assert( sizeof( DeviceGroupSubmitInfo ) == sizeof( VkDeviceGroupSubmitInfo ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, DeviceGroupSubmitInfo const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "waitSemaphoreCount : " << value.waitSemaphoreCount << std::endl;
+    stream << "pWaitSemaphoreDeviceIndices : " << value.pWaitSemaphoreDeviceIndices << std::endl;
+    stream << "commandBufferCount : " << value.commandBufferCount << std::endl;
+    stream << "pCommandBufferDeviceMasks : " << value.pCommandBufferDeviceMasks << std::endl;
+    stream << "signalSemaphoreCount : " << value.signalSemaphoreCount << std::endl;
+    stream << "pSignalSemaphoreDeviceIndices : " << value.pSignalSemaphoreDeviceIndices << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( DeviceGroupSubmitInfo value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct DeviceGroupSwapchainCreateInfoKHR
   {
@@ -25500,6 +30049,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkDeviceGroupSwapchainCreateInfoKHR*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, DeviceGroupSwapchainCreateInfoKHR const& );
 
     bool operator==( DeviceGroupSwapchainCreateInfoKHR const& rhs ) const
     {
@@ -25521,6 +30072,23 @@ namespace VULKAN_HPP_NAMESPACE
     DeviceGroupPresentModeFlagsKHR modes;
   };
   static_assert( sizeof( DeviceGroupSwapchainCreateInfoKHR ) == sizeof( VkDeviceGroupSwapchainCreateInfoKHR ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, DeviceGroupSwapchainCreateInfoKHR const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "modes : " << value.modes << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( DeviceGroupSwapchainCreateInfoKHR value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct DeviceMemoryOverallocationCreateInfoAMD
   {
@@ -25560,6 +30128,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkDeviceMemoryOverallocationCreateInfoAMD*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, DeviceMemoryOverallocationCreateInfoAMD const& );
 
     bool operator==( DeviceMemoryOverallocationCreateInfoAMD const& rhs ) const
     {
@@ -25581,6 +30151,23 @@ namespace VULKAN_HPP_NAMESPACE
     MemoryOverallocationBehaviorAMD overallocationBehavior;
   };
   static_assert( sizeof( DeviceMemoryOverallocationCreateInfoAMD ) == sizeof( VkDeviceMemoryOverallocationCreateInfoAMD ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, DeviceMemoryOverallocationCreateInfoAMD const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "overallocationBehavior : " << value.overallocationBehavior << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( DeviceMemoryOverallocationCreateInfoAMD value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct DeviceQueueGlobalPriorityCreateInfoEXT
   {
@@ -25620,6 +30207,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkDeviceQueueGlobalPriorityCreateInfoEXT*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, DeviceQueueGlobalPriorityCreateInfoEXT const& );
 
     bool operator==( DeviceQueueGlobalPriorityCreateInfoEXT const& rhs ) const
     {
@@ -25641,6 +30230,23 @@ namespace VULKAN_HPP_NAMESPACE
     QueueGlobalPriorityEXT globalPriority;
   };
   static_assert( sizeof( DeviceQueueGlobalPriorityCreateInfoEXT ) == sizeof( VkDeviceQueueGlobalPriorityCreateInfoEXT ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, DeviceQueueGlobalPriorityCreateInfoEXT const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "globalPriority : " << value.globalPriority << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( DeviceQueueGlobalPriorityCreateInfoEXT value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct DeviceQueueInfo2
   {
@@ -25696,6 +30302,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkDeviceQueueInfo2*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, DeviceQueueInfo2 const& );
 
     bool operator==( DeviceQueueInfo2 const& rhs ) const
     {
@@ -25721,6 +30329,25 @@ namespace VULKAN_HPP_NAMESPACE
     uint32_t queueIndex;
   };
   static_assert( sizeof( DeviceQueueInfo2 ) == sizeof( VkDeviceQueueInfo2 ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, DeviceQueueInfo2 const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "flags : " << value.flags << std::endl;
+    stream << "queueFamilyIndex : " << value.queueFamilyIndex << std::endl;
+    stream << "queueIndex : " << value.queueIndex << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( DeviceQueueInfo2 value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct DispatchIndirectCommand
   {
@@ -25770,6 +30397,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkDispatchIndirectCommand*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, DispatchIndirectCommand const& );
 
     bool operator==( DispatchIndirectCommand const& rhs ) const
     {
@@ -25788,6 +30417,23 @@ namespace VULKAN_HPP_NAMESPACE
     uint32_t z;
   };
   static_assert( sizeof( DispatchIndirectCommand ) == sizeof( VkDispatchIndirectCommand ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, DispatchIndirectCommand const& value )
+  {
+    stream << "x : " << value.x << std::endl;
+    stream << "y : " << value.y << std::endl;
+    stream << "z : " << value.z << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( DispatchIndirectCommand value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct DisplayEventInfoEXT
   {
@@ -25827,6 +30473,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkDisplayEventInfoEXT*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, DisplayEventInfoEXT const& );
 
     bool operator==( DisplayEventInfoEXT const& rhs ) const
     {
@@ -25848,6 +30496,23 @@ namespace VULKAN_HPP_NAMESPACE
     DisplayEventTypeEXT displayEvent;
   };
   static_assert( sizeof( DisplayEventInfoEXT ) == sizeof( VkDisplayEventInfoEXT ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, DisplayEventInfoEXT const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "displayEvent : " << value.displayEvent << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( DisplayEventInfoEXT value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct DisplayModeParametersKHR
   {
@@ -25889,6 +30554,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkDisplayModeParametersKHR*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, DisplayModeParametersKHR const& );
 
     bool operator==( DisplayModeParametersKHR const& rhs ) const
     {
@@ -25905,6 +30572,22 @@ namespace VULKAN_HPP_NAMESPACE
     uint32_t refreshRate;
   };
   static_assert( sizeof( DisplayModeParametersKHR ) == sizeof( VkDisplayModeParametersKHR ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, DisplayModeParametersKHR const& value )
+  {
+    stream << "visibleRegion : " << value.visibleRegion << std::endl;
+    stream << "refreshRate : " << value.refreshRate << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( DisplayModeParametersKHR value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct DisplayModeCreateInfoKHR
   {
@@ -25952,6 +30635,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkDisplayModeCreateInfoKHR*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, DisplayModeCreateInfoKHR const& );
 
     bool operator==( DisplayModeCreateInfoKHR const& rhs ) const
     {
@@ -25975,6 +30660,24 @@ namespace VULKAN_HPP_NAMESPACE
     DisplayModeParametersKHR parameters;
   };
   static_assert( sizeof( DisplayModeCreateInfoKHR ) == sizeof( VkDisplayModeCreateInfoKHR ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, DisplayModeCreateInfoKHR const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "flags : " << value.flags << std::endl;
+    stream << "parameters : " << value.parameters << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( DisplayModeCreateInfoKHR value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct DisplayModePropertiesKHR
   {
@@ -25987,6 +30690,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkDisplayModePropertiesKHR*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, DisplayModePropertiesKHR const& );
 
     bool operator==( DisplayModePropertiesKHR const& rhs ) const
     {
@@ -26003,6 +30708,22 @@ namespace VULKAN_HPP_NAMESPACE
     DisplayModeParametersKHR parameters;
   };
   static_assert( sizeof( DisplayModePropertiesKHR ) == sizeof( VkDisplayModePropertiesKHR ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, DisplayModePropertiesKHR const& value )
+  {
+    stream << "displayMode : " << value.displayMode << std::endl;
+    stream << "parameters : " << value.parameters << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( DisplayModePropertiesKHR value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct DisplayModeProperties2KHR
   {
@@ -26015,6 +30736,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkDisplayModeProperties2KHR*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, DisplayModeProperties2KHR const& );
 
     bool operator==( DisplayModeProperties2KHR const& rhs ) const
     {
@@ -26036,6 +30759,23 @@ namespace VULKAN_HPP_NAMESPACE
     DisplayModePropertiesKHR displayModeProperties;
   };
   static_assert( sizeof( DisplayModeProperties2KHR ) == sizeof( VkDisplayModeProperties2KHR ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, DisplayModeProperties2KHR const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "displayModeProperties : " << value.displayModeProperties << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( DisplayModeProperties2KHR value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct DisplayPlaneCapabilitiesKHR
   {
@@ -26048,6 +30788,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkDisplayPlaneCapabilitiesKHR*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, DisplayPlaneCapabilitiesKHR const& );
 
     bool operator==( DisplayPlaneCapabilitiesKHR const& rhs ) const
     {
@@ -26078,6 +30820,29 @@ namespace VULKAN_HPP_NAMESPACE
     Extent2D maxDstExtent;
   };
   static_assert( sizeof( DisplayPlaneCapabilitiesKHR ) == sizeof( VkDisplayPlaneCapabilitiesKHR ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, DisplayPlaneCapabilitiesKHR const& value )
+  {
+    stream << "supportedAlpha : " << value.supportedAlpha << std::endl;
+    stream << "minSrcPosition : " << value.minSrcPosition << std::endl;
+    stream << "maxSrcPosition : " << value.maxSrcPosition << std::endl;
+    stream << "minSrcExtent : " << value.minSrcExtent << std::endl;
+    stream << "maxSrcExtent : " << value.maxSrcExtent << std::endl;
+    stream << "minDstPosition : " << value.minDstPosition << std::endl;
+    stream << "maxDstPosition : " << value.maxDstPosition << std::endl;
+    stream << "minDstExtent : " << value.minDstExtent << std::endl;
+    stream << "maxDstExtent : " << value.maxDstExtent << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( DisplayPlaneCapabilitiesKHR value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct DisplayPlaneCapabilities2KHR
   {
@@ -26090,6 +30855,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkDisplayPlaneCapabilities2KHR*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, DisplayPlaneCapabilities2KHR const& );
 
     bool operator==( DisplayPlaneCapabilities2KHR const& rhs ) const
     {
@@ -26111,6 +30878,23 @@ namespace VULKAN_HPP_NAMESPACE
     DisplayPlaneCapabilitiesKHR capabilities;
   };
   static_assert( sizeof( DisplayPlaneCapabilities2KHR ) == sizeof( VkDisplayPlaneCapabilities2KHR ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, DisplayPlaneCapabilities2KHR const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "capabilities : " << value.capabilities << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( DisplayPlaneCapabilities2KHR value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct DisplayPlaneInfo2KHR
   {
@@ -26158,6 +30942,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkDisplayPlaneInfo2KHR*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, DisplayPlaneInfo2KHR const& );
 
     bool operator==( DisplayPlaneInfo2KHR const& rhs ) const
     {
@@ -26181,6 +30967,24 @@ namespace VULKAN_HPP_NAMESPACE
     uint32_t planeIndex;
   };
   static_assert( sizeof( DisplayPlaneInfo2KHR ) == sizeof( VkDisplayPlaneInfo2KHR ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, DisplayPlaneInfo2KHR const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "mode : " << value.mode << std::endl;
+    stream << "planeIndex : " << value.planeIndex << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( DisplayPlaneInfo2KHR value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct DisplayPlanePropertiesKHR
   {
@@ -26193,6 +30997,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkDisplayPlanePropertiesKHR*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, DisplayPlanePropertiesKHR const& );
 
     bool operator==( DisplayPlanePropertiesKHR const& rhs ) const
     {
@@ -26209,6 +31015,22 @@ namespace VULKAN_HPP_NAMESPACE
     uint32_t currentStackIndex;
   };
   static_assert( sizeof( DisplayPlanePropertiesKHR ) == sizeof( VkDisplayPlanePropertiesKHR ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, DisplayPlanePropertiesKHR const& value )
+  {
+    stream << "currentDisplay : " << value.currentDisplay << std::endl;
+    stream << "currentStackIndex : " << value.currentStackIndex << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( DisplayPlanePropertiesKHR value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct DisplayPlaneProperties2KHR
   {
@@ -26221,6 +31043,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkDisplayPlaneProperties2KHR*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, DisplayPlaneProperties2KHR const& );
 
     bool operator==( DisplayPlaneProperties2KHR const& rhs ) const
     {
@@ -26242,6 +31066,23 @@ namespace VULKAN_HPP_NAMESPACE
     DisplayPlanePropertiesKHR displayPlaneProperties;
   };
   static_assert( sizeof( DisplayPlaneProperties2KHR ) == sizeof( VkDisplayPlaneProperties2KHR ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, DisplayPlaneProperties2KHR const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "displayPlaneProperties : " << value.displayPlaneProperties << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( DisplayPlaneProperties2KHR value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct DisplayPowerInfoEXT
   {
@@ -26281,6 +31122,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkDisplayPowerInfoEXT*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, DisplayPowerInfoEXT const& );
 
     bool operator==( DisplayPowerInfoEXT const& rhs ) const
     {
@@ -26302,6 +31145,23 @@ namespace VULKAN_HPP_NAMESPACE
     DisplayPowerStateEXT powerState;
   };
   static_assert( sizeof( DisplayPowerInfoEXT ) == sizeof( VkDisplayPowerInfoEXT ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, DisplayPowerInfoEXT const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "powerState : " << value.powerState << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( DisplayPowerInfoEXT value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct DisplayPresentInfoKHR
   {
@@ -26357,6 +31217,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkDisplayPresentInfoKHR*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, DisplayPresentInfoKHR const& );
 
     bool operator==( DisplayPresentInfoKHR const& rhs ) const
     {
@@ -26382,6 +31244,25 @@ namespace VULKAN_HPP_NAMESPACE
     Bool32 persistent;
   };
   static_assert( sizeof( DisplayPresentInfoKHR ) == sizeof( VkDisplayPresentInfoKHR ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, DisplayPresentInfoKHR const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "srcRect : " << value.srcRect << std::endl;
+    stream << "dstRect : " << value.dstRect << std::endl;
+    stream << "persistent : " << value.persistent << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( DisplayPresentInfoKHR value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct DisplayPropertiesKHR
   {
@@ -26394,6 +31275,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkDisplayPropertiesKHR*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, DisplayPropertiesKHR const& );
 
     bool operator==( DisplayPropertiesKHR const& rhs ) const
     {
@@ -26420,6 +31303,27 @@ namespace VULKAN_HPP_NAMESPACE
     Bool32 persistentContent;
   };
   static_assert( sizeof( DisplayPropertiesKHR ) == sizeof( VkDisplayPropertiesKHR ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, DisplayPropertiesKHR const& value )
+  {
+    stream << "display : " << value.display << std::endl;
+    stream << "displayName : " << value.displayName << std::endl;
+    stream << "physicalDimensions : " << value.physicalDimensions << std::endl;
+    stream << "physicalResolution : " << value.physicalResolution << std::endl;
+    stream << "supportedTransforms : " << value.supportedTransforms << std::endl;
+    stream << "planeReorderPossible : " << value.planeReorderPossible << std::endl;
+    stream << "persistentContent : " << value.persistentContent << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( DisplayPropertiesKHR value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct DisplayProperties2KHR
   {
@@ -26432,6 +31336,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkDisplayProperties2KHR*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, DisplayProperties2KHR const& );
 
     bool operator==( DisplayProperties2KHR const& rhs ) const
     {
@@ -26453,6 +31359,23 @@ namespace VULKAN_HPP_NAMESPACE
     DisplayPropertiesKHR displayProperties;
   };
   static_assert( sizeof( DisplayProperties2KHR ) == sizeof( VkDisplayProperties2KHR ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, DisplayProperties2KHR const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "displayProperties : " << value.displayProperties << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( DisplayProperties2KHR value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct DisplaySurfaceCreateInfoKHR
   {
@@ -26548,6 +31471,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkDisplaySurfaceCreateInfoKHR*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, DisplaySurfaceCreateInfoKHR const& );
 
     bool operator==( DisplaySurfaceCreateInfoKHR const& rhs ) const
     {
@@ -26583,6 +31508,30 @@ namespace VULKAN_HPP_NAMESPACE
     Extent2D imageExtent;
   };
   static_assert( sizeof( DisplaySurfaceCreateInfoKHR ) == sizeof( VkDisplaySurfaceCreateInfoKHR ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, DisplaySurfaceCreateInfoKHR const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "flags : " << value.flags << std::endl;
+    stream << "displayMode : " << value.displayMode << std::endl;
+    stream << "planeIndex : " << value.planeIndex << std::endl;
+    stream << "planeStackIndex : " << value.planeStackIndex << std::endl;
+    stream << "transform : " << value.transform << std::endl;
+    stream << "globalAlpha : " << value.globalAlpha << std::endl;
+    stream << "alphaMode : " << value.alphaMode << std::endl;
+    stream << "imageExtent : " << value.imageExtent << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( DisplaySurfaceCreateInfoKHR value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct DrawIndexedIndirectCommand
   {
@@ -26648,6 +31597,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkDrawIndexedIndirectCommand*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, DrawIndexedIndirectCommand const& );
 
     bool operator==( DrawIndexedIndirectCommand const& rhs ) const
     {
@@ -26670,6 +31621,25 @@ namespace VULKAN_HPP_NAMESPACE
     uint32_t firstInstance;
   };
   static_assert( sizeof( DrawIndexedIndirectCommand ) == sizeof( VkDrawIndexedIndirectCommand ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, DrawIndexedIndirectCommand const& value )
+  {
+    stream << "indexCount : " << value.indexCount << std::endl;
+    stream << "instanceCount : " << value.instanceCount << std::endl;
+    stream << "firstIndex : " << value.firstIndex << std::endl;
+    stream << "vertexOffset : " << value.vertexOffset << std::endl;
+    stream << "firstInstance : " << value.firstInstance << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( DrawIndexedIndirectCommand value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct DrawIndirectCommand
   {
@@ -26727,6 +31697,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkDrawIndirectCommand*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, DrawIndirectCommand const& );
 
     bool operator==( DrawIndirectCommand const& rhs ) const
     {
@@ -26747,6 +31719,24 @@ namespace VULKAN_HPP_NAMESPACE
     uint32_t firstInstance;
   };
   static_assert( sizeof( DrawIndirectCommand ) == sizeof( VkDrawIndirectCommand ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, DrawIndirectCommand const& value )
+  {
+    stream << "vertexCount : " << value.vertexCount << std::endl;
+    stream << "instanceCount : " << value.instanceCount << std::endl;
+    stream << "firstVertex : " << value.firstVertex << std::endl;
+    stream << "firstInstance : " << value.firstInstance << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( DrawIndirectCommand value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct DrawMeshTasksIndirectCommandNV
   {
@@ -26788,6 +31778,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkDrawMeshTasksIndirectCommandNV*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, DrawMeshTasksIndirectCommandNV const& );
 
     bool operator==( DrawMeshTasksIndirectCommandNV const& rhs ) const
     {
@@ -26804,6 +31796,22 @@ namespace VULKAN_HPP_NAMESPACE
     uint32_t firstTask;
   };
   static_assert( sizeof( DrawMeshTasksIndirectCommandNV ) == sizeof( VkDrawMeshTasksIndirectCommandNV ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, DrawMeshTasksIndirectCommandNV const& value )
+  {
+    stream << "taskCount : " << value.taskCount << std::endl;
+    stream << "firstTask : " << value.firstTask << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( DrawMeshTasksIndirectCommandNV value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct DrmFormatModifierPropertiesEXT
   {
@@ -26816,6 +31824,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkDrmFormatModifierPropertiesEXT*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, DrmFormatModifierPropertiesEXT const& );
 
     bool operator==( DrmFormatModifierPropertiesEXT const& rhs ) const
     {
@@ -26834,6 +31844,23 @@ namespace VULKAN_HPP_NAMESPACE
     FormatFeatureFlags drmFormatModifierTilingFeatures;
   };
   static_assert( sizeof( DrmFormatModifierPropertiesEXT ) == sizeof( VkDrmFormatModifierPropertiesEXT ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, DrmFormatModifierPropertiesEXT const& value )
+  {
+    stream << "drmFormatModifier : " << value.drmFormatModifier << std::endl;
+    stream << "drmFormatModifierPlaneCount : " << value.drmFormatModifierPlaneCount << std::endl;
+    stream << "drmFormatModifierTilingFeatures : " << value.drmFormatModifierTilingFeatures << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( DrmFormatModifierPropertiesEXT value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct DrmFormatModifierPropertiesListEXT
   {
@@ -26846,6 +31873,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkDrmFormatModifierPropertiesListEXT*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, DrmFormatModifierPropertiesListEXT const& );
 
     bool operator==( DrmFormatModifierPropertiesListEXT const& rhs ) const
     {
@@ -26869,6 +31898,24 @@ namespace VULKAN_HPP_NAMESPACE
     DrmFormatModifierPropertiesEXT* pDrmFormatModifierProperties;
   };
   static_assert( sizeof( DrmFormatModifierPropertiesListEXT ) == sizeof( VkDrmFormatModifierPropertiesListEXT ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, DrmFormatModifierPropertiesListEXT const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "drmFormatModifierCount : " << value.drmFormatModifierCount << std::endl;
+    stream << "pDrmFormatModifierProperties : " << value.pDrmFormatModifierProperties << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( DrmFormatModifierPropertiesListEXT value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct EventCreateInfo
   {
@@ -26908,6 +31955,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkEventCreateInfo*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, EventCreateInfo const& );
 
     bool operator==( EventCreateInfo const& rhs ) const
     {
@@ -26929,6 +31978,23 @@ namespace VULKAN_HPP_NAMESPACE
     EventCreateFlags flags;
   };
   static_assert( sizeof( EventCreateInfo ) == sizeof( VkEventCreateInfo ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, EventCreateInfo const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "flags : " << value.flags << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( EventCreateInfo value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct ExportFenceCreateInfo
   {
@@ -26968,6 +32034,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkExportFenceCreateInfo*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, ExportFenceCreateInfo const& );
 
     bool operator==( ExportFenceCreateInfo const& rhs ) const
     {
@@ -26989,6 +32057,23 @@ namespace VULKAN_HPP_NAMESPACE
     ExternalFenceHandleTypeFlags handleTypes;
   };
   static_assert( sizeof( ExportFenceCreateInfo ) == sizeof( VkExportFenceCreateInfo ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, ExportFenceCreateInfo const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "handleTypes : " << value.handleTypes << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( ExportFenceCreateInfo value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
 #ifdef VK_USE_PLATFORM_WIN32_KHR
   struct ExportFenceWin32HandleInfoKHR
@@ -27045,6 +32130,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkExportFenceWin32HandleInfoKHR*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, ExportFenceWin32HandleInfoKHR const& );
 
     bool operator==( ExportFenceWin32HandleInfoKHR const& rhs ) const
     {
@@ -27070,6 +32157,25 @@ namespace VULKAN_HPP_NAMESPACE
     LPCWSTR name;
   };
   static_assert( sizeof( ExportFenceWin32HandleInfoKHR ) == sizeof( VkExportFenceWin32HandleInfoKHR ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, ExportFenceWin32HandleInfoKHR const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "pAttributes : " << value.pAttributes << std::endl;
+    stream << "dwAccess : " << value.dwAccess << std::endl;
+    stream << "name : " << value.name << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( ExportFenceWin32HandleInfoKHR value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 #endif /*VK_USE_PLATFORM_WIN32_KHR*/
 
   struct ExportMemoryAllocateInfo
@@ -27110,6 +32216,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkExportMemoryAllocateInfo*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, ExportMemoryAllocateInfo const& );
 
     bool operator==( ExportMemoryAllocateInfo const& rhs ) const
     {
@@ -27131,6 +32239,23 @@ namespace VULKAN_HPP_NAMESPACE
     ExternalMemoryHandleTypeFlags handleTypes;
   };
   static_assert( sizeof( ExportMemoryAllocateInfo ) == sizeof( VkExportMemoryAllocateInfo ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, ExportMemoryAllocateInfo const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "handleTypes : " << value.handleTypes << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( ExportMemoryAllocateInfo value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct ExportMemoryAllocateInfoNV
   {
@@ -27170,6 +32295,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkExportMemoryAllocateInfoNV*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, ExportMemoryAllocateInfoNV const& );
 
     bool operator==( ExportMemoryAllocateInfoNV const& rhs ) const
     {
@@ -27191,6 +32318,23 @@ namespace VULKAN_HPP_NAMESPACE
     ExternalMemoryHandleTypeFlagsNV handleTypes;
   };
   static_assert( sizeof( ExportMemoryAllocateInfoNV ) == sizeof( VkExportMemoryAllocateInfoNV ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, ExportMemoryAllocateInfoNV const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "handleTypes : " << value.handleTypes << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( ExportMemoryAllocateInfoNV value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
 #ifdef VK_USE_PLATFORM_WIN32_KHR
   struct ExportMemoryWin32HandleInfoKHR
@@ -27247,6 +32391,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkExportMemoryWin32HandleInfoKHR*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, ExportMemoryWin32HandleInfoKHR const& );
 
     bool operator==( ExportMemoryWin32HandleInfoKHR const& rhs ) const
     {
@@ -27272,6 +32418,25 @@ namespace VULKAN_HPP_NAMESPACE
     LPCWSTR name;
   };
   static_assert( sizeof( ExportMemoryWin32HandleInfoKHR ) == sizeof( VkExportMemoryWin32HandleInfoKHR ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, ExportMemoryWin32HandleInfoKHR const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "pAttributes : " << value.pAttributes << std::endl;
+    stream << "dwAccess : " << value.dwAccess << std::endl;
+    stream << "name : " << value.name << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( ExportMemoryWin32HandleInfoKHR value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 #endif /*VK_USE_PLATFORM_WIN32_KHR*/
 
 #ifdef VK_USE_PLATFORM_WIN32_KHR
@@ -27321,6 +32486,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkExportMemoryWin32HandleInfoNV*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, ExportMemoryWin32HandleInfoNV const& );
 
     bool operator==( ExportMemoryWin32HandleInfoNV const& rhs ) const
     {
@@ -27344,6 +32511,24 @@ namespace VULKAN_HPP_NAMESPACE
     DWORD dwAccess;
   };
   static_assert( sizeof( ExportMemoryWin32HandleInfoNV ) == sizeof( VkExportMemoryWin32HandleInfoNV ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, ExportMemoryWin32HandleInfoNV const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "pAttributes : " << value.pAttributes << std::endl;
+    stream << "dwAccess : " << value.dwAccess << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( ExportMemoryWin32HandleInfoNV value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 #endif /*VK_USE_PLATFORM_WIN32_KHR*/
 
   struct ExportSemaphoreCreateInfo
@@ -27384,6 +32569,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkExportSemaphoreCreateInfo*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, ExportSemaphoreCreateInfo const& );
 
     bool operator==( ExportSemaphoreCreateInfo const& rhs ) const
     {
@@ -27405,6 +32592,23 @@ namespace VULKAN_HPP_NAMESPACE
     ExternalSemaphoreHandleTypeFlags handleTypes;
   };
   static_assert( sizeof( ExportSemaphoreCreateInfo ) == sizeof( VkExportSemaphoreCreateInfo ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, ExportSemaphoreCreateInfo const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "handleTypes : " << value.handleTypes << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( ExportSemaphoreCreateInfo value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
 #ifdef VK_USE_PLATFORM_WIN32_KHR
   struct ExportSemaphoreWin32HandleInfoKHR
@@ -27461,6 +32665,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkExportSemaphoreWin32HandleInfoKHR*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, ExportSemaphoreWin32HandleInfoKHR const& );
 
     bool operator==( ExportSemaphoreWin32HandleInfoKHR const& rhs ) const
     {
@@ -27486,6 +32692,25 @@ namespace VULKAN_HPP_NAMESPACE
     LPCWSTR name;
   };
   static_assert( sizeof( ExportSemaphoreWin32HandleInfoKHR ) == sizeof( VkExportSemaphoreWin32HandleInfoKHR ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, ExportSemaphoreWin32HandleInfoKHR const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "pAttributes : " << value.pAttributes << std::endl;
+    stream << "dwAccess : " << value.dwAccess << std::endl;
+    stream << "name : " << value.name << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( ExportSemaphoreWin32HandleInfoKHR value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 #endif /*VK_USE_PLATFORM_WIN32_KHR*/
 
   struct ExtensionProperties
@@ -27499,6 +32724,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkExtensionProperties*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, ExtensionProperties const& );
 
     bool operator==( ExtensionProperties const& rhs ) const
     {
@@ -27515,6 +32742,22 @@ namespace VULKAN_HPP_NAMESPACE
     uint32_t specVersion;
   };
   static_assert( sizeof( ExtensionProperties ) == sizeof( VkExtensionProperties ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, ExtensionProperties const& value )
+  {
+    stream << "extensionName : " << value.extensionName << std::endl;
+    stream << "specVersion : " << value.specVersion << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( ExtensionProperties value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct ExternalMemoryProperties
   {
@@ -27527,6 +32770,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkExternalMemoryProperties*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, ExternalMemoryProperties const& );
 
     bool operator==( ExternalMemoryProperties const& rhs ) const
     {
@@ -27545,6 +32790,23 @@ namespace VULKAN_HPP_NAMESPACE
     ExternalMemoryHandleTypeFlags compatibleHandleTypes;
   };
   static_assert( sizeof( ExternalMemoryProperties ) == sizeof( VkExternalMemoryProperties ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, ExternalMemoryProperties const& value )
+  {
+    stream << "externalMemoryFeatures : " << value.externalMemoryFeatures << std::endl;
+    stream << "exportFromImportedHandleTypes : " << value.exportFromImportedHandleTypes << std::endl;
+    stream << "compatibleHandleTypes : " << value.compatibleHandleTypes << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( ExternalMemoryProperties value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct ExternalBufferProperties
   {
@@ -27557,6 +32819,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkExternalBufferProperties*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, ExternalBufferProperties const& );
 
     bool operator==( ExternalBufferProperties const& rhs ) const
     {
@@ -27578,6 +32842,23 @@ namespace VULKAN_HPP_NAMESPACE
     ExternalMemoryProperties externalMemoryProperties;
   };
   static_assert( sizeof( ExternalBufferProperties ) == sizeof( VkExternalBufferProperties ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, ExternalBufferProperties const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "externalMemoryProperties : " << value.externalMemoryProperties << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( ExternalBufferProperties value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct ExternalFenceProperties
   {
@@ -27590,6 +32871,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkExternalFenceProperties*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, ExternalFenceProperties const& );
 
     bool operator==( ExternalFenceProperties const& rhs ) const
     {
@@ -27615,6 +32898,25 @@ namespace VULKAN_HPP_NAMESPACE
     ExternalFenceFeatureFlags externalFenceFeatures;
   };
   static_assert( sizeof( ExternalFenceProperties ) == sizeof( VkExternalFenceProperties ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, ExternalFenceProperties const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "exportFromImportedHandleTypes : " << value.exportFromImportedHandleTypes << std::endl;
+    stream << "compatibleHandleTypes : " << value.compatibleHandleTypes << std::endl;
+    stream << "externalFenceFeatures : " << value.externalFenceFeatures << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( ExternalFenceProperties value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
 #ifdef VK_USE_PLATFORM_ANDROID_KHR
   struct ExternalFormatANDROID
@@ -27655,6 +32957,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkExternalFormatANDROID*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, ExternalFormatANDROID const& );
 
     bool operator==( ExternalFormatANDROID const& rhs ) const
     {
@@ -27676,6 +32980,23 @@ namespace VULKAN_HPP_NAMESPACE
     uint64_t externalFormat;
   };
   static_assert( sizeof( ExternalFormatANDROID ) == sizeof( VkExternalFormatANDROID ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, ExternalFormatANDROID const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "externalFormat : " << value.externalFormat << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( ExternalFormatANDROID value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 #endif /*VK_USE_PLATFORM_ANDROID_KHR*/
 
   struct ExternalImageFormatProperties
@@ -27689,6 +33010,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkExternalImageFormatProperties*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, ExternalImageFormatProperties const& );
 
     bool operator==( ExternalImageFormatProperties const& rhs ) const
     {
@@ -27710,6 +33033,23 @@ namespace VULKAN_HPP_NAMESPACE
     ExternalMemoryProperties externalMemoryProperties;
   };
   static_assert( sizeof( ExternalImageFormatProperties ) == sizeof( VkExternalImageFormatProperties ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, ExternalImageFormatProperties const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "externalMemoryProperties : " << value.externalMemoryProperties << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( ExternalImageFormatProperties value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct ImageFormatProperties
   {
@@ -27722,6 +33062,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkImageFormatProperties*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, ImageFormatProperties const& );
 
     bool operator==( ImageFormatProperties const& rhs ) const
     {
@@ -27744,6 +33086,25 @@ namespace VULKAN_HPP_NAMESPACE
     DeviceSize maxResourceSize;
   };
   static_assert( sizeof( ImageFormatProperties ) == sizeof( VkImageFormatProperties ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, ImageFormatProperties const& value )
+  {
+    stream << "maxExtent : " << value.maxExtent << std::endl;
+    stream << "maxMipLevels : " << value.maxMipLevels << std::endl;
+    stream << "maxArrayLayers : " << value.maxArrayLayers << std::endl;
+    stream << "sampleCounts : " << value.sampleCounts << std::endl;
+    stream << "maxResourceSize : " << value.maxResourceSize << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( ImageFormatProperties value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct ExternalImageFormatPropertiesNV
   {
@@ -27756,6 +33117,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkExternalImageFormatPropertiesNV*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, ExternalImageFormatPropertiesNV const& );
 
     bool operator==( ExternalImageFormatPropertiesNV const& rhs ) const
     {
@@ -27776,6 +33139,24 @@ namespace VULKAN_HPP_NAMESPACE
     ExternalMemoryHandleTypeFlagsNV compatibleHandleTypes;
   };
   static_assert( sizeof( ExternalImageFormatPropertiesNV ) == sizeof( VkExternalImageFormatPropertiesNV ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, ExternalImageFormatPropertiesNV const& value )
+  {
+    stream << "imageFormatProperties : " << value.imageFormatProperties << std::endl;
+    stream << "externalMemoryFeatures : " << value.externalMemoryFeatures << std::endl;
+    stream << "exportFromImportedHandleTypes : " << value.exportFromImportedHandleTypes << std::endl;
+    stream << "compatibleHandleTypes : " << value.compatibleHandleTypes << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( ExternalImageFormatPropertiesNV value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct ExternalMemoryBufferCreateInfo
   {
@@ -27815,6 +33196,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkExternalMemoryBufferCreateInfo*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, ExternalMemoryBufferCreateInfo const& );
 
     bool operator==( ExternalMemoryBufferCreateInfo const& rhs ) const
     {
@@ -27836,6 +33219,23 @@ namespace VULKAN_HPP_NAMESPACE
     ExternalMemoryHandleTypeFlags handleTypes;
   };
   static_assert( sizeof( ExternalMemoryBufferCreateInfo ) == sizeof( VkExternalMemoryBufferCreateInfo ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, ExternalMemoryBufferCreateInfo const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "handleTypes : " << value.handleTypes << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( ExternalMemoryBufferCreateInfo value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct ExternalMemoryImageCreateInfo
   {
@@ -27875,6 +33275,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkExternalMemoryImageCreateInfo*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, ExternalMemoryImageCreateInfo const& );
 
     bool operator==( ExternalMemoryImageCreateInfo const& rhs ) const
     {
@@ -27896,6 +33298,23 @@ namespace VULKAN_HPP_NAMESPACE
     ExternalMemoryHandleTypeFlags handleTypes;
   };
   static_assert( sizeof( ExternalMemoryImageCreateInfo ) == sizeof( VkExternalMemoryImageCreateInfo ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, ExternalMemoryImageCreateInfo const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "handleTypes : " << value.handleTypes << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( ExternalMemoryImageCreateInfo value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct ExternalMemoryImageCreateInfoNV
   {
@@ -27935,6 +33354,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkExternalMemoryImageCreateInfoNV*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, ExternalMemoryImageCreateInfoNV const& );
 
     bool operator==( ExternalMemoryImageCreateInfoNV const& rhs ) const
     {
@@ -27956,6 +33377,23 @@ namespace VULKAN_HPP_NAMESPACE
     ExternalMemoryHandleTypeFlagsNV handleTypes;
   };
   static_assert( sizeof( ExternalMemoryImageCreateInfoNV ) == sizeof( VkExternalMemoryImageCreateInfoNV ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, ExternalMemoryImageCreateInfoNV const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "handleTypes : " << value.handleTypes << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( ExternalMemoryImageCreateInfoNV value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct ExternalSemaphoreProperties
   {
@@ -27968,6 +33406,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkExternalSemaphoreProperties*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, ExternalSemaphoreProperties const& );
 
     bool operator==( ExternalSemaphoreProperties const& rhs ) const
     {
@@ -27993,6 +33433,25 @@ namespace VULKAN_HPP_NAMESPACE
     ExternalSemaphoreFeatureFlags externalSemaphoreFeatures;
   };
   static_assert( sizeof( ExternalSemaphoreProperties ) == sizeof( VkExternalSemaphoreProperties ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, ExternalSemaphoreProperties const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "exportFromImportedHandleTypes : " << value.exportFromImportedHandleTypes << std::endl;
+    stream << "compatibleHandleTypes : " << value.compatibleHandleTypes << std::endl;
+    stream << "externalSemaphoreFeatures : " << value.externalSemaphoreFeatures << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( ExternalSemaphoreProperties value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct FenceCreateInfo
   {
@@ -28032,6 +33491,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkFenceCreateInfo*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, FenceCreateInfo const& );
 
     bool operator==( FenceCreateInfo const& rhs ) const
     {
@@ -28053,6 +33514,23 @@ namespace VULKAN_HPP_NAMESPACE
     FenceCreateFlags flags;
   };
   static_assert( sizeof( FenceCreateInfo ) == sizeof( VkFenceCreateInfo ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, FenceCreateInfo const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "flags : " << value.flags << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( FenceCreateInfo value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct FenceGetFdInfoKHR
   {
@@ -28100,6 +33578,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkFenceGetFdInfoKHR*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, FenceGetFdInfoKHR const& );
 
     bool operator==( FenceGetFdInfoKHR const& rhs ) const
     {
@@ -28123,6 +33603,24 @@ namespace VULKAN_HPP_NAMESPACE
     ExternalFenceHandleTypeFlagBits handleType;
   };
   static_assert( sizeof( FenceGetFdInfoKHR ) == sizeof( VkFenceGetFdInfoKHR ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, FenceGetFdInfoKHR const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "fence : " << value.fence << std::endl;
+    stream << "handleType : " << value.handleType << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( FenceGetFdInfoKHR value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
 #ifdef VK_USE_PLATFORM_WIN32_KHR
   struct FenceGetWin32HandleInfoKHR
@@ -28171,6 +33669,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkFenceGetWin32HandleInfoKHR*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, FenceGetWin32HandleInfoKHR const& );
 
     bool operator==( FenceGetWin32HandleInfoKHR const& rhs ) const
     {
@@ -28194,6 +33694,24 @@ namespace VULKAN_HPP_NAMESPACE
     ExternalFenceHandleTypeFlagBits handleType;
   };
   static_assert( sizeof( FenceGetWin32HandleInfoKHR ) == sizeof( VkFenceGetWin32HandleInfoKHR ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, FenceGetWin32HandleInfoKHR const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "fence : " << value.fence << std::endl;
+    stream << "handleType : " << value.handleType << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( FenceGetWin32HandleInfoKHR value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 #endif /*VK_USE_PLATFORM_WIN32_KHR*/
 
   struct FilterCubicImageViewImageFormatPropertiesEXT
@@ -28207,6 +33725,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkFilterCubicImageViewImageFormatPropertiesEXT*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, FilterCubicImageViewImageFormatPropertiesEXT const& );
 
     bool operator==( FilterCubicImageViewImageFormatPropertiesEXT const& rhs ) const
     {
@@ -28230,6 +33750,24 @@ namespace VULKAN_HPP_NAMESPACE
     Bool32 filterCubicMinmax;
   };
   static_assert( sizeof( FilterCubicImageViewImageFormatPropertiesEXT ) == sizeof( VkFilterCubicImageViewImageFormatPropertiesEXT ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, FilterCubicImageViewImageFormatPropertiesEXT const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "filterCubic : " << value.filterCubic << std::endl;
+    stream << "filterCubicMinmax : " << value.filterCubicMinmax << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( FilterCubicImageViewImageFormatPropertiesEXT value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct FormatProperties
   {
@@ -28242,6 +33780,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkFormatProperties*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, FormatProperties const& );
 
     bool operator==( FormatProperties const& rhs ) const
     {
@@ -28260,6 +33800,23 @@ namespace VULKAN_HPP_NAMESPACE
     FormatFeatureFlags bufferFeatures;
   };
   static_assert( sizeof( FormatProperties ) == sizeof( VkFormatProperties ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, FormatProperties const& value )
+  {
+    stream << "linearTilingFeatures : " << value.linearTilingFeatures << std::endl;
+    stream << "optimalTilingFeatures : " << value.optimalTilingFeatures << std::endl;
+    stream << "bufferFeatures : " << value.bufferFeatures << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( FormatProperties value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct FormatProperties2
   {
@@ -28272,6 +33829,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkFormatProperties2*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, FormatProperties2 const& );
 
     bool operator==( FormatProperties2 const& rhs ) const
     {
@@ -28293,6 +33852,23 @@ namespace VULKAN_HPP_NAMESPACE
     FormatProperties formatProperties;
   };
   static_assert( sizeof( FormatProperties2 ) == sizeof( VkFormatProperties2 ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, FormatProperties2 const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "formatProperties : " << value.formatProperties << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( FormatProperties2 value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct FramebufferCreateInfo
   {
@@ -28380,6 +33956,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkFramebufferCreateInfo*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, FramebufferCreateInfo const& );
 
     bool operator==( FramebufferCreateInfo const& rhs ) const
     {
@@ -28413,6 +33991,29 @@ namespace VULKAN_HPP_NAMESPACE
     uint32_t layers;
   };
   static_assert( sizeof( FramebufferCreateInfo ) == sizeof( VkFramebufferCreateInfo ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, FramebufferCreateInfo const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "flags : " << value.flags << std::endl;
+    stream << "renderPass : " << value.renderPass << std::endl;
+    stream << "attachmentCount : " << value.attachmentCount << std::endl;
+    stream << "pAttachments : " << value.pAttachments << std::endl;
+    stream << "width : " << value.width << std::endl;
+    stream << "height : " << value.height << std::endl;
+    stream << "layers : " << value.layers << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( FramebufferCreateInfo value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct VertexInputBindingDescription
   {
@@ -28462,6 +34063,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkVertexInputBindingDescription*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, VertexInputBindingDescription const& );
 
     bool operator==( VertexInputBindingDescription const& rhs ) const
     {
@@ -28480,6 +34083,23 @@ namespace VULKAN_HPP_NAMESPACE
     VertexInputRate inputRate;
   };
   static_assert( sizeof( VertexInputBindingDescription ) == sizeof( VkVertexInputBindingDescription ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, VertexInputBindingDescription const& value )
+  {
+    stream << "binding : " << value.binding << std::endl;
+    stream << "stride : " << value.stride << std::endl;
+    stream << "inputRate : " << value.inputRate << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( VertexInputBindingDescription value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct VertexInputAttributeDescription
   {
@@ -28537,6 +34157,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkVertexInputAttributeDescription*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, VertexInputAttributeDescription const& );
 
     bool operator==( VertexInputAttributeDescription const& rhs ) const
     {
@@ -28557,6 +34179,24 @@ namespace VULKAN_HPP_NAMESPACE
     uint32_t offset;
   };
   static_assert( sizeof( VertexInputAttributeDescription ) == sizeof( VkVertexInputAttributeDescription ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, VertexInputAttributeDescription const& value )
+  {
+    stream << "location : " << value.location << std::endl;
+    stream << "binding : " << value.binding << std::endl;
+    stream << "format : " << value.format << std::endl;
+    stream << "offset : " << value.offset << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( VertexInputAttributeDescription value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct PipelineVertexInputStateCreateInfo
   {
@@ -28628,6 +34268,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkPipelineVertexInputStateCreateInfo*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, PipelineVertexInputStateCreateInfo const& );
 
     bool operator==( PipelineVertexInputStateCreateInfo const& rhs ) const
     {
@@ -28657,6 +34299,27 @@ namespace VULKAN_HPP_NAMESPACE
     const VertexInputAttributeDescription* pVertexAttributeDescriptions;
   };
   static_assert( sizeof( PipelineVertexInputStateCreateInfo ) == sizeof( VkPipelineVertexInputStateCreateInfo ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, PipelineVertexInputStateCreateInfo const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "flags : " << value.flags << std::endl;
+    stream << "vertexBindingDescriptionCount : " << value.vertexBindingDescriptionCount << std::endl;
+    stream << "pVertexBindingDescriptions : " << value.pVertexBindingDescriptions << std::endl;
+    stream << "vertexAttributeDescriptionCount : " << value.vertexAttributeDescriptionCount << std::endl;
+    stream << "pVertexAttributeDescriptions : " << value.pVertexAttributeDescriptions << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( PipelineVertexInputStateCreateInfo value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct PipelineInputAssemblyStateCreateInfo
   {
@@ -28712,6 +34375,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkPipelineInputAssemblyStateCreateInfo*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, PipelineInputAssemblyStateCreateInfo const& );
 
     bool operator==( PipelineInputAssemblyStateCreateInfo const& rhs ) const
     {
@@ -28737,6 +34402,25 @@ namespace VULKAN_HPP_NAMESPACE
     Bool32 primitiveRestartEnable;
   };
   static_assert( sizeof( PipelineInputAssemblyStateCreateInfo ) == sizeof( VkPipelineInputAssemblyStateCreateInfo ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, PipelineInputAssemblyStateCreateInfo const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "flags : " << value.flags << std::endl;
+    stream << "topology : " << value.topology << std::endl;
+    stream << "primitiveRestartEnable : " << value.primitiveRestartEnable << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( PipelineInputAssemblyStateCreateInfo value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct PipelineTessellationStateCreateInfo
   {
@@ -28784,6 +34468,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkPipelineTessellationStateCreateInfo*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, PipelineTessellationStateCreateInfo const& );
 
     bool operator==( PipelineTessellationStateCreateInfo const& rhs ) const
     {
@@ -28807,6 +34493,24 @@ namespace VULKAN_HPP_NAMESPACE
     uint32_t patchControlPoints;
   };
   static_assert( sizeof( PipelineTessellationStateCreateInfo ) == sizeof( VkPipelineTessellationStateCreateInfo ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, PipelineTessellationStateCreateInfo const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "flags : " << value.flags << std::endl;
+    stream << "patchControlPoints : " << value.patchControlPoints << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( PipelineTessellationStateCreateInfo value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct Viewport
   {
@@ -28880,6 +34584,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkViewport*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, Viewport const& );
 
     bool operator==( Viewport const& rhs ) const
     {
@@ -28904,6 +34610,26 @@ namespace VULKAN_HPP_NAMESPACE
     float maxDepth;
   };
   static_assert( sizeof( Viewport ) == sizeof( VkViewport ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, Viewport const& value )
+  {
+    stream << "x : " << value.x << std::endl;
+    stream << "y : " << value.y << std::endl;
+    stream << "width : " << value.width << std::endl;
+    stream << "height : " << value.height << std::endl;
+    stream << "minDepth : " << value.minDepth << std::endl;
+    stream << "maxDepth : " << value.maxDepth << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( Viewport value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct PipelineViewportStateCreateInfo
   {
@@ -28975,6 +34701,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkPipelineViewportStateCreateInfo*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, PipelineViewportStateCreateInfo const& );
 
     bool operator==( PipelineViewportStateCreateInfo const& rhs ) const
     {
@@ -29004,6 +34732,27 @@ namespace VULKAN_HPP_NAMESPACE
     const Rect2D* pScissors;
   };
   static_assert( sizeof( PipelineViewportStateCreateInfo ) == sizeof( VkPipelineViewportStateCreateInfo ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, PipelineViewportStateCreateInfo const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "flags : " << value.flags << std::endl;
+    stream << "viewportCount : " << value.viewportCount << std::endl;
+    stream << "pViewports : " << value.pViewports << std::endl;
+    stream << "scissorCount : " << value.scissorCount << std::endl;
+    stream << "pScissors : " << value.pScissors << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( PipelineViewportStateCreateInfo value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct PipelineRasterizationStateCreateInfo
   {
@@ -29123,6 +34872,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkPipelineRasterizationStateCreateInfo*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, PipelineRasterizationStateCreateInfo const& );
 
     bool operator==( PipelineRasterizationStateCreateInfo const& rhs ) const
     {
@@ -29164,6 +34915,33 @@ namespace VULKAN_HPP_NAMESPACE
     float lineWidth;
   };
   static_assert( sizeof( PipelineRasterizationStateCreateInfo ) == sizeof( VkPipelineRasterizationStateCreateInfo ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, PipelineRasterizationStateCreateInfo const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "flags : " << value.flags << std::endl;
+    stream << "depthClampEnable : " << value.depthClampEnable << std::endl;
+    stream << "rasterizerDiscardEnable : " << value.rasterizerDiscardEnable << std::endl;
+    stream << "polygonMode : " << value.polygonMode << std::endl;
+    stream << "cullMode : " << value.cullMode << std::endl;
+    stream << "frontFace : " << value.frontFace << std::endl;
+    stream << "depthBiasEnable : " << value.depthBiasEnable << std::endl;
+    stream << "depthBiasConstantFactor : " << value.depthBiasConstantFactor << std::endl;
+    stream << "depthBiasClamp : " << value.depthBiasClamp << std::endl;
+    stream << "depthBiasSlopeFactor : " << value.depthBiasSlopeFactor << std::endl;
+    stream << "lineWidth : " << value.lineWidth << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( PipelineRasterizationStateCreateInfo value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct PipelineMultisampleStateCreateInfo
   {
@@ -29251,6 +35029,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkPipelineMultisampleStateCreateInfo*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, PipelineMultisampleStateCreateInfo const& );
 
     bool operator==( PipelineMultisampleStateCreateInfo const& rhs ) const
     {
@@ -29284,6 +35064,29 @@ namespace VULKAN_HPP_NAMESPACE
     Bool32 alphaToOneEnable;
   };
   static_assert( sizeof( PipelineMultisampleStateCreateInfo ) == sizeof( VkPipelineMultisampleStateCreateInfo ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, PipelineMultisampleStateCreateInfo const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "flags : " << value.flags << std::endl;
+    stream << "rasterizationSamples : " << value.rasterizationSamples << std::endl;
+    stream << "sampleShadingEnable : " << value.sampleShadingEnable << std::endl;
+    stream << "minSampleShading : " << value.minSampleShading << std::endl;
+    stream << "pSampleMask : " << value.pSampleMask << std::endl;
+    stream << "alphaToCoverageEnable : " << value.alphaToCoverageEnable << std::endl;
+    stream << "alphaToOneEnable : " << value.alphaToOneEnable << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( PipelineMultisampleStateCreateInfo value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct StencilOpState
   {
@@ -29365,6 +35168,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkStencilOpState*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, StencilOpState const& );
 
     bool operator==( StencilOpState const& rhs ) const
     {
@@ -29391,6 +35196,27 @@ namespace VULKAN_HPP_NAMESPACE
     uint32_t reference;
   };
   static_assert( sizeof( StencilOpState ) == sizeof( VkStencilOpState ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, StencilOpState const& value )
+  {
+    stream << "failOp : " << value.failOp << std::endl;
+    stream << "passOp : " << value.passOp << std::endl;
+    stream << "depthFailOp : " << value.depthFailOp << std::endl;
+    stream << "compareOp : " << value.compareOp << std::endl;
+    stream << "compareMask : " << value.compareMask << std::endl;
+    stream << "writeMask : " << value.writeMask << std::endl;
+    stream << "reference : " << value.reference << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( StencilOpState value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct PipelineDepthStencilStateCreateInfo
   {
@@ -29502,6 +35328,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkPipelineDepthStencilStateCreateInfo*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, PipelineDepthStencilStateCreateInfo const& );
 
     bool operator==( PipelineDepthStencilStateCreateInfo const& rhs ) const
     {
@@ -29541,6 +35369,32 @@ namespace VULKAN_HPP_NAMESPACE
     float maxDepthBounds;
   };
   static_assert( sizeof( PipelineDepthStencilStateCreateInfo ) == sizeof( VkPipelineDepthStencilStateCreateInfo ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, PipelineDepthStencilStateCreateInfo const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "flags : " << value.flags << std::endl;
+    stream << "depthTestEnable : " << value.depthTestEnable << std::endl;
+    stream << "depthWriteEnable : " << value.depthWriteEnable << std::endl;
+    stream << "depthCompareOp : " << value.depthCompareOp << std::endl;
+    stream << "depthBoundsTestEnable : " << value.depthBoundsTestEnable << std::endl;
+    stream << "stencilTestEnable : " << value.stencilTestEnable << std::endl;
+    stream << "front : " << value.front << std::endl;
+    stream << "back : " << value.back << std::endl;
+    stream << "minDepthBounds : " << value.minDepthBounds << std::endl;
+    stream << "maxDepthBounds : " << value.maxDepthBounds << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( PipelineDepthStencilStateCreateInfo value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct PipelineColorBlendAttachmentState
   {
@@ -29630,6 +35484,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkPipelineColorBlendAttachmentState*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, PipelineColorBlendAttachmentState const& );
 
     bool operator==( PipelineColorBlendAttachmentState const& rhs ) const
     {
@@ -29658,6 +35514,28 @@ namespace VULKAN_HPP_NAMESPACE
     ColorComponentFlags colorWriteMask;
   };
   static_assert( sizeof( PipelineColorBlendAttachmentState ) == sizeof( VkPipelineColorBlendAttachmentState ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, PipelineColorBlendAttachmentState const& value )
+  {
+    stream << "blendEnable : " << value.blendEnable << std::endl;
+    stream << "srcColorBlendFactor : " << value.srcColorBlendFactor << std::endl;
+    stream << "dstColorBlendFactor : " << value.dstColorBlendFactor << std::endl;
+    stream << "colorBlendOp : " << value.colorBlendOp << std::endl;
+    stream << "srcAlphaBlendFactor : " << value.srcAlphaBlendFactor << std::endl;
+    stream << "dstAlphaBlendFactor : " << value.dstAlphaBlendFactor << std::endl;
+    stream << "alphaBlendOp : " << value.alphaBlendOp << std::endl;
+    stream << "colorWriteMask : " << value.colorWriteMask << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( PipelineColorBlendAttachmentState value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct PipelineColorBlendStateCreateInfo
   {
@@ -29738,6 +35616,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkPipelineColorBlendStateCreateInfo*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, PipelineColorBlendStateCreateInfo const& );
 
     bool operator==( PipelineColorBlendStateCreateInfo const& rhs ) const
     {
@@ -29769,6 +35649,28 @@ namespace VULKAN_HPP_NAMESPACE
     float blendConstants[4];
   };
   static_assert( sizeof( PipelineColorBlendStateCreateInfo ) == sizeof( VkPipelineColorBlendStateCreateInfo ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, PipelineColorBlendStateCreateInfo const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "flags : " << value.flags << std::endl;
+    stream << "logicOpEnable : " << value.logicOpEnable << std::endl;
+    stream << "logicOp : " << value.logicOp << std::endl;
+    stream << "attachmentCount : " << value.attachmentCount << std::endl;
+    stream << "pAttachments : " << value.pAttachments << std::endl;
+    stream << "blendConstants : " << value.blendConstants << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( PipelineColorBlendStateCreateInfo value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct PipelineDynamicStateCreateInfo
   {
@@ -29824,6 +35726,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkPipelineDynamicStateCreateInfo*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, PipelineDynamicStateCreateInfo const& );
 
     bool operator==( PipelineDynamicStateCreateInfo const& rhs ) const
     {
@@ -29849,6 +35753,25 @@ namespace VULKAN_HPP_NAMESPACE
     const DynamicState* pDynamicStates;
   };
   static_assert( sizeof( PipelineDynamicStateCreateInfo ) == sizeof( VkPipelineDynamicStateCreateInfo ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, PipelineDynamicStateCreateInfo const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "flags : " << value.flags << std::endl;
+    stream << "dynamicStateCount : " << value.dynamicStateCount << std::endl;
+    stream << "pDynamicStates : " << value.pDynamicStates << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( PipelineDynamicStateCreateInfo value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct GraphicsPipelineCreateInfo
   {
@@ -30016,6 +35939,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkGraphicsPipelineCreateInfo*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, GraphicsPipelineCreateInfo const& );
 
     bool operator==( GraphicsPipelineCreateInfo const& rhs ) const
     {
@@ -30069,6 +35994,39 @@ namespace VULKAN_HPP_NAMESPACE
     int32_t basePipelineIndex;
   };
   static_assert( sizeof( GraphicsPipelineCreateInfo ) == sizeof( VkGraphicsPipelineCreateInfo ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, GraphicsPipelineCreateInfo const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "flags : " << value.flags << std::endl;
+    stream << "stageCount : " << value.stageCount << std::endl;
+    stream << "pStages : " << value.pStages << std::endl;
+    stream << "pVertexInputState : " << value.pVertexInputState << std::endl;
+    stream << "pInputAssemblyState : " << value.pInputAssemblyState << std::endl;
+    stream << "pTessellationState : " << value.pTessellationState << std::endl;
+    stream << "pViewportState : " << value.pViewportState << std::endl;
+    stream << "pRasterizationState : " << value.pRasterizationState << std::endl;
+    stream << "pMultisampleState : " << value.pMultisampleState << std::endl;
+    stream << "pDepthStencilState : " << value.pDepthStencilState << std::endl;
+    stream << "pColorBlendState : " << value.pColorBlendState << std::endl;
+    stream << "pDynamicState : " << value.pDynamicState << std::endl;
+    stream << "layout : " << value.layout << std::endl;
+    stream << "renderPass : " << value.renderPass << std::endl;
+    stream << "subpass : " << value.subpass << std::endl;
+    stream << "basePipelineHandle : " << value.basePipelineHandle << std::endl;
+    stream << "basePipelineIndex : " << value.basePipelineIndex << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( GraphicsPipelineCreateInfo value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct XYColorEXT
   {
@@ -30110,6 +36068,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkXYColorEXT*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, XYColorEXT const& );
 
     bool operator==( XYColorEXT const& rhs ) const
     {
@@ -30126,6 +36086,22 @@ namespace VULKAN_HPP_NAMESPACE
     float y;
   };
   static_assert( sizeof( XYColorEXT ) == sizeof( VkXYColorEXT ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, XYColorEXT const& value )
+  {
+    stream << "x : " << value.x << std::endl;
+    stream << "y : " << value.y << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( XYColorEXT value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct HdrMetadataEXT
   {
@@ -30221,6 +36197,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkHdrMetadataEXT*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, HdrMetadataEXT const& );
 
     bool operator==( HdrMetadataEXT const& rhs ) const
     {
@@ -30256,6 +36234,30 @@ namespace VULKAN_HPP_NAMESPACE
     float maxFrameAverageLightLevel;
   };
   static_assert( sizeof( HdrMetadataEXT ) == sizeof( VkHdrMetadataEXT ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, HdrMetadataEXT const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "displayPrimaryRed : " << value.displayPrimaryRed << std::endl;
+    stream << "displayPrimaryGreen : " << value.displayPrimaryGreen << std::endl;
+    stream << "displayPrimaryBlue : " << value.displayPrimaryBlue << std::endl;
+    stream << "whitePoint : " << value.whitePoint << std::endl;
+    stream << "maxLuminance : " << value.maxLuminance << std::endl;
+    stream << "minLuminance : " << value.minLuminance << std::endl;
+    stream << "maxContentLightLevel : " << value.maxContentLightLevel << std::endl;
+    stream << "maxFrameAverageLightLevel : " << value.maxFrameAverageLightLevel << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( HdrMetadataEXT value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
 #ifdef VK_USE_PLATFORM_IOS_MVK
   struct IOSSurfaceCreateInfoMVK
@@ -30304,6 +36306,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkIOSSurfaceCreateInfoMVK*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, IOSSurfaceCreateInfoMVK const& );
 
     bool operator==( IOSSurfaceCreateInfoMVK const& rhs ) const
     {
@@ -30327,6 +36331,24 @@ namespace VULKAN_HPP_NAMESPACE
     const void* pView;
   };
   static_assert( sizeof( IOSSurfaceCreateInfoMVK ) == sizeof( VkIOSSurfaceCreateInfoMVK ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, IOSSurfaceCreateInfoMVK const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "flags : " << value.flags << std::endl;
+    stream << "pView : " << value.pView << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( IOSSurfaceCreateInfoMVK value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 #endif /*VK_USE_PLATFORM_IOS_MVK*/
 
   struct ImageBlit
@@ -30386,6 +36408,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkImageBlit*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, ImageBlit const& );
 
     bool operator==( ImageBlit const& rhs ) const
     {
@@ -30406,6 +36430,24 @@ namespace VULKAN_HPP_NAMESPACE
     Offset3D dstOffsets[2];
   };
   static_assert( sizeof( ImageBlit ) == sizeof( VkImageBlit ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, ImageBlit const& value )
+  {
+    stream << "srcSubresource : " << value.srcSubresource << std::endl;
+    stream << "srcOffsets : " << value.srcOffsets << std::endl;
+    stream << "dstSubresource : " << value.dstSubresource << std::endl;
+    stream << "dstOffsets : " << value.dstOffsets << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( ImageBlit value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct ImageCopy
   {
@@ -30471,6 +36513,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkImageCopy*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, ImageCopy const& );
 
     bool operator==( ImageCopy const& rhs ) const
     {
@@ -30493,6 +36537,25 @@ namespace VULKAN_HPP_NAMESPACE
     Extent3D extent;
   };
   static_assert( sizeof( ImageCopy ) == sizeof( VkImageCopy ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, ImageCopy const& value )
+  {
+    stream << "srcSubresource : " << value.srcSubresource << std::endl;
+    stream << "srcOffset : " << value.srcOffset << std::endl;
+    stream << "dstSubresource : " << value.dstSubresource << std::endl;
+    stream << "dstOffset : " << value.dstOffset << std::endl;
+    stream << "extent : " << value.extent << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( ImageCopy value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct ImageCreateInfo
   {
@@ -30628,6 +36691,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkImageCreateInfo*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, ImageCreateInfo const& );
 
     bool operator==( ImageCreateInfo const& rhs ) const
     {
@@ -30673,6 +36738,35 @@ namespace VULKAN_HPP_NAMESPACE
     ImageLayout initialLayout;
   };
   static_assert( sizeof( ImageCreateInfo ) == sizeof( VkImageCreateInfo ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, ImageCreateInfo const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "flags : " << value.flags << std::endl;
+    stream << "imageType : " << value.imageType << std::endl;
+    stream << "format : " << value.format << std::endl;
+    stream << "extent : " << value.extent << std::endl;
+    stream << "mipLevels : " << value.mipLevels << std::endl;
+    stream << "arrayLayers : " << value.arrayLayers << std::endl;
+    stream << "samples : " << value.samples << std::endl;
+    stream << "tiling : " << value.tiling << std::endl;
+    stream << "usage : " << value.usage << std::endl;
+    stream << "sharingMode : " << value.sharingMode << std::endl;
+    stream << "queueFamilyIndexCount : " << value.queueFamilyIndexCount << std::endl;
+    stream << "pQueueFamilyIndices : " << value.pQueueFamilyIndices << std::endl;
+    stream << "initialLayout : " << value.initialLayout << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( ImageCreateInfo value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct SubresourceLayout
   {
@@ -30685,6 +36779,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkSubresourceLayout*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, SubresourceLayout const& );
 
     bool operator==( SubresourceLayout const& rhs ) const
     {
@@ -30707,6 +36803,25 @@ namespace VULKAN_HPP_NAMESPACE
     DeviceSize depthPitch;
   };
   static_assert( sizeof( SubresourceLayout ) == sizeof( VkSubresourceLayout ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, SubresourceLayout const& value )
+  {
+    stream << "offset : " << value.offset << std::endl;
+    stream << "size : " << value.size << std::endl;
+    stream << "rowPitch : " << value.rowPitch << std::endl;
+    stream << "arrayPitch : " << value.arrayPitch << std::endl;
+    stream << "depthPitch : " << value.depthPitch << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( SubresourceLayout value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct ImageDrmFormatModifierExplicitCreateInfoEXT
   {
@@ -30762,6 +36877,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkImageDrmFormatModifierExplicitCreateInfoEXT*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, ImageDrmFormatModifierExplicitCreateInfoEXT const& );
 
     bool operator==( ImageDrmFormatModifierExplicitCreateInfoEXT const& rhs ) const
     {
@@ -30787,6 +36904,25 @@ namespace VULKAN_HPP_NAMESPACE
     const SubresourceLayout* pPlaneLayouts;
   };
   static_assert( sizeof( ImageDrmFormatModifierExplicitCreateInfoEXT ) == sizeof( VkImageDrmFormatModifierExplicitCreateInfoEXT ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, ImageDrmFormatModifierExplicitCreateInfoEXT const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "drmFormatModifier : " << value.drmFormatModifier << std::endl;
+    stream << "drmFormatModifierPlaneCount : " << value.drmFormatModifierPlaneCount << std::endl;
+    stream << "pPlaneLayouts : " << value.pPlaneLayouts << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( ImageDrmFormatModifierExplicitCreateInfoEXT value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct ImageDrmFormatModifierListCreateInfoEXT
   {
@@ -30834,6 +36970,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkImageDrmFormatModifierListCreateInfoEXT*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, ImageDrmFormatModifierListCreateInfoEXT const& );
 
     bool operator==( ImageDrmFormatModifierListCreateInfoEXT const& rhs ) const
     {
@@ -30857,6 +36995,24 @@ namespace VULKAN_HPP_NAMESPACE
     const uint64_t* pDrmFormatModifiers;
   };
   static_assert( sizeof( ImageDrmFormatModifierListCreateInfoEXT ) == sizeof( VkImageDrmFormatModifierListCreateInfoEXT ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, ImageDrmFormatModifierListCreateInfoEXT const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "drmFormatModifierCount : " << value.drmFormatModifierCount << std::endl;
+    stream << "pDrmFormatModifiers : " << value.pDrmFormatModifiers << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( ImageDrmFormatModifierListCreateInfoEXT value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct ImageDrmFormatModifierPropertiesEXT
   {
@@ -30869,6 +37025,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkImageDrmFormatModifierPropertiesEXT*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, ImageDrmFormatModifierPropertiesEXT const& );
 
     bool operator==( ImageDrmFormatModifierPropertiesEXT const& rhs ) const
     {
@@ -30890,6 +37048,23 @@ namespace VULKAN_HPP_NAMESPACE
     uint64_t drmFormatModifier;
   };
   static_assert( sizeof( ImageDrmFormatModifierPropertiesEXT ) == sizeof( VkImageDrmFormatModifierPropertiesEXT ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, ImageDrmFormatModifierPropertiesEXT const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "drmFormatModifier : " << value.drmFormatModifier << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( ImageDrmFormatModifierPropertiesEXT value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct ImageFormatListCreateInfoKHR
   {
@@ -30937,6 +37112,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkImageFormatListCreateInfoKHR*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, ImageFormatListCreateInfoKHR const& );
 
     bool operator==( ImageFormatListCreateInfoKHR const& rhs ) const
     {
@@ -30960,6 +37137,24 @@ namespace VULKAN_HPP_NAMESPACE
     const Format* pViewFormats;
   };
   static_assert( sizeof( ImageFormatListCreateInfoKHR ) == sizeof( VkImageFormatListCreateInfoKHR ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, ImageFormatListCreateInfoKHR const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "viewFormatCount : " << value.viewFormatCount << std::endl;
+    stream << "pViewFormats : " << value.pViewFormats << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( ImageFormatListCreateInfoKHR value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct ImageFormatProperties2
   {
@@ -30972,6 +37167,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkImageFormatProperties2*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, ImageFormatProperties2 const& );
 
     bool operator==( ImageFormatProperties2 const& rhs ) const
     {
@@ -30993,6 +37190,23 @@ namespace VULKAN_HPP_NAMESPACE
     ImageFormatProperties imageFormatProperties;
   };
   static_assert( sizeof( ImageFormatProperties2 ) == sizeof( VkImageFormatProperties2 ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, ImageFormatProperties2 const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "imageFormatProperties : " << value.imageFormatProperties << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( ImageFormatProperties2 value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct ImageSubresourceRange
   {
@@ -31058,6 +37272,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkImageSubresourceRange*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, ImageSubresourceRange const& );
 
     bool operator==( ImageSubresourceRange const& rhs ) const
     {
@@ -31080,6 +37296,25 @@ namespace VULKAN_HPP_NAMESPACE
     uint32_t layerCount;
   };
   static_assert( sizeof( ImageSubresourceRange ) == sizeof( VkImageSubresourceRange ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, ImageSubresourceRange const& value )
+  {
+    stream << "aspectMask : " << value.aspectMask << std::endl;
+    stream << "baseMipLevel : " << value.baseMipLevel << std::endl;
+    stream << "levelCount : " << value.levelCount << std::endl;
+    stream << "baseArrayLayer : " << value.baseArrayLayer << std::endl;
+    stream << "layerCount : " << value.layerCount << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( ImageSubresourceRange value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct ImageMemoryBarrier
   {
@@ -31175,6 +37410,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkImageMemoryBarrier*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, ImageMemoryBarrier const& );
 
     bool operator==( ImageMemoryBarrier const& rhs ) const
     {
@@ -31210,6 +37447,30 @@ namespace VULKAN_HPP_NAMESPACE
     ImageSubresourceRange subresourceRange;
   };
   static_assert( sizeof( ImageMemoryBarrier ) == sizeof( VkImageMemoryBarrier ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, ImageMemoryBarrier const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "srcAccessMask : " << value.srcAccessMask << std::endl;
+    stream << "dstAccessMask : " << value.dstAccessMask << std::endl;
+    stream << "oldLayout : " << value.oldLayout << std::endl;
+    stream << "newLayout : " << value.newLayout << std::endl;
+    stream << "srcQueueFamilyIndex : " << value.srcQueueFamilyIndex << std::endl;
+    stream << "dstQueueFamilyIndex : " << value.dstQueueFamilyIndex << std::endl;
+    stream << "image : " << value.image << std::endl;
+    stream << "subresourceRange : " << value.subresourceRange << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( ImageMemoryBarrier value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct ImageMemoryRequirementsInfo2
   {
@@ -31249,6 +37510,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkImageMemoryRequirementsInfo2*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, ImageMemoryRequirementsInfo2 const& );
 
     bool operator==( ImageMemoryRequirementsInfo2 const& rhs ) const
     {
@@ -31270,6 +37533,23 @@ namespace VULKAN_HPP_NAMESPACE
     Image image;
   };
   static_assert( sizeof( ImageMemoryRequirementsInfo2 ) == sizeof( VkImageMemoryRequirementsInfo2 ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, ImageMemoryRequirementsInfo2 const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "image : " << value.image << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( ImageMemoryRequirementsInfo2 value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
 #ifdef VK_USE_PLATFORM_FUCHSIA
   struct ImagePipeSurfaceCreateInfoFUCHSIA
@@ -31318,6 +37598,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkImagePipeSurfaceCreateInfoFUCHSIA*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, ImagePipeSurfaceCreateInfoFUCHSIA const& );
 
     bool operator==( ImagePipeSurfaceCreateInfoFUCHSIA const& rhs ) const
     {
@@ -31341,6 +37623,24 @@ namespace VULKAN_HPP_NAMESPACE
     zx_handle_t imagePipeHandle;
   };
   static_assert( sizeof( ImagePipeSurfaceCreateInfoFUCHSIA ) == sizeof( VkImagePipeSurfaceCreateInfoFUCHSIA ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, ImagePipeSurfaceCreateInfoFUCHSIA const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "flags : " << value.flags << std::endl;
+    stream << "imagePipeHandle : " << value.imagePipeHandle << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( ImagePipeSurfaceCreateInfoFUCHSIA value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 #endif /*VK_USE_PLATFORM_FUCHSIA*/
 
   struct ImagePlaneMemoryRequirementsInfo
@@ -31381,6 +37681,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkImagePlaneMemoryRequirementsInfo*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, ImagePlaneMemoryRequirementsInfo const& );
 
     bool operator==( ImagePlaneMemoryRequirementsInfo const& rhs ) const
     {
@@ -31402,6 +37704,23 @@ namespace VULKAN_HPP_NAMESPACE
     ImageAspectFlagBits planeAspect;
   };
   static_assert( sizeof( ImagePlaneMemoryRequirementsInfo ) == sizeof( VkImagePlaneMemoryRequirementsInfo ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, ImagePlaneMemoryRequirementsInfo const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "planeAspect : " << value.planeAspect << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( ImagePlaneMemoryRequirementsInfo value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct ImageResolve
   {
@@ -31467,6 +37786,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkImageResolve*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, ImageResolve const& );
 
     bool operator==( ImageResolve const& rhs ) const
     {
@@ -31489,6 +37810,25 @@ namespace VULKAN_HPP_NAMESPACE
     Extent3D extent;
   };
   static_assert( sizeof( ImageResolve ) == sizeof( VkImageResolve ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, ImageResolve const& value )
+  {
+    stream << "srcSubresource : " << value.srcSubresource << std::endl;
+    stream << "srcOffset : " << value.srcOffset << std::endl;
+    stream << "dstSubresource : " << value.dstSubresource << std::endl;
+    stream << "dstOffset : " << value.dstOffset << std::endl;
+    stream << "extent : " << value.extent << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( ImageResolve value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct ImageSparseMemoryRequirementsInfo2
   {
@@ -31528,6 +37868,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkImageSparseMemoryRequirementsInfo2*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, ImageSparseMemoryRequirementsInfo2 const& );
 
     bool operator==( ImageSparseMemoryRequirementsInfo2 const& rhs ) const
     {
@@ -31549,6 +37891,23 @@ namespace VULKAN_HPP_NAMESPACE
     Image image;
   };
   static_assert( sizeof( ImageSparseMemoryRequirementsInfo2 ) == sizeof( VkImageSparseMemoryRequirementsInfo2 ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, ImageSparseMemoryRequirementsInfo2 const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "image : " << value.image << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( ImageSparseMemoryRequirementsInfo2 value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct ImageStencilUsageCreateInfoEXT
   {
@@ -31588,6 +37947,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkImageStencilUsageCreateInfoEXT*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, ImageStencilUsageCreateInfoEXT const& );
 
     bool operator==( ImageStencilUsageCreateInfoEXT const& rhs ) const
     {
@@ -31609,6 +37970,23 @@ namespace VULKAN_HPP_NAMESPACE
     ImageUsageFlags stencilUsage;
   };
   static_assert( sizeof( ImageStencilUsageCreateInfoEXT ) == sizeof( VkImageStencilUsageCreateInfoEXT ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, ImageStencilUsageCreateInfoEXT const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "stencilUsage : " << value.stencilUsage << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( ImageStencilUsageCreateInfoEXT value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct ImageSwapchainCreateInfoKHR
   {
@@ -31648,6 +38026,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkImageSwapchainCreateInfoKHR*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, ImageSwapchainCreateInfoKHR const& );
 
     bool operator==( ImageSwapchainCreateInfoKHR const& rhs ) const
     {
@@ -31669,6 +38049,23 @@ namespace VULKAN_HPP_NAMESPACE
     SwapchainKHR swapchain;
   };
   static_assert( sizeof( ImageSwapchainCreateInfoKHR ) == sizeof( VkImageSwapchainCreateInfoKHR ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, ImageSwapchainCreateInfoKHR const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "swapchain : " << value.swapchain << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( ImageSwapchainCreateInfoKHR value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct ImageViewASTCDecodeModeEXT
   {
@@ -31708,6 +38105,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkImageViewASTCDecodeModeEXT*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, ImageViewASTCDecodeModeEXT const& );
 
     bool operator==( ImageViewASTCDecodeModeEXT const& rhs ) const
     {
@@ -31729,6 +38128,23 @@ namespace VULKAN_HPP_NAMESPACE
     Format decodeMode;
   };
   static_assert( sizeof( ImageViewASTCDecodeModeEXT ) == sizeof( VkImageViewASTCDecodeModeEXT ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, ImageViewASTCDecodeModeEXT const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "decodeMode : " << value.decodeMode << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( ImageViewASTCDecodeModeEXT value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct ImageViewCreateInfo
   {
@@ -31808,6 +38224,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkImageViewCreateInfo*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, ImageViewCreateInfo const& );
 
     bool operator==( ImageViewCreateInfo const& rhs ) const
     {
@@ -31839,6 +38257,28 @@ namespace VULKAN_HPP_NAMESPACE
     ImageSubresourceRange subresourceRange;
   };
   static_assert( sizeof( ImageViewCreateInfo ) == sizeof( VkImageViewCreateInfo ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, ImageViewCreateInfo const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "flags : " << value.flags << std::endl;
+    stream << "image : " << value.image << std::endl;
+    stream << "viewType : " << value.viewType << std::endl;
+    stream << "format : " << value.format << std::endl;
+    stream << "components : " << value.components << std::endl;
+    stream << "subresourceRange : " << value.subresourceRange << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( ImageViewCreateInfo value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct ImageViewUsageCreateInfo
   {
@@ -31878,6 +38318,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkImageViewUsageCreateInfo*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, ImageViewUsageCreateInfo const& );
 
     bool operator==( ImageViewUsageCreateInfo const& rhs ) const
     {
@@ -31899,6 +38341,23 @@ namespace VULKAN_HPP_NAMESPACE
     ImageUsageFlags usage;
   };
   static_assert( sizeof( ImageViewUsageCreateInfo ) == sizeof( VkImageViewUsageCreateInfo ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, ImageViewUsageCreateInfo const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "usage : " << value.usage << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( ImageViewUsageCreateInfo value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
 #ifdef VK_USE_PLATFORM_ANDROID_KHR
   struct ImportAndroidHardwareBufferInfoANDROID
@@ -31939,6 +38398,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkImportAndroidHardwareBufferInfoANDROID*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, ImportAndroidHardwareBufferInfoANDROID const& );
 
     bool operator==( ImportAndroidHardwareBufferInfoANDROID const& rhs ) const
     {
@@ -31960,6 +38421,23 @@ namespace VULKAN_HPP_NAMESPACE
     struct AHardwareBuffer* buffer;
   };
   static_assert( sizeof( ImportAndroidHardwareBufferInfoANDROID ) == sizeof( VkImportAndroidHardwareBufferInfoANDROID ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, ImportAndroidHardwareBufferInfoANDROID const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "buffer : " << value.buffer << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( ImportAndroidHardwareBufferInfoANDROID value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 #endif /*VK_USE_PLATFORM_ANDROID_KHR*/
 
   struct ImportFenceFdInfoKHR
@@ -32024,6 +38502,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkImportFenceFdInfoKHR*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, ImportFenceFdInfoKHR const& );
 
     bool operator==( ImportFenceFdInfoKHR const& rhs ) const
     {
@@ -32051,6 +38531,26 @@ namespace VULKAN_HPP_NAMESPACE
     int fd;
   };
   static_assert( sizeof( ImportFenceFdInfoKHR ) == sizeof( VkImportFenceFdInfoKHR ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, ImportFenceFdInfoKHR const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "fence : " << value.fence << std::endl;
+    stream << "flags : " << value.flags << std::endl;
+    stream << "handleType : " << value.handleType << std::endl;
+    stream << "fd : " << value.fd << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( ImportFenceFdInfoKHR value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
 #ifdef VK_USE_PLATFORM_WIN32_KHR
   struct ImportFenceWin32HandleInfoKHR
@@ -32123,6 +38623,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkImportFenceWin32HandleInfoKHR*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, ImportFenceWin32HandleInfoKHR const& );
 
     bool operator==( ImportFenceWin32HandleInfoKHR const& rhs ) const
     {
@@ -32152,6 +38654,27 @@ namespace VULKAN_HPP_NAMESPACE
     LPCWSTR name;
   };
   static_assert( sizeof( ImportFenceWin32HandleInfoKHR ) == sizeof( VkImportFenceWin32HandleInfoKHR ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, ImportFenceWin32HandleInfoKHR const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "fence : " << value.fence << std::endl;
+    stream << "flags : " << value.flags << std::endl;
+    stream << "handleType : " << value.handleType << std::endl;
+    stream << "handle : " << value.handle << std::endl;
+    stream << "name : " << value.name << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( ImportFenceWin32HandleInfoKHR value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 #endif /*VK_USE_PLATFORM_WIN32_KHR*/
 
   struct ImportMemoryFdInfoKHR
@@ -32200,6 +38723,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkImportMemoryFdInfoKHR*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, ImportMemoryFdInfoKHR const& );
 
     bool operator==( ImportMemoryFdInfoKHR const& rhs ) const
     {
@@ -32223,6 +38748,24 @@ namespace VULKAN_HPP_NAMESPACE
     int fd;
   };
   static_assert( sizeof( ImportMemoryFdInfoKHR ) == sizeof( VkImportMemoryFdInfoKHR ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, ImportMemoryFdInfoKHR const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "handleType : " << value.handleType << std::endl;
+    stream << "fd : " << value.fd << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( ImportMemoryFdInfoKHR value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct ImportMemoryHostPointerInfoEXT
   {
@@ -32270,6 +38813,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkImportMemoryHostPointerInfoEXT*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, ImportMemoryHostPointerInfoEXT const& );
 
     bool operator==( ImportMemoryHostPointerInfoEXT const& rhs ) const
     {
@@ -32293,6 +38838,24 @@ namespace VULKAN_HPP_NAMESPACE
     void* pHostPointer;
   };
   static_assert( sizeof( ImportMemoryHostPointerInfoEXT ) == sizeof( VkImportMemoryHostPointerInfoEXT ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, ImportMemoryHostPointerInfoEXT const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "handleType : " << value.handleType << std::endl;
+    stream << "pHostPointer : " << value.pHostPointer << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( ImportMemoryHostPointerInfoEXT value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
 #ifdef VK_USE_PLATFORM_WIN32_KHR
   struct ImportMemoryWin32HandleInfoKHR
@@ -32349,6 +38912,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkImportMemoryWin32HandleInfoKHR*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, ImportMemoryWin32HandleInfoKHR const& );
 
     bool operator==( ImportMemoryWin32HandleInfoKHR const& rhs ) const
     {
@@ -32374,6 +38939,25 @@ namespace VULKAN_HPP_NAMESPACE
     LPCWSTR name;
   };
   static_assert( sizeof( ImportMemoryWin32HandleInfoKHR ) == sizeof( VkImportMemoryWin32HandleInfoKHR ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, ImportMemoryWin32HandleInfoKHR const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "handleType : " << value.handleType << std::endl;
+    stream << "handle : " << value.handle << std::endl;
+    stream << "name : " << value.name << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( ImportMemoryWin32HandleInfoKHR value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 #endif /*VK_USE_PLATFORM_WIN32_KHR*/
 
 #ifdef VK_USE_PLATFORM_WIN32_KHR
@@ -32423,6 +39007,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkImportMemoryWin32HandleInfoNV*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, ImportMemoryWin32HandleInfoNV const& );
 
     bool operator==( ImportMemoryWin32HandleInfoNV const& rhs ) const
     {
@@ -32446,6 +39032,24 @@ namespace VULKAN_HPP_NAMESPACE
     HANDLE handle;
   };
   static_assert( sizeof( ImportMemoryWin32HandleInfoNV ) == sizeof( VkImportMemoryWin32HandleInfoNV ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, ImportMemoryWin32HandleInfoNV const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "handleType : " << value.handleType << std::endl;
+    stream << "handle : " << value.handle << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( ImportMemoryWin32HandleInfoNV value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 #endif /*VK_USE_PLATFORM_WIN32_KHR*/
 
   struct ImportSemaphoreFdInfoKHR
@@ -32510,6 +39114,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkImportSemaphoreFdInfoKHR*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, ImportSemaphoreFdInfoKHR const& );
 
     bool operator==( ImportSemaphoreFdInfoKHR const& rhs ) const
     {
@@ -32537,6 +39143,26 @@ namespace VULKAN_HPP_NAMESPACE
     int fd;
   };
   static_assert( sizeof( ImportSemaphoreFdInfoKHR ) == sizeof( VkImportSemaphoreFdInfoKHR ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, ImportSemaphoreFdInfoKHR const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "semaphore : " << value.semaphore << std::endl;
+    stream << "flags : " << value.flags << std::endl;
+    stream << "handleType : " << value.handleType << std::endl;
+    stream << "fd : " << value.fd << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( ImportSemaphoreFdInfoKHR value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
 #ifdef VK_USE_PLATFORM_WIN32_KHR
   struct ImportSemaphoreWin32HandleInfoKHR
@@ -32609,6 +39235,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkImportSemaphoreWin32HandleInfoKHR*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, ImportSemaphoreWin32HandleInfoKHR const& );
 
     bool operator==( ImportSemaphoreWin32HandleInfoKHR const& rhs ) const
     {
@@ -32638,6 +39266,27 @@ namespace VULKAN_HPP_NAMESPACE
     LPCWSTR name;
   };
   static_assert( sizeof( ImportSemaphoreWin32HandleInfoKHR ) == sizeof( VkImportSemaphoreWin32HandleInfoKHR ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, ImportSemaphoreWin32HandleInfoKHR const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "semaphore : " << value.semaphore << std::endl;
+    stream << "flags : " << value.flags << std::endl;
+    stream << "handleType : " << value.handleType << std::endl;
+    stream << "handle : " << value.handle << std::endl;
+    stream << "name : " << value.name << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( ImportSemaphoreWin32HandleInfoKHR value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 #endif /*VK_USE_PLATFORM_WIN32_KHR*/
 
   struct IndirectCommandsLayoutTokenNVX
@@ -32696,6 +39345,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkIndirectCommandsLayoutTokenNVX*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, IndirectCommandsLayoutTokenNVX const& );
 
     bool operator==( IndirectCommandsLayoutTokenNVX const& rhs ) const
     {
@@ -32716,6 +39367,24 @@ namespace VULKAN_HPP_NAMESPACE
     uint32_t divisor;
   };
   static_assert( sizeof( IndirectCommandsLayoutTokenNVX ) == sizeof( VkIndirectCommandsLayoutTokenNVX ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, IndirectCommandsLayoutTokenNVX const& value )
+  {
+    stream << "tokenType : " << value.tokenType << std::endl;
+    stream << "bindingUnit : " << value.bindingUnit << std::endl;
+    stream << "dynamicCount : " << value.dynamicCount << std::endl;
+    stream << "divisor : " << value.divisor << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( IndirectCommandsLayoutTokenNVX value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct IndirectCommandsLayoutCreateInfoNVX
   {
@@ -32779,6 +39448,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkIndirectCommandsLayoutCreateInfoNVX*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, IndirectCommandsLayoutCreateInfoNVX const& );
 
     bool operator==( IndirectCommandsLayoutCreateInfoNVX const& rhs ) const
     {
@@ -32806,6 +39477,26 @@ namespace VULKAN_HPP_NAMESPACE
     const IndirectCommandsLayoutTokenNVX* pTokens;
   };
   static_assert( sizeof( IndirectCommandsLayoutCreateInfoNVX ) == sizeof( VkIndirectCommandsLayoutCreateInfoNVX ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, IndirectCommandsLayoutCreateInfoNVX const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "pipelineBindPoint : " << value.pipelineBindPoint << std::endl;
+    stream << "flags : " << value.flags << std::endl;
+    stream << "tokenCount : " << value.tokenCount << std::endl;
+    stream << "pTokens : " << value.pTokens << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( IndirectCommandsLayoutCreateInfoNVX value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct InputAttachmentAspectReference
   {
@@ -32855,6 +39546,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkInputAttachmentAspectReference*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, InputAttachmentAspectReference const& );
 
     bool operator==( InputAttachmentAspectReference const& rhs ) const
     {
@@ -32873,6 +39566,23 @@ namespace VULKAN_HPP_NAMESPACE
     ImageAspectFlags aspectMask;
   };
   static_assert( sizeof( InputAttachmentAspectReference ) == sizeof( VkInputAttachmentAspectReference ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, InputAttachmentAspectReference const& value )
+  {
+    stream << "subpass : " << value.subpass << std::endl;
+    stream << "inputAttachmentIndex : " << value.inputAttachmentIndex << std::endl;
+    stream << "aspectMask : " << value.aspectMask << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( InputAttachmentAspectReference value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct InstanceCreateInfo
   {
@@ -32952,6 +39662,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkInstanceCreateInfo*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, InstanceCreateInfo const& );
 
     bool operator==( InstanceCreateInfo const& rhs ) const
     {
@@ -32983,6 +39695,28 @@ namespace VULKAN_HPP_NAMESPACE
     const char* const* ppEnabledExtensionNames;
   };
   static_assert( sizeof( InstanceCreateInfo ) == sizeof( VkInstanceCreateInfo ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, InstanceCreateInfo const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "flags : " << value.flags << std::endl;
+    stream << "pApplicationInfo : " << value.pApplicationInfo << std::endl;
+    stream << "enabledLayerCount : " << value.enabledLayerCount << std::endl;
+    stream << "ppEnabledLayerNames : " << value.ppEnabledLayerNames << std::endl;
+    stream << "enabledExtensionCount : " << value.enabledExtensionCount << std::endl;
+    stream << "ppEnabledExtensionNames : " << value.ppEnabledExtensionNames << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( InstanceCreateInfo value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct LayerProperties
   {
@@ -32995,6 +39729,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkLayerProperties*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, LayerProperties const& );
 
     bool operator==( LayerProperties const& rhs ) const
     {
@@ -33015,6 +39751,24 @@ namespace VULKAN_HPP_NAMESPACE
     char description[VK_MAX_DESCRIPTION_SIZE];
   };
   static_assert( sizeof( LayerProperties ) == sizeof( VkLayerProperties ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, LayerProperties const& value )
+  {
+    stream << "layerName : " << value.layerName << std::endl;
+    stream << "specVersion : " << value.specVersion << std::endl;
+    stream << "implementationVersion : " << value.implementationVersion << std::endl;
+    stream << "description : " << value.description << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( LayerProperties value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
 #ifdef VK_USE_PLATFORM_MACOS_MVK
   struct MacOSSurfaceCreateInfoMVK
@@ -33063,6 +39817,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkMacOSSurfaceCreateInfoMVK*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, MacOSSurfaceCreateInfoMVK const& );
 
     bool operator==( MacOSSurfaceCreateInfoMVK const& rhs ) const
     {
@@ -33086,6 +39842,24 @@ namespace VULKAN_HPP_NAMESPACE
     const void* pView;
   };
   static_assert( sizeof( MacOSSurfaceCreateInfoMVK ) == sizeof( VkMacOSSurfaceCreateInfoMVK ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, MacOSSurfaceCreateInfoMVK const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "flags : " << value.flags << std::endl;
+    stream << "pView : " << value.pView << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( MacOSSurfaceCreateInfoMVK value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 #endif /*VK_USE_PLATFORM_MACOS_MVK*/
 
   struct MappedMemoryRange
@@ -33142,6 +39916,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkMappedMemoryRange*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, MappedMemoryRange const& );
 
     bool operator==( MappedMemoryRange const& rhs ) const
     {
@@ -33167,6 +39943,25 @@ namespace VULKAN_HPP_NAMESPACE
     DeviceSize size;
   };
   static_assert( sizeof( MappedMemoryRange ) == sizeof( VkMappedMemoryRange ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, MappedMemoryRange const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "memory : " << value.memory << std::endl;
+    stream << "offset : " << value.offset << std::endl;
+    stream << "size : " << value.size << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( MappedMemoryRange value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct MemoryAllocateFlagsInfo
   {
@@ -33214,6 +40009,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkMemoryAllocateFlagsInfo*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, MemoryAllocateFlagsInfo const& );
 
     bool operator==( MemoryAllocateFlagsInfo const& rhs ) const
     {
@@ -33237,6 +40034,24 @@ namespace VULKAN_HPP_NAMESPACE
     uint32_t deviceMask;
   };
   static_assert( sizeof( MemoryAllocateFlagsInfo ) == sizeof( VkMemoryAllocateFlagsInfo ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, MemoryAllocateFlagsInfo const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "flags : " << value.flags << std::endl;
+    stream << "deviceMask : " << value.deviceMask << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( MemoryAllocateFlagsInfo value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct MemoryAllocateInfo
   {
@@ -33284,6 +40099,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkMemoryAllocateInfo*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, MemoryAllocateInfo const& );
 
     bool operator==( MemoryAllocateInfo const& rhs ) const
     {
@@ -33307,6 +40124,24 @@ namespace VULKAN_HPP_NAMESPACE
     uint32_t memoryTypeIndex;
   };
   static_assert( sizeof( MemoryAllocateInfo ) == sizeof( VkMemoryAllocateInfo ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, MemoryAllocateInfo const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "allocationSize : " << value.allocationSize << std::endl;
+    stream << "memoryTypeIndex : " << value.memoryTypeIndex << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( MemoryAllocateInfo value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct MemoryBarrier
   {
@@ -33354,6 +40189,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkMemoryBarrier*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, MemoryBarrier const& );
 
     bool operator==( MemoryBarrier const& rhs ) const
     {
@@ -33377,6 +40214,24 @@ namespace VULKAN_HPP_NAMESPACE
     AccessFlags dstAccessMask;
   };
   static_assert( sizeof( MemoryBarrier ) == sizeof( VkMemoryBarrier ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, MemoryBarrier const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "srcAccessMask : " << value.srcAccessMask << std::endl;
+    stream << "dstAccessMask : " << value.dstAccessMask << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( MemoryBarrier value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct MemoryDedicatedAllocateInfo
   {
@@ -33424,6 +40279,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkMemoryDedicatedAllocateInfo*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, MemoryDedicatedAllocateInfo const& );
 
     bool operator==( MemoryDedicatedAllocateInfo const& rhs ) const
     {
@@ -33447,6 +40304,24 @@ namespace VULKAN_HPP_NAMESPACE
     Buffer buffer;
   };
   static_assert( sizeof( MemoryDedicatedAllocateInfo ) == sizeof( VkMemoryDedicatedAllocateInfo ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, MemoryDedicatedAllocateInfo const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "image : " << value.image << std::endl;
+    stream << "buffer : " << value.buffer << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( MemoryDedicatedAllocateInfo value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct MemoryDedicatedRequirements
   {
@@ -33459,6 +40334,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkMemoryDedicatedRequirements*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, MemoryDedicatedRequirements const& );
 
     bool operator==( MemoryDedicatedRequirements const& rhs ) const
     {
@@ -33482,6 +40359,24 @@ namespace VULKAN_HPP_NAMESPACE
     Bool32 requiresDedicatedAllocation;
   };
   static_assert( sizeof( MemoryDedicatedRequirements ) == sizeof( VkMemoryDedicatedRequirements ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, MemoryDedicatedRequirements const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "prefersDedicatedAllocation : " << value.prefersDedicatedAllocation << std::endl;
+    stream << "requiresDedicatedAllocation : " << value.requiresDedicatedAllocation << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( MemoryDedicatedRequirements value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct MemoryFdPropertiesKHR
   {
@@ -33494,6 +40389,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkMemoryFdPropertiesKHR*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, MemoryFdPropertiesKHR const& );
 
     bool operator==( MemoryFdPropertiesKHR const& rhs ) const
     {
@@ -33515,6 +40412,23 @@ namespace VULKAN_HPP_NAMESPACE
     uint32_t memoryTypeBits;
   };
   static_assert( sizeof( MemoryFdPropertiesKHR ) == sizeof( VkMemoryFdPropertiesKHR ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, MemoryFdPropertiesKHR const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "memoryTypeBits : " << value.memoryTypeBits << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( MemoryFdPropertiesKHR value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
 #ifdef VK_USE_PLATFORM_ANDROID_KHR
   struct MemoryGetAndroidHardwareBufferInfoANDROID
@@ -33555,6 +40469,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkMemoryGetAndroidHardwareBufferInfoANDROID*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, MemoryGetAndroidHardwareBufferInfoANDROID const& );
 
     bool operator==( MemoryGetAndroidHardwareBufferInfoANDROID const& rhs ) const
     {
@@ -33576,6 +40492,23 @@ namespace VULKAN_HPP_NAMESPACE
     DeviceMemory memory;
   };
   static_assert( sizeof( MemoryGetAndroidHardwareBufferInfoANDROID ) == sizeof( VkMemoryGetAndroidHardwareBufferInfoANDROID ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, MemoryGetAndroidHardwareBufferInfoANDROID const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "memory : " << value.memory << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( MemoryGetAndroidHardwareBufferInfoANDROID value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 #endif /*VK_USE_PLATFORM_ANDROID_KHR*/
 
   struct MemoryGetFdInfoKHR
@@ -33624,6 +40557,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkMemoryGetFdInfoKHR*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, MemoryGetFdInfoKHR const& );
 
     bool operator==( MemoryGetFdInfoKHR const& rhs ) const
     {
@@ -33647,6 +40582,24 @@ namespace VULKAN_HPP_NAMESPACE
     ExternalMemoryHandleTypeFlagBits handleType;
   };
   static_assert( sizeof( MemoryGetFdInfoKHR ) == sizeof( VkMemoryGetFdInfoKHR ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, MemoryGetFdInfoKHR const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "memory : " << value.memory << std::endl;
+    stream << "handleType : " << value.handleType << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( MemoryGetFdInfoKHR value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
 #ifdef VK_USE_PLATFORM_WIN32_KHR
   struct MemoryGetWin32HandleInfoKHR
@@ -33695,6 +40648,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkMemoryGetWin32HandleInfoKHR*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, MemoryGetWin32HandleInfoKHR const& );
 
     bool operator==( MemoryGetWin32HandleInfoKHR const& rhs ) const
     {
@@ -33718,6 +40673,24 @@ namespace VULKAN_HPP_NAMESPACE
     ExternalMemoryHandleTypeFlagBits handleType;
   };
   static_assert( sizeof( MemoryGetWin32HandleInfoKHR ) == sizeof( VkMemoryGetWin32HandleInfoKHR ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, MemoryGetWin32HandleInfoKHR const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "memory : " << value.memory << std::endl;
+    stream << "handleType : " << value.handleType << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( MemoryGetWin32HandleInfoKHR value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 #endif /*VK_USE_PLATFORM_WIN32_KHR*/
 
   struct MemoryHeap
@@ -33731,6 +40704,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkMemoryHeap*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, MemoryHeap const& );
 
     bool operator==( MemoryHeap const& rhs ) const
     {
@@ -33747,6 +40722,22 @@ namespace VULKAN_HPP_NAMESPACE
     MemoryHeapFlags flags;
   };
   static_assert( sizeof( MemoryHeap ) == sizeof( VkMemoryHeap ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, MemoryHeap const& value )
+  {
+    stream << "size : " << value.size << std::endl;
+    stream << "flags : " << value.flags << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( MemoryHeap value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct MemoryHostPointerPropertiesEXT
   {
@@ -33759,6 +40750,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkMemoryHostPointerPropertiesEXT*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, MemoryHostPointerPropertiesEXT const& );
 
     bool operator==( MemoryHostPointerPropertiesEXT const& rhs ) const
     {
@@ -33780,6 +40773,23 @@ namespace VULKAN_HPP_NAMESPACE
     uint32_t memoryTypeBits;
   };
   static_assert( sizeof( MemoryHostPointerPropertiesEXT ) == sizeof( VkMemoryHostPointerPropertiesEXT ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, MemoryHostPointerPropertiesEXT const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "memoryTypeBits : " << value.memoryTypeBits << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( MemoryHostPointerPropertiesEXT value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct MemoryPriorityAllocateInfoEXT
   {
@@ -33819,6 +40829,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkMemoryPriorityAllocateInfoEXT*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, MemoryPriorityAllocateInfoEXT const& );
 
     bool operator==( MemoryPriorityAllocateInfoEXT const& rhs ) const
     {
@@ -33840,6 +40852,23 @@ namespace VULKAN_HPP_NAMESPACE
     float priority;
   };
   static_assert( sizeof( MemoryPriorityAllocateInfoEXT ) == sizeof( VkMemoryPriorityAllocateInfoEXT ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, MemoryPriorityAllocateInfoEXT const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "priority : " << value.priority << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( MemoryPriorityAllocateInfoEXT value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct MemoryRequirements
   {
@@ -33852,6 +40881,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkMemoryRequirements*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, MemoryRequirements const& );
 
     bool operator==( MemoryRequirements const& rhs ) const
     {
@@ -33870,6 +40901,23 @@ namespace VULKAN_HPP_NAMESPACE
     uint32_t memoryTypeBits;
   };
   static_assert( sizeof( MemoryRequirements ) == sizeof( VkMemoryRequirements ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, MemoryRequirements const& value )
+  {
+    stream << "size : " << value.size << std::endl;
+    stream << "alignment : " << value.alignment << std::endl;
+    stream << "memoryTypeBits : " << value.memoryTypeBits << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( MemoryRequirements value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct MemoryRequirements2
   {
@@ -33882,6 +40930,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkMemoryRequirements2*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, MemoryRequirements2 const& );
 
     bool operator==( MemoryRequirements2 const& rhs ) const
     {
@@ -33903,6 +40953,23 @@ namespace VULKAN_HPP_NAMESPACE
     MemoryRequirements memoryRequirements;
   };
   static_assert( sizeof( MemoryRequirements2 ) == sizeof( VkMemoryRequirements2 ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, MemoryRequirements2 const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "memoryRequirements : " << value.memoryRequirements << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( MemoryRequirements2 value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct MemoryType
   {
@@ -33915,6 +40982,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkMemoryType*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, MemoryType const& );
 
     bool operator==( MemoryType const& rhs ) const
     {
@@ -33931,6 +41000,22 @@ namespace VULKAN_HPP_NAMESPACE
     uint32_t heapIndex;
   };
   static_assert( sizeof( MemoryType ) == sizeof( VkMemoryType ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, MemoryType const& value )
+  {
+    stream << "propertyFlags : " << value.propertyFlags << std::endl;
+    stream << "heapIndex : " << value.heapIndex << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( MemoryType value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
 #ifdef VK_USE_PLATFORM_WIN32_KHR
   struct MemoryWin32HandlePropertiesKHR
@@ -33944,6 +41029,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkMemoryWin32HandlePropertiesKHR*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, MemoryWin32HandlePropertiesKHR const& );
 
     bool operator==( MemoryWin32HandlePropertiesKHR const& rhs ) const
     {
@@ -33965,6 +41052,23 @@ namespace VULKAN_HPP_NAMESPACE
     uint32_t memoryTypeBits;
   };
   static_assert( sizeof( MemoryWin32HandlePropertiesKHR ) == sizeof( VkMemoryWin32HandlePropertiesKHR ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, MemoryWin32HandlePropertiesKHR const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "memoryTypeBits : " << value.memoryTypeBits << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( MemoryWin32HandlePropertiesKHR value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 #endif /*VK_USE_PLATFORM_WIN32_KHR*/
 
   struct MultisamplePropertiesEXT
@@ -33978,6 +41082,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkMultisamplePropertiesEXT*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, MultisamplePropertiesEXT const& );
 
     bool operator==( MultisamplePropertiesEXT const& rhs ) const
     {
@@ -33999,6 +41105,23 @@ namespace VULKAN_HPP_NAMESPACE
     Extent2D maxSampleLocationGridSize;
   };
   static_assert( sizeof( MultisamplePropertiesEXT ) == sizeof( VkMultisamplePropertiesEXT ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, MultisamplePropertiesEXT const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "maxSampleLocationGridSize : " << value.maxSampleLocationGridSize << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( MultisamplePropertiesEXT value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct ObjectTableCreateInfoNVX
   {
@@ -34102,6 +41225,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkObjectTableCreateInfoNVX*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, ObjectTableCreateInfoNVX const& );
 
     bool operator==( ObjectTableCreateInfoNVX const& rhs ) const
     {
@@ -34139,6 +41264,31 @@ namespace VULKAN_HPP_NAMESPACE
     uint32_t maxPipelineLayouts;
   };
   static_assert( sizeof( ObjectTableCreateInfoNVX ) == sizeof( VkObjectTableCreateInfoNVX ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, ObjectTableCreateInfoNVX const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "objectCount : " << value.objectCount << std::endl;
+    stream << "pObjectEntryTypes : " << value.pObjectEntryTypes << std::endl;
+    stream << "pObjectEntryCounts : " << value.pObjectEntryCounts << std::endl;
+    stream << "pObjectEntryUsageFlags : " << value.pObjectEntryUsageFlags << std::endl;
+    stream << "maxUniformBuffersPerDescriptor : " << value.maxUniformBuffersPerDescriptor << std::endl;
+    stream << "maxStorageBuffersPerDescriptor : " << value.maxStorageBuffersPerDescriptor << std::endl;
+    stream << "maxStorageImagesPerDescriptor : " << value.maxStorageImagesPerDescriptor << std::endl;
+    stream << "maxSampledImagesPerDescriptor : " << value.maxSampledImagesPerDescriptor << std::endl;
+    stream << "maxPipelineLayouts : " << value.maxPipelineLayouts << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( ObjectTableCreateInfoNVX value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct ObjectTableEntryNVX
   {
@@ -34180,6 +41330,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkObjectTableEntryNVX*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, ObjectTableEntryNVX const& );
 
     bool operator==( ObjectTableEntryNVX const& rhs ) const
     {
@@ -34196,6 +41348,22 @@ namespace VULKAN_HPP_NAMESPACE
     ObjectEntryUsageFlagsNVX flags;
   };
   static_assert( sizeof( ObjectTableEntryNVX ) == sizeof( VkObjectTableEntryNVX ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, ObjectTableEntryNVX const& value )
+  {
+    stream << "type : " << value.type << std::endl;
+    stream << "flags : " << value.flags << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( ObjectTableEntryNVX value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct ObjectTableDescriptorSetEntryNVX
   {
@@ -34262,6 +41430,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkObjectTableDescriptorSetEntryNVX*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, ObjectTableDescriptorSetEntryNVX const& );
 
     bool operator==( ObjectTableDescriptorSetEntryNVX const& rhs ) const
     {
@@ -34282,6 +41452,24 @@ namespace VULKAN_HPP_NAMESPACE
     DescriptorSet descriptorSet;
   };
   static_assert( sizeof( ObjectTableDescriptorSetEntryNVX ) == sizeof( VkObjectTableDescriptorSetEntryNVX ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, ObjectTableDescriptorSetEntryNVX const& value )
+  {
+    stream << "type : " << value.type << std::endl;
+    stream << "flags : " << value.flags << std::endl;
+    stream << "pipelineLayout : " << value.pipelineLayout << std::endl;
+    stream << "descriptorSet : " << value.descriptorSet << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( ObjectTableDescriptorSetEntryNVX value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct ObjectTableIndexBufferEntryNVX
   {
@@ -34348,6 +41536,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkObjectTableIndexBufferEntryNVX*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, ObjectTableIndexBufferEntryNVX const& );
 
     bool operator==( ObjectTableIndexBufferEntryNVX const& rhs ) const
     {
@@ -34368,6 +41558,24 @@ namespace VULKAN_HPP_NAMESPACE
     IndexType indexType;
   };
   static_assert( sizeof( ObjectTableIndexBufferEntryNVX ) == sizeof( VkObjectTableIndexBufferEntryNVX ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, ObjectTableIndexBufferEntryNVX const& value )
+  {
+    stream << "type : " << value.type << std::endl;
+    stream << "flags : " << value.flags << std::endl;
+    stream << "buffer : " << value.buffer << std::endl;
+    stream << "indexType : " << value.indexType << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( ObjectTableIndexBufferEntryNVX value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct ObjectTablePipelineEntryNVX
   {
@@ -34424,6 +41632,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkObjectTablePipelineEntryNVX*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, ObjectTablePipelineEntryNVX const& );
 
     bool operator==( ObjectTablePipelineEntryNVX const& rhs ) const
     {
@@ -34442,6 +41652,23 @@ namespace VULKAN_HPP_NAMESPACE
     Pipeline pipeline;
   };
   static_assert( sizeof( ObjectTablePipelineEntryNVX ) == sizeof( VkObjectTablePipelineEntryNVX ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, ObjectTablePipelineEntryNVX const& value )
+  {
+    stream << "type : " << value.type << std::endl;
+    stream << "flags : " << value.flags << std::endl;
+    stream << "pipeline : " << value.pipeline << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( ObjectTablePipelineEntryNVX value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct ObjectTablePushConstantEntryNVX
   {
@@ -34508,6 +41735,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkObjectTablePushConstantEntryNVX*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, ObjectTablePushConstantEntryNVX const& );
 
     bool operator==( ObjectTablePushConstantEntryNVX const& rhs ) const
     {
@@ -34528,6 +41757,24 @@ namespace VULKAN_HPP_NAMESPACE
     ShaderStageFlags stageFlags;
   };
   static_assert( sizeof( ObjectTablePushConstantEntryNVX ) == sizeof( VkObjectTablePushConstantEntryNVX ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, ObjectTablePushConstantEntryNVX const& value )
+  {
+    stream << "type : " << value.type << std::endl;
+    stream << "flags : " << value.flags << std::endl;
+    stream << "pipelineLayout : " << value.pipelineLayout << std::endl;
+    stream << "stageFlags : " << value.stageFlags << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( ObjectTablePushConstantEntryNVX value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct ObjectTableVertexBufferEntryNVX
   {
@@ -34584,6 +41831,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkObjectTableVertexBufferEntryNVX*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, ObjectTableVertexBufferEntryNVX const& );
 
     bool operator==( ObjectTableVertexBufferEntryNVX const& rhs ) const
     {
@@ -34602,6 +41851,23 @@ namespace VULKAN_HPP_NAMESPACE
     Buffer buffer;
   };
   static_assert( sizeof( ObjectTableVertexBufferEntryNVX ) == sizeof( VkObjectTableVertexBufferEntryNVX ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, ObjectTableVertexBufferEntryNVX const& value )
+  {
+    stream << "type : " << value.type << std::endl;
+    stream << "flags : " << value.flags << std::endl;
+    stream << "buffer : " << value.buffer << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( ObjectTableVertexBufferEntryNVX value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct PastPresentationTimingGOOGLE
   {
@@ -34614,6 +41880,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkPastPresentationTimingGOOGLE*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, PastPresentationTimingGOOGLE const& );
 
     bool operator==( PastPresentationTimingGOOGLE const& rhs ) const
     {
@@ -34636,6 +41904,25 @@ namespace VULKAN_HPP_NAMESPACE
     uint64_t presentMargin;
   };
   static_assert( sizeof( PastPresentationTimingGOOGLE ) == sizeof( VkPastPresentationTimingGOOGLE ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, PastPresentationTimingGOOGLE const& value )
+  {
+    stream << "presentID : " << value.presentID << std::endl;
+    stream << "desiredPresentTime : " << value.desiredPresentTime << std::endl;
+    stream << "actualPresentTime : " << value.actualPresentTime << std::endl;
+    stream << "earliestPresentTime : " << value.earliestPresentTime << std::endl;
+    stream << "presentMargin : " << value.presentMargin << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( PastPresentationTimingGOOGLE value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct PhysicalDevice16BitStorageFeatures
   {
@@ -34699,6 +41986,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkPhysicalDevice16BitStorageFeatures*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, PhysicalDevice16BitStorageFeatures const& );
 
     bool operator==( PhysicalDevice16BitStorageFeatures const& rhs ) const
     {
@@ -34726,6 +42015,26 @@ namespace VULKAN_HPP_NAMESPACE
     Bool32 storageInputOutput16;
   };
   static_assert( sizeof( PhysicalDevice16BitStorageFeatures ) == sizeof( VkPhysicalDevice16BitStorageFeatures ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, PhysicalDevice16BitStorageFeatures const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "storageBuffer16BitAccess : " << value.storageBuffer16BitAccess << std::endl;
+    stream << "uniformAndStorageBuffer16BitAccess : " << value.uniformAndStorageBuffer16BitAccess << std::endl;
+    stream << "storagePushConstant16 : " << value.storagePushConstant16 << std::endl;
+    stream << "storageInputOutput16 : " << value.storageInputOutput16 << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( PhysicalDevice16BitStorageFeatures value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct PhysicalDevice8BitStorageFeaturesKHR
   {
@@ -34781,6 +42090,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkPhysicalDevice8BitStorageFeaturesKHR*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, PhysicalDevice8BitStorageFeaturesKHR const& );
 
     bool operator==( PhysicalDevice8BitStorageFeaturesKHR const& rhs ) const
     {
@@ -34806,6 +42117,25 @@ namespace VULKAN_HPP_NAMESPACE
     Bool32 storagePushConstant8;
   };
   static_assert( sizeof( PhysicalDevice8BitStorageFeaturesKHR ) == sizeof( VkPhysicalDevice8BitStorageFeaturesKHR ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, PhysicalDevice8BitStorageFeaturesKHR const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "storageBuffer8BitAccess : " << value.storageBuffer8BitAccess << std::endl;
+    stream << "uniformAndStorageBuffer8BitAccess : " << value.uniformAndStorageBuffer8BitAccess << std::endl;
+    stream << "storagePushConstant8 : " << value.storagePushConstant8 << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( PhysicalDevice8BitStorageFeaturesKHR value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct PhysicalDeviceASTCDecodeFeaturesEXT
   {
@@ -34845,6 +42175,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkPhysicalDeviceASTCDecodeFeaturesEXT*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, PhysicalDeviceASTCDecodeFeaturesEXT const& );
 
     bool operator==( PhysicalDeviceASTCDecodeFeaturesEXT const& rhs ) const
     {
@@ -34866,6 +42198,23 @@ namespace VULKAN_HPP_NAMESPACE
     Bool32 decodeModeSharedExponent;
   };
   static_assert( sizeof( PhysicalDeviceASTCDecodeFeaturesEXT ) == sizeof( VkPhysicalDeviceASTCDecodeFeaturesEXT ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, PhysicalDeviceASTCDecodeFeaturesEXT const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "decodeModeSharedExponent : " << value.decodeModeSharedExponent << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( PhysicalDeviceASTCDecodeFeaturesEXT value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct PhysicalDeviceBlendOperationAdvancedFeaturesEXT
   {
@@ -34905,6 +42254,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkPhysicalDeviceBlendOperationAdvancedFeaturesEXT*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, PhysicalDeviceBlendOperationAdvancedFeaturesEXT const& );
 
     bool operator==( PhysicalDeviceBlendOperationAdvancedFeaturesEXT const& rhs ) const
     {
@@ -34926,6 +42277,23 @@ namespace VULKAN_HPP_NAMESPACE
     Bool32 advancedBlendCoherentOperations;
   };
   static_assert( sizeof( PhysicalDeviceBlendOperationAdvancedFeaturesEXT ) == sizeof( VkPhysicalDeviceBlendOperationAdvancedFeaturesEXT ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, PhysicalDeviceBlendOperationAdvancedFeaturesEXT const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "advancedBlendCoherentOperations : " << value.advancedBlendCoherentOperations << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( PhysicalDeviceBlendOperationAdvancedFeaturesEXT value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct PhysicalDeviceBlendOperationAdvancedPropertiesEXT
   {
@@ -34938,6 +42306,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkPhysicalDeviceBlendOperationAdvancedPropertiesEXT*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, PhysicalDeviceBlendOperationAdvancedPropertiesEXT const& );
 
     bool operator==( PhysicalDeviceBlendOperationAdvancedPropertiesEXT const& rhs ) const
     {
@@ -34969,6 +42339,28 @@ namespace VULKAN_HPP_NAMESPACE
     Bool32 advancedBlendAllOperations;
   };
   static_assert( sizeof( PhysicalDeviceBlendOperationAdvancedPropertiesEXT ) == sizeof( VkPhysicalDeviceBlendOperationAdvancedPropertiesEXT ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, PhysicalDeviceBlendOperationAdvancedPropertiesEXT const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "advancedBlendMaxColorAttachments : " << value.advancedBlendMaxColorAttachments << std::endl;
+    stream << "advancedBlendIndependentBlend : " << value.advancedBlendIndependentBlend << std::endl;
+    stream << "advancedBlendNonPremultipliedSrcColor : " << value.advancedBlendNonPremultipliedSrcColor << std::endl;
+    stream << "advancedBlendNonPremultipliedDstColor : " << value.advancedBlendNonPremultipliedDstColor << std::endl;
+    stream << "advancedBlendCorrelatedOverlap : " << value.advancedBlendCorrelatedOverlap << std::endl;
+    stream << "advancedBlendAllOperations : " << value.advancedBlendAllOperations << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( PhysicalDeviceBlendOperationAdvancedPropertiesEXT value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct PhysicalDeviceBufferAddressFeaturesEXT
   {
@@ -35024,6 +42416,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkPhysicalDeviceBufferAddressFeaturesEXT*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, PhysicalDeviceBufferAddressFeaturesEXT const& );
 
     bool operator==( PhysicalDeviceBufferAddressFeaturesEXT const& rhs ) const
     {
@@ -35049,6 +42443,25 @@ namespace VULKAN_HPP_NAMESPACE
     Bool32 bufferDeviceAddressMultiDevice;
   };
   static_assert( sizeof( PhysicalDeviceBufferAddressFeaturesEXT ) == sizeof( VkPhysicalDeviceBufferAddressFeaturesEXT ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, PhysicalDeviceBufferAddressFeaturesEXT const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "bufferDeviceAddress : " << value.bufferDeviceAddress << std::endl;
+    stream << "bufferDeviceAddressCaptureReplay : " << value.bufferDeviceAddressCaptureReplay << std::endl;
+    stream << "bufferDeviceAddressMultiDevice : " << value.bufferDeviceAddressMultiDevice << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( PhysicalDeviceBufferAddressFeaturesEXT value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct PhysicalDeviceComputeShaderDerivativesFeaturesNV
   {
@@ -35096,6 +42509,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkPhysicalDeviceComputeShaderDerivativesFeaturesNV*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, PhysicalDeviceComputeShaderDerivativesFeaturesNV const& );
 
     bool operator==( PhysicalDeviceComputeShaderDerivativesFeaturesNV const& rhs ) const
     {
@@ -35119,6 +42534,24 @@ namespace VULKAN_HPP_NAMESPACE
     Bool32 computeDerivativeGroupLinear;
   };
   static_assert( sizeof( PhysicalDeviceComputeShaderDerivativesFeaturesNV ) == sizeof( VkPhysicalDeviceComputeShaderDerivativesFeaturesNV ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, PhysicalDeviceComputeShaderDerivativesFeaturesNV const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "computeDerivativeGroupQuads : " << value.computeDerivativeGroupQuads << std::endl;
+    stream << "computeDerivativeGroupLinear : " << value.computeDerivativeGroupLinear << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( PhysicalDeviceComputeShaderDerivativesFeaturesNV value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct PhysicalDeviceConditionalRenderingFeaturesEXT
   {
@@ -35166,6 +42599,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkPhysicalDeviceConditionalRenderingFeaturesEXT*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, PhysicalDeviceConditionalRenderingFeaturesEXT const& );
 
     bool operator==( PhysicalDeviceConditionalRenderingFeaturesEXT const& rhs ) const
     {
@@ -35189,6 +42624,24 @@ namespace VULKAN_HPP_NAMESPACE
     Bool32 inheritedConditionalRendering;
   };
   static_assert( sizeof( PhysicalDeviceConditionalRenderingFeaturesEXT ) == sizeof( VkPhysicalDeviceConditionalRenderingFeaturesEXT ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, PhysicalDeviceConditionalRenderingFeaturesEXT const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "conditionalRendering : " << value.conditionalRendering << std::endl;
+    stream << "inheritedConditionalRendering : " << value.inheritedConditionalRendering << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( PhysicalDeviceConditionalRenderingFeaturesEXT value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct PhysicalDeviceConservativeRasterizationPropertiesEXT
   {
@@ -35201,6 +42654,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkPhysicalDeviceConservativeRasterizationPropertiesEXT*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, PhysicalDeviceConservativeRasterizationPropertiesEXT const& );
 
     bool operator==( PhysicalDeviceConservativeRasterizationPropertiesEXT const& rhs ) const
     {
@@ -35238,6 +42693,31 @@ namespace VULKAN_HPP_NAMESPACE
     Bool32 conservativeRasterizationPostDepthCoverage;
   };
   static_assert( sizeof( PhysicalDeviceConservativeRasterizationPropertiesEXT ) == sizeof( VkPhysicalDeviceConservativeRasterizationPropertiesEXT ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, PhysicalDeviceConservativeRasterizationPropertiesEXT const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "primitiveOverestimationSize : " << value.primitiveOverestimationSize << std::endl;
+    stream << "maxExtraPrimitiveOverestimationSize : " << value.maxExtraPrimitiveOverestimationSize << std::endl;
+    stream << "extraPrimitiveOverestimationSizeGranularity : " << value.extraPrimitiveOverestimationSizeGranularity << std::endl;
+    stream << "primitiveUnderestimation : " << value.primitiveUnderestimation << std::endl;
+    stream << "conservativePointAndLineRasterization : " << value.conservativePointAndLineRasterization << std::endl;
+    stream << "degenerateTrianglesRasterized : " << value.degenerateTrianglesRasterized << std::endl;
+    stream << "degenerateLinesRasterized : " << value.degenerateLinesRasterized << std::endl;
+    stream << "fullyCoveredFragmentShaderInputVariable : " << value.fullyCoveredFragmentShaderInputVariable << std::endl;
+    stream << "conservativeRasterizationPostDepthCoverage : " << value.conservativeRasterizationPostDepthCoverage << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( PhysicalDeviceConservativeRasterizationPropertiesEXT value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct PhysicalDeviceCornerSampledImageFeaturesNV
   {
@@ -35277,6 +42757,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkPhysicalDeviceCornerSampledImageFeaturesNV*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, PhysicalDeviceCornerSampledImageFeaturesNV const& );
 
     bool operator==( PhysicalDeviceCornerSampledImageFeaturesNV const& rhs ) const
     {
@@ -35298,6 +42780,23 @@ namespace VULKAN_HPP_NAMESPACE
     Bool32 cornerSampledImage;
   };
   static_assert( sizeof( PhysicalDeviceCornerSampledImageFeaturesNV ) == sizeof( VkPhysicalDeviceCornerSampledImageFeaturesNV ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, PhysicalDeviceCornerSampledImageFeaturesNV const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "cornerSampledImage : " << value.cornerSampledImage << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( PhysicalDeviceCornerSampledImageFeaturesNV value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct PhysicalDeviceDedicatedAllocationImageAliasingFeaturesNV
   {
@@ -35337,6 +42836,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkPhysicalDeviceDedicatedAllocationImageAliasingFeaturesNV*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, PhysicalDeviceDedicatedAllocationImageAliasingFeaturesNV const& );
 
     bool operator==( PhysicalDeviceDedicatedAllocationImageAliasingFeaturesNV const& rhs ) const
     {
@@ -35358,6 +42859,23 @@ namespace VULKAN_HPP_NAMESPACE
     Bool32 dedicatedAllocationImageAliasing;
   };
   static_assert( sizeof( PhysicalDeviceDedicatedAllocationImageAliasingFeaturesNV ) == sizeof( VkPhysicalDeviceDedicatedAllocationImageAliasingFeaturesNV ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, PhysicalDeviceDedicatedAllocationImageAliasingFeaturesNV const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "dedicatedAllocationImageAliasing : " << value.dedicatedAllocationImageAliasing << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( PhysicalDeviceDedicatedAllocationImageAliasingFeaturesNV value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct PhysicalDeviceDepthStencilResolvePropertiesKHR
   {
@@ -35370,6 +42888,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkPhysicalDeviceDepthStencilResolvePropertiesKHR*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, PhysicalDeviceDepthStencilResolvePropertiesKHR const& );
 
     bool operator==( PhysicalDeviceDepthStencilResolvePropertiesKHR const& rhs ) const
     {
@@ -35397,6 +42917,26 @@ namespace VULKAN_HPP_NAMESPACE
     Bool32 independentResolve;
   };
   static_assert( sizeof( PhysicalDeviceDepthStencilResolvePropertiesKHR ) == sizeof( VkPhysicalDeviceDepthStencilResolvePropertiesKHR ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, PhysicalDeviceDepthStencilResolvePropertiesKHR const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "supportedDepthResolveModes : " << value.supportedDepthResolveModes << std::endl;
+    stream << "supportedStencilResolveModes : " << value.supportedStencilResolveModes << std::endl;
+    stream << "independentResolveNone : " << value.independentResolveNone << std::endl;
+    stream << "independentResolve : " << value.independentResolve << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( PhysicalDeviceDepthStencilResolvePropertiesKHR value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct PhysicalDeviceDescriptorIndexingFeaturesEXT
   {
@@ -35588,6 +43128,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkPhysicalDeviceDescriptorIndexingFeaturesEXT*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, PhysicalDeviceDescriptorIndexingFeaturesEXT const& );
 
     bool operator==( PhysicalDeviceDescriptorIndexingFeaturesEXT const& rhs ) const
     {
@@ -35647,6 +43189,42 @@ namespace VULKAN_HPP_NAMESPACE
     Bool32 runtimeDescriptorArray;
   };
   static_assert( sizeof( PhysicalDeviceDescriptorIndexingFeaturesEXT ) == sizeof( VkPhysicalDeviceDescriptorIndexingFeaturesEXT ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, PhysicalDeviceDescriptorIndexingFeaturesEXT const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "shaderInputAttachmentArrayDynamicIndexing : " << value.shaderInputAttachmentArrayDynamicIndexing << std::endl;
+    stream << "shaderUniformTexelBufferArrayDynamicIndexing : " << value.shaderUniformTexelBufferArrayDynamicIndexing << std::endl;
+    stream << "shaderStorageTexelBufferArrayDynamicIndexing : " << value.shaderStorageTexelBufferArrayDynamicIndexing << std::endl;
+    stream << "shaderUniformBufferArrayNonUniformIndexing : " << value.shaderUniformBufferArrayNonUniformIndexing << std::endl;
+    stream << "shaderSampledImageArrayNonUniformIndexing : " << value.shaderSampledImageArrayNonUniformIndexing << std::endl;
+    stream << "shaderStorageBufferArrayNonUniformIndexing : " << value.shaderStorageBufferArrayNonUniformIndexing << std::endl;
+    stream << "shaderStorageImageArrayNonUniformIndexing : " << value.shaderStorageImageArrayNonUniformIndexing << std::endl;
+    stream << "shaderInputAttachmentArrayNonUniformIndexing : " << value.shaderInputAttachmentArrayNonUniformIndexing << std::endl;
+    stream << "shaderUniformTexelBufferArrayNonUniformIndexing : " << value.shaderUniformTexelBufferArrayNonUniformIndexing << std::endl;
+    stream << "shaderStorageTexelBufferArrayNonUniformIndexing : " << value.shaderStorageTexelBufferArrayNonUniformIndexing << std::endl;
+    stream << "descriptorBindingUniformBufferUpdateAfterBind : " << value.descriptorBindingUniformBufferUpdateAfterBind << std::endl;
+    stream << "descriptorBindingSampledImageUpdateAfterBind : " << value.descriptorBindingSampledImageUpdateAfterBind << std::endl;
+    stream << "descriptorBindingStorageImageUpdateAfterBind : " << value.descriptorBindingStorageImageUpdateAfterBind << std::endl;
+    stream << "descriptorBindingStorageBufferUpdateAfterBind : " << value.descriptorBindingStorageBufferUpdateAfterBind << std::endl;
+    stream << "descriptorBindingUniformTexelBufferUpdateAfterBind : " << value.descriptorBindingUniformTexelBufferUpdateAfterBind << std::endl;
+    stream << "descriptorBindingStorageTexelBufferUpdateAfterBind : " << value.descriptorBindingStorageTexelBufferUpdateAfterBind << std::endl;
+    stream << "descriptorBindingUpdateUnusedWhilePending : " << value.descriptorBindingUpdateUnusedWhilePending << std::endl;
+    stream << "descriptorBindingPartiallyBound : " << value.descriptorBindingPartiallyBound << std::endl;
+    stream << "descriptorBindingVariableDescriptorCount : " << value.descriptorBindingVariableDescriptorCount << std::endl;
+    stream << "runtimeDescriptorArray : " << value.runtimeDescriptorArray << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( PhysicalDeviceDescriptorIndexingFeaturesEXT value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct PhysicalDeviceDescriptorIndexingPropertiesEXT
   {
@@ -35659,6 +43237,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkPhysicalDeviceDescriptorIndexingPropertiesEXT*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, PhysicalDeviceDescriptorIndexingPropertiesEXT const& );
 
     bool operator==( PhysicalDeviceDescriptorIndexingPropertiesEXT const& rhs ) const
     {
@@ -35724,6 +43304,45 @@ namespace VULKAN_HPP_NAMESPACE
     uint32_t maxDescriptorSetUpdateAfterBindInputAttachments;
   };
   static_assert( sizeof( PhysicalDeviceDescriptorIndexingPropertiesEXT ) == sizeof( VkPhysicalDeviceDescriptorIndexingPropertiesEXT ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, PhysicalDeviceDescriptorIndexingPropertiesEXT const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "maxUpdateAfterBindDescriptorsInAllPools : " << value.maxUpdateAfterBindDescriptorsInAllPools << std::endl;
+    stream << "shaderUniformBufferArrayNonUniformIndexingNative : " << value.shaderUniformBufferArrayNonUniformIndexingNative << std::endl;
+    stream << "shaderSampledImageArrayNonUniformIndexingNative : " << value.shaderSampledImageArrayNonUniformIndexingNative << std::endl;
+    stream << "shaderStorageBufferArrayNonUniformIndexingNative : " << value.shaderStorageBufferArrayNonUniformIndexingNative << std::endl;
+    stream << "shaderStorageImageArrayNonUniformIndexingNative : " << value.shaderStorageImageArrayNonUniformIndexingNative << std::endl;
+    stream << "shaderInputAttachmentArrayNonUniformIndexingNative : " << value.shaderInputAttachmentArrayNonUniformIndexingNative << std::endl;
+    stream << "robustBufferAccessUpdateAfterBind : " << value.robustBufferAccessUpdateAfterBind << std::endl;
+    stream << "quadDivergentImplicitLod : " << value.quadDivergentImplicitLod << std::endl;
+    stream << "maxPerStageDescriptorUpdateAfterBindSamplers : " << value.maxPerStageDescriptorUpdateAfterBindSamplers << std::endl;
+    stream << "maxPerStageDescriptorUpdateAfterBindUniformBuffers : " << value.maxPerStageDescriptorUpdateAfterBindUniformBuffers << std::endl;
+    stream << "maxPerStageDescriptorUpdateAfterBindStorageBuffers : " << value.maxPerStageDescriptorUpdateAfterBindStorageBuffers << std::endl;
+    stream << "maxPerStageDescriptorUpdateAfterBindSampledImages : " << value.maxPerStageDescriptorUpdateAfterBindSampledImages << std::endl;
+    stream << "maxPerStageDescriptorUpdateAfterBindStorageImages : " << value.maxPerStageDescriptorUpdateAfterBindStorageImages << std::endl;
+    stream << "maxPerStageDescriptorUpdateAfterBindInputAttachments : " << value.maxPerStageDescriptorUpdateAfterBindInputAttachments << std::endl;
+    stream << "maxPerStageUpdateAfterBindResources : " << value.maxPerStageUpdateAfterBindResources << std::endl;
+    stream << "maxDescriptorSetUpdateAfterBindSamplers : " << value.maxDescriptorSetUpdateAfterBindSamplers << std::endl;
+    stream << "maxDescriptorSetUpdateAfterBindUniformBuffers : " << value.maxDescriptorSetUpdateAfterBindUniformBuffers << std::endl;
+    stream << "maxDescriptorSetUpdateAfterBindUniformBuffersDynamic : " << value.maxDescriptorSetUpdateAfterBindUniformBuffersDynamic << std::endl;
+    stream << "maxDescriptorSetUpdateAfterBindStorageBuffers : " << value.maxDescriptorSetUpdateAfterBindStorageBuffers << std::endl;
+    stream << "maxDescriptorSetUpdateAfterBindStorageBuffersDynamic : " << value.maxDescriptorSetUpdateAfterBindStorageBuffersDynamic << std::endl;
+    stream << "maxDescriptorSetUpdateAfterBindSampledImages : " << value.maxDescriptorSetUpdateAfterBindSampledImages << std::endl;
+    stream << "maxDescriptorSetUpdateAfterBindStorageImages : " << value.maxDescriptorSetUpdateAfterBindStorageImages << std::endl;
+    stream << "maxDescriptorSetUpdateAfterBindInputAttachments : " << value.maxDescriptorSetUpdateAfterBindInputAttachments << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( PhysicalDeviceDescriptorIndexingPropertiesEXT value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct PhysicalDeviceDiscardRectanglePropertiesEXT
   {
@@ -35736,6 +43355,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkPhysicalDeviceDiscardRectanglePropertiesEXT*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, PhysicalDeviceDiscardRectanglePropertiesEXT const& );
 
     bool operator==( PhysicalDeviceDiscardRectanglePropertiesEXT const& rhs ) const
     {
@@ -35757,6 +43378,23 @@ namespace VULKAN_HPP_NAMESPACE
     uint32_t maxDiscardRectangles;
   };
   static_assert( sizeof( PhysicalDeviceDiscardRectanglePropertiesEXT ) == sizeof( VkPhysicalDeviceDiscardRectanglePropertiesEXT ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, PhysicalDeviceDiscardRectanglePropertiesEXT const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "maxDiscardRectangles : " << value.maxDiscardRectangles << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( PhysicalDeviceDiscardRectanglePropertiesEXT value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct PhysicalDeviceDriverPropertiesKHR
   {
@@ -35769,6 +43407,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkPhysicalDeviceDriverPropertiesKHR*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, PhysicalDeviceDriverPropertiesKHR const& );
 
     bool operator==( PhysicalDeviceDriverPropertiesKHR const& rhs ) const
     {
@@ -35796,6 +43436,26 @@ namespace VULKAN_HPP_NAMESPACE
     ConformanceVersionKHR conformanceVersion;
   };
   static_assert( sizeof( PhysicalDeviceDriverPropertiesKHR ) == sizeof( VkPhysicalDeviceDriverPropertiesKHR ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, PhysicalDeviceDriverPropertiesKHR const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "driverID : " << value.driverID << std::endl;
+    stream << "driverName : " << value.driverName << std::endl;
+    stream << "driverInfo : " << value.driverInfo << std::endl;
+    stream << "conformanceVersion : " << value.conformanceVersion << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( PhysicalDeviceDriverPropertiesKHR value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct PhysicalDeviceExclusiveScissorFeaturesNV
   {
@@ -35835,6 +43495,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkPhysicalDeviceExclusiveScissorFeaturesNV*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, PhysicalDeviceExclusiveScissorFeaturesNV const& );
 
     bool operator==( PhysicalDeviceExclusiveScissorFeaturesNV const& rhs ) const
     {
@@ -35856,6 +43518,23 @@ namespace VULKAN_HPP_NAMESPACE
     Bool32 exclusiveScissor;
   };
   static_assert( sizeof( PhysicalDeviceExclusiveScissorFeaturesNV ) == sizeof( VkPhysicalDeviceExclusiveScissorFeaturesNV ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, PhysicalDeviceExclusiveScissorFeaturesNV const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "exclusiveScissor : " << value.exclusiveScissor << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( PhysicalDeviceExclusiveScissorFeaturesNV value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct PhysicalDeviceExternalBufferInfo
   {
@@ -35911,6 +43590,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkPhysicalDeviceExternalBufferInfo*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, PhysicalDeviceExternalBufferInfo const& );
 
     bool operator==( PhysicalDeviceExternalBufferInfo const& rhs ) const
     {
@@ -35936,6 +43617,25 @@ namespace VULKAN_HPP_NAMESPACE
     ExternalMemoryHandleTypeFlagBits handleType;
   };
   static_assert( sizeof( PhysicalDeviceExternalBufferInfo ) == sizeof( VkPhysicalDeviceExternalBufferInfo ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, PhysicalDeviceExternalBufferInfo const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "flags : " << value.flags << std::endl;
+    stream << "usage : " << value.usage << std::endl;
+    stream << "handleType : " << value.handleType << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( PhysicalDeviceExternalBufferInfo value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct PhysicalDeviceExternalFenceInfo
   {
@@ -35975,6 +43675,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkPhysicalDeviceExternalFenceInfo*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, PhysicalDeviceExternalFenceInfo const& );
 
     bool operator==( PhysicalDeviceExternalFenceInfo const& rhs ) const
     {
@@ -35996,6 +43698,23 @@ namespace VULKAN_HPP_NAMESPACE
     ExternalFenceHandleTypeFlagBits handleType;
   };
   static_assert( sizeof( PhysicalDeviceExternalFenceInfo ) == sizeof( VkPhysicalDeviceExternalFenceInfo ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, PhysicalDeviceExternalFenceInfo const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "handleType : " << value.handleType << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( PhysicalDeviceExternalFenceInfo value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct PhysicalDeviceExternalImageFormatInfo
   {
@@ -36035,6 +43754,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkPhysicalDeviceExternalImageFormatInfo*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, PhysicalDeviceExternalImageFormatInfo const& );
 
     bool operator==( PhysicalDeviceExternalImageFormatInfo const& rhs ) const
     {
@@ -36056,6 +43777,23 @@ namespace VULKAN_HPP_NAMESPACE
     ExternalMemoryHandleTypeFlagBits handleType;
   };
   static_assert( sizeof( PhysicalDeviceExternalImageFormatInfo ) == sizeof( VkPhysicalDeviceExternalImageFormatInfo ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, PhysicalDeviceExternalImageFormatInfo const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "handleType : " << value.handleType << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( PhysicalDeviceExternalImageFormatInfo value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct PhysicalDeviceExternalMemoryHostPropertiesEXT
   {
@@ -36068,6 +43806,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkPhysicalDeviceExternalMemoryHostPropertiesEXT*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, PhysicalDeviceExternalMemoryHostPropertiesEXT const& );
 
     bool operator==( PhysicalDeviceExternalMemoryHostPropertiesEXT const& rhs ) const
     {
@@ -36089,6 +43829,23 @@ namespace VULKAN_HPP_NAMESPACE
     DeviceSize minImportedHostPointerAlignment;
   };
   static_assert( sizeof( PhysicalDeviceExternalMemoryHostPropertiesEXT ) == sizeof( VkPhysicalDeviceExternalMemoryHostPropertiesEXT ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, PhysicalDeviceExternalMemoryHostPropertiesEXT const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "minImportedHostPointerAlignment : " << value.minImportedHostPointerAlignment << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( PhysicalDeviceExternalMemoryHostPropertiesEXT value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct PhysicalDeviceExternalSemaphoreInfo
   {
@@ -36128,6 +43885,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkPhysicalDeviceExternalSemaphoreInfo*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, PhysicalDeviceExternalSemaphoreInfo const& );
 
     bool operator==( PhysicalDeviceExternalSemaphoreInfo const& rhs ) const
     {
@@ -36149,6 +43908,23 @@ namespace VULKAN_HPP_NAMESPACE
     ExternalSemaphoreHandleTypeFlagBits handleType;
   };
   static_assert( sizeof( PhysicalDeviceExternalSemaphoreInfo ) == sizeof( VkPhysicalDeviceExternalSemaphoreInfo ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, PhysicalDeviceExternalSemaphoreInfo const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "handleType : " << value.handleType << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( PhysicalDeviceExternalSemaphoreInfo value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct PhysicalDeviceFeatures2
   {
@@ -36188,6 +43964,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkPhysicalDeviceFeatures2*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, PhysicalDeviceFeatures2 const& );
 
     bool operator==( PhysicalDeviceFeatures2 const& rhs ) const
     {
@@ -36209,6 +43987,23 @@ namespace VULKAN_HPP_NAMESPACE
     PhysicalDeviceFeatures features;
   };
   static_assert( sizeof( PhysicalDeviceFeatures2 ) == sizeof( VkPhysicalDeviceFeatures2 ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, PhysicalDeviceFeatures2 const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "features : " << value.features << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( PhysicalDeviceFeatures2 value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct PhysicalDeviceFloat16Int8FeaturesKHR
   {
@@ -36256,6 +44051,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkPhysicalDeviceFloat16Int8FeaturesKHR*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, PhysicalDeviceFloat16Int8FeaturesKHR const& );
 
     bool operator==( PhysicalDeviceFloat16Int8FeaturesKHR const& rhs ) const
     {
@@ -36279,6 +44076,24 @@ namespace VULKAN_HPP_NAMESPACE
     Bool32 shaderInt8;
   };
   static_assert( sizeof( PhysicalDeviceFloat16Int8FeaturesKHR ) == sizeof( VkPhysicalDeviceFloat16Int8FeaturesKHR ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, PhysicalDeviceFloat16Int8FeaturesKHR const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "shaderFloat16 : " << value.shaderFloat16 << std::endl;
+    stream << "shaderInt8 : " << value.shaderInt8 << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( PhysicalDeviceFloat16Int8FeaturesKHR value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct PhysicalDeviceFloatControlsPropertiesKHR
   {
@@ -36291,6 +44106,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkPhysicalDeviceFloatControlsPropertiesKHR*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, PhysicalDeviceFloatControlsPropertiesKHR const& );
 
     bool operator==( PhysicalDeviceFloatControlsPropertiesKHR const& rhs ) const
     {
@@ -36344,6 +44161,39 @@ namespace VULKAN_HPP_NAMESPACE
     Bool32 shaderRoundingModeRTZFloat64;
   };
   static_assert( sizeof( PhysicalDeviceFloatControlsPropertiesKHR ) == sizeof( VkPhysicalDeviceFloatControlsPropertiesKHR ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, PhysicalDeviceFloatControlsPropertiesKHR const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "separateDenormSettings : " << value.separateDenormSettings << std::endl;
+    stream << "separateRoundingModeSettings : " << value.separateRoundingModeSettings << std::endl;
+    stream << "shaderSignedZeroInfNanPreserveFloat16 : " << value.shaderSignedZeroInfNanPreserveFloat16 << std::endl;
+    stream << "shaderSignedZeroInfNanPreserveFloat32 : " << value.shaderSignedZeroInfNanPreserveFloat32 << std::endl;
+    stream << "shaderSignedZeroInfNanPreserveFloat64 : " << value.shaderSignedZeroInfNanPreserveFloat64 << std::endl;
+    stream << "shaderDenormPreserveFloat16 : " << value.shaderDenormPreserveFloat16 << std::endl;
+    stream << "shaderDenormPreserveFloat32 : " << value.shaderDenormPreserveFloat32 << std::endl;
+    stream << "shaderDenormPreserveFloat64 : " << value.shaderDenormPreserveFloat64 << std::endl;
+    stream << "shaderDenormFlushToZeroFloat16 : " << value.shaderDenormFlushToZeroFloat16 << std::endl;
+    stream << "shaderDenormFlushToZeroFloat32 : " << value.shaderDenormFlushToZeroFloat32 << std::endl;
+    stream << "shaderDenormFlushToZeroFloat64 : " << value.shaderDenormFlushToZeroFloat64 << std::endl;
+    stream << "shaderRoundingModeRTEFloat16 : " << value.shaderRoundingModeRTEFloat16 << std::endl;
+    stream << "shaderRoundingModeRTEFloat32 : " << value.shaderRoundingModeRTEFloat32 << std::endl;
+    stream << "shaderRoundingModeRTEFloat64 : " << value.shaderRoundingModeRTEFloat64 << std::endl;
+    stream << "shaderRoundingModeRTZFloat16 : " << value.shaderRoundingModeRTZFloat16 << std::endl;
+    stream << "shaderRoundingModeRTZFloat32 : " << value.shaderRoundingModeRTZFloat32 << std::endl;
+    stream << "shaderRoundingModeRTZFloat64 : " << value.shaderRoundingModeRTZFloat64 << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( PhysicalDeviceFloatControlsPropertiesKHR value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct PhysicalDeviceFragmentDensityMapFeaturesEXT
   {
@@ -36356,6 +44206,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkPhysicalDeviceFragmentDensityMapFeaturesEXT*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, PhysicalDeviceFragmentDensityMapFeaturesEXT const& );
 
     bool operator==( PhysicalDeviceFragmentDensityMapFeaturesEXT const& rhs ) const
     {
@@ -36381,6 +44233,25 @@ namespace VULKAN_HPP_NAMESPACE
     Bool32 fragmentDensityMapNonSubsampledImages;
   };
   static_assert( sizeof( PhysicalDeviceFragmentDensityMapFeaturesEXT ) == sizeof( VkPhysicalDeviceFragmentDensityMapFeaturesEXT ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, PhysicalDeviceFragmentDensityMapFeaturesEXT const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "fragmentDensityMap : " << value.fragmentDensityMap << std::endl;
+    stream << "fragmentDensityMapDynamic : " << value.fragmentDensityMapDynamic << std::endl;
+    stream << "fragmentDensityMapNonSubsampledImages : " << value.fragmentDensityMapNonSubsampledImages << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( PhysicalDeviceFragmentDensityMapFeaturesEXT value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct PhysicalDeviceFragmentDensityMapPropertiesEXT
   {
@@ -36393,6 +44264,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkPhysicalDeviceFragmentDensityMapPropertiesEXT*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, PhysicalDeviceFragmentDensityMapPropertiesEXT const& );
 
     bool operator==( PhysicalDeviceFragmentDensityMapPropertiesEXT const& rhs ) const
     {
@@ -36418,6 +44291,25 @@ namespace VULKAN_HPP_NAMESPACE
     Bool32 fragmentDensityInvocations;
   };
   static_assert( sizeof( PhysicalDeviceFragmentDensityMapPropertiesEXT ) == sizeof( VkPhysicalDeviceFragmentDensityMapPropertiesEXT ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, PhysicalDeviceFragmentDensityMapPropertiesEXT const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "minFragmentDensityTexelSize : " << value.minFragmentDensityTexelSize << std::endl;
+    stream << "maxFragmentDensityTexelSize : " << value.maxFragmentDensityTexelSize << std::endl;
+    stream << "fragmentDensityInvocations : " << value.fragmentDensityInvocations << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( PhysicalDeviceFragmentDensityMapPropertiesEXT value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct PhysicalDeviceFragmentShaderBarycentricFeaturesNV
   {
@@ -36457,6 +44349,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkPhysicalDeviceFragmentShaderBarycentricFeaturesNV*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, PhysicalDeviceFragmentShaderBarycentricFeaturesNV const& );
 
     bool operator==( PhysicalDeviceFragmentShaderBarycentricFeaturesNV const& rhs ) const
     {
@@ -36478,6 +44372,23 @@ namespace VULKAN_HPP_NAMESPACE
     Bool32 fragmentShaderBarycentric;
   };
   static_assert( sizeof( PhysicalDeviceFragmentShaderBarycentricFeaturesNV ) == sizeof( VkPhysicalDeviceFragmentShaderBarycentricFeaturesNV ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, PhysicalDeviceFragmentShaderBarycentricFeaturesNV const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "fragmentShaderBarycentric : " << value.fragmentShaderBarycentric << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( PhysicalDeviceFragmentShaderBarycentricFeaturesNV value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct PhysicalDeviceGroupProperties
   {
@@ -36490,6 +44401,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkPhysicalDeviceGroupProperties*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, PhysicalDeviceGroupProperties const& );
 
     bool operator==( PhysicalDeviceGroupProperties const& rhs ) const
     {
@@ -36515,6 +44428,25 @@ namespace VULKAN_HPP_NAMESPACE
     Bool32 subsetAllocation;
   };
   static_assert( sizeof( PhysicalDeviceGroupProperties ) == sizeof( VkPhysicalDeviceGroupProperties ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, PhysicalDeviceGroupProperties const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "physicalDeviceCount : " << value.physicalDeviceCount << std::endl;
+    stream << "physicalDevices : " << value.physicalDevices << std::endl;
+    stream << "subsetAllocation : " << value.subsetAllocation << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( PhysicalDeviceGroupProperties value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct PhysicalDeviceIDProperties
   {
@@ -36527,6 +44459,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkPhysicalDeviceIDProperties*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, PhysicalDeviceIDProperties const& );
 
     bool operator==( PhysicalDeviceIDProperties const& rhs ) const
     {
@@ -36556,6 +44490,27 @@ namespace VULKAN_HPP_NAMESPACE
     Bool32 deviceLUIDValid;
   };
   static_assert( sizeof( PhysicalDeviceIDProperties ) == sizeof( VkPhysicalDeviceIDProperties ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, PhysicalDeviceIDProperties const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "deviceUUID : " << value.deviceUUID << std::endl;
+    stream << "driverUUID : " << value.driverUUID << std::endl;
+    stream << "deviceLUID : " << value.deviceLUID << std::endl;
+    stream << "deviceNodeMask : " << value.deviceNodeMask << std::endl;
+    stream << "deviceLUIDValid : " << value.deviceLUIDValid << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( PhysicalDeviceIDProperties value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct PhysicalDeviceImageDrmFormatModifierInfoEXT
   {
@@ -36619,6 +44574,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkPhysicalDeviceImageDrmFormatModifierInfoEXT*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, PhysicalDeviceImageDrmFormatModifierInfoEXT const& );
 
     bool operator==( PhysicalDeviceImageDrmFormatModifierInfoEXT const& rhs ) const
     {
@@ -36646,6 +44603,26 @@ namespace VULKAN_HPP_NAMESPACE
     const uint32_t* pQueueFamilyIndices;
   };
   static_assert( sizeof( PhysicalDeviceImageDrmFormatModifierInfoEXT ) == sizeof( VkPhysicalDeviceImageDrmFormatModifierInfoEXT ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, PhysicalDeviceImageDrmFormatModifierInfoEXT const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "drmFormatModifier : " << value.drmFormatModifier << std::endl;
+    stream << "sharingMode : " << value.sharingMode << std::endl;
+    stream << "queueFamilyIndexCount : " << value.queueFamilyIndexCount << std::endl;
+    stream << "pQueueFamilyIndices : " << value.pQueueFamilyIndices << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( PhysicalDeviceImageDrmFormatModifierInfoEXT value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct PhysicalDeviceImageFormatInfo2
   {
@@ -36717,6 +44694,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkPhysicalDeviceImageFormatInfo2*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, PhysicalDeviceImageFormatInfo2 const& );
 
     bool operator==( PhysicalDeviceImageFormatInfo2 const& rhs ) const
     {
@@ -36746,6 +44725,27 @@ namespace VULKAN_HPP_NAMESPACE
     ImageCreateFlags flags;
   };
   static_assert( sizeof( PhysicalDeviceImageFormatInfo2 ) == sizeof( VkPhysicalDeviceImageFormatInfo2 ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, PhysicalDeviceImageFormatInfo2 const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "format : " << value.format << std::endl;
+    stream << "type : " << value.type << std::endl;
+    stream << "tiling : " << value.tiling << std::endl;
+    stream << "usage : " << value.usage << std::endl;
+    stream << "flags : " << value.flags << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( PhysicalDeviceImageFormatInfo2 value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct PhysicalDeviceImageViewImageFormatInfoEXT
   {
@@ -36785,6 +44785,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkPhysicalDeviceImageViewImageFormatInfoEXT*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, PhysicalDeviceImageViewImageFormatInfoEXT const& );
 
     bool operator==( PhysicalDeviceImageViewImageFormatInfoEXT const& rhs ) const
     {
@@ -36806,6 +44808,23 @@ namespace VULKAN_HPP_NAMESPACE
     ImageViewType imageViewType;
   };
   static_assert( sizeof( PhysicalDeviceImageViewImageFormatInfoEXT ) == sizeof( VkPhysicalDeviceImageViewImageFormatInfoEXT ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, PhysicalDeviceImageViewImageFormatInfoEXT const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "imageViewType : " << value.imageViewType << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( PhysicalDeviceImageViewImageFormatInfoEXT value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct PhysicalDeviceInlineUniformBlockFeaturesEXT
   {
@@ -36853,6 +44872,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkPhysicalDeviceInlineUniformBlockFeaturesEXT*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, PhysicalDeviceInlineUniformBlockFeaturesEXT const& );
 
     bool operator==( PhysicalDeviceInlineUniformBlockFeaturesEXT const& rhs ) const
     {
@@ -36876,6 +44897,24 @@ namespace VULKAN_HPP_NAMESPACE
     Bool32 descriptorBindingInlineUniformBlockUpdateAfterBind;
   };
   static_assert( sizeof( PhysicalDeviceInlineUniformBlockFeaturesEXT ) == sizeof( VkPhysicalDeviceInlineUniformBlockFeaturesEXT ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, PhysicalDeviceInlineUniformBlockFeaturesEXT const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "inlineUniformBlock : " << value.inlineUniformBlock << std::endl;
+    stream << "descriptorBindingInlineUniformBlockUpdateAfterBind : " << value.descriptorBindingInlineUniformBlockUpdateAfterBind << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( PhysicalDeviceInlineUniformBlockFeaturesEXT value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct PhysicalDeviceInlineUniformBlockPropertiesEXT
   {
@@ -36888,6 +44927,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkPhysicalDeviceInlineUniformBlockPropertiesEXT*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, PhysicalDeviceInlineUniformBlockPropertiesEXT const& );
 
     bool operator==( PhysicalDeviceInlineUniformBlockPropertiesEXT const& rhs ) const
     {
@@ -36917,6 +44958,27 @@ namespace VULKAN_HPP_NAMESPACE
     uint32_t maxDescriptorSetUpdateAfterBindInlineUniformBlocks;
   };
   static_assert( sizeof( PhysicalDeviceInlineUniformBlockPropertiesEXT ) == sizeof( VkPhysicalDeviceInlineUniformBlockPropertiesEXT ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, PhysicalDeviceInlineUniformBlockPropertiesEXT const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "maxInlineUniformBlockSize : " << value.maxInlineUniformBlockSize << std::endl;
+    stream << "maxPerStageDescriptorInlineUniformBlocks : " << value.maxPerStageDescriptorInlineUniformBlocks << std::endl;
+    stream << "maxPerStageDescriptorUpdateAfterBindInlineUniformBlocks : " << value.maxPerStageDescriptorUpdateAfterBindInlineUniformBlocks << std::endl;
+    stream << "maxDescriptorSetInlineUniformBlocks : " << value.maxDescriptorSetInlineUniformBlocks << std::endl;
+    stream << "maxDescriptorSetUpdateAfterBindInlineUniformBlocks : " << value.maxDescriptorSetUpdateAfterBindInlineUniformBlocks << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( PhysicalDeviceInlineUniformBlockPropertiesEXT value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct PhysicalDeviceLimits
   {
@@ -36929,6 +44991,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkPhysicalDeviceLimits*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, PhysicalDeviceLimits const& );
 
     bool operator==( PhysicalDeviceLimits const& rhs ) const
     {
@@ -37153,6 +45217,126 @@ namespace VULKAN_HPP_NAMESPACE
     DeviceSize nonCoherentAtomSize;
   };
   static_assert( sizeof( PhysicalDeviceLimits ) == sizeof( VkPhysicalDeviceLimits ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, PhysicalDeviceLimits const& value )
+  {
+    stream << "maxImageDimension1D : " << value.maxImageDimension1D << std::endl;
+    stream << "maxImageDimension2D : " << value.maxImageDimension2D << std::endl;
+    stream << "maxImageDimension3D : " << value.maxImageDimension3D << std::endl;
+    stream << "maxImageDimensionCube : " << value.maxImageDimensionCube << std::endl;
+    stream << "maxImageArrayLayers : " << value.maxImageArrayLayers << std::endl;
+    stream << "maxTexelBufferElements : " << value.maxTexelBufferElements << std::endl;
+    stream << "maxUniformBufferRange : " << value.maxUniformBufferRange << std::endl;
+    stream << "maxStorageBufferRange : " << value.maxStorageBufferRange << std::endl;
+    stream << "maxPushConstantsSize : " << value.maxPushConstantsSize << std::endl;
+    stream << "maxMemoryAllocationCount : " << value.maxMemoryAllocationCount << std::endl;
+    stream << "maxSamplerAllocationCount : " << value.maxSamplerAllocationCount << std::endl;
+    stream << "bufferImageGranularity : " << value.bufferImageGranularity << std::endl;
+    stream << "sparseAddressSpaceSize : " << value.sparseAddressSpaceSize << std::endl;
+    stream << "maxBoundDescriptorSets : " << value.maxBoundDescriptorSets << std::endl;
+    stream << "maxPerStageDescriptorSamplers : " << value.maxPerStageDescriptorSamplers << std::endl;
+    stream << "maxPerStageDescriptorUniformBuffers : " << value.maxPerStageDescriptorUniformBuffers << std::endl;
+    stream << "maxPerStageDescriptorStorageBuffers : " << value.maxPerStageDescriptorStorageBuffers << std::endl;
+    stream << "maxPerStageDescriptorSampledImages : " << value.maxPerStageDescriptorSampledImages << std::endl;
+    stream << "maxPerStageDescriptorStorageImages : " << value.maxPerStageDescriptorStorageImages << std::endl;
+    stream << "maxPerStageDescriptorInputAttachments : " << value.maxPerStageDescriptorInputAttachments << std::endl;
+    stream << "maxPerStageResources : " << value.maxPerStageResources << std::endl;
+    stream << "maxDescriptorSetSamplers : " << value.maxDescriptorSetSamplers << std::endl;
+    stream << "maxDescriptorSetUniformBuffers : " << value.maxDescriptorSetUniformBuffers << std::endl;
+    stream << "maxDescriptorSetUniformBuffersDynamic : " << value.maxDescriptorSetUniformBuffersDynamic << std::endl;
+    stream << "maxDescriptorSetStorageBuffers : " << value.maxDescriptorSetStorageBuffers << std::endl;
+    stream << "maxDescriptorSetStorageBuffersDynamic : " << value.maxDescriptorSetStorageBuffersDynamic << std::endl;
+    stream << "maxDescriptorSetSampledImages : " << value.maxDescriptorSetSampledImages << std::endl;
+    stream << "maxDescriptorSetStorageImages : " << value.maxDescriptorSetStorageImages << std::endl;
+    stream << "maxDescriptorSetInputAttachments : " << value.maxDescriptorSetInputAttachments << std::endl;
+    stream << "maxVertexInputAttributes : " << value.maxVertexInputAttributes << std::endl;
+    stream << "maxVertexInputBindings : " << value.maxVertexInputBindings << std::endl;
+    stream << "maxVertexInputAttributeOffset : " << value.maxVertexInputAttributeOffset << std::endl;
+    stream << "maxVertexInputBindingStride : " << value.maxVertexInputBindingStride << std::endl;
+    stream << "maxVertexOutputComponents : " << value.maxVertexOutputComponents << std::endl;
+    stream << "maxTessellationGenerationLevel : " << value.maxTessellationGenerationLevel << std::endl;
+    stream << "maxTessellationPatchSize : " << value.maxTessellationPatchSize << std::endl;
+    stream << "maxTessellationControlPerVertexInputComponents : " << value.maxTessellationControlPerVertexInputComponents << std::endl;
+    stream << "maxTessellationControlPerVertexOutputComponents : " << value.maxTessellationControlPerVertexOutputComponents << std::endl;
+    stream << "maxTessellationControlPerPatchOutputComponents : " << value.maxTessellationControlPerPatchOutputComponents << std::endl;
+    stream << "maxTessellationControlTotalOutputComponents : " << value.maxTessellationControlTotalOutputComponents << std::endl;
+    stream << "maxTessellationEvaluationInputComponents : " << value.maxTessellationEvaluationInputComponents << std::endl;
+    stream << "maxTessellationEvaluationOutputComponents : " << value.maxTessellationEvaluationOutputComponents << std::endl;
+    stream << "maxGeometryShaderInvocations : " << value.maxGeometryShaderInvocations << std::endl;
+    stream << "maxGeometryInputComponents : " << value.maxGeometryInputComponents << std::endl;
+    stream << "maxGeometryOutputComponents : " << value.maxGeometryOutputComponents << std::endl;
+    stream << "maxGeometryOutputVertices : " << value.maxGeometryOutputVertices << std::endl;
+    stream << "maxGeometryTotalOutputComponents : " << value.maxGeometryTotalOutputComponents << std::endl;
+    stream << "maxFragmentInputComponents : " << value.maxFragmentInputComponents << std::endl;
+    stream << "maxFragmentOutputAttachments : " << value.maxFragmentOutputAttachments << std::endl;
+    stream << "maxFragmentDualSrcAttachments : " << value.maxFragmentDualSrcAttachments << std::endl;
+    stream << "maxFragmentCombinedOutputResources : " << value.maxFragmentCombinedOutputResources << std::endl;
+    stream << "maxComputeSharedMemorySize : " << value.maxComputeSharedMemorySize << std::endl;
+    stream << "maxComputeWorkGroupCount : " << value.maxComputeWorkGroupCount << std::endl;
+    stream << "maxComputeWorkGroupInvocations : " << value.maxComputeWorkGroupInvocations << std::endl;
+    stream << "maxComputeWorkGroupSize : " << value.maxComputeWorkGroupSize << std::endl;
+    stream << "subPixelPrecisionBits : " << value.subPixelPrecisionBits << std::endl;
+    stream << "subTexelPrecisionBits : " << value.subTexelPrecisionBits << std::endl;
+    stream << "mipmapPrecisionBits : " << value.mipmapPrecisionBits << std::endl;
+    stream << "maxDrawIndexedIndexValue : " << value.maxDrawIndexedIndexValue << std::endl;
+    stream << "maxDrawIndirectCount : " << value.maxDrawIndirectCount << std::endl;
+    stream << "maxSamplerLodBias : " << value.maxSamplerLodBias << std::endl;
+    stream << "maxSamplerAnisotropy : " << value.maxSamplerAnisotropy << std::endl;
+    stream << "maxViewports : " << value.maxViewports << std::endl;
+    stream << "maxViewportDimensions : " << value.maxViewportDimensions << std::endl;
+    stream << "viewportBoundsRange : " << value.viewportBoundsRange << std::endl;
+    stream << "viewportSubPixelBits : " << value.viewportSubPixelBits << std::endl;
+    stream << "minMemoryMapAlignment : " << value.minMemoryMapAlignment << std::endl;
+    stream << "minTexelBufferOffsetAlignment : " << value.minTexelBufferOffsetAlignment << std::endl;
+    stream << "minUniformBufferOffsetAlignment : " << value.minUniformBufferOffsetAlignment << std::endl;
+    stream << "minStorageBufferOffsetAlignment : " << value.minStorageBufferOffsetAlignment << std::endl;
+    stream << "minTexelOffset : " << value.minTexelOffset << std::endl;
+    stream << "maxTexelOffset : " << value.maxTexelOffset << std::endl;
+    stream << "minTexelGatherOffset : " << value.minTexelGatherOffset << std::endl;
+    stream << "maxTexelGatherOffset : " << value.maxTexelGatherOffset << std::endl;
+    stream << "minInterpolationOffset : " << value.minInterpolationOffset << std::endl;
+    stream << "maxInterpolationOffset : " << value.maxInterpolationOffset << std::endl;
+    stream << "subPixelInterpolationOffsetBits : " << value.subPixelInterpolationOffsetBits << std::endl;
+    stream << "maxFramebufferWidth : " << value.maxFramebufferWidth << std::endl;
+    stream << "maxFramebufferHeight : " << value.maxFramebufferHeight << std::endl;
+    stream << "maxFramebufferLayers : " << value.maxFramebufferLayers << std::endl;
+    stream << "framebufferColorSampleCounts : " << value.framebufferColorSampleCounts << std::endl;
+    stream << "framebufferDepthSampleCounts : " << value.framebufferDepthSampleCounts << std::endl;
+    stream << "framebufferStencilSampleCounts : " << value.framebufferStencilSampleCounts << std::endl;
+    stream << "framebufferNoAttachmentsSampleCounts : " << value.framebufferNoAttachmentsSampleCounts << std::endl;
+    stream << "maxColorAttachments : " << value.maxColorAttachments << std::endl;
+    stream << "sampledImageColorSampleCounts : " << value.sampledImageColorSampleCounts << std::endl;
+    stream << "sampledImageIntegerSampleCounts : " << value.sampledImageIntegerSampleCounts << std::endl;
+    stream << "sampledImageDepthSampleCounts : " << value.sampledImageDepthSampleCounts << std::endl;
+    stream << "sampledImageStencilSampleCounts : " << value.sampledImageStencilSampleCounts << std::endl;
+    stream << "storageImageSampleCounts : " << value.storageImageSampleCounts << std::endl;
+    stream << "maxSampleMaskWords : " << value.maxSampleMaskWords << std::endl;
+    stream << "timestampComputeAndGraphics : " << value.timestampComputeAndGraphics << std::endl;
+    stream << "timestampPeriod : " << value.timestampPeriod << std::endl;
+    stream << "maxClipDistances : " << value.maxClipDistances << std::endl;
+    stream << "maxCullDistances : " << value.maxCullDistances << std::endl;
+    stream << "maxCombinedClipAndCullDistances : " << value.maxCombinedClipAndCullDistances << std::endl;
+    stream << "discreteQueuePriorities : " << value.discreteQueuePriorities << std::endl;
+    stream << "pointSizeRange : " << value.pointSizeRange << std::endl;
+    stream << "lineWidthRange : " << value.lineWidthRange << std::endl;
+    stream << "pointSizeGranularity : " << value.pointSizeGranularity << std::endl;
+    stream << "lineWidthGranularity : " << value.lineWidthGranularity << std::endl;
+    stream << "strictLines : " << value.strictLines << std::endl;
+    stream << "standardSampleLocations : " << value.standardSampleLocations << std::endl;
+    stream << "optimalBufferCopyOffsetAlignment : " << value.optimalBufferCopyOffsetAlignment << std::endl;
+    stream << "optimalBufferCopyRowPitchAlignment : " << value.optimalBufferCopyRowPitchAlignment << std::endl;
+    stream << "nonCoherentAtomSize : " << value.nonCoherentAtomSize << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( PhysicalDeviceLimits value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct PhysicalDeviceMaintenance3Properties
   {
@@ -37165,6 +45349,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkPhysicalDeviceMaintenance3Properties*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, PhysicalDeviceMaintenance3Properties const& );
 
     bool operator==( PhysicalDeviceMaintenance3Properties const& rhs ) const
     {
@@ -37188,6 +45374,24 @@ namespace VULKAN_HPP_NAMESPACE
     DeviceSize maxMemoryAllocationSize;
   };
   static_assert( sizeof( PhysicalDeviceMaintenance3Properties ) == sizeof( VkPhysicalDeviceMaintenance3Properties ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, PhysicalDeviceMaintenance3Properties const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "maxPerSetDescriptors : " << value.maxPerSetDescriptors << std::endl;
+    stream << "maxMemoryAllocationSize : " << value.maxMemoryAllocationSize << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( PhysicalDeviceMaintenance3Properties value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct PhysicalDeviceMemoryBudgetPropertiesEXT
   {
@@ -37200,6 +45404,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkPhysicalDeviceMemoryBudgetPropertiesEXT*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, PhysicalDeviceMemoryBudgetPropertiesEXT const& );
 
     bool operator==( PhysicalDeviceMemoryBudgetPropertiesEXT const& rhs ) const
     {
@@ -37223,6 +45429,24 @@ namespace VULKAN_HPP_NAMESPACE
     DeviceSize heapUsage[VK_MAX_MEMORY_HEAPS];
   };
   static_assert( sizeof( PhysicalDeviceMemoryBudgetPropertiesEXT ) == sizeof( VkPhysicalDeviceMemoryBudgetPropertiesEXT ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, PhysicalDeviceMemoryBudgetPropertiesEXT const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "heapBudget : " << value.heapBudget << std::endl;
+    stream << "heapUsage : " << value.heapUsage << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( PhysicalDeviceMemoryBudgetPropertiesEXT value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct PhysicalDeviceMemoryPriorityFeaturesEXT
   {
@@ -37262,6 +45486,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkPhysicalDeviceMemoryPriorityFeaturesEXT*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, PhysicalDeviceMemoryPriorityFeaturesEXT const& );
 
     bool operator==( PhysicalDeviceMemoryPriorityFeaturesEXT const& rhs ) const
     {
@@ -37283,6 +45509,23 @@ namespace VULKAN_HPP_NAMESPACE
     Bool32 memoryPriority;
   };
   static_assert( sizeof( PhysicalDeviceMemoryPriorityFeaturesEXT ) == sizeof( VkPhysicalDeviceMemoryPriorityFeaturesEXT ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, PhysicalDeviceMemoryPriorityFeaturesEXT const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "memoryPriority : " << value.memoryPriority << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( PhysicalDeviceMemoryPriorityFeaturesEXT value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct PhysicalDeviceMemoryProperties
   {
@@ -37295,6 +45538,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkPhysicalDeviceMemoryProperties*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, PhysicalDeviceMemoryProperties const& );
 
     bool operator==( PhysicalDeviceMemoryProperties const& rhs ) const
     {
@@ -37315,6 +45560,24 @@ namespace VULKAN_HPP_NAMESPACE
     MemoryHeap memoryHeaps[VK_MAX_MEMORY_HEAPS];
   };
   static_assert( sizeof( PhysicalDeviceMemoryProperties ) == sizeof( VkPhysicalDeviceMemoryProperties ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, PhysicalDeviceMemoryProperties const& value )
+  {
+    stream << "memoryTypeCount : " << value.memoryTypeCount << std::endl;
+    stream << "memoryTypes : " << value.memoryTypes << std::endl;
+    stream << "memoryHeapCount : " << value.memoryHeapCount << std::endl;
+    stream << "memoryHeaps : " << value.memoryHeaps << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( PhysicalDeviceMemoryProperties value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct PhysicalDeviceMemoryProperties2
   {
@@ -37327,6 +45590,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkPhysicalDeviceMemoryProperties2*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, PhysicalDeviceMemoryProperties2 const& );
 
     bool operator==( PhysicalDeviceMemoryProperties2 const& rhs ) const
     {
@@ -37348,6 +45613,23 @@ namespace VULKAN_HPP_NAMESPACE
     PhysicalDeviceMemoryProperties memoryProperties;
   };
   static_assert( sizeof( PhysicalDeviceMemoryProperties2 ) == sizeof( VkPhysicalDeviceMemoryProperties2 ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, PhysicalDeviceMemoryProperties2 const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "memoryProperties : " << value.memoryProperties << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( PhysicalDeviceMemoryProperties2 value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct PhysicalDeviceMeshShaderFeaturesNV
   {
@@ -37395,6 +45677,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkPhysicalDeviceMeshShaderFeaturesNV*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, PhysicalDeviceMeshShaderFeaturesNV const& );
 
     bool operator==( PhysicalDeviceMeshShaderFeaturesNV const& rhs ) const
     {
@@ -37418,6 +45702,24 @@ namespace VULKAN_HPP_NAMESPACE
     Bool32 meshShader;
   };
   static_assert( sizeof( PhysicalDeviceMeshShaderFeaturesNV ) == sizeof( VkPhysicalDeviceMeshShaderFeaturesNV ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, PhysicalDeviceMeshShaderFeaturesNV const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "taskShader : " << value.taskShader << std::endl;
+    stream << "meshShader : " << value.meshShader << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( PhysicalDeviceMeshShaderFeaturesNV value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct PhysicalDeviceMeshShaderPropertiesNV
   {
@@ -37430,6 +45732,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkPhysicalDeviceMeshShaderPropertiesNV*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, PhysicalDeviceMeshShaderPropertiesNV const& );
 
     bool operator==( PhysicalDeviceMeshShaderPropertiesNV const& rhs ) const
     {
@@ -37475,6 +45779,35 @@ namespace VULKAN_HPP_NAMESPACE
     uint32_t meshOutputPerPrimitiveGranularity;
   };
   static_assert( sizeof( PhysicalDeviceMeshShaderPropertiesNV ) == sizeof( VkPhysicalDeviceMeshShaderPropertiesNV ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, PhysicalDeviceMeshShaderPropertiesNV const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "maxDrawMeshTasksCount : " << value.maxDrawMeshTasksCount << std::endl;
+    stream << "maxTaskWorkGroupInvocations : " << value.maxTaskWorkGroupInvocations << std::endl;
+    stream << "maxTaskWorkGroupSize : " << value.maxTaskWorkGroupSize << std::endl;
+    stream << "maxTaskTotalMemorySize : " << value.maxTaskTotalMemorySize << std::endl;
+    stream << "maxTaskOutputCount : " << value.maxTaskOutputCount << std::endl;
+    stream << "maxMeshWorkGroupInvocations : " << value.maxMeshWorkGroupInvocations << std::endl;
+    stream << "maxMeshWorkGroupSize : " << value.maxMeshWorkGroupSize << std::endl;
+    stream << "maxMeshTotalMemorySize : " << value.maxMeshTotalMemorySize << std::endl;
+    stream << "maxMeshOutputVertices : " << value.maxMeshOutputVertices << std::endl;
+    stream << "maxMeshOutputPrimitives : " << value.maxMeshOutputPrimitives << std::endl;
+    stream << "maxMeshMultiviewViewCount : " << value.maxMeshMultiviewViewCount << std::endl;
+    stream << "meshOutputPerVertexGranularity : " << value.meshOutputPerVertexGranularity << std::endl;
+    stream << "meshOutputPerPrimitiveGranularity : " << value.meshOutputPerPrimitiveGranularity << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( PhysicalDeviceMeshShaderPropertiesNV value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct PhysicalDeviceMultiviewFeatures
   {
@@ -37530,6 +45863,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkPhysicalDeviceMultiviewFeatures*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, PhysicalDeviceMultiviewFeatures const& );
 
     bool operator==( PhysicalDeviceMultiviewFeatures const& rhs ) const
     {
@@ -37555,6 +45890,25 @@ namespace VULKAN_HPP_NAMESPACE
     Bool32 multiviewTessellationShader;
   };
   static_assert( sizeof( PhysicalDeviceMultiviewFeatures ) == sizeof( VkPhysicalDeviceMultiviewFeatures ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, PhysicalDeviceMultiviewFeatures const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "multiview : " << value.multiview << std::endl;
+    stream << "multiviewGeometryShader : " << value.multiviewGeometryShader << std::endl;
+    stream << "multiviewTessellationShader : " << value.multiviewTessellationShader << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( PhysicalDeviceMultiviewFeatures value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct PhysicalDeviceMultiviewPerViewAttributesPropertiesNVX
   {
@@ -37567,6 +45921,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkPhysicalDeviceMultiviewPerViewAttributesPropertiesNVX*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, PhysicalDeviceMultiviewPerViewAttributesPropertiesNVX const& );
 
     bool operator==( PhysicalDeviceMultiviewPerViewAttributesPropertiesNVX const& rhs ) const
     {
@@ -37588,6 +45944,23 @@ namespace VULKAN_HPP_NAMESPACE
     Bool32 perViewPositionAllComponents;
   };
   static_assert( sizeof( PhysicalDeviceMultiviewPerViewAttributesPropertiesNVX ) == sizeof( VkPhysicalDeviceMultiviewPerViewAttributesPropertiesNVX ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, PhysicalDeviceMultiviewPerViewAttributesPropertiesNVX const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "perViewPositionAllComponents : " << value.perViewPositionAllComponents << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( PhysicalDeviceMultiviewPerViewAttributesPropertiesNVX value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct PhysicalDeviceMultiviewProperties
   {
@@ -37600,6 +45973,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkPhysicalDeviceMultiviewProperties*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, PhysicalDeviceMultiviewProperties const& );
 
     bool operator==( PhysicalDeviceMultiviewProperties const& rhs ) const
     {
@@ -37623,6 +45998,24 @@ namespace VULKAN_HPP_NAMESPACE
     uint32_t maxMultiviewInstanceIndex;
   };
   static_assert( sizeof( PhysicalDeviceMultiviewProperties ) == sizeof( VkPhysicalDeviceMultiviewProperties ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, PhysicalDeviceMultiviewProperties const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "maxMultiviewViewCount : " << value.maxMultiviewViewCount << std::endl;
+    stream << "maxMultiviewInstanceIndex : " << value.maxMultiviewInstanceIndex << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( PhysicalDeviceMultiviewProperties value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct PhysicalDevicePCIBusInfoPropertiesEXT
   {
@@ -37635,6 +46028,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkPhysicalDevicePCIBusInfoPropertiesEXT*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, PhysicalDevicePCIBusInfoPropertiesEXT const& );
 
     bool operator==( PhysicalDevicePCIBusInfoPropertiesEXT const& rhs ) const
     {
@@ -37662,6 +46057,26 @@ namespace VULKAN_HPP_NAMESPACE
     uint32_t pciFunction;
   };
   static_assert( sizeof( PhysicalDevicePCIBusInfoPropertiesEXT ) == sizeof( VkPhysicalDevicePCIBusInfoPropertiesEXT ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, PhysicalDevicePCIBusInfoPropertiesEXT const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "pciDomain : " << value.pciDomain << std::endl;
+    stream << "pciBus : " << value.pciBus << std::endl;
+    stream << "pciDevice : " << value.pciDevice << std::endl;
+    stream << "pciFunction : " << value.pciFunction << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( PhysicalDevicePCIBusInfoPropertiesEXT value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct PhysicalDevicePointClippingProperties
   {
@@ -37674,6 +46089,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkPhysicalDevicePointClippingProperties*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, PhysicalDevicePointClippingProperties const& );
 
     bool operator==( PhysicalDevicePointClippingProperties const& rhs ) const
     {
@@ -37695,6 +46112,23 @@ namespace VULKAN_HPP_NAMESPACE
     PointClippingBehavior pointClippingBehavior;
   };
   static_assert( sizeof( PhysicalDevicePointClippingProperties ) == sizeof( VkPhysicalDevicePointClippingProperties ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, PhysicalDevicePointClippingProperties const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "pointClippingBehavior : " << value.pointClippingBehavior << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( PhysicalDevicePointClippingProperties value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct PhysicalDeviceSparseProperties
   {
@@ -37707,6 +46141,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkPhysicalDeviceSparseProperties*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, PhysicalDeviceSparseProperties const& );
 
     bool operator==( PhysicalDeviceSparseProperties const& rhs ) const
     {
@@ -37729,6 +46165,25 @@ namespace VULKAN_HPP_NAMESPACE
     Bool32 residencyNonResidentStrict;
   };
   static_assert( sizeof( PhysicalDeviceSparseProperties ) == sizeof( VkPhysicalDeviceSparseProperties ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, PhysicalDeviceSparseProperties const& value )
+  {
+    stream << "residencyStandard2DBlockShape : " << value.residencyStandard2DBlockShape << std::endl;
+    stream << "residencyStandard2DMultisampleBlockShape : " << value.residencyStandard2DMultisampleBlockShape << std::endl;
+    stream << "residencyStandard3DBlockShape : " << value.residencyStandard3DBlockShape << std::endl;
+    stream << "residencyAlignedMipSize : " << value.residencyAlignedMipSize << std::endl;
+    stream << "residencyNonResidentStrict : " << value.residencyNonResidentStrict << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( PhysicalDeviceSparseProperties value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct PhysicalDeviceProperties
   {
@@ -37741,6 +46196,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkPhysicalDeviceProperties*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, PhysicalDeviceProperties const& );
 
     bool operator==( PhysicalDeviceProperties const& rhs ) const
     {
@@ -37771,6 +46228,29 @@ namespace VULKAN_HPP_NAMESPACE
     PhysicalDeviceSparseProperties sparseProperties;
   };
   static_assert( sizeof( PhysicalDeviceProperties ) == sizeof( VkPhysicalDeviceProperties ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, PhysicalDeviceProperties const& value )
+  {
+    stream << "apiVersion : " << value.apiVersion << std::endl;
+    stream << "driverVersion : " << value.driverVersion << std::endl;
+    stream << "vendorID : " << value.vendorID << std::endl;
+    stream << "deviceID : " << value.deviceID << std::endl;
+    stream << "deviceType : " << value.deviceType << std::endl;
+    stream << "deviceName : " << value.deviceName << std::endl;
+    stream << "pipelineCacheUUID : " << value.pipelineCacheUUID << std::endl;
+    stream << "limits : " << value.limits << std::endl;
+    stream << "sparseProperties : " << value.sparseProperties << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( PhysicalDeviceProperties value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct PhysicalDeviceProperties2
   {
@@ -37783,6 +46263,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkPhysicalDeviceProperties2*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, PhysicalDeviceProperties2 const& );
 
     bool operator==( PhysicalDeviceProperties2 const& rhs ) const
     {
@@ -37804,6 +46286,23 @@ namespace VULKAN_HPP_NAMESPACE
     PhysicalDeviceProperties properties;
   };
   static_assert( sizeof( PhysicalDeviceProperties2 ) == sizeof( VkPhysicalDeviceProperties2 ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, PhysicalDeviceProperties2 const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "properties : " << value.properties << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( PhysicalDeviceProperties2 value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct PhysicalDeviceProtectedMemoryFeatures
   {
@@ -37843,6 +46342,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkPhysicalDeviceProtectedMemoryFeatures*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, PhysicalDeviceProtectedMemoryFeatures const& );
 
     bool operator==( PhysicalDeviceProtectedMemoryFeatures const& rhs ) const
     {
@@ -37864,6 +46365,23 @@ namespace VULKAN_HPP_NAMESPACE
     Bool32 protectedMemory;
   };
   static_assert( sizeof( PhysicalDeviceProtectedMemoryFeatures ) == sizeof( VkPhysicalDeviceProtectedMemoryFeatures ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, PhysicalDeviceProtectedMemoryFeatures const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "protectedMemory : " << value.protectedMemory << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( PhysicalDeviceProtectedMemoryFeatures value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct PhysicalDeviceProtectedMemoryProperties
   {
@@ -37876,6 +46394,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkPhysicalDeviceProtectedMemoryProperties*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, PhysicalDeviceProtectedMemoryProperties const& );
 
     bool operator==( PhysicalDeviceProtectedMemoryProperties const& rhs ) const
     {
@@ -37897,6 +46417,23 @@ namespace VULKAN_HPP_NAMESPACE
     Bool32 protectedNoFault;
   };
   static_assert( sizeof( PhysicalDeviceProtectedMemoryProperties ) == sizeof( VkPhysicalDeviceProtectedMemoryProperties ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, PhysicalDeviceProtectedMemoryProperties const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "protectedNoFault : " << value.protectedNoFault << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( PhysicalDeviceProtectedMemoryProperties value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct PhysicalDevicePushDescriptorPropertiesKHR
   {
@@ -37909,6 +46446,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkPhysicalDevicePushDescriptorPropertiesKHR*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, PhysicalDevicePushDescriptorPropertiesKHR const& );
 
     bool operator==( PhysicalDevicePushDescriptorPropertiesKHR const& rhs ) const
     {
@@ -37930,6 +46469,23 @@ namespace VULKAN_HPP_NAMESPACE
     uint32_t maxPushDescriptors;
   };
   static_assert( sizeof( PhysicalDevicePushDescriptorPropertiesKHR ) == sizeof( VkPhysicalDevicePushDescriptorPropertiesKHR ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, PhysicalDevicePushDescriptorPropertiesKHR const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "maxPushDescriptors : " << value.maxPushDescriptors << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( PhysicalDevicePushDescriptorPropertiesKHR value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct PhysicalDeviceRayTracingPropertiesNV
   {
@@ -37942,6 +46498,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkPhysicalDeviceRayTracingPropertiesNV*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, PhysicalDeviceRayTracingPropertiesNV const& );
 
     bool operator==( PhysicalDeviceRayTracingPropertiesNV const& rhs ) const
     {
@@ -37977,6 +46535,30 @@ namespace VULKAN_HPP_NAMESPACE
     uint32_t maxDescriptorSetAccelerationStructures;
   };
   static_assert( sizeof( PhysicalDeviceRayTracingPropertiesNV ) == sizeof( VkPhysicalDeviceRayTracingPropertiesNV ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, PhysicalDeviceRayTracingPropertiesNV const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "shaderGroupHandleSize : " << value.shaderGroupHandleSize << std::endl;
+    stream << "maxRecursionDepth : " << value.maxRecursionDepth << std::endl;
+    stream << "maxShaderGroupStride : " << value.maxShaderGroupStride << std::endl;
+    stream << "shaderGroupBaseAlignment : " << value.shaderGroupBaseAlignment << std::endl;
+    stream << "maxGeometryCount : " << value.maxGeometryCount << std::endl;
+    stream << "maxInstanceCount : " << value.maxInstanceCount << std::endl;
+    stream << "maxTriangleCount : " << value.maxTriangleCount << std::endl;
+    stream << "maxDescriptorSetAccelerationStructures : " << value.maxDescriptorSetAccelerationStructures << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( PhysicalDeviceRayTracingPropertiesNV value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct PhysicalDeviceRepresentativeFragmentTestFeaturesNV
   {
@@ -38016,6 +46598,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkPhysicalDeviceRepresentativeFragmentTestFeaturesNV*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, PhysicalDeviceRepresentativeFragmentTestFeaturesNV const& );
 
     bool operator==( PhysicalDeviceRepresentativeFragmentTestFeaturesNV const& rhs ) const
     {
@@ -38037,6 +46621,23 @@ namespace VULKAN_HPP_NAMESPACE
     Bool32 representativeFragmentTest;
   };
   static_assert( sizeof( PhysicalDeviceRepresentativeFragmentTestFeaturesNV ) == sizeof( VkPhysicalDeviceRepresentativeFragmentTestFeaturesNV ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, PhysicalDeviceRepresentativeFragmentTestFeaturesNV const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "representativeFragmentTest : " << value.representativeFragmentTest << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( PhysicalDeviceRepresentativeFragmentTestFeaturesNV value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct PhysicalDeviceSampleLocationsPropertiesEXT
   {
@@ -38049,6 +46650,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkPhysicalDeviceSampleLocationsPropertiesEXT*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, PhysicalDeviceSampleLocationsPropertiesEXT const& );
 
     bool operator==( PhysicalDeviceSampleLocationsPropertiesEXT const& rhs ) const
     {
@@ -38078,6 +46681,27 @@ namespace VULKAN_HPP_NAMESPACE
     Bool32 variableSampleLocations;
   };
   static_assert( sizeof( PhysicalDeviceSampleLocationsPropertiesEXT ) == sizeof( VkPhysicalDeviceSampleLocationsPropertiesEXT ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, PhysicalDeviceSampleLocationsPropertiesEXT const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "sampleLocationSampleCounts : " << value.sampleLocationSampleCounts << std::endl;
+    stream << "maxSampleLocationGridSize : " << value.maxSampleLocationGridSize << std::endl;
+    stream << "sampleLocationCoordinateRange : " << value.sampleLocationCoordinateRange << std::endl;
+    stream << "sampleLocationSubPixelBits : " << value.sampleLocationSubPixelBits << std::endl;
+    stream << "variableSampleLocations : " << value.variableSampleLocations << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( PhysicalDeviceSampleLocationsPropertiesEXT value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct PhysicalDeviceSamplerFilterMinmaxPropertiesEXT
   {
@@ -38090,6 +46714,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkPhysicalDeviceSamplerFilterMinmaxPropertiesEXT*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, PhysicalDeviceSamplerFilterMinmaxPropertiesEXT const& );
 
     bool operator==( PhysicalDeviceSamplerFilterMinmaxPropertiesEXT const& rhs ) const
     {
@@ -38113,6 +46739,24 @@ namespace VULKAN_HPP_NAMESPACE
     Bool32 filterMinmaxImageComponentMapping;
   };
   static_assert( sizeof( PhysicalDeviceSamplerFilterMinmaxPropertiesEXT ) == sizeof( VkPhysicalDeviceSamplerFilterMinmaxPropertiesEXT ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, PhysicalDeviceSamplerFilterMinmaxPropertiesEXT const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "filterMinmaxSingleComponentFormats : " << value.filterMinmaxSingleComponentFormats << std::endl;
+    stream << "filterMinmaxImageComponentMapping : " << value.filterMinmaxImageComponentMapping << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( PhysicalDeviceSamplerFilterMinmaxPropertiesEXT value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct PhysicalDeviceSamplerYcbcrConversionFeatures
   {
@@ -38152,6 +46796,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkPhysicalDeviceSamplerYcbcrConversionFeatures*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, PhysicalDeviceSamplerYcbcrConversionFeatures const& );
 
     bool operator==( PhysicalDeviceSamplerYcbcrConversionFeatures const& rhs ) const
     {
@@ -38173,6 +46819,23 @@ namespace VULKAN_HPP_NAMESPACE
     Bool32 samplerYcbcrConversion;
   };
   static_assert( sizeof( PhysicalDeviceSamplerYcbcrConversionFeatures ) == sizeof( VkPhysicalDeviceSamplerYcbcrConversionFeatures ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, PhysicalDeviceSamplerYcbcrConversionFeatures const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "samplerYcbcrConversion : " << value.samplerYcbcrConversion << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( PhysicalDeviceSamplerYcbcrConversionFeatures value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct PhysicalDeviceScalarBlockLayoutFeaturesEXT
   {
@@ -38212,6 +46875,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkPhysicalDeviceScalarBlockLayoutFeaturesEXT*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, PhysicalDeviceScalarBlockLayoutFeaturesEXT const& );
 
     bool operator==( PhysicalDeviceScalarBlockLayoutFeaturesEXT const& rhs ) const
     {
@@ -38233,6 +46898,23 @@ namespace VULKAN_HPP_NAMESPACE
     Bool32 scalarBlockLayout;
   };
   static_assert( sizeof( PhysicalDeviceScalarBlockLayoutFeaturesEXT ) == sizeof( VkPhysicalDeviceScalarBlockLayoutFeaturesEXT ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, PhysicalDeviceScalarBlockLayoutFeaturesEXT const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "scalarBlockLayout : " << value.scalarBlockLayout << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( PhysicalDeviceScalarBlockLayoutFeaturesEXT value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct PhysicalDeviceShaderAtomicInt64FeaturesKHR
   {
@@ -38280,6 +46962,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkPhysicalDeviceShaderAtomicInt64FeaturesKHR*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, PhysicalDeviceShaderAtomicInt64FeaturesKHR const& );
 
     bool operator==( PhysicalDeviceShaderAtomicInt64FeaturesKHR const& rhs ) const
     {
@@ -38303,6 +46987,24 @@ namespace VULKAN_HPP_NAMESPACE
     Bool32 shaderSharedInt64Atomics;
   };
   static_assert( sizeof( PhysicalDeviceShaderAtomicInt64FeaturesKHR ) == sizeof( VkPhysicalDeviceShaderAtomicInt64FeaturesKHR ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, PhysicalDeviceShaderAtomicInt64FeaturesKHR const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "shaderBufferInt64Atomics : " << value.shaderBufferInt64Atomics << std::endl;
+    stream << "shaderSharedInt64Atomics : " << value.shaderSharedInt64Atomics << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( PhysicalDeviceShaderAtomicInt64FeaturesKHR value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct PhysicalDeviceShaderCorePropertiesAMD
   {
@@ -38315,6 +47017,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkPhysicalDeviceShaderCorePropertiesAMD*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, PhysicalDeviceShaderCorePropertiesAMD const& );
 
     bool operator==( PhysicalDeviceShaderCorePropertiesAMD const& rhs ) const
     {
@@ -38362,6 +47066,36 @@ namespace VULKAN_HPP_NAMESPACE
     uint32_t vgprAllocationGranularity;
   };
   static_assert( sizeof( PhysicalDeviceShaderCorePropertiesAMD ) == sizeof( VkPhysicalDeviceShaderCorePropertiesAMD ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, PhysicalDeviceShaderCorePropertiesAMD const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "shaderEngineCount : " << value.shaderEngineCount << std::endl;
+    stream << "shaderArraysPerEngineCount : " << value.shaderArraysPerEngineCount << std::endl;
+    stream << "computeUnitsPerShaderArray : " << value.computeUnitsPerShaderArray << std::endl;
+    stream << "simdPerComputeUnit : " << value.simdPerComputeUnit << std::endl;
+    stream << "wavefrontsPerSimd : " << value.wavefrontsPerSimd << std::endl;
+    stream << "wavefrontSize : " << value.wavefrontSize << std::endl;
+    stream << "sgprsPerSimd : " << value.sgprsPerSimd << std::endl;
+    stream << "minSgprAllocation : " << value.minSgprAllocation << std::endl;
+    stream << "maxSgprAllocation : " << value.maxSgprAllocation << std::endl;
+    stream << "sgprAllocationGranularity : " << value.sgprAllocationGranularity << std::endl;
+    stream << "vgprsPerSimd : " << value.vgprsPerSimd << std::endl;
+    stream << "minVgprAllocation : " << value.minVgprAllocation << std::endl;
+    stream << "maxVgprAllocation : " << value.maxVgprAllocation << std::endl;
+    stream << "vgprAllocationGranularity : " << value.vgprAllocationGranularity << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( PhysicalDeviceShaderCorePropertiesAMD value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct PhysicalDeviceShaderDrawParameterFeatures
   {
@@ -38401,6 +47135,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkPhysicalDeviceShaderDrawParameterFeatures*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, PhysicalDeviceShaderDrawParameterFeatures const& );
 
     bool operator==( PhysicalDeviceShaderDrawParameterFeatures const& rhs ) const
     {
@@ -38422,6 +47158,23 @@ namespace VULKAN_HPP_NAMESPACE
     Bool32 shaderDrawParameters;
   };
   static_assert( sizeof( PhysicalDeviceShaderDrawParameterFeatures ) == sizeof( VkPhysicalDeviceShaderDrawParameterFeatures ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, PhysicalDeviceShaderDrawParameterFeatures const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "shaderDrawParameters : " << value.shaderDrawParameters << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( PhysicalDeviceShaderDrawParameterFeatures value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct PhysicalDeviceShaderImageFootprintFeaturesNV
   {
@@ -38461,6 +47214,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkPhysicalDeviceShaderImageFootprintFeaturesNV*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, PhysicalDeviceShaderImageFootprintFeaturesNV const& );
 
     bool operator==( PhysicalDeviceShaderImageFootprintFeaturesNV const& rhs ) const
     {
@@ -38482,6 +47237,23 @@ namespace VULKAN_HPP_NAMESPACE
     Bool32 imageFootprint;
   };
   static_assert( sizeof( PhysicalDeviceShaderImageFootprintFeaturesNV ) == sizeof( VkPhysicalDeviceShaderImageFootprintFeaturesNV ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, PhysicalDeviceShaderImageFootprintFeaturesNV const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "imageFootprint : " << value.imageFootprint << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( PhysicalDeviceShaderImageFootprintFeaturesNV value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct PhysicalDeviceShadingRateImageFeaturesNV
   {
@@ -38529,6 +47301,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkPhysicalDeviceShadingRateImageFeaturesNV*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, PhysicalDeviceShadingRateImageFeaturesNV const& );
 
     bool operator==( PhysicalDeviceShadingRateImageFeaturesNV const& rhs ) const
     {
@@ -38552,6 +47326,24 @@ namespace VULKAN_HPP_NAMESPACE
     Bool32 shadingRateCoarseSampleOrder;
   };
   static_assert( sizeof( PhysicalDeviceShadingRateImageFeaturesNV ) == sizeof( VkPhysicalDeviceShadingRateImageFeaturesNV ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, PhysicalDeviceShadingRateImageFeaturesNV const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "shadingRateImage : " << value.shadingRateImage << std::endl;
+    stream << "shadingRateCoarseSampleOrder : " << value.shadingRateCoarseSampleOrder << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( PhysicalDeviceShadingRateImageFeaturesNV value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct PhysicalDeviceShadingRateImagePropertiesNV
   {
@@ -38564,6 +47356,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkPhysicalDeviceShadingRateImagePropertiesNV*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, PhysicalDeviceShadingRateImagePropertiesNV const& );
 
     bool operator==( PhysicalDeviceShadingRateImagePropertiesNV const& rhs ) const
     {
@@ -38589,6 +47383,25 @@ namespace VULKAN_HPP_NAMESPACE
     uint32_t shadingRateMaxCoarseSamples;
   };
   static_assert( sizeof( PhysicalDeviceShadingRateImagePropertiesNV ) == sizeof( VkPhysicalDeviceShadingRateImagePropertiesNV ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, PhysicalDeviceShadingRateImagePropertiesNV const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "shadingRateTexelSize : " << value.shadingRateTexelSize << std::endl;
+    stream << "shadingRatePaletteSize : " << value.shadingRatePaletteSize << std::endl;
+    stream << "shadingRateMaxCoarseSamples : " << value.shadingRateMaxCoarseSamples << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( PhysicalDeviceShadingRateImagePropertiesNV value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct PhysicalDeviceSparseImageFormatInfo2
   {
@@ -38660,6 +47473,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkPhysicalDeviceSparseImageFormatInfo2*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, PhysicalDeviceSparseImageFormatInfo2 const& );
 
     bool operator==( PhysicalDeviceSparseImageFormatInfo2 const& rhs ) const
     {
@@ -38689,6 +47504,27 @@ namespace VULKAN_HPP_NAMESPACE
     ImageTiling tiling;
   };
   static_assert( sizeof( PhysicalDeviceSparseImageFormatInfo2 ) == sizeof( VkPhysicalDeviceSparseImageFormatInfo2 ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, PhysicalDeviceSparseImageFormatInfo2 const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "format : " << value.format << std::endl;
+    stream << "type : " << value.type << std::endl;
+    stream << "samples : " << value.samples << std::endl;
+    stream << "usage : " << value.usage << std::endl;
+    stream << "tiling : " << value.tiling << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( PhysicalDeviceSparseImageFormatInfo2 value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct PhysicalDeviceSubgroupProperties
   {
@@ -38701,6 +47537,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkPhysicalDeviceSubgroupProperties*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, PhysicalDeviceSubgroupProperties const& );
 
     bool operator==( PhysicalDeviceSubgroupProperties const& rhs ) const
     {
@@ -38728,6 +47566,26 @@ namespace VULKAN_HPP_NAMESPACE
     Bool32 quadOperationsInAllStages;
   };
   static_assert( sizeof( PhysicalDeviceSubgroupProperties ) == sizeof( VkPhysicalDeviceSubgroupProperties ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, PhysicalDeviceSubgroupProperties const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "subgroupSize : " << value.subgroupSize << std::endl;
+    stream << "supportedStages : " << value.supportedStages << std::endl;
+    stream << "supportedOperations : " << value.supportedOperations << std::endl;
+    stream << "quadOperationsInAllStages : " << value.quadOperationsInAllStages << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( PhysicalDeviceSubgroupProperties value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct PhysicalDeviceSurfaceInfo2KHR
   {
@@ -38767,6 +47625,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkPhysicalDeviceSurfaceInfo2KHR*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, PhysicalDeviceSurfaceInfo2KHR const& );
 
     bool operator==( PhysicalDeviceSurfaceInfo2KHR const& rhs ) const
     {
@@ -38788,6 +47648,23 @@ namespace VULKAN_HPP_NAMESPACE
     SurfaceKHR surface;
   };
   static_assert( sizeof( PhysicalDeviceSurfaceInfo2KHR ) == sizeof( VkPhysicalDeviceSurfaceInfo2KHR ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, PhysicalDeviceSurfaceInfo2KHR const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "surface : " << value.surface << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( PhysicalDeviceSurfaceInfo2KHR value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct PhysicalDeviceTransformFeedbackFeaturesEXT
   {
@@ -38835,6 +47712,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkPhysicalDeviceTransformFeedbackFeaturesEXT*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, PhysicalDeviceTransformFeedbackFeaturesEXT const& );
 
     bool operator==( PhysicalDeviceTransformFeedbackFeaturesEXT const& rhs ) const
     {
@@ -38858,6 +47737,24 @@ namespace VULKAN_HPP_NAMESPACE
     Bool32 geometryStreams;
   };
   static_assert( sizeof( PhysicalDeviceTransformFeedbackFeaturesEXT ) == sizeof( VkPhysicalDeviceTransformFeedbackFeaturesEXT ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, PhysicalDeviceTransformFeedbackFeaturesEXT const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "transformFeedback : " << value.transformFeedback << std::endl;
+    stream << "geometryStreams : " << value.geometryStreams << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( PhysicalDeviceTransformFeedbackFeaturesEXT value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct PhysicalDeviceTransformFeedbackPropertiesEXT
   {
@@ -38870,6 +47767,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkPhysicalDeviceTransformFeedbackPropertiesEXT*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, PhysicalDeviceTransformFeedbackPropertiesEXT const& );
 
     bool operator==( PhysicalDeviceTransformFeedbackPropertiesEXT const& rhs ) const
     {
@@ -38909,6 +47808,32 @@ namespace VULKAN_HPP_NAMESPACE
     Bool32 transformFeedbackDraw;
   };
   static_assert( sizeof( PhysicalDeviceTransformFeedbackPropertiesEXT ) == sizeof( VkPhysicalDeviceTransformFeedbackPropertiesEXT ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, PhysicalDeviceTransformFeedbackPropertiesEXT const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "maxTransformFeedbackStreams : " << value.maxTransformFeedbackStreams << std::endl;
+    stream << "maxTransformFeedbackBuffers : " << value.maxTransformFeedbackBuffers << std::endl;
+    stream << "maxTransformFeedbackBufferSize : " << value.maxTransformFeedbackBufferSize << std::endl;
+    stream << "maxTransformFeedbackStreamDataSize : " << value.maxTransformFeedbackStreamDataSize << std::endl;
+    stream << "maxTransformFeedbackBufferDataSize : " << value.maxTransformFeedbackBufferDataSize << std::endl;
+    stream << "maxTransformFeedbackBufferDataStride : " << value.maxTransformFeedbackBufferDataStride << std::endl;
+    stream << "transformFeedbackQueries : " << value.transformFeedbackQueries << std::endl;
+    stream << "transformFeedbackStreamsLinesTriangles : " << value.transformFeedbackStreamsLinesTriangles << std::endl;
+    stream << "transformFeedbackRasterizationStreamSelect : " << value.transformFeedbackRasterizationStreamSelect << std::endl;
+    stream << "transformFeedbackDraw : " << value.transformFeedbackDraw << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( PhysicalDeviceTransformFeedbackPropertiesEXT value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct PhysicalDeviceVariablePointerFeatures
   {
@@ -38956,6 +47881,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkPhysicalDeviceVariablePointerFeatures*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, PhysicalDeviceVariablePointerFeatures const& );
 
     bool operator==( PhysicalDeviceVariablePointerFeatures const& rhs ) const
     {
@@ -38979,6 +47906,24 @@ namespace VULKAN_HPP_NAMESPACE
     Bool32 variablePointers;
   };
   static_assert( sizeof( PhysicalDeviceVariablePointerFeatures ) == sizeof( VkPhysicalDeviceVariablePointerFeatures ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, PhysicalDeviceVariablePointerFeatures const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "variablePointersStorageBuffer : " << value.variablePointersStorageBuffer << std::endl;
+    stream << "variablePointers : " << value.variablePointers << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( PhysicalDeviceVariablePointerFeatures value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct PhysicalDeviceVertexAttributeDivisorFeaturesEXT
   {
@@ -39026,6 +47971,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkPhysicalDeviceVertexAttributeDivisorFeaturesEXT*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, PhysicalDeviceVertexAttributeDivisorFeaturesEXT const& );
 
     bool operator==( PhysicalDeviceVertexAttributeDivisorFeaturesEXT const& rhs ) const
     {
@@ -39049,6 +47996,24 @@ namespace VULKAN_HPP_NAMESPACE
     Bool32 vertexAttributeInstanceRateZeroDivisor;
   };
   static_assert( sizeof( PhysicalDeviceVertexAttributeDivisorFeaturesEXT ) == sizeof( VkPhysicalDeviceVertexAttributeDivisorFeaturesEXT ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, PhysicalDeviceVertexAttributeDivisorFeaturesEXT const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "vertexAttributeInstanceRateDivisor : " << value.vertexAttributeInstanceRateDivisor << std::endl;
+    stream << "vertexAttributeInstanceRateZeroDivisor : " << value.vertexAttributeInstanceRateZeroDivisor << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( PhysicalDeviceVertexAttributeDivisorFeaturesEXT value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct PhysicalDeviceVertexAttributeDivisorPropertiesEXT
   {
@@ -39061,6 +48026,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkPhysicalDeviceVertexAttributeDivisorPropertiesEXT*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, PhysicalDeviceVertexAttributeDivisorPropertiesEXT const& );
 
     bool operator==( PhysicalDeviceVertexAttributeDivisorPropertiesEXT const& rhs ) const
     {
@@ -39082,6 +48049,23 @@ namespace VULKAN_HPP_NAMESPACE
     uint32_t maxVertexAttribDivisor;
   };
   static_assert( sizeof( PhysicalDeviceVertexAttributeDivisorPropertiesEXT ) == sizeof( VkPhysicalDeviceVertexAttributeDivisorPropertiesEXT ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, PhysicalDeviceVertexAttributeDivisorPropertiesEXT const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "maxVertexAttribDivisor : " << value.maxVertexAttribDivisor << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( PhysicalDeviceVertexAttributeDivisorPropertiesEXT value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct PhysicalDeviceVulkanMemoryModelFeaturesKHR
   {
@@ -39137,6 +48121,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkPhysicalDeviceVulkanMemoryModelFeaturesKHR*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, PhysicalDeviceVulkanMemoryModelFeaturesKHR const& );
 
     bool operator==( PhysicalDeviceVulkanMemoryModelFeaturesKHR const& rhs ) const
     {
@@ -39162,6 +48148,25 @@ namespace VULKAN_HPP_NAMESPACE
     Bool32 vulkanMemoryModelAvailabilityVisibilityChains;
   };
   static_assert( sizeof( PhysicalDeviceVulkanMemoryModelFeaturesKHR ) == sizeof( VkPhysicalDeviceVulkanMemoryModelFeaturesKHR ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, PhysicalDeviceVulkanMemoryModelFeaturesKHR const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "vulkanMemoryModel : " << value.vulkanMemoryModel << std::endl;
+    stream << "vulkanMemoryModelDeviceScope : " << value.vulkanMemoryModelDeviceScope << std::endl;
+    stream << "vulkanMemoryModelAvailabilityVisibilityChains : " << value.vulkanMemoryModelAvailabilityVisibilityChains << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( PhysicalDeviceVulkanMemoryModelFeaturesKHR value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct PipelineCacheCreateInfo
   {
@@ -39217,6 +48222,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkPipelineCacheCreateInfo*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, PipelineCacheCreateInfo const& );
 
     bool operator==( PipelineCacheCreateInfo const& rhs ) const
     {
@@ -39242,6 +48249,25 @@ namespace VULKAN_HPP_NAMESPACE
     const void* pInitialData;
   };
   static_assert( sizeof( PipelineCacheCreateInfo ) == sizeof( VkPipelineCacheCreateInfo ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, PipelineCacheCreateInfo const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "flags : " << value.flags << std::endl;
+    stream << "initialDataSize : " << value.initialDataSize << std::endl;
+    stream << "pInitialData : " << value.pInitialData << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( PipelineCacheCreateInfo value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct PipelineColorBlendAdvancedStateCreateInfoEXT
   {
@@ -39297,6 +48323,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkPipelineColorBlendAdvancedStateCreateInfoEXT*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, PipelineColorBlendAdvancedStateCreateInfoEXT const& );
 
     bool operator==( PipelineColorBlendAdvancedStateCreateInfoEXT const& rhs ) const
     {
@@ -39322,6 +48350,25 @@ namespace VULKAN_HPP_NAMESPACE
     BlendOverlapEXT blendOverlap;
   };
   static_assert( sizeof( PipelineColorBlendAdvancedStateCreateInfoEXT ) == sizeof( VkPipelineColorBlendAdvancedStateCreateInfoEXT ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, PipelineColorBlendAdvancedStateCreateInfoEXT const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "srcPremultiplied : " << value.srcPremultiplied << std::endl;
+    stream << "dstPremultiplied : " << value.dstPremultiplied << std::endl;
+    stream << "blendOverlap : " << value.blendOverlap << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( PipelineColorBlendAdvancedStateCreateInfoEXT value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct PipelineCoverageModulationStateCreateInfoNV
   {
@@ -39393,6 +48440,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkPipelineCoverageModulationStateCreateInfoNV*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, PipelineCoverageModulationStateCreateInfoNV const& );
 
     bool operator==( PipelineCoverageModulationStateCreateInfoNV const& rhs ) const
     {
@@ -39422,6 +48471,27 @@ namespace VULKAN_HPP_NAMESPACE
     const float* pCoverageModulationTable;
   };
   static_assert( sizeof( PipelineCoverageModulationStateCreateInfoNV ) == sizeof( VkPipelineCoverageModulationStateCreateInfoNV ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, PipelineCoverageModulationStateCreateInfoNV const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "flags : " << value.flags << std::endl;
+    stream << "coverageModulationMode : " << value.coverageModulationMode << std::endl;
+    stream << "coverageModulationTableEnable : " << value.coverageModulationTableEnable << std::endl;
+    stream << "coverageModulationTableCount : " << value.coverageModulationTableCount << std::endl;
+    stream << "pCoverageModulationTable : " << value.pCoverageModulationTable << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( PipelineCoverageModulationStateCreateInfoNV value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct PipelineCoverageToColorStateCreateInfoNV
   {
@@ -39477,6 +48547,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkPipelineCoverageToColorStateCreateInfoNV*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, PipelineCoverageToColorStateCreateInfoNV const& );
 
     bool operator==( PipelineCoverageToColorStateCreateInfoNV const& rhs ) const
     {
@@ -39502,6 +48574,25 @@ namespace VULKAN_HPP_NAMESPACE
     uint32_t coverageToColorLocation;
   };
   static_assert( sizeof( PipelineCoverageToColorStateCreateInfoNV ) == sizeof( VkPipelineCoverageToColorStateCreateInfoNV ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, PipelineCoverageToColorStateCreateInfoNV const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "flags : " << value.flags << std::endl;
+    stream << "coverageToColorEnable : " << value.coverageToColorEnable << std::endl;
+    stream << "coverageToColorLocation : " << value.coverageToColorLocation << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( PipelineCoverageToColorStateCreateInfoNV value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct PipelineDiscardRectangleStateCreateInfoEXT
   {
@@ -39565,6 +48656,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkPipelineDiscardRectangleStateCreateInfoEXT*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, PipelineDiscardRectangleStateCreateInfoEXT const& );
 
     bool operator==( PipelineDiscardRectangleStateCreateInfoEXT const& rhs ) const
     {
@@ -39592,6 +48685,26 @@ namespace VULKAN_HPP_NAMESPACE
     const Rect2D* pDiscardRectangles;
   };
   static_assert( sizeof( PipelineDiscardRectangleStateCreateInfoEXT ) == sizeof( VkPipelineDiscardRectangleStateCreateInfoEXT ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, PipelineDiscardRectangleStateCreateInfoEXT const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "flags : " << value.flags << std::endl;
+    stream << "discardRectangleMode : " << value.discardRectangleMode << std::endl;
+    stream << "discardRectangleCount : " << value.discardRectangleCount << std::endl;
+    stream << "pDiscardRectangles : " << value.pDiscardRectangles << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( PipelineDiscardRectangleStateCreateInfoEXT value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct PushConstantRange
   {
@@ -39641,6 +48754,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkPushConstantRange*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, PushConstantRange const& );
 
     bool operator==( PushConstantRange const& rhs ) const
     {
@@ -39659,6 +48774,23 @@ namespace VULKAN_HPP_NAMESPACE
     uint32_t size;
   };
   static_assert( sizeof( PushConstantRange ) == sizeof( VkPushConstantRange ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, PushConstantRange const& value )
+  {
+    stream << "stageFlags : " << value.stageFlags << std::endl;
+    stream << "offset : " << value.offset << std::endl;
+    stream << "size : " << value.size << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( PushConstantRange value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct PipelineLayoutCreateInfo
   {
@@ -39730,6 +48862,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkPipelineLayoutCreateInfo*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, PipelineLayoutCreateInfo const& );
 
     bool operator==( PipelineLayoutCreateInfo const& rhs ) const
     {
@@ -39759,6 +48893,27 @@ namespace VULKAN_HPP_NAMESPACE
     const PushConstantRange* pPushConstantRanges;
   };
   static_assert( sizeof( PipelineLayoutCreateInfo ) == sizeof( VkPipelineLayoutCreateInfo ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, PipelineLayoutCreateInfo const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "flags : " << value.flags << std::endl;
+    stream << "setLayoutCount : " << value.setLayoutCount << std::endl;
+    stream << "pSetLayouts : " << value.pSetLayouts << std::endl;
+    stream << "pushConstantRangeCount : " << value.pushConstantRangeCount << std::endl;
+    stream << "pPushConstantRanges : " << value.pPushConstantRanges << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( PipelineLayoutCreateInfo value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct PipelineRasterizationConservativeStateCreateInfoEXT
   {
@@ -39814,6 +48969,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkPipelineRasterizationConservativeStateCreateInfoEXT*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, PipelineRasterizationConservativeStateCreateInfoEXT const& );
 
     bool operator==( PipelineRasterizationConservativeStateCreateInfoEXT const& rhs ) const
     {
@@ -39839,6 +48996,25 @@ namespace VULKAN_HPP_NAMESPACE
     float extraPrimitiveOverestimationSize;
   };
   static_assert( sizeof( PipelineRasterizationConservativeStateCreateInfoEXT ) == sizeof( VkPipelineRasterizationConservativeStateCreateInfoEXT ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, PipelineRasterizationConservativeStateCreateInfoEXT const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "flags : " << value.flags << std::endl;
+    stream << "conservativeRasterizationMode : " << value.conservativeRasterizationMode << std::endl;
+    stream << "extraPrimitiveOverestimationSize : " << value.extraPrimitiveOverestimationSize << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( PipelineRasterizationConservativeStateCreateInfoEXT value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct PipelineRasterizationStateRasterizationOrderAMD
   {
@@ -39878,6 +49054,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkPipelineRasterizationStateRasterizationOrderAMD*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, PipelineRasterizationStateRasterizationOrderAMD const& );
 
     bool operator==( PipelineRasterizationStateRasterizationOrderAMD const& rhs ) const
     {
@@ -39899,6 +49077,23 @@ namespace VULKAN_HPP_NAMESPACE
     RasterizationOrderAMD rasterizationOrder;
   };
   static_assert( sizeof( PipelineRasterizationStateRasterizationOrderAMD ) == sizeof( VkPipelineRasterizationStateRasterizationOrderAMD ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, PipelineRasterizationStateRasterizationOrderAMD const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "rasterizationOrder : " << value.rasterizationOrder << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( PipelineRasterizationStateRasterizationOrderAMD value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct PipelineRasterizationStateStreamCreateInfoEXT
   {
@@ -39946,6 +49141,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkPipelineRasterizationStateStreamCreateInfoEXT*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, PipelineRasterizationStateStreamCreateInfoEXT const& );
 
     bool operator==( PipelineRasterizationStateStreamCreateInfoEXT const& rhs ) const
     {
@@ -39969,6 +49166,24 @@ namespace VULKAN_HPP_NAMESPACE
     uint32_t rasterizationStream;
   };
   static_assert( sizeof( PipelineRasterizationStateStreamCreateInfoEXT ) == sizeof( VkPipelineRasterizationStateStreamCreateInfoEXT ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, PipelineRasterizationStateStreamCreateInfoEXT const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "flags : " << value.flags << std::endl;
+    stream << "rasterizationStream : " << value.rasterizationStream << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( PipelineRasterizationStateStreamCreateInfoEXT value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct PipelineRepresentativeFragmentTestStateCreateInfoNV
   {
@@ -40008,6 +49223,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkPipelineRepresentativeFragmentTestStateCreateInfoNV*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, PipelineRepresentativeFragmentTestStateCreateInfoNV const& );
 
     bool operator==( PipelineRepresentativeFragmentTestStateCreateInfoNV const& rhs ) const
     {
@@ -40029,6 +49246,23 @@ namespace VULKAN_HPP_NAMESPACE
     Bool32 representativeFragmentTestEnable;
   };
   static_assert( sizeof( PipelineRepresentativeFragmentTestStateCreateInfoNV ) == sizeof( VkPipelineRepresentativeFragmentTestStateCreateInfoNV ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, PipelineRepresentativeFragmentTestStateCreateInfoNV const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "representativeFragmentTestEnable : " << value.representativeFragmentTestEnable << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( PipelineRepresentativeFragmentTestStateCreateInfoNV value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct PipelineSampleLocationsStateCreateInfoEXT
   {
@@ -40076,6 +49310,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkPipelineSampleLocationsStateCreateInfoEXT*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, PipelineSampleLocationsStateCreateInfoEXT const& );
 
     bool operator==( PipelineSampleLocationsStateCreateInfoEXT const& rhs ) const
     {
@@ -40099,6 +49335,24 @@ namespace VULKAN_HPP_NAMESPACE
     SampleLocationsInfoEXT sampleLocationsInfo;
   };
   static_assert( sizeof( PipelineSampleLocationsStateCreateInfoEXT ) == sizeof( VkPipelineSampleLocationsStateCreateInfoEXT ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, PipelineSampleLocationsStateCreateInfoEXT const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "sampleLocationsEnable : " << value.sampleLocationsEnable << std::endl;
+    stream << "sampleLocationsInfo : " << value.sampleLocationsInfo << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( PipelineSampleLocationsStateCreateInfoEXT value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct PipelineTessellationDomainOriginStateCreateInfo
   {
@@ -40138,6 +49392,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkPipelineTessellationDomainOriginStateCreateInfo*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, PipelineTessellationDomainOriginStateCreateInfo const& );
 
     bool operator==( PipelineTessellationDomainOriginStateCreateInfo const& rhs ) const
     {
@@ -40159,6 +49415,23 @@ namespace VULKAN_HPP_NAMESPACE
     TessellationDomainOrigin domainOrigin;
   };
   static_assert( sizeof( PipelineTessellationDomainOriginStateCreateInfo ) == sizeof( VkPipelineTessellationDomainOriginStateCreateInfo ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, PipelineTessellationDomainOriginStateCreateInfo const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "domainOrigin : " << value.domainOrigin << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( PipelineTessellationDomainOriginStateCreateInfo value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct VertexInputBindingDivisorDescriptionEXT
   {
@@ -40200,6 +49473,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkVertexInputBindingDivisorDescriptionEXT*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, VertexInputBindingDivisorDescriptionEXT const& );
 
     bool operator==( VertexInputBindingDivisorDescriptionEXT const& rhs ) const
     {
@@ -40216,6 +49491,22 @@ namespace VULKAN_HPP_NAMESPACE
     uint32_t divisor;
   };
   static_assert( sizeof( VertexInputBindingDivisorDescriptionEXT ) == sizeof( VkVertexInputBindingDivisorDescriptionEXT ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, VertexInputBindingDivisorDescriptionEXT const& value )
+  {
+    stream << "binding : " << value.binding << std::endl;
+    stream << "divisor : " << value.divisor << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( VertexInputBindingDivisorDescriptionEXT value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct PipelineVertexInputDivisorStateCreateInfoEXT
   {
@@ -40263,6 +49554,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkPipelineVertexInputDivisorStateCreateInfoEXT*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, PipelineVertexInputDivisorStateCreateInfoEXT const& );
 
     bool operator==( PipelineVertexInputDivisorStateCreateInfoEXT const& rhs ) const
     {
@@ -40286,6 +49579,24 @@ namespace VULKAN_HPP_NAMESPACE
     const VertexInputBindingDivisorDescriptionEXT* pVertexBindingDivisors;
   };
   static_assert( sizeof( PipelineVertexInputDivisorStateCreateInfoEXT ) == sizeof( VkPipelineVertexInputDivisorStateCreateInfoEXT ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, PipelineVertexInputDivisorStateCreateInfoEXT const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "vertexBindingDivisorCount : " << value.vertexBindingDivisorCount << std::endl;
+    stream << "pVertexBindingDivisors : " << value.pVertexBindingDivisors << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( PipelineVertexInputDivisorStateCreateInfoEXT value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct PipelineViewportCoarseSampleOrderStateCreateInfoNV
   {
@@ -40341,6 +49652,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkPipelineViewportCoarseSampleOrderStateCreateInfoNV*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, PipelineViewportCoarseSampleOrderStateCreateInfoNV const& );
 
     bool operator==( PipelineViewportCoarseSampleOrderStateCreateInfoNV const& rhs ) const
     {
@@ -40366,6 +49679,25 @@ namespace VULKAN_HPP_NAMESPACE
     const CoarseSampleOrderCustomNV* pCustomSampleOrders;
   };
   static_assert( sizeof( PipelineViewportCoarseSampleOrderStateCreateInfoNV ) == sizeof( VkPipelineViewportCoarseSampleOrderStateCreateInfoNV ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, PipelineViewportCoarseSampleOrderStateCreateInfoNV const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "sampleOrderType : " << value.sampleOrderType << std::endl;
+    stream << "customSampleOrderCount : " << value.customSampleOrderCount << std::endl;
+    stream << "pCustomSampleOrders : " << value.pCustomSampleOrders << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( PipelineViewportCoarseSampleOrderStateCreateInfoNV value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct PipelineViewportExclusiveScissorStateCreateInfoNV
   {
@@ -40413,6 +49745,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkPipelineViewportExclusiveScissorStateCreateInfoNV*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, PipelineViewportExclusiveScissorStateCreateInfoNV const& );
 
     bool operator==( PipelineViewportExclusiveScissorStateCreateInfoNV const& rhs ) const
     {
@@ -40436,6 +49770,24 @@ namespace VULKAN_HPP_NAMESPACE
     const Rect2D* pExclusiveScissors;
   };
   static_assert( sizeof( PipelineViewportExclusiveScissorStateCreateInfoNV ) == sizeof( VkPipelineViewportExclusiveScissorStateCreateInfoNV ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, PipelineViewportExclusiveScissorStateCreateInfoNV const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "exclusiveScissorCount : " << value.exclusiveScissorCount << std::endl;
+    stream << "pExclusiveScissors : " << value.pExclusiveScissors << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( PipelineViewportExclusiveScissorStateCreateInfoNV value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct ShadingRatePaletteNV
   {
@@ -40477,6 +49829,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkShadingRatePaletteNV*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, ShadingRatePaletteNV const& );
 
     bool operator==( ShadingRatePaletteNV const& rhs ) const
     {
@@ -40493,6 +49847,22 @@ namespace VULKAN_HPP_NAMESPACE
     const ShadingRatePaletteEntryNV* pShadingRatePaletteEntries;
   };
   static_assert( sizeof( ShadingRatePaletteNV ) == sizeof( VkShadingRatePaletteNV ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, ShadingRatePaletteNV const& value )
+  {
+    stream << "shadingRatePaletteEntryCount : " << value.shadingRatePaletteEntryCount << std::endl;
+    stream << "pShadingRatePaletteEntries : " << value.pShadingRatePaletteEntries << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( ShadingRatePaletteNV value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct PipelineViewportShadingRateImageStateCreateInfoNV
   {
@@ -40548,6 +49918,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkPipelineViewportShadingRateImageStateCreateInfoNV*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, PipelineViewportShadingRateImageStateCreateInfoNV const& );
 
     bool operator==( PipelineViewportShadingRateImageStateCreateInfoNV const& rhs ) const
     {
@@ -40573,6 +49945,25 @@ namespace VULKAN_HPP_NAMESPACE
     const ShadingRatePaletteNV* pShadingRatePalettes;
   };
   static_assert( sizeof( PipelineViewportShadingRateImageStateCreateInfoNV ) == sizeof( VkPipelineViewportShadingRateImageStateCreateInfoNV ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, PipelineViewportShadingRateImageStateCreateInfoNV const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "shadingRateImageEnable : " << value.shadingRateImageEnable << std::endl;
+    stream << "viewportCount : " << value.viewportCount << std::endl;
+    stream << "pShadingRatePalettes : " << value.pShadingRatePalettes << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( PipelineViewportShadingRateImageStateCreateInfoNV value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct ViewportSwizzleNV
   {
@@ -40630,6 +50021,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkViewportSwizzleNV*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, ViewportSwizzleNV const& );
 
     bool operator==( ViewportSwizzleNV const& rhs ) const
     {
@@ -40650,6 +50043,24 @@ namespace VULKAN_HPP_NAMESPACE
     ViewportCoordinateSwizzleNV w;
   };
   static_assert( sizeof( ViewportSwizzleNV ) == sizeof( VkViewportSwizzleNV ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, ViewportSwizzleNV const& value )
+  {
+    stream << "x : " << value.x << std::endl;
+    stream << "y : " << value.y << std::endl;
+    stream << "z : " << value.z << std::endl;
+    stream << "w : " << value.w << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( ViewportSwizzleNV value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct PipelineViewportSwizzleStateCreateInfoNV
   {
@@ -40705,6 +50116,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkPipelineViewportSwizzleStateCreateInfoNV*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, PipelineViewportSwizzleStateCreateInfoNV const& );
 
     bool operator==( PipelineViewportSwizzleStateCreateInfoNV const& rhs ) const
     {
@@ -40730,6 +50143,25 @@ namespace VULKAN_HPP_NAMESPACE
     const ViewportSwizzleNV* pViewportSwizzles;
   };
   static_assert( sizeof( PipelineViewportSwizzleStateCreateInfoNV ) == sizeof( VkPipelineViewportSwizzleStateCreateInfoNV ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, PipelineViewportSwizzleStateCreateInfoNV const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "flags : " << value.flags << std::endl;
+    stream << "viewportCount : " << value.viewportCount << std::endl;
+    stream << "pViewportSwizzles : " << value.pViewportSwizzles << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( PipelineViewportSwizzleStateCreateInfoNV value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct ViewportWScalingNV
   {
@@ -40771,6 +50203,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkViewportWScalingNV*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, ViewportWScalingNV const& );
 
     bool operator==( ViewportWScalingNV const& rhs ) const
     {
@@ -40787,6 +50221,22 @@ namespace VULKAN_HPP_NAMESPACE
     float ycoeff;
   };
   static_assert( sizeof( ViewportWScalingNV ) == sizeof( VkViewportWScalingNV ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, ViewportWScalingNV const& value )
+  {
+    stream << "xcoeff : " << value.xcoeff << std::endl;
+    stream << "ycoeff : " << value.ycoeff << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( ViewportWScalingNV value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct PipelineViewportWScalingStateCreateInfoNV
   {
@@ -40842,6 +50292,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkPipelineViewportWScalingStateCreateInfoNV*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, PipelineViewportWScalingStateCreateInfoNV const& );
 
     bool operator==( PipelineViewportWScalingStateCreateInfoNV const& rhs ) const
     {
@@ -40867,6 +50319,25 @@ namespace VULKAN_HPP_NAMESPACE
     const ViewportWScalingNV* pViewportWScalings;
   };
   static_assert( sizeof( PipelineViewportWScalingStateCreateInfoNV ) == sizeof( VkPipelineViewportWScalingStateCreateInfoNV ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, PipelineViewportWScalingStateCreateInfoNV const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "viewportWScalingEnable : " << value.viewportWScalingEnable << std::endl;
+    stream << "viewportCount : " << value.viewportCount << std::endl;
+    stream << "pViewportWScalings : " << value.pViewportWScalings << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( PipelineViewportWScalingStateCreateInfoNV value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct PresentInfoKHR
   {
@@ -40946,6 +50417,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkPresentInfoKHR*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, PresentInfoKHR const& );
 
     bool operator==( PresentInfoKHR const& rhs ) const
     {
@@ -40977,6 +50450,28 @@ namespace VULKAN_HPP_NAMESPACE
     Result* pResults;
   };
   static_assert( sizeof( PresentInfoKHR ) == sizeof( VkPresentInfoKHR ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, PresentInfoKHR const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "waitSemaphoreCount : " << value.waitSemaphoreCount << std::endl;
+    stream << "pWaitSemaphores : " << value.pWaitSemaphores << std::endl;
+    stream << "swapchainCount : " << value.swapchainCount << std::endl;
+    stream << "pSwapchains : " << value.pSwapchains << std::endl;
+    stream << "pImageIndices : " << value.pImageIndices << std::endl;
+    stream << "pResults : " << value.pResults << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( PresentInfoKHR value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct RectLayerKHR
   {
@@ -41033,6 +50528,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkRectLayerKHR*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, RectLayerKHR const& );
 
     bool operator==( RectLayerKHR const& rhs ) const
     {
@@ -41051,6 +50548,23 @@ namespace VULKAN_HPP_NAMESPACE
     uint32_t layer;
   };
   static_assert( sizeof( RectLayerKHR ) == sizeof( VkRectLayerKHR ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, RectLayerKHR const& value )
+  {
+    stream << "offset : " << value.offset << std::endl;
+    stream << "extent : " << value.extent << std::endl;
+    stream << "layer : " << value.layer << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( RectLayerKHR value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct PresentRegionKHR
   {
@@ -41092,6 +50606,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkPresentRegionKHR*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, PresentRegionKHR const& );
 
     bool operator==( PresentRegionKHR const& rhs ) const
     {
@@ -41108,6 +50624,22 @@ namespace VULKAN_HPP_NAMESPACE
     const RectLayerKHR* pRectangles;
   };
   static_assert( sizeof( PresentRegionKHR ) == sizeof( VkPresentRegionKHR ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, PresentRegionKHR const& value )
+  {
+    stream << "rectangleCount : " << value.rectangleCount << std::endl;
+    stream << "pRectangles : " << value.pRectangles << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( PresentRegionKHR value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct PresentRegionsKHR
   {
@@ -41155,6 +50687,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkPresentRegionsKHR*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, PresentRegionsKHR const& );
 
     bool operator==( PresentRegionsKHR const& rhs ) const
     {
@@ -41178,6 +50712,24 @@ namespace VULKAN_HPP_NAMESPACE
     const PresentRegionKHR* pRegions;
   };
   static_assert( sizeof( PresentRegionsKHR ) == sizeof( VkPresentRegionsKHR ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, PresentRegionsKHR const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "swapchainCount : " << value.swapchainCount << std::endl;
+    stream << "pRegions : " << value.pRegions << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( PresentRegionsKHR value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct PresentTimeGOOGLE
   {
@@ -41219,6 +50771,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkPresentTimeGOOGLE*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, PresentTimeGOOGLE const& );
 
     bool operator==( PresentTimeGOOGLE const& rhs ) const
     {
@@ -41235,6 +50789,22 @@ namespace VULKAN_HPP_NAMESPACE
     uint64_t desiredPresentTime;
   };
   static_assert( sizeof( PresentTimeGOOGLE ) == sizeof( VkPresentTimeGOOGLE ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, PresentTimeGOOGLE const& value )
+  {
+    stream << "presentID : " << value.presentID << std::endl;
+    stream << "desiredPresentTime : " << value.desiredPresentTime << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( PresentTimeGOOGLE value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct PresentTimesInfoGOOGLE
   {
@@ -41282,6 +50852,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkPresentTimesInfoGOOGLE*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, PresentTimesInfoGOOGLE const& );
 
     bool operator==( PresentTimesInfoGOOGLE const& rhs ) const
     {
@@ -41305,6 +50877,24 @@ namespace VULKAN_HPP_NAMESPACE
     const PresentTimeGOOGLE* pTimes;
   };
   static_assert( sizeof( PresentTimesInfoGOOGLE ) == sizeof( VkPresentTimesInfoGOOGLE ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, PresentTimesInfoGOOGLE const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "swapchainCount : " << value.swapchainCount << std::endl;
+    stream << "pTimes : " << value.pTimes << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( PresentTimesInfoGOOGLE value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct ProtectedSubmitInfo
   {
@@ -41344,6 +50934,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkProtectedSubmitInfo*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, ProtectedSubmitInfo const& );
 
     bool operator==( ProtectedSubmitInfo const& rhs ) const
     {
@@ -41365,6 +50957,23 @@ namespace VULKAN_HPP_NAMESPACE
     Bool32 protectedSubmit;
   };
   static_assert( sizeof( ProtectedSubmitInfo ) == sizeof( VkProtectedSubmitInfo ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, ProtectedSubmitInfo const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "protectedSubmit : " << value.protectedSubmit << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( ProtectedSubmitInfo value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct QueryPoolCreateInfo
   {
@@ -41428,6 +51037,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkQueryPoolCreateInfo*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, QueryPoolCreateInfo const& );
 
     bool operator==( QueryPoolCreateInfo const& rhs ) const
     {
@@ -41455,6 +51066,26 @@ namespace VULKAN_HPP_NAMESPACE
     QueryPipelineStatisticFlags pipelineStatistics;
   };
   static_assert( sizeof( QueryPoolCreateInfo ) == sizeof( VkQueryPoolCreateInfo ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, QueryPoolCreateInfo const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "flags : " << value.flags << std::endl;
+    stream << "queryType : " << value.queryType << std::endl;
+    stream << "queryCount : " << value.queryCount << std::endl;
+    stream << "pipelineStatistics : " << value.pipelineStatistics << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( QueryPoolCreateInfo value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct QueueFamilyCheckpointPropertiesNV
   {
@@ -41467,6 +51098,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkQueueFamilyCheckpointPropertiesNV*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, QueueFamilyCheckpointPropertiesNV const& );
 
     bool operator==( QueueFamilyCheckpointPropertiesNV const& rhs ) const
     {
@@ -41488,6 +51121,23 @@ namespace VULKAN_HPP_NAMESPACE
     PipelineStageFlags checkpointExecutionStageMask;
   };
   static_assert( sizeof( QueueFamilyCheckpointPropertiesNV ) == sizeof( VkQueueFamilyCheckpointPropertiesNV ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, QueueFamilyCheckpointPropertiesNV const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "checkpointExecutionStageMask : " << value.checkpointExecutionStageMask << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( QueueFamilyCheckpointPropertiesNV value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct QueueFamilyProperties
   {
@@ -41500,6 +51150,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkQueueFamilyProperties*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, QueueFamilyProperties const& );
 
     bool operator==( QueueFamilyProperties const& rhs ) const
     {
@@ -41520,6 +51172,24 @@ namespace VULKAN_HPP_NAMESPACE
     Extent3D minImageTransferGranularity;
   };
   static_assert( sizeof( QueueFamilyProperties ) == sizeof( VkQueueFamilyProperties ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, QueueFamilyProperties const& value )
+  {
+    stream << "queueFlags : " << value.queueFlags << std::endl;
+    stream << "queueCount : " << value.queueCount << std::endl;
+    stream << "timestampValidBits : " << value.timestampValidBits << std::endl;
+    stream << "minImageTransferGranularity : " << value.minImageTransferGranularity << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( QueueFamilyProperties value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct QueueFamilyProperties2
   {
@@ -41532,6 +51202,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkQueueFamilyProperties2*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, QueueFamilyProperties2 const& );
 
     bool operator==( QueueFamilyProperties2 const& rhs ) const
     {
@@ -41553,6 +51225,23 @@ namespace VULKAN_HPP_NAMESPACE
     QueueFamilyProperties queueFamilyProperties;
   };
   static_assert( sizeof( QueueFamilyProperties2 ) == sizeof( VkQueueFamilyProperties2 ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, QueueFamilyProperties2 const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "queueFamilyProperties : " << value.queueFamilyProperties << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( QueueFamilyProperties2 value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct RayTracingShaderGroupCreateInfoNV
   {
@@ -41624,6 +51313,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkRayTracingShaderGroupCreateInfoNV*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, RayTracingShaderGroupCreateInfoNV const& );
 
     bool operator==( RayTracingShaderGroupCreateInfoNV const& rhs ) const
     {
@@ -41653,6 +51344,27 @@ namespace VULKAN_HPP_NAMESPACE
     uint32_t intersectionShader;
   };
   static_assert( sizeof( RayTracingShaderGroupCreateInfoNV ) == sizeof( VkRayTracingShaderGroupCreateInfoNV ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, RayTracingShaderGroupCreateInfoNV const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "type : " << value.type << std::endl;
+    stream << "generalShader : " << value.generalShader << std::endl;
+    stream << "closestHitShader : " << value.closestHitShader << std::endl;
+    stream << "anyHitShader : " << value.anyHitShader << std::endl;
+    stream << "intersectionShader : " << value.intersectionShader << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( RayTracingShaderGroupCreateInfoNV value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct RayTracingPipelineCreateInfoNV
   {
@@ -41756,6 +51468,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkRayTracingPipelineCreateInfoNV*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, RayTracingPipelineCreateInfoNV const& );
 
     bool operator==( RayTracingPipelineCreateInfoNV const& rhs ) const
     {
@@ -41793,6 +51507,31 @@ namespace VULKAN_HPP_NAMESPACE
     int32_t basePipelineIndex;
   };
   static_assert( sizeof( RayTracingPipelineCreateInfoNV ) == sizeof( VkRayTracingPipelineCreateInfoNV ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, RayTracingPipelineCreateInfoNV const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "flags : " << value.flags << std::endl;
+    stream << "stageCount : " << value.stageCount << std::endl;
+    stream << "pStages : " << value.pStages << std::endl;
+    stream << "groupCount : " << value.groupCount << std::endl;
+    stream << "pGroups : " << value.pGroups << std::endl;
+    stream << "maxRecursionDepth : " << value.maxRecursionDepth << std::endl;
+    stream << "layout : " << value.layout << std::endl;
+    stream << "basePipelineHandle : " << value.basePipelineHandle << std::endl;
+    stream << "basePipelineIndex : " << value.basePipelineIndex << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( RayTracingPipelineCreateInfoNV value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct RefreshCycleDurationGOOGLE
   {
@@ -41805,6 +51544,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkRefreshCycleDurationGOOGLE*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, RefreshCycleDurationGOOGLE const& );
 
     bool operator==( RefreshCycleDurationGOOGLE const& rhs ) const
     {
@@ -41819,6 +51560,21 @@ namespace VULKAN_HPP_NAMESPACE
     uint64_t refreshDuration;
   };
   static_assert( sizeof( RefreshCycleDurationGOOGLE ) == sizeof( VkRefreshCycleDurationGOOGLE ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, RefreshCycleDurationGOOGLE const& value )
+  {
+    stream << "refreshDuration : " << value.refreshDuration << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( RefreshCycleDurationGOOGLE value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct RenderPassBeginInfo
   {
@@ -41890,6 +51646,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkRenderPassBeginInfo*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, RenderPassBeginInfo const& );
 
     bool operator==( RenderPassBeginInfo const& rhs ) const
     {
@@ -41919,6 +51677,27 @@ namespace VULKAN_HPP_NAMESPACE
     const ClearValue* pClearValues;
   };
   static_assert( sizeof( RenderPassBeginInfo ) == sizeof( VkRenderPassBeginInfo ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, RenderPassBeginInfo const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "renderPass : " << value.renderPass << std::endl;
+    stream << "framebuffer : " << value.framebuffer << std::endl;
+    stream << "renderArea : " << value.renderArea << std::endl;
+    stream << "clearValueCount : " << value.clearValueCount << std::endl;
+    stream << "pClearValues : " << value.pClearValues << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( RenderPassBeginInfo value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct SubpassDescription
   {
@@ -42024,6 +51803,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkSubpassDescription*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, SubpassDescription const& );
 
     bool operator==( SubpassDescription const& rhs ) const
     {
@@ -42056,6 +51837,30 @@ namespace VULKAN_HPP_NAMESPACE
     const uint32_t* pPreserveAttachments;
   };
   static_assert( sizeof( SubpassDescription ) == sizeof( VkSubpassDescription ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, SubpassDescription const& value )
+  {
+    stream << "flags : " << value.flags << std::endl;
+    stream << "pipelineBindPoint : " << value.pipelineBindPoint << std::endl;
+    stream << "inputAttachmentCount : " << value.inputAttachmentCount << std::endl;
+    stream << "pInputAttachments : " << value.pInputAttachments << std::endl;
+    stream << "colorAttachmentCount : " << value.colorAttachmentCount << std::endl;
+    stream << "pColorAttachments : " << value.pColorAttachments << std::endl;
+    stream << "pResolveAttachments : " << value.pResolveAttachments << std::endl;
+    stream << "pDepthStencilAttachment : " << value.pDepthStencilAttachment << std::endl;
+    stream << "preserveAttachmentCount : " << value.preserveAttachmentCount << std::endl;
+    stream << "pPreserveAttachments : " << value.pPreserveAttachments << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( SubpassDescription value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct SubpassDependency
   {
@@ -42137,6 +51942,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkSubpassDependency*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, SubpassDependency const& );
 
     bool operator==( SubpassDependency const& rhs ) const
     {
@@ -42163,6 +51970,27 @@ namespace VULKAN_HPP_NAMESPACE
     DependencyFlags dependencyFlags;
   };
   static_assert( sizeof( SubpassDependency ) == sizeof( VkSubpassDependency ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, SubpassDependency const& value )
+  {
+    stream << "srcSubpass : " << value.srcSubpass << std::endl;
+    stream << "dstSubpass : " << value.dstSubpass << std::endl;
+    stream << "srcStageMask : " << value.srcStageMask << std::endl;
+    stream << "dstStageMask : " << value.dstStageMask << std::endl;
+    stream << "srcAccessMask : " << value.srcAccessMask << std::endl;
+    stream << "dstAccessMask : " << value.dstAccessMask << std::endl;
+    stream << "dependencyFlags : " << value.dependencyFlags << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( SubpassDependency value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct RenderPassCreateInfo
   {
@@ -42250,6 +52078,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkRenderPassCreateInfo*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, RenderPassCreateInfo const& );
 
     bool operator==( RenderPassCreateInfo const& rhs ) const
     {
@@ -42283,6 +52113,29 @@ namespace VULKAN_HPP_NAMESPACE
     const SubpassDependency* pDependencies;
   };
   static_assert( sizeof( RenderPassCreateInfo ) == sizeof( VkRenderPassCreateInfo ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, RenderPassCreateInfo const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "flags : " << value.flags << std::endl;
+    stream << "attachmentCount : " << value.attachmentCount << std::endl;
+    stream << "pAttachments : " << value.pAttachments << std::endl;
+    stream << "subpassCount : " << value.subpassCount << std::endl;
+    stream << "pSubpasses : " << value.pSubpasses << std::endl;
+    stream << "dependencyCount : " << value.dependencyCount << std::endl;
+    stream << "pDependencies : " << value.pDependencies << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( RenderPassCreateInfo value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct SubpassDescription2KHR
   {
@@ -42402,6 +52255,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkSubpassDescription2KHR*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, SubpassDescription2KHR const& );
 
     bool operator==( SubpassDescription2KHR const& rhs ) const
     {
@@ -42443,6 +52298,33 @@ namespace VULKAN_HPP_NAMESPACE
     const uint32_t* pPreserveAttachments;
   };
   static_assert( sizeof( SubpassDescription2KHR ) == sizeof( VkSubpassDescription2KHR ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, SubpassDescription2KHR const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "flags : " << value.flags << std::endl;
+    stream << "pipelineBindPoint : " << value.pipelineBindPoint << std::endl;
+    stream << "viewMask : " << value.viewMask << std::endl;
+    stream << "inputAttachmentCount : " << value.inputAttachmentCount << std::endl;
+    stream << "pInputAttachments : " << value.pInputAttachments << std::endl;
+    stream << "colorAttachmentCount : " << value.colorAttachmentCount << std::endl;
+    stream << "pColorAttachments : " << value.pColorAttachments << std::endl;
+    stream << "pResolveAttachments : " << value.pResolveAttachments << std::endl;
+    stream << "pDepthStencilAttachment : " << value.pDepthStencilAttachment << std::endl;
+    stream << "preserveAttachmentCount : " << value.preserveAttachmentCount << std::endl;
+    stream << "pPreserveAttachments : " << value.pPreserveAttachments << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( SubpassDescription2KHR value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct SubpassDependency2KHR
   {
@@ -42538,6 +52420,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkSubpassDependency2KHR*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, SubpassDependency2KHR const& );
 
     bool operator==( SubpassDependency2KHR const& rhs ) const
     {
@@ -42573,6 +52457,30 @@ namespace VULKAN_HPP_NAMESPACE
     int32_t viewOffset;
   };
   static_assert( sizeof( SubpassDependency2KHR ) == sizeof( VkSubpassDependency2KHR ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, SubpassDependency2KHR const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "srcSubpass : " << value.srcSubpass << std::endl;
+    stream << "dstSubpass : " << value.dstSubpass << std::endl;
+    stream << "srcStageMask : " << value.srcStageMask << std::endl;
+    stream << "dstStageMask : " << value.dstStageMask << std::endl;
+    stream << "srcAccessMask : " << value.srcAccessMask << std::endl;
+    stream << "dstAccessMask : " << value.dstAccessMask << std::endl;
+    stream << "dependencyFlags : " << value.dependencyFlags << std::endl;
+    stream << "viewOffset : " << value.viewOffset << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( SubpassDependency2KHR value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct RenderPassCreateInfo2KHR
   {
@@ -42676,6 +52584,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkRenderPassCreateInfo2KHR*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, RenderPassCreateInfo2KHR const& );
 
     bool operator==( RenderPassCreateInfo2KHR const& rhs ) const
     {
@@ -42713,6 +52623,31 @@ namespace VULKAN_HPP_NAMESPACE
     const uint32_t* pCorrelatedViewMasks;
   };
   static_assert( sizeof( RenderPassCreateInfo2KHR ) == sizeof( VkRenderPassCreateInfo2KHR ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, RenderPassCreateInfo2KHR const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "flags : " << value.flags << std::endl;
+    stream << "attachmentCount : " << value.attachmentCount << std::endl;
+    stream << "pAttachments : " << value.pAttachments << std::endl;
+    stream << "subpassCount : " << value.subpassCount << std::endl;
+    stream << "pSubpasses : " << value.pSubpasses << std::endl;
+    stream << "dependencyCount : " << value.dependencyCount << std::endl;
+    stream << "pDependencies : " << value.pDependencies << std::endl;
+    stream << "correlatedViewMaskCount : " << value.correlatedViewMaskCount << std::endl;
+    stream << "pCorrelatedViewMasks : " << value.pCorrelatedViewMasks << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( RenderPassCreateInfo2KHR value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct RenderPassFragmentDensityMapCreateInfoEXT
   {
@@ -42752,6 +52687,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkRenderPassFragmentDensityMapCreateInfoEXT*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, RenderPassFragmentDensityMapCreateInfoEXT const& );
 
     bool operator==( RenderPassFragmentDensityMapCreateInfoEXT const& rhs ) const
     {
@@ -42773,6 +52710,23 @@ namespace VULKAN_HPP_NAMESPACE
     AttachmentReference fragmentDensityMapAttachment;
   };
   static_assert( sizeof( RenderPassFragmentDensityMapCreateInfoEXT ) == sizeof( VkRenderPassFragmentDensityMapCreateInfoEXT ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, RenderPassFragmentDensityMapCreateInfoEXT const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "fragmentDensityMapAttachment : " << value.fragmentDensityMapAttachment << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( RenderPassFragmentDensityMapCreateInfoEXT value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct RenderPassInputAttachmentAspectCreateInfo
   {
@@ -42820,6 +52774,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkRenderPassInputAttachmentAspectCreateInfo*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, RenderPassInputAttachmentAspectCreateInfo const& );
 
     bool operator==( RenderPassInputAttachmentAspectCreateInfo const& rhs ) const
     {
@@ -42843,6 +52799,24 @@ namespace VULKAN_HPP_NAMESPACE
     const InputAttachmentAspectReference* pAspectReferences;
   };
   static_assert( sizeof( RenderPassInputAttachmentAspectCreateInfo ) == sizeof( VkRenderPassInputAttachmentAspectCreateInfo ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, RenderPassInputAttachmentAspectCreateInfo const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "aspectReferenceCount : " << value.aspectReferenceCount << std::endl;
+    stream << "pAspectReferences : " << value.pAspectReferences << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( RenderPassInputAttachmentAspectCreateInfo value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct RenderPassMultiviewCreateInfo
   {
@@ -42922,6 +52896,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkRenderPassMultiviewCreateInfo*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, RenderPassMultiviewCreateInfo const& );
 
     bool operator==( RenderPassMultiviewCreateInfo const& rhs ) const
     {
@@ -42953,6 +52929,28 @@ namespace VULKAN_HPP_NAMESPACE
     const uint32_t* pCorrelationMasks;
   };
   static_assert( sizeof( RenderPassMultiviewCreateInfo ) == sizeof( VkRenderPassMultiviewCreateInfo ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, RenderPassMultiviewCreateInfo const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "subpassCount : " << value.subpassCount << std::endl;
+    stream << "pViewMasks : " << value.pViewMasks << std::endl;
+    stream << "dependencyCount : " << value.dependencyCount << std::endl;
+    stream << "pViewOffsets : " << value.pViewOffsets << std::endl;
+    stream << "correlationMaskCount : " << value.correlationMaskCount << std::endl;
+    stream << "pCorrelationMasks : " << value.pCorrelationMasks << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( RenderPassMultiviewCreateInfo value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct SubpassSampleLocationsEXT
   {
@@ -42994,6 +52992,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkSubpassSampleLocationsEXT*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, SubpassSampleLocationsEXT const& );
 
     bool operator==( SubpassSampleLocationsEXT const& rhs ) const
     {
@@ -43010,6 +53010,22 @@ namespace VULKAN_HPP_NAMESPACE
     SampleLocationsInfoEXT sampleLocationsInfo;
   };
   static_assert( sizeof( SubpassSampleLocationsEXT ) == sizeof( VkSubpassSampleLocationsEXT ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, SubpassSampleLocationsEXT const& value )
+  {
+    stream << "subpassIndex : " << value.subpassIndex << std::endl;
+    stream << "sampleLocationsInfo : " << value.sampleLocationsInfo << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( SubpassSampleLocationsEXT value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct RenderPassSampleLocationsBeginInfoEXT
   {
@@ -43073,6 +53089,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkRenderPassSampleLocationsBeginInfoEXT*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, RenderPassSampleLocationsBeginInfoEXT const& );
 
     bool operator==( RenderPassSampleLocationsBeginInfoEXT const& rhs ) const
     {
@@ -43100,6 +53118,26 @@ namespace VULKAN_HPP_NAMESPACE
     const SubpassSampleLocationsEXT* pPostSubpassSampleLocations;
   };
   static_assert( sizeof( RenderPassSampleLocationsBeginInfoEXT ) == sizeof( VkRenderPassSampleLocationsBeginInfoEXT ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, RenderPassSampleLocationsBeginInfoEXT const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "attachmentInitialSampleLocationsCount : " << value.attachmentInitialSampleLocationsCount << std::endl;
+    stream << "pAttachmentInitialSampleLocations : " << value.pAttachmentInitialSampleLocations << std::endl;
+    stream << "postSubpassSampleLocationsCount : " << value.postSubpassSampleLocationsCount << std::endl;
+    stream << "pPostSubpassSampleLocations : " << value.pPostSubpassSampleLocations << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( RenderPassSampleLocationsBeginInfoEXT value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct SamplerCreateInfo
   {
@@ -43259,6 +53297,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkSamplerCreateInfo*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, SamplerCreateInfo const& );
 
     bool operator==( SamplerCreateInfo const& rhs ) const
     {
@@ -43310,6 +53350,38 @@ namespace VULKAN_HPP_NAMESPACE
     Bool32 unnormalizedCoordinates;
   };
   static_assert( sizeof( SamplerCreateInfo ) == sizeof( VkSamplerCreateInfo ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, SamplerCreateInfo const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "flags : " << value.flags << std::endl;
+    stream << "magFilter : " << value.magFilter << std::endl;
+    stream << "minFilter : " << value.minFilter << std::endl;
+    stream << "mipmapMode : " << value.mipmapMode << std::endl;
+    stream << "addressModeU : " << value.addressModeU << std::endl;
+    stream << "addressModeV : " << value.addressModeV << std::endl;
+    stream << "addressModeW : " << value.addressModeW << std::endl;
+    stream << "mipLodBias : " << value.mipLodBias << std::endl;
+    stream << "anisotropyEnable : " << value.anisotropyEnable << std::endl;
+    stream << "maxAnisotropy : " << value.maxAnisotropy << std::endl;
+    stream << "compareEnable : " << value.compareEnable << std::endl;
+    stream << "compareOp : " << value.compareOp << std::endl;
+    stream << "minLod : " << value.minLod << std::endl;
+    stream << "maxLod : " << value.maxLod << std::endl;
+    stream << "borderColor : " << value.borderColor << std::endl;
+    stream << "unnormalizedCoordinates : " << value.unnormalizedCoordinates << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( SamplerCreateInfo value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct SamplerReductionModeCreateInfoEXT
   {
@@ -43349,6 +53421,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkSamplerReductionModeCreateInfoEXT*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, SamplerReductionModeCreateInfoEXT const& );
 
     bool operator==( SamplerReductionModeCreateInfoEXT const& rhs ) const
     {
@@ -43370,6 +53444,23 @@ namespace VULKAN_HPP_NAMESPACE
     SamplerReductionModeEXT reductionMode;
   };
   static_assert( sizeof( SamplerReductionModeCreateInfoEXT ) == sizeof( VkSamplerReductionModeCreateInfoEXT ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, SamplerReductionModeCreateInfoEXT const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "reductionMode : " << value.reductionMode << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( SamplerReductionModeCreateInfoEXT value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct SamplerYcbcrConversionCreateInfo
   {
@@ -43465,6 +53556,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkSamplerYcbcrConversionCreateInfo*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, SamplerYcbcrConversionCreateInfo const& );
 
     bool operator==( SamplerYcbcrConversionCreateInfo const& rhs ) const
     {
@@ -43500,6 +53593,30 @@ namespace VULKAN_HPP_NAMESPACE
     Bool32 forceExplicitReconstruction;
   };
   static_assert( sizeof( SamplerYcbcrConversionCreateInfo ) == sizeof( VkSamplerYcbcrConversionCreateInfo ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, SamplerYcbcrConversionCreateInfo const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "format : " << value.format << std::endl;
+    stream << "ycbcrModel : " << value.ycbcrModel << std::endl;
+    stream << "ycbcrRange : " << value.ycbcrRange << std::endl;
+    stream << "components : " << value.components << std::endl;
+    stream << "xChromaOffset : " << value.xChromaOffset << std::endl;
+    stream << "yChromaOffset : " << value.yChromaOffset << std::endl;
+    stream << "chromaFilter : " << value.chromaFilter << std::endl;
+    stream << "forceExplicitReconstruction : " << value.forceExplicitReconstruction << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( SamplerYcbcrConversionCreateInfo value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct SamplerYcbcrConversionImageFormatProperties
   {
@@ -43512,6 +53629,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkSamplerYcbcrConversionImageFormatProperties*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, SamplerYcbcrConversionImageFormatProperties const& );
 
     bool operator==( SamplerYcbcrConversionImageFormatProperties const& rhs ) const
     {
@@ -43533,6 +53652,23 @@ namespace VULKAN_HPP_NAMESPACE
     uint32_t combinedImageSamplerDescriptorCount;
   };
   static_assert( sizeof( SamplerYcbcrConversionImageFormatProperties ) == sizeof( VkSamplerYcbcrConversionImageFormatProperties ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, SamplerYcbcrConversionImageFormatProperties const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "combinedImageSamplerDescriptorCount : " << value.combinedImageSamplerDescriptorCount << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( SamplerYcbcrConversionImageFormatProperties value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct SamplerYcbcrConversionInfo
   {
@@ -43572,6 +53708,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkSamplerYcbcrConversionInfo*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, SamplerYcbcrConversionInfo const& );
 
     bool operator==( SamplerYcbcrConversionInfo const& rhs ) const
     {
@@ -43593,6 +53731,23 @@ namespace VULKAN_HPP_NAMESPACE
     SamplerYcbcrConversion conversion;
   };
   static_assert( sizeof( SamplerYcbcrConversionInfo ) == sizeof( VkSamplerYcbcrConversionInfo ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, SamplerYcbcrConversionInfo const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "conversion : " << value.conversion << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( SamplerYcbcrConversionInfo value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct SemaphoreCreateInfo
   {
@@ -43632,6 +53787,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkSemaphoreCreateInfo*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, SemaphoreCreateInfo const& );
 
     bool operator==( SemaphoreCreateInfo const& rhs ) const
     {
@@ -43653,6 +53810,23 @@ namespace VULKAN_HPP_NAMESPACE
     SemaphoreCreateFlags flags;
   };
   static_assert( sizeof( SemaphoreCreateInfo ) == sizeof( VkSemaphoreCreateInfo ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, SemaphoreCreateInfo const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "flags : " << value.flags << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( SemaphoreCreateInfo value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct SemaphoreGetFdInfoKHR
   {
@@ -43700,6 +53874,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkSemaphoreGetFdInfoKHR*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, SemaphoreGetFdInfoKHR const& );
 
     bool operator==( SemaphoreGetFdInfoKHR const& rhs ) const
     {
@@ -43723,6 +53899,24 @@ namespace VULKAN_HPP_NAMESPACE
     ExternalSemaphoreHandleTypeFlagBits handleType;
   };
   static_assert( sizeof( SemaphoreGetFdInfoKHR ) == sizeof( VkSemaphoreGetFdInfoKHR ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, SemaphoreGetFdInfoKHR const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "semaphore : " << value.semaphore << std::endl;
+    stream << "handleType : " << value.handleType << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( SemaphoreGetFdInfoKHR value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
 #ifdef VK_USE_PLATFORM_WIN32_KHR
   struct SemaphoreGetWin32HandleInfoKHR
@@ -43771,6 +53965,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkSemaphoreGetWin32HandleInfoKHR*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, SemaphoreGetWin32HandleInfoKHR const& );
 
     bool operator==( SemaphoreGetWin32HandleInfoKHR const& rhs ) const
     {
@@ -43794,6 +53990,24 @@ namespace VULKAN_HPP_NAMESPACE
     ExternalSemaphoreHandleTypeFlagBits handleType;
   };
   static_assert( sizeof( SemaphoreGetWin32HandleInfoKHR ) == sizeof( VkSemaphoreGetWin32HandleInfoKHR ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, SemaphoreGetWin32HandleInfoKHR const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "semaphore : " << value.semaphore << std::endl;
+    stream << "handleType : " << value.handleType << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( SemaphoreGetWin32HandleInfoKHR value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 #endif /*VK_USE_PLATFORM_WIN32_KHR*/
 
   struct ShaderModuleCreateInfo
@@ -43850,6 +54064,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkShaderModuleCreateInfo*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, ShaderModuleCreateInfo const& );
 
     bool operator==( ShaderModuleCreateInfo const& rhs ) const
     {
@@ -43875,6 +54091,25 @@ namespace VULKAN_HPP_NAMESPACE
     const uint32_t* pCode;
   };
   static_assert( sizeof( ShaderModuleCreateInfo ) == sizeof( VkShaderModuleCreateInfo ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, ShaderModuleCreateInfo const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "flags : " << value.flags << std::endl;
+    stream << "codeSize : " << value.codeSize << std::endl;
+    stream << "pCode : " << value.pCode << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( ShaderModuleCreateInfo value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct ShaderModuleValidationCacheCreateInfoEXT
   {
@@ -43914,6 +54149,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkShaderModuleValidationCacheCreateInfoEXT*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, ShaderModuleValidationCacheCreateInfoEXT const& );
 
     bool operator==( ShaderModuleValidationCacheCreateInfoEXT const& rhs ) const
     {
@@ -43935,6 +54172,23 @@ namespace VULKAN_HPP_NAMESPACE
     ValidationCacheEXT validationCache;
   };
   static_assert( sizeof( ShaderModuleValidationCacheCreateInfoEXT ) == sizeof( VkShaderModuleValidationCacheCreateInfoEXT ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, ShaderModuleValidationCacheCreateInfoEXT const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "validationCache : " << value.validationCache << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( ShaderModuleValidationCacheCreateInfoEXT value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct ShaderResourceUsageAMD
   {
@@ -43947,6 +54201,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkShaderResourceUsageAMD*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, ShaderResourceUsageAMD const& );
 
     bool operator==( ShaderResourceUsageAMD const& rhs ) const
     {
@@ -43969,6 +54225,25 @@ namespace VULKAN_HPP_NAMESPACE
     size_t scratchMemUsageInBytes;
   };
   static_assert( sizeof( ShaderResourceUsageAMD ) == sizeof( VkShaderResourceUsageAMD ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, ShaderResourceUsageAMD const& value )
+  {
+    stream << "numUsedVgprs : " << value.numUsedVgprs << std::endl;
+    stream << "numUsedSgprs : " << value.numUsedSgprs << std::endl;
+    stream << "ldsSizePerLocalWorkGroup : " << value.ldsSizePerLocalWorkGroup << std::endl;
+    stream << "ldsUsageSizeInBytes : " << value.ldsUsageSizeInBytes << std::endl;
+    stream << "scratchMemUsageInBytes : " << value.scratchMemUsageInBytes << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( ShaderResourceUsageAMD value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct ShaderStatisticsInfoAMD
   {
@@ -43981,6 +54256,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkShaderStatisticsInfoAMD*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, ShaderStatisticsInfoAMD const& );
 
     bool operator==( ShaderStatisticsInfoAMD const& rhs ) const
     {
@@ -44007,6 +54284,27 @@ namespace VULKAN_HPP_NAMESPACE
     uint32_t computeWorkGroupSize[3];
   };
   static_assert( sizeof( ShaderStatisticsInfoAMD ) == sizeof( VkShaderStatisticsInfoAMD ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, ShaderStatisticsInfoAMD const& value )
+  {
+    stream << "shaderStageMask : " << value.shaderStageMask << std::endl;
+    stream << "resourceUsage : " << value.resourceUsage << std::endl;
+    stream << "numPhysicalVgprs : " << value.numPhysicalVgprs << std::endl;
+    stream << "numPhysicalSgprs : " << value.numPhysicalSgprs << std::endl;
+    stream << "numAvailableVgprs : " << value.numAvailableVgprs << std::endl;
+    stream << "numAvailableSgprs : " << value.numAvailableSgprs << std::endl;
+    stream << "computeWorkGroupSize : " << value.computeWorkGroupSize << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( ShaderStatisticsInfoAMD value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct SharedPresentSurfaceCapabilitiesKHR
   {
@@ -44019,6 +54317,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkSharedPresentSurfaceCapabilitiesKHR*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, SharedPresentSurfaceCapabilitiesKHR const& );
 
     bool operator==( SharedPresentSurfaceCapabilitiesKHR const& rhs ) const
     {
@@ -44040,6 +54340,23 @@ namespace VULKAN_HPP_NAMESPACE
     ImageUsageFlags sharedPresentSupportedUsageFlags;
   };
   static_assert( sizeof( SharedPresentSurfaceCapabilitiesKHR ) == sizeof( VkSharedPresentSurfaceCapabilitiesKHR ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, SharedPresentSurfaceCapabilitiesKHR const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "sharedPresentSupportedUsageFlags : " << value.sharedPresentSupportedUsageFlags << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( SharedPresentSurfaceCapabilitiesKHR value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct SparseImageFormatProperties
   {
@@ -44052,6 +54369,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkSparseImageFormatProperties*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, SparseImageFormatProperties const& );
 
     bool operator==( SparseImageFormatProperties const& rhs ) const
     {
@@ -44070,6 +54389,23 @@ namespace VULKAN_HPP_NAMESPACE
     SparseImageFormatFlags flags;
   };
   static_assert( sizeof( SparseImageFormatProperties ) == sizeof( VkSparseImageFormatProperties ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, SparseImageFormatProperties const& value )
+  {
+    stream << "aspectMask : " << value.aspectMask << std::endl;
+    stream << "imageGranularity : " << value.imageGranularity << std::endl;
+    stream << "flags : " << value.flags << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( SparseImageFormatProperties value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct SparseImageFormatProperties2
   {
@@ -44082,6 +54418,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkSparseImageFormatProperties2*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, SparseImageFormatProperties2 const& );
 
     bool operator==( SparseImageFormatProperties2 const& rhs ) const
     {
@@ -44103,6 +54441,23 @@ namespace VULKAN_HPP_NAMESPACE
     SparseImageFormatProperties properties;
   };
   static_assert( sizeof( SparseImageFormatProperties2 ) == sizeof( VkSparseImageFormatProperties2 ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, SparseImageFormatProperties2 const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "properties : " << value.properties << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( SparseImageFormatProperties2 value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct SparseImageMemoryRequirements
   {
@@ -44115,6 +54470,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkSparseImageMemoryRequirements*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, SparseImageMemoryRequirements const& );
 
     bool operator==( SparseImageMemoryRequirements const& rhs ) const
     {
@@ -44137,6 +54494,25 @@ namespace VULKAN_HPP_NAMESPACE
     DeviceSize imageMipTailStride;
   };
   static_assert( sizeof( SparseImageMemoryRequirements ) == sizeof( VkSparseImageMemoryRequirements ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, SparseImageMemoryRequirements const& value )
+  {
+    stream << "formatProperties : " << value.formatProperties << std::endl;
+    stream << "imageMipTailFirstLod : " << value.imageMipTailFirstLod << std::endl;
+    stream << "imageMipTailSize : " << value.imageMipTailSize << std::endl;
+    stream << "imageMipTailOffset : " << value.imageMipTailOffset << std::endl;
+    stream << "imageMipTailStride : " << value.imageMipTailStride << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( SparseImageMemoryRequirements value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct SparseImageMemoryRequirements2
   {
@@ -44149,6 +54525,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkSparseImageMemoryRequirements2*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, SparseImageMemoryRequirements2 const& );
 
     bool operator==( SparseImageMemoryRequirements2 const& rhs ) const
     {
@@ -44170,6 +54548,23 @@ namespace VULKAN_HPP_NAMESPACE
     SparseImageMemoryRequirements memoryRequirements;
   };
   static_assert( sizeof( SparseImageMemoryRequirements2 ) == sizeof( VkSparseImageMemoryRequirements2 ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, SparseImageMemoryRequirements2 const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "memoryRequirements : " << value.memoryRequirements << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( SparseImageMemoryRequirements2 value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct SubmitInfo
   {
@@ -44257,6 +54652,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkSubmitInfo*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, SubmitInfo const& );
 
     bool operator==( SubmitInfo const& rhs ) const
     {
@@ -44290,6 +54687,29 @@ namespace VULKAN_HPP_NAMESPACE
     const Semaphore* pSignalSemaphores;
   };
   static_assert( sizeof( SubmitInfo ) == sizeof( VkSubmitInfo ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, SubmitInfo const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "waitSemaphoreCount : " << value.waitSemaphoreCount << std::endl;
+    stream << "pWaitSemaphores : " << value.pWaitSemaphores << std::endl;
+    stream << "pWaitDstStageMask : " << value.pWaitDstStageMask << std::endl;
+    stream << "commandBufferCount : " << value.commandBufferCount << std::endl;
+    stream << "pCommandBuffers : " << value.pCommandBuffers << std::endl;
+    stream << "signalSemaphoreCount : " << value.signalSemaphoreCount << std::endl;
+    stream << "pSignalSemaphores : " << value.pSignalSemaphores << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( SubmitInfo value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct SubpassBeginInfoKHR
   {
@@ -44329,6 +54749,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkSubpassBeginInfoKHR*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, SubpassBeginInfoKHR const& );
 
     bool operator==( SubpassBeginInfoKHR const& rhs ) const
     {
@@ -44350,6 +54772,23 @@ namespace VULKAN_HPP_NAMESPACE
     SubpassContents contents;
   };
   static_assert( sizeof( SubpassBeginInfoKHR ) == sizeof( VkSubpassBeginInfoKHR ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, SubpassBeginInfoKHR const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "contents : " << value.contents << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( SubpassBeginInfoKHR value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct SubpassDescriptionDepthStencilResolveKHR
   {
@@ -44405,6 +54844,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkSubpassDescriptionDepthStencilResolveKHR*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, SubpassDescriptionDepthStencilResolveKHR const& );
 
     bool operator==( SubpassDescriptionDepthStencilResolveKHR const& rhs ) const
     {
@@ -44430,6 +54871,25 @@ namespace VULKAN_HPP_NAMESPACE
     const AttachmentReference2KHR* pDepthStencilResolveAttachment;
   };
   static_assert( sizeof( SubpassDescriptionDepthStencilResolveKHR ) == sizeof( VkSubpassDescriptionDepthStencilResolveKHR ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, SubpassDescriptionDepthStencilResolveKHR const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "depthResolveMode : " << value.depthResolveMode << std::endl;
+    stream << "stencilResolveMode : " << value.stencilResolveMode << std::endl;
+    stream << "pDepthStencilResolveAttachment : " << value.pDepthStencilResolveAttachment << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( SubpassDescriptionDepthStencilResolveKHR value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct SubpassEndInfoKHR
   {
@@ -44462,6 +54922,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkSubpassEndInfoKHR*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, SubpassEndInfoKHR const& );
 
     bool operator==( SubpassEndInfoKHR const& rhs ) const
     {
@@ -44481,6 +54943,22 @@ namespace VULKAN_HPP_NAMESPACE
     const void* pNext = nullptr;
   };
   static_assert( sizeof( SubpassEndInfoKHR ) == sizeof( VkSubpassEndInfoKHR ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, SubpassEndInfoKHR const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( SubpassEndInfoKHR value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct SurfaceCapabilities2EXT
   {
@@ -44493,6 +54971,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkSurfaceCapabilities2EXT*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, SurfaceCapabilities2EXT const& );
 
     bool operator==( SurfaceCapabilities2EXT const& rhs ) const
     {
@@ -44534,6 +55014,33 @@ namespace VULKAN_HPP_NAMESPACE
     SurfaceCounterFlagsEXT supportedSurfaceCounters;
   };
   static_assert( sizeof( SurfaceCapabilities2EXT ) == sizeof( VkSurfaceCapabilities2EXT ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, SurfaceCapabilities2EXT const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "minImageCount : " << value.minImageCount << std::endl;
+    stream << "maxImageCount : " << value.maxImageCount << std::endl;
+    stream << "currentExtent : " << value.currentExtent << std::endl;
+    stream << "minImageExtent : " << value.minImageExtent << std::endl;
+    stream << "maxImageExtent : " << value.maxImageExtent << std::endl;
+    stream << "maxImageArrayLayers : " << value.maxImageArrayLayers << std::endl;
+    stream << "supportedTransforms : " << value.supportedTransforms << std::endl;
+    stream << "currentTransform : " << value.currentTransform << std::endl;
+    stream << "supportedCompositeAlpha : " << value.supportedCompositeAlpha << std::endl;
+    stream << "supportedUsageFlags : " << value.supportedUsageFlags << std::endl;
+    stream << "supportedSurfaceCounters : " << value.supportedSurfaceCounters << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( SurfaceCapabilities2EXT value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct SurfaceCapabilitiesKHR
   {
@@ -44546,6 +55053,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkSurfaceCapabilitiesKHR*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, SurfaceCapabilitiesKHR const& );
 
     bool operator==( SurfaceCapabilitiesKHR const& rhs ) const
     {
@@ -44578,6 +55087,30 @@ namespace VULKAN_HPP_NAMESPACE
     ImageUsageFlags supportedUsageFlags;
   };
   static_assert( sizeof( SurfaceCapabilitiesKHR ) == sizeof( VkSurfaceCapabilitiesKHR ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, SurfaceCapabilitiesKHR const& value )
+  {
+    stream << "minImageCount : " << value.minImageCount << std::endl;
+    stream << "maxImageCount : " << value.maxImageCount << std::endl;
+    stream << "currentExtent : " << value.currentExtent << std::endl;
+    stream << "minImageExtent : " << value.minImageExtent << std::endl;
+    stream << "maxImageExtent : " << value.maxImageExtent << std::endl;
+    stream << "maxImageArrayLayers : " << value.maxImageArrayLayers << std::endl;
+    stream << "supportedTransforms : " << value.supportedTransforms << std::endl;
+    stream << "currentTransform : " << value.currentTransform << std::endl;
+    stream << "supportedCompositeAlpha : " << value.supportedCompositeAlpha << std::endl;
+    stream << "supportedUsageFlags : " << value.supportedUsageFlags << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( SurfaceCapabilitiesKHR value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct SurfaceCapabilities2KHR
   {
@@ -44590,6 +55123,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkSurfaceCapabilities2KHR*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, SurfaceCapabilities2KHR const& );
 
     bool operator==( SurfaceCapabilities2KHR const& rhs ) const
     {
@@ -44611,6 +55146,23 @@ namespace VULKAN_HPP_NAMESPACE
     SurfaceCapabilitiesKHR surfaceCapabilities;
   };
   static_assert( sizeof( SurfaceCapabilities2KHR ) == sizeof( VkSurfaceCapabilities2KHR ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, SurfaceCapabilities2KHR const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "surfaceCapabilities : " << value.surfaceCapabilities << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( SurfaceCapabilities2KHR value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct SurfaceFormatKHR
   {
@@ -44623,6 +55175,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkSurfaceFormatKHR*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, SurfaceFormatKHR const& );
 
     bool operator==( SurfaceFormatKHR const& rhs ) const
     {
@@ -44639,6 +55193,22 @@ namespace VULKAN_HPP_NAMESPACE
     ColorSpaceKHR colorSpace;
   };
   static_assert( sizeof( SurfaceFormatKHR ) == sizeof( VkSurfaceFormatKHR ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, SurfaceFormatKHR const& value )
+  {
+    stream << "format : " << value.format << std::endl;
+    stream << "colorSpace : " << value.colorSpace << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( SurfaceFormatKHR value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct SurfaceFormat2KHR
   {
@@ -44651,6 +55221,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkSurfaceFormat2KHR*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, SurfaceFormat2KHR const& );
 
     bool operator==( SurfaceFormat2KHR const& rhs ) const
     {
@@ -44672,6 +55244,23 @@ namespace VULKAN_HPP_NAMESPACE
     SurfaceFormatKHR surfaceFormat;
   };
   static_assert( sizeof( SurfaceFormat2KHR ) == sizeof( VkSurfaceFormat2KHR ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, SurfaceFormat2KHR const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "surfaceFormat : " << value.surfaceFormat << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( SurfaceFormat2KHR value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct SwapchainCounterCreateInfoEXT
   {
@@ -44711,6 +55300,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkSwapchainCounterCreateInfoEXT*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, SwapchainCounterCreateInfoEXT const& );
 
     bool operator==( SwapchainCounterCreateInfoEXT const& rhs ) const
     {
@@ -44732,6 +55323,23 @@ namespace VULKAN_HPP_NAMESPACE
     SurfaceCounterFlagsEXT surfaceCounters;
   };
   static_assert( sizeof( SwapchainCounterCreateInfoEXT ) == sizeof( VkSwapchainCounterCreateInfoEXT ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, SwapchainCounterCreateInfoEXT const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "surfaceCounters : " << value.surfaceCounters << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( SwapchainCounterCreateInfoEXT value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct SwapchainCreateInfoKHR
   {
@@ -44891,6 +55499,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkSwapchainCreateInfoKHR*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, SwapchainCreateInfoKHR const& );
 
     bool operator==( SwapchainCreateInfoKHR const& rhs ) const
     {
@@ -44942,6 +55552,38 @@ namespace VULKAN_HPP_NAMESPACE
     SwapchainKHR oldSwapchain;
   };
   static_assert( sizeof( SwapchainCreateInfoKHR ) == sizeof( VkSwapchainCreateInfoKHR ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, SwapchainCreateInfoKHR const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "flags : " << value.flags << std::endl;
+    stream << "surface : " << value.surface << std::endl;
+    stream << "minImageCount : " << value.minImageCount << std::endl;
+    stream << "imageFormat : " << value.imageFormat << std::endl;
+    stream << "imageColorSpace : " << value.imageColorSpace << std::endl;
+    stream << "imageExtent : " << value.imageExtent << std::endl;
+    stream << "imageArrayLayers : " << value.imageArrayLayers << std::endl;
+    stream << "imageUsage : " << value.imageUsage << std::endl;
+    stream << "imageSharingMode : " << value.imageSharingMode << std::endl;
+    stream << "queueFamilyIndexCount : " << value.queueFamilyIndexCount << std::endl;
+    stream << "pQueueFamilyIndices : " << value.pQueueFamilyIndices << std::endl;
+    stream << "preTransform : " << value.preTransform << std::endl;
+    stream << "compositeAlpha : " << value.compositeAlpha << std::endl;
+    stream << "presentMode : " << value.presentMode << std::endl;
+    stream << "clipped : " << value.clipped << std::endl;
+    stream << "oldSwapchain : " << value.oldSwapchain << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( SwapchainCreateInfoKHR value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct TextureLODGatherFormatPropertiesAMD
   {
@@ -44954,6 +55596,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkTextureLODGatherFormatPropertiesAMD*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, TextureLODGatherFormatPropertiesAMD const& );
 
     bool operator==( TextureLODGatherFormatPropertiesAMD const& rhs ) const
     {
@@ -44975,6 +55619,23 @@ namespace VULKAN_HPP_NAMESPACE
     Bool32 supportsTextureGatherLODBiasAMD;
   };
   static_assert( sizeof( TextureLODGatherFormatPropertiesAMD ) == sizeof( VkTextureLODGatherFormatPropertiesAMD ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, TextureLODGatherFormatPropertiesAMD const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "supportsTextureGatherLODBiasAMD : " << value.supportsTextureGatherLODBiasAMD << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( TextureLODGatherFormatPropertiesAMD value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct ValidationCacheCreateInfoEXT
   {
@@ -45030,6 +55691,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkValidationCacheCreateInfoEXT*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, ValidationCacheCreateInfoEXT const& );
 
     bool operator==( ValidationCacheCreateInfoEXT const& rhs ) const
     {
@@ -45055,6 +55718,25 @@ namespace VULKAN_HPP_NAMESPACE
     const void* pInitialData;
   };
   static_assert( sizeof( ValidationCacheCreateInfoEXT ) == sizeof( VkValidationCacheCreateInfoEXT ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, ValidationCacheCreateInfoEXT const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "flags : " << value.flags << std::endl;
+    stream << "initialDataSize : " << value.initialDataSize << std::endl;
+    stream << "pInitialData : " << value.pInitialData << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( ValidationCacheCreateInfoEXT value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct ValidationFeaturesEXT
   {
@@ -45118,6 +55800,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkValidationFeaturesEXT*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, ValidationFeaturesEXT const& );
 
     bool operator==( ValidationFeaturesEXT const& rhs ) const
     {
@@ -45145,6 +55829,26 @@ namespace VULKAN_HPP_NAMESPACE
     const ValidationFeatureDisableEXT* pDisabledValidationFeatures;
   };
   static_assert( sizeof( ValidationFeaturesEXT ) == sizeof( VkValidationFeaturesEXT ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, ValidationFeaturesEXT const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "enabledValidationFeatureCount : " << value.enabledValidationFeatureCount << std::endl;
+    stream << "pEnabledValidationFeatures : " << value.pEnabledValidationFeatures << std::endl;
+    stream << "disabledValidationFeatureCount : " << value.disabledValidationFeatureCount << std::endl;
+    stream << "pDisabledValidationFeatures : " << value.pDisabledValidationFeatures << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( ValidationFeaturesEXT value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct ValidationFlagsEXT
   {
@@ -45192,6 +55896,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkValidationFlagsEXT*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, ValidationFlagsEXT const& );
 
     bool operator==( ValidationFlagsEXT const& rhs ) const
     {
@@ -45215,6 +55921,24 @@ namespace VULKAN_HPP_NAMESPACE
     const ValidationCheckEXT* pDisabledValidationChecks;
   };
   static_assert( sizeof( ValidationFlagsEXT ) == sizeof( VkValidationFlagsEXT ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, ValidationFlagsEXT const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "disabledValidationCheckCount : " << value.disabledValidationCheckCount << std::endl;
+    stream << "pDisabledValidationChecks : " << value.pDisabledValidationChecks << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( ValidationFlagsEXT value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
 #ifdef VK_USE_PLATFORM_VI_NN
   struct ViSurfaceCreateInfoNN
@@ -45263,6 +55987,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkViSurfaceCreateInfoNN*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, ViSurfaceCreateInfoNN const& );
 
     bool operator==( ViSurfaceCreateInfoNN const& rhs ) const
     {
@@ -45286,6 +56012,24 @@ namespace VULKAN_HPP_NAMESPACE
     void* window;
   };
   static_assert( sizeof( ViSurfaceCreateInfoNN ) == sizeof( VkViSurfaceCreateInfoNN ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, ViSurfaceCreateInfoNN const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "flags : " << value.flags << std::endl;
+    stream << "window : " << value.window << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( ViSurfaceCreateInfoNN value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 #endif /*VK_USE_PLATFORM_VI_NN*/
 
 #ifdef VK_USE_PLATFORM_WAYLAND_KHR
@@ -45343,6 +56087,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkWaylandSurfaceCreateInfoKHR*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, WaylandSurfaceCreateInfoKHR const& );
 
     bool operator==( WaylandSurfaceCreateInfoKHR const& rhs ) const
     {
@@ -45368,6 +56114,25 @@ namespace VULKAN_HPP_NAMESPACE
     struct wl_surface* surface;
   };
   static_assert( sizeof( WaylandSurfaceCreateInfoKHR ) == sizeof( VkWaylandSurfaceCreateInfoKHR ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, WaylandSurfaceCreateInfoKHR const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "flags : " << value.flags << std::endl;
+    stream << "display : " << value.display << std::endl;
+    stream << "surface : " << value.surface << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( WaylandSurfaceCreateInfoKHR value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 #endif /*VK_USE_PLATFORM_WAYLAND_KHR*/
 
 #ifdef VK_USE_PLATFORM_WIN32_KHR
@@ -45457,6 +56222,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkWin32KeyedMutexAcquireReleaseInfoKHR*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, Win32KeyedMutexAcquireReleaseInfoKHR const& );
 
     bool operator==( Win32KeyedMutexAcquireReleaseInfoKHR const& rhs ) const
     {
@@ -45490,6 +56257,29 @@ namespace VULKAN_HPP_NAMESPACE
     const uint64_t* pReleaseKeys;
   };
   static_assert( sizeof( Win32KeyedMutexAcquireReleaseInfoKHR ) == sizeof( VkWin32KeyedMutexAcquireReleaseInfoKHR ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, Win32KeyedMutexAcquireReleaseInfoKHR const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "acquireCount : " << value.acquireCount << std::endl;
+    stream << "pAcquireSyncs : " << value.pAcquireSyncs << std::endl;
+    stream << "pAcquireKeys : " << value.pAcquireKeys << std::endl;
+    stream << "pAcquireTimeouts : " << value.pAcquireTimeouts << std::endl;
+    stream << "releaseCount : " << value.releaseCount << std::endl;
+    stream << "pReleaseSyncs : " << value.pReleaseSyncs << std::endl;
+    stream << "pReleaseKeys : " << value.pReleaseKeys << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( Win32KeyedMutexAcquireReleaseInfoKHR value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 #endif /*VK_USE_PLATFORM_WIN32_KHR*/
 
 #ifdef VK_USE_PLATFORM_WIN32_KHR
@@ -45579,6 +56369,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkWin32KeyedMutexAcquireReleaseInfoNV*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, Win32KeyedMutexAcquireReleaseInfoNV const& );
 
     bool operator==( Win32KeyedMutexAcquireReleaseInfoNV const& rhs ) const
     {
@@ -45612,6 +56404,29 @@ namespace VULKAN_HPP_NAMESPACE
     const uint64_t* pReleaseKeys;
   };
   static_assert( sizeof( Win32KeyedMutexAcquireReleaseInfoNV ) == sizeof( VkWin32KeyedMutexAcquireReleaseInfoNV ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, Win32KeyedMutexAcquireReleaseInfoNV const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "acquireCount : " << value.acquireCount << std::endl;
+    stream << "pAcquireSyncs : " << value.pAcquireSyncs << std::endl;
+    stream << "pAcquireKeys : " << value.pAcquireKeys << std::endl;
+    stream << "pAcquireTimeoutMilliseconds : " << value.pAcquireTimeoutMilliseconds << std::endl;
+    stream << "releaseCount : " << value.releaseCount << std::endl;
+    stream << "pReleaseSyncs : " << value.pReleaseSyncs << std::endl;
+    stream << "pReleaseKeys : " << value.pReleaseKeys << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( Win32KeyedMutexAcquireReleaseInfoNV value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 #endif /*VK_USE_PLATFORM_WIN32_KHR*/
 
 #ifdef VK_USE_PLATFORM_WIN32_KHR
@@ -45669,6 +56484,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkWin32SurfaceCreateInfoKHR*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, Win32SurfaceCreateInfoKHR const& );
 
     bool operator==( Win32SurfaceCreateInfoKHR const& rhs ) const
     {
@@ -45694,6 +56511,25 @@ namespace VULKAN_HPP_NAMESPACE
     HWND hwnd;
   };
   static_assert( sizeof( Win32SurfaceCreateInfoKHR ) == sizeof( VkWin32SurfaceCreateInfoKHR ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, Win32SurfaceCreateInfoKHR const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "flags : " << value.flags << std::endl;
+    stream << "hinstance : " << value.hinstance << std::endl;
+    stream << "hwnd : " << value.hwnd << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( Win32SurfaceCreateInfoKHR value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 #endif /*VK_USE_PLATFORM_WIN32_KHR*/
 
   struct WriteDescriptorSet
@@ -45790,6 +56626,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkWriteDescriptorSet*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, WriteDescriptorSet const& );
 
     bool operator==( WriteDescriptorSet const& rhs ) const
     {
@@ -45825,6 +56663,30 @@ namespace VULKAN_HPP_NAMESPACE
     const BufferView* pTexelBufferView;
   };
   static_assert( sizeof( WriteDescriptorSet ) == sizeof( VkWriteDescriptorSet ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, WriteDescriptorSet const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "dstSet : " << value.dstSet << std::endl;
+    stream << "dstBinding : " << value.dstBinding << std::endl;
+    stream << "dstArrayElement : " << value.dstArrayElement << std::endl;
+    stream << "descriptorCount : " << value.descriptorCount << std::endl;
+    stream << "descriptorType : " << value.descriptorType << std::endl;
+    stream << "pImageInfo : " << value.pImageInfo << std::endl;
+    stream << "pBufferInfo : " << value.pBufferInfo << std::endl;
+    stream << "pTexelBufferView : " << value.pTexelBufferView << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( WriteDescriptorSet value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct WriteDescriptorSetAccelerationStructureNV
   {
@@ -45872,6 +56734,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkWriteDescriptorSetAccelerationStructureNV*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, WriteDescriptorSetAccelerationStructureNV const& );
 
     bool operator==( WriteDescriptorSetAccelerationStructureNV const& rhs ) const
     {
@@ -45895,6 +56759,24 @@ namespace VULKAN_HPP_NAMESPACE
     const AccelerationStructureNV* pAccelerationStructures;
   };
   static_assert( sizeof( WriteDescriptorSetAccelerationStructureNV ) == sizeof( VkWriteDescriptorSetAccelerationStructureNV ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, WriteDescriptorSetAccelerationStructureNV const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "accelerationStructureCount : " << value.accelerationStructureCount << std::endl;
+    stream << "pAccelerationStructures : " << value.pAccelerationStructures << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( WriteDescriptorSetAccelerationStructureNV value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
   struct WriteDescriptorSetInlineUniformBlockEXT
   {
@@ -45942,6 +56824,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkWriteDescriptorSetInlineUniformBlockEXT*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, WriteDescriptorSetInlineUniformBlockEXT const& );
 
     bool operator==( WriteDescriptorSetInlineUniformBlockEXT const& rhs ) const
     {
@@ -45965,6 +56849,24 @@ namespace VULKAN_HPP_NAMESPACE
     const void* pData;
   };
   static_assert( sizeof( WriteDescriptorSetInlineUniformBlockEXT ) == sizeof( VkWriteDescriptorSetInlineUniformBlockEXT ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, WriteDescriptorSetInlineUniformBlockEXT const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "dataSize : " << value.dataSize << std::endl;
+    stream << "pData : " << value.pData << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( WriteDescriptorSetInlineUniformBlockEXT value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 
 #ifdef VK_USE_PLATFORM_XCB_KHR
   struct XcbSurfaceCreateInfoKHR
@@ -46021,6 +56923,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkXcbSurfaceCreateInfoKHR*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, XcbSurfaceCreateInfoKHR const& );
 
     bool operator==( XcbSurfaceCreateInfoKHR const& rhs ) const
     {
@@ -46046,6 +56950,25 @@ namespace VULKAN_HPP_NAMESPACE
     xcb_window_t window;
   };
   static_assert( sizeof( XcbSurfaceCreateInfoKHR ) == sizeof( VkXcbSurfaceCreateInfoKHR ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, XcbSurfaceCreateInfoKHR const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "flags : " << value.flags << std::endl;
+    stream << "connection : " << value.connection << std::endl;
+    stream << "window : " << value.window << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( XcbSurfaceCreateInfoKHR value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 #endif /*VK_USE_PLATFORM_XCB_KHR*/
 
 #ifdef VK_USE_PLATFORM_XLIB_KHR
@@ -46103,6 +57026,8 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return *reinterpret_cast<VkXlibSurfaceCreateInfoKHR*>( this );
     }
+    
+    friend std::ostream& operator<<( std::ostream&, XlibSurfaceCreateInfoKHR const& );
 
     bool operator==( XlibSurfaceCreateInfoKHR const& rhs ) const
     {
@@ -46128,6 +57053,25 @@ namespace VULKAN_HPP_NAMESPACE
     Window window;
   };
   static_assert( sizeof( XlibSurfaceCreateInfoKHR ) == sizeof( VkXlibSurfaceCreateInfoKHR ), "struct and wrapper have different size!" );
+  
+  std::ostream& operator<<( std::ostream& stream, XlibSurfaceCreateInfoKHR const& value )
+  {
+    stream << "sType : " << value.sType << std::endl;
+    stream << "pNext : " << value.pNext << std::endl;
+    stream << "flags : " << value.flags << std::endl;
+    stream << "dpy : " << value.dpy << std::endl;
+    stream << "window : " << value.window << std::endl;
+
+    return stream;
+  }
+  
+  std::string to_string( XlibSurfaceCreateInfoKHR value )
+  {
+    std::ostringstream result;
+    result << value;
+    return result.str();
+  }
+
 #endif /*VK_USE_PLATFORM_XLIB_KHR*/
 
   template<typename Dispatch>

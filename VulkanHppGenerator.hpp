@@ -221,6 +221,7 @@ class VulkanHppGenerator
     std::string writeStructConstructorArgument(bool & listedArgument, std::string const& indentation, MemberData const& memberData) const;
     void writeStructMembers(std::ostream & os, StructureData const& structData) const;
     void writeStructSetter(std::ostream & os, std::string const& structureName, MemberData const& memberData) const;
+	void writeStructToString(std::ostream & os, std::string const& structureName, StructureData const& structData) const;
     void writeStructure(std::ostream & os, std::pair<std::string, StructureData> const& structure) const;
     void writeUnion(std::ostream & os, std::pair<std::string, StructureData> const& structure) const;
     void writeUniqueTypes(std::ostream &os, std::string const& parentType, std::set<std::string> const& childrenTypes) const;
